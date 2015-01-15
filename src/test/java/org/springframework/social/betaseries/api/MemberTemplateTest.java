@@ -134,7 +134,7 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 				"https://api.betaseries.com/members/notifications?since_id=252676676&number=3")
 				.andRespond(
 						withSuccess()
-								.body(jsonResource("members-notifications-sinceId-252676676-number-3"))
+								.body(jsonResource("members-notifications-sinceId-252676676-3"))
 								.contentType(MediaType.APPLICATION_JSON));
 
 		List<Notification> notifications = betaSeries.memberOperations()
@@ -164,7 +164,7 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 				"https://api.betaseries.com/members/notifications?since_id=252676676&number=3&sort=asc")
 				.andRespond(
 						withSuccess()
-								.body(jsonResource("members-notifications-sinceId-252676676-number-3"))
+								.body(jsonResource("members-notifications-sinceId-252676676-3"))
 								.contentType(MediaType.APPLICATION_JSON));
 
 		List<Notification> notifications = betaSeries.memberOperations()
