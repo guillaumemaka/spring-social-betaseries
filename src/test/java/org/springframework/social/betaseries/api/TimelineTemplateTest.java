@@ -1,8 +1,11 @@
 package org.springframework.social.betaseries.api;
 
-import static org.junit.Assert.*;
-import static org.springframework.test.web.client.response.MockRestResponseCreators.*;
-import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.CoreMatchers.instanceOf;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertThat;
+import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
 
 import java.util.List;
 

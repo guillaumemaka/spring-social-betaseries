@@ -1,14 +1,14 @@
 package org.springframework.social.betaseries.api;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
-
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.social.betaseries.api.Show.SeasonDetail;
