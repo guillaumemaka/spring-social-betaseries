@@ -1,7 +1,8 @@
 package org.springframework.social.betaseries.api;
 
-import static org.junit.Assert.*;
-import static org.springframework.test.web.client.response.MockRestResponseCreators.*;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
 
 import org.junit.Test;
 import org.springframework.http.MediaType;
