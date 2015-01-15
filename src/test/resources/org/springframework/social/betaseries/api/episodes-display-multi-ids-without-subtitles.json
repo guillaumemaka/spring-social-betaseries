@@ -1,0 +1,65 @@
+{
+    "episodes": [
+        {
+            "id": 264473,
+            "thetvdb_id": 55452,
+            "title": "Simpsons Roasting on an Open Fire",
+            "season": 1,
+            "episode": 1,
+            "show": {
+                "id": 12,
+                "thetvdb_id": 71663,
+                "title": "The Simpsons"
+            },
+            "code": "S01E01",
+            "global": 1,
+            "description": "Ce soir, les Simpson assistent \u00e0 la f\u00eate de No\u00ebl de l'\u00e9cole dans laquelle Bart et Lisa participent. De retour \u00e0 la maison, les enfants r\u00e9digent leur lettre pour le P\u00e8re No\u00ebl : Lisa r\u00e9clame pour la \u00e9ni\u00e8me ann\u00e9e un poney et Bart veut un tatouage.",
+            "date": "1989-12-18",
+            "note": {
+                "total": "164",
+                "mean": "4.16",
+                "user": 5
+            },
+            "user": {
+                "seen": true,
+                "downloaded": true
+            },
+            "comments": "4",
+            "subtitles": [
+
+            ]
+        },
+        {
+            "id": 264474,
+            "thetvdb_id": 55453,
+            "title": "Bart the Genius",
+            "season": 1,
+            "episode": 2,
+            "show": {
+                "id": 12,
+                "thetvdb_id": 71663,
+                "title": "The Simpsons"
+            },
+            "code": "S01E02",
+            "global": 2,
+            "description": "Toute la famille est r\u00e9unie autour d'une table pour jouer au scrable. Bart est d'humeur joyeuse et Lisa lui rappelle qu'il a plut\u00f4t int\u00e9r\u00eat \u00e0 r\u00e9viser pour les tests qu'il va devoir passer.",
+            "date": "1990-01-15",
+            "note": {
+                "total": "110",
+                "mean": "4.25",
+                "user": 0
+            },
+            "user": {
+                "seen": false,
+                "downloaded": false
+            },
+            "comments": "0",
+            "subtitles": [
+
+            ]
+        }
+    ],
+    "errors": [
+
+    ]
+}

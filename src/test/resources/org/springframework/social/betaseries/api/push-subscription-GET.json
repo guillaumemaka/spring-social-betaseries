@@ -1,0 +1,32 @@
+{
+	"subscriptions":
+	[{
+		"id": 30126,
+		"user_id": 130446,
+		"type": "episodes",
+		"udid": "28a2176a90035bd08d86242b7aaa934f4f4c7463",
+		"app_version": "1.0.4",
+		"device_token": "cb39f5ff712e22ff0ffea03ae0a5bb47a8fb4676ae21edc3909a65816ac6f047",
+		"device_model": "iPad",
+		"device_version": "8.1.1"
+	}, {
+		"id": 30127,
+		"user_id": 130446,
+		"type": "seasons",
+		"udid": "28a2176a90035bd08d86242b7aaa934f4f4c7463",
+		"app_version": "1.0.4",
+		"device_token": "cb39f5ff712e22ff0ffea03ae0a5bb47a8fb4676ae21edc3909a65816ac6f047",
+		"device_model": "iPad",
+		"device_version": "8.1.1"
+	}, {
+		"id": 30121,
+		"user_id": 130446,
+		"type": "unseen",
+		"udid": "28a2176a90035bd08d86242b7aaa934f4f4c7463",
+		"app_version": "1.0.4",
+		"device_token": "cb39f5ff712e22ff0ffea03ae0a5bb47a8fb4676ae21edc3909a65816ac6f047",
+		"device_model": "iPad",
+		"device_version": "8.1.1"
+	}],
+	"errors": []
+}

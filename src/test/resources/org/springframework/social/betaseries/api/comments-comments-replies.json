@@ -1,0 +1,29 @@
+{
+    "comments": [
+        {
+            "id": 72947,
+            "user_id": 30054,
+            "login": "srktest",
+            "avatar": null,
+            "date": "2011-05-01 12:40:17",
+            "text": "test reply",
+            "inner_id": 29,
+            "in_reply_to": "1",
+            "replies": 0
+        },
+        {
+            "id": 153307,
+            "user_id": 147227,
+            "login": "Osiatis",
+            "avatar": "http:\/\/cdn.betaseries.com\/betaseries\/data\/avatars\/3a\/3a2273eec390357b5aa5ace242460ced.png",
+            "date": "2013-04-27 15:30:37",
+            "text": "reply reply",
+            "inner_id": 70,
+            "in_reply_to": "1",
+            "replies": 0
+        }
+    ],
+    "errors": [
+
+    ]
+}

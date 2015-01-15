@@ -1,0 +1,34 @@
+{
+    "episode": {
+        "id": 417218,
+        "thetvdb_id": 5032293,
+        "title": "Covercraft",
+        "season": 26,
+        "episode": 8,
+        "show": {
+            "id": 12,
+            "thetvdb_id": 71663,
+            "title": "The Simpsons"
+        },
+        "code": "S26E08",
+        "global": 561,
+        "description": "Homer has a mid-life crisis, takes up bass guitar and forms a cover band with some of the other dads in town. But the band's modest early success is soon overwhelmed by the breakout potential of their most unlikely star, Apu.",
+        "date": "2014-11-24",
+        "note": {
+            "total": 0,
+            "mean": 0,
+            "user": 0
+        },
+        "user": {
+            "seen": false,
+            "downloaded": false
+        },
+        "comments": "0",
+        "subtitles": [
+
+        ]
+    },
+    "errors": [
+
+    ]
+}

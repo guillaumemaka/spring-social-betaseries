@@ -1,0 +1,25 @@
+{
+    "member": {
+        "id": 26977,
+        "login": "Dev039",
+        "xp": 1100,
+        "cached": 1406931956,
+        "avatar": null,
+        "in_account": false,
+        "stats": {
+            "friends": 1,
+            "shows": 0,
+            "seasons": 0,
+            "episodes": 0,
+            "comments": 0,
+            "progress": 100,
+            "episodes_to_watch": 0,
+            "time_on_tv": 0,
+            "time_to_spend": 0,
+            "badges": 0
+        }
+    },
+    "errors": [
+
+    ]
+}

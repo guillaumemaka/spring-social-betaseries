@@ -1,0 +1,36 @@
+{
+    "episodes": [
+        {
+            "id": 163293,
+            "thetvdb_id": 332179,
+            "title": "Chuck Versus the Intersect",
+            "season": 1,
+            "episode": 1,
+            "show": {
+                "id": 13,
+                "thetvdb_id": 80348,
+                "title": "Chuck"
+            },
+            "code": "S01E01",
+            "global": 1,
+            "description": "Chuck se retrouve en possession de renseignements ultra-secrets qu'il a re\u00e7u par mail de la part de Bryce Larkin, un ancien coloc, qu'il croyait devenu comptable. Il ignore tout des informations capitales qu'il d\u00e9tient jusqu'\u00e0 ce qu'il soit contact\u00e9 par la la CIA et la NSA...",
+            "date": "2007-09-24",
+            "note": {
+                "total": "567",
+                "mean": "4.3104",
+                "user": 0
+            },
+            "user": {
+                "seen": false,
+                "downloaded": false
+            },
+            "comments": "3",
+            "subtitles": [
+
+            ]
+        }
+    ],
+    "errors": [
+
+    ]
+}
