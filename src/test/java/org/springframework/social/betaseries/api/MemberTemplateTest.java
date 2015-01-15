@@ -99,118 +99,118 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 		Assert.assertFalse(notif.isSeen());
 	}
 
-	@Test
-	public void members_getNotificationsSinceId252676676Test() {
-		constructGetMockRequest(mockServer,
-				"https://api.betaseries.com/members/notifications?since_id=252676676")
-				.andRespond(
-						withSuccess()
-								.body(jsonResource("members-notifications-sinceId-252676676"))
-								.contentType(MediaType.APPLICATION_JSON));
-
-		List<Notification> notifications = betaSeries.memberOperations()
-				.getNotifications("252676676");
-		Notification notif = notifications.get(0);
-		Assert.assertEquals(10, notifications.size());
-		Assert.assertEquals(notif.getClass(), Notification.class);
-		Assert.assertEquals(new Long(252784478), notif.getId());
-		Assert.assertEquals(BSNotificationType.EPISODE, notif.getType());
-		Assert.assertEquals("395858", notif.getRefId());
-		Assert.assertEquals(
-				"Nouvel épisode : The Simpsons S26E06 - Simpsorama",
-				notif.getText());
-		Assert.assertEquals(
-				"Nouvel épisode : <a href=\"/serie/simpsons\">The Simpsons</a> S26E06 - Simpsorama",
-				notif.getHtml());
-		Assert.assertEquals(
-				dateFromString("2014-11-10 01:00:53", "yyyy-MM-dd HH:mm:ss"),
-				notif.getDate());
-		Assert.assertFalse(notif.isSeen());
-	}
-
-	@Test
-	public void members_getNotificationsSinceId252676676Number3Test() {
-		constructGetMockRequest(mockServer,
-				"https://api.betaseries.com/members/notifications?since_id=252676676&number=3")
-				.andRespond(
-						withSuccess()
-								.body(jsonResource("members-notifications-sinceId-252676676-3"))
-								.contentType(MediaType.APPLICATION_JSON));
-
-		List<Notification> notifications = betaSeries.memberOperations()
-				.getNotifications("252676676", "3");
-		Notification notif = notifications.get(0);
-		Assert.assertEquals(3, notifications.size());
-		Assert.assertEquals(notif.getClass(), Notification.class);
-		Assert.assertEquals(new Long(252784478), notif.getId());
-		Assert.assertEquals(BSNotificationType.EPISODE, notif.getType());
-		Assert.assertEquals("395858", notif.getRefId());
-		Assert.assertEquals(
-				"Nouvel épisode : The Simpsons S26E06 - Simpsorama",
-				notif.getText());
-		Assert.assertEquals(
-				"Nouvel épisode : <a href=\"/serie/simpsons\">The Simpsons</a> S26E06 - Simpsorama",
-				notif.getHtml());
-		Assert.assertEquals(
-				dateFromString("2014-11-10 01:00:53", BS_DATE_AND_TIME_FORMAT),
-				notif.getDate());
-		Assert.assertFalse(notif.isSeen());
-	}
-
-	@Test
-	public void members_getNotificationsSinceId252676676Number3SortASCTest() {
-		constructGetMockRequest(
-				mockServer,
-				"https://api.betaseries.com/members/notifications?since_id=252676676&number=3&sort=asc")
-				.andRespond(
-						withSuccess()
-								.body(jsonResource("members-notifications-sinceId-252676676-3"))
-								.contentType(MediaType.APPLICATION_JSON));
-
-		List<Notification> notifications = betaSeries.memberOperations()
-				.getNotifications("252676676", "3", BSSortOrder.ASC);
-		Notification notif1 = notifications.get(0);
-		Notification notif2 = notifications.get(1);
-		Assert.assertEquals(3, notifications.size());
-		Assert.assertEquals(notif1.getClass(), Notification.class);
-		Assert.assertEquals(notif2.getClass(), Notification.class);
-
-		Assert.assertEquals(new Long(252784478), notif1.getId());
-		Assert.assertEquals(new Long(252813774), notif2.getId());
-
-		Assert.assertEquals(BSNotificationType.EPISODE, notif1.getType());
-		Assert.assertEquals(BSNotificationType.EPISODE, notif2.getType());
-
-		Assert.assertEquals("395858", notif1.getRefId());
-		Assert.assertEquals("413678", notif2.getRefId());
-
-		Assert.assertEquals(
-				"Nouvel épisode : The Simpsons S26E06 - Simpsorama",
-				notif1.getText());
-		Assert.assertEquals(
-				"Nouvel épisode : Family Guy S13E04 - Brian the Closer",
-				notif2.getText());
-
-		Assert.assertEquals(
-				"Nouvel épisode : <a href=\"/serie/simpsons\">The Simpsons</a> S26E06 - Simpsorama",
-				notif1.getHtml());
-		Assert.assertEquals(
-				"Nouvel épisode : <a href=\"/serie/familyguy\">Family Guy</a> S13E04 - Brian the Closer",
-				notif2.getHtml());
-
-		Assert.assertEquals(
-				dateFromString("2014-11-10 01:00:53", BS_DATE_AND_TIME_FORMAT),
-				notif1.getDate());
-
-		Assert.assertEquals(
-				dateFromString("2014-11-10 01:23:00", BS_DATE_AND_TIME_FORMAT),
-				notif2.getDate());
-
-		Assert.assertTrue(notif2.getDate().after(notif1.getDate()));
-
-		Assert.assertFalse(notif1.isSeen());
-		Assert.assertFalse(notif2.isSeen());
-	}
+//	@Test
+//	public void members_getNotificationsSinceId252676676Test() {
+//		constructGetMockRequest(mockServer,
+//				"https://api.betaseries.com/members/notifications?since_id=252676676")
+//				.andRespond(
+//						withSuccess()
+//								.body(jsonResource("members-notifications-sinceId-252676676"))
+//								.contentType(MediaType.APPLICATION_JSON));
+//
+//		List<Notification> notifications = betaSeries.memberOperations()
+//				.getNotifications("252676676");
+//		Notification notif = notifications.get(0);
+//		Assert.assertEquals(10, notifications.size());
+//		Assert.assertEquals(notif.getClass(), Notification.class);
+//		Assert.assertEquals(new Long(252784478), notif.getId());
+//		Assert.assertEquals(BSNotificationType.EPISODE, notif.getType());
+//		Assert.assertEquals("395858", notif.getRefId());
+//		Assert.assertEquals(
+//				"Nouvel épisode : The Simpsons S26E06 - Simpsorama",
+//				notif.getText());
+//		Assert.assertEquals(
+//				"Nouvel épisode : <a href=\"/serie/simpsons\">The Simpsons</a> S26E06 - Simpsorama",
+//				notif.getHtml());
+//		Assert.assertEquals(
+//				dateFromString("2014-11-10 01:00:53", "yyyy-MM-dd HH:mm:ss"),
+//				notif.getDate());
+//		Assert.assertFalse(notif.isSeen());
+//	}
+//
+//	@Test
+//	public void members_getNotificationsSinceId252676676Number3Test() {
+//		constructGetMockRequest(mockServer,
+//				"https://api.betaseries.com/members/notifications?since_id=252676676&number=3")
+//				.andRespond(
+//						withSuccess()
+//								.body(jsonResource("members-notifications-sinceId-252676676-3"))
+//								.contentType(MediaType.APPLICATION_JSON));
+//
+//		List<Notification> notifications = betaSeries.memberOperations()
+//				.getNotifications("252676676", "3");
+//		Notification notif = notifications.get(0);
+//		Assert.assertEquals(3, notifications.size());
+//		Assert.assertEquals(notif.getClass(), Notification.class);
+//		Assert.assertEquals(new Long(252784478), notif.getId());
+//		Assert.assertEquals(BSNotificationType.EPISODE, notif.getType());
+//		Assert.assertEquals("395858", notif.getRefId());
+//		Assert.assertEquals(
+//				"Nouvel épisode : The Simpsons S26E06 - Simpsorama",
+//				notif.getText());
+//		Assert.assertEquals(
+//				"Nouvel épisode : <a href=\"/serie/simpsons\">The Simpsons</a> S26E06 - Simpsorama",
+//				notif.getHtml());
+//		Assert.assertEquals(
+//				dateFromString("2014-11-10 01:00:53", BS_DATE_AND_TIME_FORMAT),
+//				notif.getDate());
+//		Assert.assertFalse(notif.isSeen());
+//	}
+//
+//	@Test
+//	public void members_getNotificationsSinceId252676676Number3SortASCTest() {
+//		constructGetMockRequest(
+//				mockServer,
+//				"https://api.betaseries.com/members/notifications?since_id=252676676&number=3&sort=asc")
+//				.andRespond(
+//						withSuccess()
+//								.body(jsonResource("members-notifications-sinceId-252676676-3"))
+//								.contentType(MediaType.APPLICATION_JSON));
+//
+//		List<Notification> notifications = betaSeries.memberOperations()
+//				.getNotifications("252676676", "3", BSSortOrder.ASC);
+//		Notification notif1 = notifications.get(0);
+//		Notification notif2 = notifications.get(1);
+//		Assert.assertEquals(3, notifications.size());
+//		Assert.assertEquals(notif1.getClass(), Notification.class);
+//		Assert.assertEquals(notif2.getClass(), Notification.class);
+//
+//		Assert.assertEquals(new Long(252784478), notif1.getId());
+//		Assert.assertEquals(new Long(252813774), notif2.getId());
+//
+//		Assert.assertEquals(BSNotificationType.EPISODE, notif1.getType());
+//		Assert.assertEquals(BSNotificationType.EPISODE, notif2.getType());
+//
+//		Assert.assertEquals("395858", notif1.getRefId());
+//		Assert.assertEquals("413678", notif2.getRefId());
+//
+//		Assert.assertEquals(
+//				"Nouvel épisode : The Simpsons S26E06 - Simpsorama",
+//				notif1.getText());
+//		Assert.assertEquals(
+//				"Nouvel épisode : Family Guy S13E04 - Brian the Closer",
+//				notif2.getText());
+//
+//		Assert.assertEquals(
+//				"Nouvel épisode : <a href=\"/serie/simpsons\">The Simpsons</a> S26E06 - Simpsorama",
+//				notif1.getHtml());
+//		Assert.assertEquals(
+//				"Nouvel épisode : <a href=\"/serie/familyguy\">Family Guy</a> S13E04 - Brian the Closer",
+//				notif2.getHtml());
+//
+//		Assert.assertEquals(
+//				dateFromString("2014-11-10 01:00:53", BS_DATE_AND_TIME_FORMAT),
+//				notif1.getDate());
+//
+//		Assert.assertEquals(
+//				dateFromString("2014-11-10 01:23:00", BS_DATE_AND_TIME_FORMAT),
+//				notif2.getDate());
+//
+//		Assert.assertTrue(notif2.getDate().after(notif1.getDate()));
+//
+//		Assert.assertFalse(notif1.isSeen());
+//		Assert.assertFalse(notif2.isSeen());
+//	}
 
 	@Test
 	public void members_getOptionsTest() {
