@@ -1,0 +1,60 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+sourceCompatibility = '1.6'
+group = 'org.springframework.social.betaseries'
+version = '1.0.0-SNAPSHOT'
+
+
+ext.jacksonVersion = '2.3.3'
+ext.jacksonAnnotationVersion = '2.3.0'
+ext.springSocialVersion = '1.1.0.RELEASE'
+ext.springVersion = '4.1.2.RELEASE'
+ext.httpClientVersion = '4.3.3'
+ext.slf4jVersion = '1.7.7'
+ext.junitVersion = '4.11'
+ext.mockitoVersion = '1.10.8'
+
+
+dependencies {
+	compile group: 'org.springframework' , name: 'spring-context', version: springVersion	
+	compile group: 'org.springframework.social' , name: 'spring-social-security', version: springSocialVersion
+	compile group: 'org.springframework.social' , name: 'spring-social-core', version: springSocialVersion
+	compile group: 'com.fasterxml.jackson.core' , name: 'jackson-core', version: jacksonVersion
+	compile group: 'com.fasterxml.jackson.core' , name: 'jackson-annotations', version: jacksonAnnotationVersion
+	compile group: 'com.fasterxml.jackson.core' , name: 'jackson-databind', version: jacksonVersion
+	compile group: 'org.apache.httpcomponents' , name: 'httpclient', version: httpClientVersion
+	compile group: 'org.slf4j' , name: 'slf4j-log4j12', version: slf4jVersion	
+	
+	testCompile group: 'junit' , name: 'junit', version: junitVersion
+	testCompile group: 'org.springframework' , name: 'spring-test', version: springVersion
+	testCompile group: 'org.mockito' , name: 'mockito-core', version: mockitoVersion
+	
+}
+
+jar {
+	manifest {
+		attributes("Implementation-Title": "spring-social-betaseries",
+				   "Implementation-Version": version)
+	}
+}
+
+test {
+	testLogging {
+		exceptionFormat "full" // default is "short"
+		events "started", "passed", "skipped", "failed", "standardOut", "standardError"
+	}
+	
+	reports.html.enabled = true
+}
+
+repositories {
+	mavenCentral()
+ 
+	mavenLocal()
+ 
+	maven {
+		url "http://maven.springframework.org/release"
+	}
+}
