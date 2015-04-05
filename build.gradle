@@ -1,60 +1,129 @@
-apply plugin: 'java'
-apply plugin: 'idea'
-apply plugin: 'eclipse'
+buildscript {
+    repositories {
+        maven { url 'http://repo.spring.io/plugins-release' }
+    }
+}
 
-sourceCompatibility = '1.6'
-group = 'org.springframework.social.betaseries'
-version = '1.0.0-SNAPSHOT'
+configure(allprojects) {
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+    apply plugin: 'idea'
 
+    group = 'org.springframework.social'
 
-ext.jacksonVersion = '2.3.3'
-ext.jacksonAnnotationVersion = '2.3.0'
-ext.springSocialVersion = '1.1.0.RELEASE'
-ext.springVersion = '4.1.2.RELEASE'
-ext.httpClientVersion = '4.3.3'
-ext.slf4jVersion = '1.7.7'
-ext.junitVersion = '4.11'
-ext.mockitoVersion = '1.10.8'
+    sourceCompatibility=1.5
+    targetCompatibility=1.5
 
+    ext {
+        springSocialVersion = '1.1.0.RELEASE'
+        jacksonVersion = '2.3.0'
+        junitVersion = '4.11'
+        mockitoVersion = '1.9.5'
+        servletApiVersion = '3.0.1'
+        springVersion = '4.0.2.RELEASE'
+		slf4jVersion = '1.7.7'
+    }
 
-dependencies {
-	compile group: 'org.springframework' , name: 'spring-context', version: springVersion	
-	compile group: 'org.springframework.social' , name: 'spring-social-security', version: springSocialVersion
-	compile group: 'org.springframework.social' , name: 'spring-social-core', version: springSocialVersion
-	compile group: 'com.fasterxml.jackson.core' , name: 'jackson-core', version: jacksonVersion
-	compile group: 'com.fasterxml.jackson.core' , name: 'jackson-annotations', version: jacksonAnnotationVersion
-	compile group: 'com.fasterxml.jackson.core' , name: 'jackson-databind', version: jacksonVersion
-	compile group: 'org.apache.httpcomponents' , name: 'httpclient', version: httpClientVersion
-	compile group: 'org.slf4j' , name: 'slf4j-log4j12', version: slf4jVersion	
+    [compileJava, compileTestJava]*.options*.compilerArgs = ['-Xlint:none']
+
+    sourceSets.test.resources.srcDirs = ['src/test/resources', 'src/test/java']
+
+    test.systemProperty("java.awt.headless", "true")
+
+    repositories {
+        maven { url "http://repo.spring.io/libs-snapshot" }
+        maven { url "http://repo.spring.io/ebr-maven-external" }
+    }
+
+    dependencies {
+        testCompile "junit:junit:$junitVersion"
+        testCompile "org.mockito:mockito-all:$mockitoVersion"
+        testCompile "org.springframework:spring-test:$springVersion"
+    }
+
+    // servlet-api (2.5) and tomcat-servlet-api (3.0) classpath entries should not be
+    // exported to dependent projects in Eclipse to avoid false compilation errors due
+    // to changing APIs across these versions
+    eclipse.classpath.file.whenMerged { classpath ->
+        classpath.entries.findAll { entry -> entry.path.contains('servlet-api') }*.exported = false
+    }
+}
+
+configure(subprojects) { subproject ->
+    apply from: "${rootProject.projectDir}/publish-maven.gradle"
+
+    jar {
+        manifest.attributes['Implementation-Title'] = subproject.name
+        manifest.attributes['Implementation-Version'] = subproject.version
+
+        from("${rootProject.projectDir}/src/dist") {
+            include "license.txt"
+            include "notice.txt"
+            into "META-INF"
+            expand(copyright: new Date().format('yyyy'), version: project.version)
+        }
+    }
+
+    javadoc {
+        options.memberLevel = org.gradle.external.javadoc.JavadocMemberLevel.PROTECTED
+        options.author = true
+        options.header = project.name
+        //options.overview = "${projectDir}/src/main/java/overview.html"
+    }
+
+    task sourcesJar(type: Jar, dependsOn:classes) {
+        classifier = 'sources'
+        from sourceSets.main.allJava
+    }
+
+    task javadocJar(type: Jar) {
+        classifier = 'javadoc'
+        from javadoc
+    }
+
+    artifacts {
+        archives sourcesJar
+        archives javadocJar
+    }
+}
+
+configure(rootProject) {
+    description = 'Spring Social BetaSeries'
+		
+	dependencies {
+		compile "org.springframework.social:spring-social-core:$springSocialVersion"
+		compile ("org.springframework.social:spring-social-config:$springSocialVersion")
+		compile ("org.springframework.social:spring-social-security:$springSocialVersion")
+		compile ("com.fasterxml.jackson.core:jackson-core:$jacksonVersion")
+		compile ("com.fasterxml.jackson.core:jackson-databind:$jacksonVersion")
+		compile ("com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion")
+		compile ("javax.servlet:javax.servlet-api:$servletApiVersion")
+		compile group: 'org.slf4j' , name: 'slf4j-log4j12', version: slf4jVersion
+		testCompile "org.springframework:spring-test:$springVersion"
+	 }
 	
-	testCompile group: 'junit' , name: 'junit', version: junitVersion
-	testCompile group: 'org.springframework' , name: 'spring-test', version: springVersion
-	testCompile group: 'org.mockito' , name: 'mockito-core', version: mockitoVersion
-	
+    task wrapper(type: Wrapper) {
+        description = 'Generates gradlew[.bat] scripts'
+        gradleVersion = '1.10'
+    }
+
 }
 
-jar {
-	manifest {
-		attributes("Implementation-Title": "spring-social-betaseries",
-				   "Implementation-Version": version)
-	}
-}
+//task updateRootDocs << {
+//    copy {
+//        from 'src/dist'
+//        into "${rootProject.projectDir}"
+//        include 'notice.txt'
+//        expand(copyright: new Date().format('yyyy'), version: project.version)
+//        rename { filename -> 'NOTICE' }
+//    }
+//
+//    copy {
+//        from 'src/dist'
+//        into "${rootProject.projectDir}"
+//        include 'license.txt'
+//        rename { filename -> 'LICENSE' }
+//    }
+//}
 
-test {
-	testLogging {
-		exceptionFormat "full" // default is "short"
-		events "started", "passed", "skipped", "failed", "standardOut", "standardError"
-	}
-	
-	reports.html.enabled = true
-}
-
-repositories {
-	mavenCentral()
- 
-	mavenLocal()
- 
-	maven {
-		url "http://maven.springframework.org/release"
-	}
-}
+// build.dependsOn('updateRootDocs')
