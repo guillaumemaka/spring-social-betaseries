@@ -1,26 +1,65 @@
+/**
+ * Copyright 2015 [name of copyright owner]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
 import java.util.Date;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Event.
+ *
+ * @author Guillaume Maka
+ */
 public class Event extends BetaSeriesObject {
+	
+	/** The id. */
 	private final Integer id;
+	
+	/** The type. */
 	private final BSTimelineEventType type;
+	
+	/** The ref. */
 	private final String ref;
+	
+	/** The ref id. */
 	private final Integer refId;
+	
+	/** The user. */
 	private final String user;
+	
+	/** The user id. */
 	private final Integer userId;
+	
+	/** The html. */
 	private final String html;
+	
+	/** The date. */
 	private final Date date;
 
 	/**
-	 * @param id
-	 * @param type
-	 * @param ref
-	 * @param refId
-	 * @param user
-	 * @param userId
-	 * @param html
-	 * @param date
+	 * Instantiates a new event.
+	 *
+	 * @param id the id
+	 * @param type the type
+	 * @param ref the ref
+	 * @param refId the ref id
+	 * @param user the user
+	 * @param userId the user id
+	 * @param html the html
+	 * @param date the date
 	 */
 	public Event(Integer id, BSTimelineEventType type, String ref,
 			Integer refId, String user, Integer userId, String html, Date date) {
@@ -36,6 +75,8 @@ public class Event extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the id.
+	 *
 	 * @return the id
 	 */
 	public Integer getId() {
@@ -43,6 +84,8 @@ public class Event extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the type.
+	 *
 	 * @return the type
 	 */
 	public BSTimelineEventType getType() {
@@ -50,6 +93,8 @@ public class Event extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the ref.
+	 *
 	 * @return the ref
 	 */
 	public String getRef() {
@@ -57,6 +102,8 @@ public class Event extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the ref id.
+	 *
 	 * @return the refId
 	 */
 	public Integer getRefId() {
@@ -64,6 +111,8 @@ public class Event extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the user.
+	 *
 	 * @return the user
 	 */
 	public String getUser() {
@@ -71,6 +120,8 @@ public class Event extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the user id.
+	 *
 	 * @return the userId
 	 */
 	public Integer getUserId() {
@@ -78,6 +129,8 @@ public class Event extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the html.
+	 *
 	 * @return the html
 	 */
 	public String getHtml() {
@@ -85,6 +138,8 @@ public class Event extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the date.
+	 *
 	 * @return the date
 	 */
 	public Date getDate() {

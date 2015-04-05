@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 [name of copyright owner]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -71,8 +71,10 @@ public class Episode extends BetaSeriesObject {
 	/** The is downloaded. */
 	private boolean isDownloaded;
 	
+	/** The number of comment. */
 	private int numberOfComment;
 	
+	/** The subtitles. */
 	private List<Subtitle> subtitles;
 	
 	/**
@@ -378,6 +380,8 @@ public class Episode extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the number of comment.
+	 *
 	 * @return the numberOfComment
 	 */
 	public int getNumberOfComment() {
@@ -385,6 +389,8 @@ public class Episode extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the subtitles.
+	 *
 	 * @return the subtitles
 	 */
 	public List<Subtitle> getSubtitles() {
@@ -392,6 +398,8 @@ public class Episode extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the subtitles.
+	 *
 	 * @param subtitles the subtitles to set
 	 */
 	public void setSubtitles(List<Subtitle> subtitles) {
@@ -399,6 +407,8 @@ public class Episode extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the number of comment.
+	 *
 	 * @param numberOfComment the numberOfComment to set
 	 */
 	public void setNumberOfComment(int numberOfComment) {

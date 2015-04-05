@@ -1,3 +1,18 @@
+/**
+ * Copyright 2015 [name of copyright owner]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api.impl.json;
 
 import java.util.Map;
@@ -8,19 +23,30 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class BetaSeriesAuthObjectWrapper.
+ *
+ * @author Guillaume Maka
+ */
 @JsonIgnoreProperties(ignoreUnknown=true)
 public class BetaSeriesAuthObjectWrapper {
 
+	/** The user. */
 	private final Map<String, Object> user;
 
+	/** The token. */
 	private final String token;
 
+	/** The hash. */
 	private final String hash;
 
 	/**
-	 * @param user
-	 * @param token
-	 * @param hash
+	 * Instantiates a new beta series auth object wrapper.
+	 *
+	 * @param user the user
+	 * @param token the token
+	 * @param hash the hash
 	 */
 	@JsonCreator
 	public BetaSeriesAuthObjectWrapper(
@@ -33,6 +59,11 @@ public class BetaSeriesAuthObjectWrapper {
 		this.hash = hash;
 	}
 
+	/**
+	 * Gets the authenticated user.
+	 *
+	 * @return the authenticated user
+	 */
 	public BSAuthObject getAuthenticatedUser() {
 		return new BSAuthObject(
 				user.get("id").toString(), 

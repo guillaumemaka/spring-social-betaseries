@@ -1,3 +1,18 @@
+/**
+ * Copyright 2015 [name of copyright owner]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api.impl.json;
 
 import java.io.IOException;
@@ -22,15 +37,33 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class MemberDeserializer.
+ *
+ * @author Guillaume Maka
+ */
 public class MemberDeserializer extends JsonDeserializer<Member> {
+	
+	/** The Constant TAG. */
 	private static final String TAG = JsonDeserializer.class.getName();
+	
+	/** The logger. */
 	private final Logger logger = LoggerFactory.getLogger(MemberDeserializer.class);
+	
+	/** The om. */
 	private ObjectMapper om; 
 	
+	/**
+	 * Instantiates a new member deserializer.
+	 */
 	public MemberDeserializer() {
 		
 	}
 	
+	/* (non-Javadoc)
+	 * @see com.fasterxml.jackson.databind.JsonDeserializer#deserialize(com.fasterxml.jackson.core.JsonParser, com.fasterxml.jackson.databind.DeserializationContext)
+	 */
 	@Override
 	public Member deserialize(JsonParser jp, DeserializationContext ctx)
 			throws IOException, JsonProcessingException {
@@ -48,6 +81,12 @@ public class MemberDeserializer extends JsonDeserializer<Member> {
 		return member;
 	}
 
+	/**
+	 * Deserialize.
+	 *
+	 * @param node the node
+	 * @return the member
+	 */
 	private Member deserialize(JsonNode node) {
 
 		final JsonNode rootNode;
@@ -100,6 +139,12 @@ public class MemberDeserializer extends JsonDeserializer<Member> {
 		return member;
 	}
 
+	/**
+	 * Deserialize member stats.
+	 *
+	 * @param node the node
+	 * @return the member stats
+	 */
 	private MemberStats deserializeMemberStats(JsonNode node) {
 //		MemberStats stats = new MemberStats(
 //				node.path("friends").asInt(), 
@@ -127,6 +172,12 @@ public class MemberDeserializer extends JsonDeserializer<Member> {
 		return stats;
 	}
 
+	/**
+	 * Deserialize member options.
+	 *
+	 * @param node the node
+	 * @return the member options
+	 */
 	private MemberOptions deserializeMemberOptions(JsonNode node) {
 		logger.debug(node.toString());
 		MemberOptions options = null;
@@ -142,6 +193,12 @@ public class MemberDeserializer extends JsonDeserializer<Member> {
 		return options;
 	}
 
+	/**
+	 * Deserialize show.
+	 *
+	 * @param node the node
+	 * @return the show
+	 */
 	private Show deserializeShow(JsonNode node) {
 		Show show = null;
 		
@@ -158,6 +215,12 @@ public class MemberDeserializer extends JsonDeserializer<Member> {
 		return show;
 	}
 
+	/**
+	 * Deserialize movie.
+	 *
+	 * @param node the node
+	 * @return the movie
+	 */
 	private Movie deserializeMovie(JsonNode node) {
 		Movie movie = null;
 		
@@ -174,11 +237,20 @@ public class MemberDeserializer extends JsonDeserializer<Member> {
 		return movie;
 	}
 	
+	/**
+	 * Initialize object mapper.
+	 */
 	private void initializeObjectMapper() {
 		om = new ObjectMapper();
 		om.registerModule(new BetaSeriesModule());
 	}
 	
+	/**
+	 * Debug.
+	 *
+	 * @param tag the tag
+	 * @param exception the exception
+	 */
 	private void debug(String tag, Object exception) {		
 		if(logger.isDebugEnabled()) logger.debug(TAG, exception);		
 	}

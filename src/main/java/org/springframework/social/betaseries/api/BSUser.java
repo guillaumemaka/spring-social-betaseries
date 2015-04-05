@@ -1,14 +1,43 @@
+/**
+ * Copyright 2015 [name of copyright owner]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class BSUser.
+ *
+ * @author Guillaume Maka
+ */
 public class BSUser extends BetaSeriesObject {
+	
+	/** The id. */
 	private final Integer id;
+	
+	/** The login. */
 	private final String login;
+	
+	/** The in account. */
 	private final boolean inAccount;
 
 	/**
-	 * @param id
-	 * @param login
-	 * @param inAccount
+	 * Instantiates a new BS user.
+	 *
+	 * @param id the id
+	 * @param login the login
+	 * @param inAccount the in account
 	 */
 	public BSUser(Integer id, String login, boolean inAccount) {
 		super();
@@ -18,6 +47,8 @@ public class BSUser extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the id.
+	 *
 	 * @return the id
 	 */
 	public Integer getId() {
@@ -25,6 +56,8 @@ public class BSUser extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the login.
+	 *
 	 * @return the login
 	 */
 	public String getLogin() {
@@ -32,6 +65,8 @@ public class BSUser extends BetaSeriesObject {
 	}
 
 	/**
+	 * Checks if is in account.
+	 *
 	 * @return the inAccount
 	 */
 	public boolean isInAccount() {

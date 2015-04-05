@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 [name of copyright owner]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,20 +36,27 @@ public class BetaSeriesAcceptHeaderParameterInterceptor implements
 	/** The api key. */
 	private String acceptedMediaType;
 	
+	/**
+	 * Instantiates a new beta series accept header parameter interceptor.
+	 */
 	public BetaSeriesAcceptHeaderParameterInterceptor() {
 		this(MediaType.APPLICATION_JSON);
 	}
 	
 	/**
 	 * Instantiates a new beta series api key parameter interceptor.
-	 * 
-	 * @param apiKey
-	 *            the api key
+	 *
+	 * @param acceptedMediaType the accepted media type
 	 */
 	public BetaSeriesAcceptHeaderParameterInterceptor(String acceptedMediaType) {
 		this(MediaType.parseMediaType(acceptedMediaType));
 	}
 	
+	/**
+	 * Instantiates a new beta series accept header parameter interceptor.
+	 *
+	 * @param mediaType the media type
+	 */
 	public BetaSeriesAcceptHeaderParameterInterceptor(MediaType mediaType) {
 		if(mediaType.includes(MediaType.APPLICATION_JSON) || mediaType.includes(MediaType.APPLICATION_XML)) {
 			this.acceptedMediaType = mediaType.toString();

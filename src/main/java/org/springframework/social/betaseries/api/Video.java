@@ -1,25 +1,67 @@
+/**
+ * Copyright 2015 [name of copyright owner]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Video.
+ *
+ * @author Guillaume Maka
+ */
 public class Video extends BetaSeriesObject {
+	
+	/** The id. */
 	private final int id;
+	
+	/** The show id. */
 	private final int showId;
+	
+	/** The youtube id. */
 	private final String youtubeId;
+	
+	/** The youtube url. */
 	private final String youtubeUrl;
+	
+	/** The title. */
 	private final String title;
+	
+	/** The season. */
 	private final int season;
+	
+	/** The episode. */
 	private final int episode;
+	
+	/** The login. */
 	private final String login;
+	
+	/** The login id. */
 	private final int loginId;
+	
 	/**
-	 * @param id
-	 * @param showId
-	 * @param youtubeId
-	 * @param youtubeUrl
-	 * @param title
-	 * @param season
-	 * @param episode
-	 * @param login
-	 * @param loginId
+	 * Instantiates a new video.
+	 *
+	 * @param id the id
+	 * @param showId the show id
+	 * @param youtubeId the youtube id
+	 * @param youtubeUrl the youtube url
+	 * @param title the title
+	 * @param season the season
+	 * @param episode the episode
+	 * @param login the login
+	 * @param loginId the login id
 	 */
 	public Video(int id, int showId, String youtubeId, String youtubeUrl,
 			String title, int season, int episode, String login, int loginId) {
@@ -34,55 +76,82 @@ public class Video extends BetaSeriesObject {
 		this.login = login;
 		this.loginId = loginId;
 	}
+	
 	/**
+	 * Gets the id.
+	 *
 	 * @return the id
 	 */
 	public int getId() {
 		return id;
 	}
+	
 	/**
+	 * Gets the show id.
+	 *
 	 * @return the showId
 	 */
 	public int getShowId() {
 		return showId;
 	}
+	
 	/**
+	 * Gets the youtube id.
+	 *
 	 * @return the youtubeId
 	 */
 	public String getYoutubeId() {
 		return youtubeId;
 	}
+	
 	/**
+	 * Gets the youtube url.
+	 *
 	 * @return the youtubeUrl
 	 */
 	public String getYoutubeUrl() {
 		return youtubeUrl;
 	}
+	
 	/**
+	 * Gets the title.
+	 *
 	 * @return the title
 	 */
 	public String getTitle() {
 		return title;
 	}
+	
 	/**
+	 * Gets the season.
+	 *
 	 * @return the season
 	 */
 	public int getSeason() {
 		return season;
 	}
+	
 	/**
+	 * Gets the episode.
+	 *
 	 * @return the episode
 	 */
 	public int getEpisode() {
 		return episode;
 	}
+	
 	/**
+	 * Gets the login.
+	 *
 	 * @return the login
 	 */
 	public String getLogin() {
 		return login;
 	}
+	
 	/**
+	 * Gets the login id.
+	 *
 	 * @return the loginId
 	 */
 	public int getLoginId() {

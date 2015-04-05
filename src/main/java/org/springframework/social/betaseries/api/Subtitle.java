@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 [name of copyright owner]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,9 +21,8 @@ import java.util.List;
 // TODO: Auto-generated Javadoc
 /**
  * The Class Subtitle.
- * 
+ *
  * @author Guillaume Maka
- * @param <EmbededEpidose>
  */
 public class Subtitle extends BetaSeriesObject {
 
@@ -42,26 +41,30 @@ public class Subtitle extends BetaSeriesObject {
 	/** The file. */
 	private final String file;
 
+	/** The content. */
 	private final List<String> content;
 
 	/** The url. */
 	private final String url;
 
+	/** The episode. */
 	private final EmbededEpisode episode;
 
 	/** The date. */
 	private final Date date;
 
 	/**
-	 * @param id
-	 * @param language
-	 * @param source
-	 * @param quality
-	 * @param file
-	 * @param content
-	 * @param url
-	 * @param episode
-	 * @param date
+	 * Instantiates a new subtitle.
+	 *
+	 * @param id the id
+	 * @param language the language
+	 * @param source the source
+	 * @param quality the quality
+	 * @param file the file
+	 * @param content the content
+	 * @param url the url
+	 * @param episode the episode
+	 * @param date the date
 	 */
 	public Subtitle(int id, String language, String source, int quality,
 			String file, List<String> content, String url,
@@ -79,6 +82,8 @@ public class Subtitle extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the id.
+	 *
 	 * @return the id
 	 */
 	public int getId() {
@@ -86,6 +91,8 @@ public class Subtitle extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the language.
+	 *
 	 * @return the language
 	 */
 	public String getLanguage() {
@@ -93,6 +100,8 @@ public class Subtitle extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the source.
+	 *
 	 * @return the source
 	 */
 	public String getSource() {
@@ -100,6 +109,8 @@ public class Subtitle extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the quality.
+	 *
 	 * @return the quality
 	 */
 	public int getQuality() {
@@ -107,6 +118,8 @@ public class Subtitle extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the file.
+	 *
 	 * @return the file
 	 */
 	public String getFile() {
@@ -114,6 +127,8 @@ public class Subtitle extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the content.
+	 *
 	 * @return the content
 	 */
 	public List<String> getContent() {
@@ -121,6 +136,8 @@ public class Subtitle extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the url.
+	 *
 	 * @return the url
 	 */
 	public String getUrl() {
@@ -128,6 +145,8 @@ public class Subtitle extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the episode.
+	 *
 	 * @return the episode
 	 */
 	public EmbededEpisode getEpisode() {
@@ -135,6 +154,8 @@ public class Subtitle extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the date.
+	 *
 	 * @return the date
 	 */
 	public Date getDate() {
@@ -236,17 +257,32 @@ public class Subtitle extends BetaSeriesObject {
 		return builder.toString();
 	}
 
+	/**
+	 * The Class EmbededEpisode.
+	 *
+	 * @author Guillaume Maka
+	 */
 	public static class EmbededEpisode extends BetaSeriesObject {
+		
+		/** The show id. */
 		private final int showId;
+		
+		/** The episode id. */
 		private final int episodeId;
+		
+		/** The season. */
 		private final int season;
+		
+		/** The episode. */
 		private final int episode;
 
 		/**
-		 * @param showId
-		 * @param episodeId
-		 * @param season
-		 * @param episode
+		 * Instantiates a new embeded episode.
+		 *
+		 * @param showId the show id
+		 * @param episodeId the episode id
+		 * @param season the season
+		 * @param episode the episode
 		 */
 		public EmbededEpisode(int showId, int episodeId, int season, int episode) {
 			super();
@@ -257,6 +293,8 @@ public class Subtitle extends BetaSeriesObject {
 		}
 
 		/**
+		 * Gets the show id.
+		 *
 		 * @return the showId
 		 */
 		public int getShowId() {
@@ -264,6 +302,8 @@ public class Subtitle extends BetaSeriesObject {
 		}
 
 		/**
+		 * Gets the episode id.
+		 *
 		 * @return the episodeId
 		 */
 		public int getEpisodeId() {
@@ -271,6 +311,8 @@ public class Subtitle extends BetaSeriesObject {
 		}
 
 		/**
+		 * Gets the season.
+		 *
 		 * @return the season
 		 */
 		public int getSeason() {
@@ -278,6 +320,8 @@ public class Subtitle extends BetaSeriesObject {
 		}
 
 		/**
+		 * Gets the episode.
+		 *
 		 * @return the episode
 		 */
 		public int getEpisode() {

@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 [name of copyright owner]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,9 +17,6 @@ package org.springframework.social.betaseries.api;
 
 import java.util.List;
 
-import org.springframework.social.ApiException;
-import org.springframework.social.MissingAuthorizationException;
-
 // TODO: Auto-generated Javadoc
 /**
  * The Interface CommentOperations.
@@ -29,27 +26,20 @@ import org.springframework.social.MissingAuthorizationException;
 public interface CommentOperations {
 	
 	/**
-	 * Gets the latest comments for a specific object type
-	 * 
-	 * @param type
-	 *            the BetaSeries element type {@link BSObjectType} episode|movie|show|member episode|movie|show|member
-	 * @param objectId
-	 *            the BetaSeries element object id
+	 * Gets the latest comments for a specific object type.
+	 *
+	 * @param type            the BetaSeries element type {@link BSObjectType} episode|movie|show|member episode|movie|show|member
+	 * @param objectId            the BetaSeries element object id
 	 * @return collection of {@link Comment}
-	 * @throws MissingAuthorizationException
-	 * @throws ApiException
 	 */
 	List<Comment> getCommentsFor(BSObjectType type, String objectId);
 	
 	/**
-	 * Gets a subset of comments
-	 * 
-	 * @param type
-	 *            the BetaSerie element type {@link BSObjectType} episode|movie|show|member
-	 * @param objectId
-	 *            the object id
-	 * @param commentPerPage
-	 *            the number of comment per page
+	 * Gets a subset of comments.
+	 *
+	 * @param type            the BetaSerie element type {@link BSObjectType} episode|movie|show|member
+	 * @param objectId            the object id
+	 * @param commentPerPage            the number of comment per page
 	 * @return a collection of {@link Comment}
 	 */
 	List<Comment> getCommentsFor(BSObjectType type, String objectId, int commentPerPage);
@@ -106,12 +96,10 @@ public interface CommentOperations {
 	List<Comment> getCommentsFor(BSObjectType type, String objectId, int commentPerPage, String sinceId, BSSortOrder order, boolean includeReplies);
 	
 	/**
-	 * Gets the comments replies for a specific comment
-	 * 
-	 * @param commentId
-	 *            the comment id
-	 * @param order
-	 *            the order
+	 * Gets the comments replies for a specific comment.
+	 *
+	 * @param commentId            the comment id
+	 * @param order            the order
 	 * @return the comments replies for
 	 */
 	List<Comment> getCommentsRepliesFor(String commentId, BSSortOrder order);

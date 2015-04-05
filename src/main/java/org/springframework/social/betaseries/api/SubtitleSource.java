@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 [name of copyright owner]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,7 @@
  */
 package org.springframework.social.betaseries.api;
 
+// TODO: Auto-generated Javadoc
 /**
  * The Class SubtitlesSource.
  * 
@@ -28,13 +29,18 @@ public class SubtitleSource extends BetaSeriesObject {
 	/** The enabled. */
 	private boolean enabled;
 	
+	/**
+	 * Instantiates a new subtitle source.
+	 */
 	public SubtitleSource() {
 		super();
 	}
 	
 	/**
-	 * @param name
-	 * @param enabled
+	 * Instantiates a new subtitle source.
+	 *
+	 * @param name the name
+	 * @param enabled the enabled
 	 */
 	public SubtitleSource(String name, boolean enabled) {
 		super();
@@ -43,6 +49,8 @@ public class SubtitleSource extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the name.
+	 *
 	 * @return the name
 	 */
 	public String getName() {
@@ -50,6 +58,8 @@ public class SubtitleSource extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the name.
+	 *
 	 * @param name the name to set
 	 */
 	public void setName(String name) {
@@ -57,6 +67,8 @@ public class SubtitleSource extends BetaSeriesObject {
 	}
 
 	/**
+	 * Checks if is enabled.
+	 *
 	 * @return the enabled
 	 */
 	public boolean isEnabled() {
@@ -64,6 +76,8 @@ public class SubtitleSource extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the enabled.
+	 *
 	 * @param enabled the enabled to set
 	 */
 	public void setEnabled(boolean enabled) {

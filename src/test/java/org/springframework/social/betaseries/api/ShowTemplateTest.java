@@ -1,3 +1,18 @@
+/**
+ * Copyright 2015 [name of copyright owner]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
 import static org.junit.Assert.assertArrayEquals;
@@ -17,7 +32,17 @@ import org.springframework.http.MediaType;
 import org.springframework.social.betaseries.api.Show.SeasonDetail;
 import org.springframework.social.betaseries.api.Show.UserDetail;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class ShowTemplateTest.
+ *
+ * @author Guillaume Maka
+ */
 public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
+	
+	/**
+	 * Archive.
+	 */
 	@Test
 	public void archive() {
 		constructPostMockRequest(mockServer, "https://api.betaseries.com/shows/archive")
@@ -28,6 +53,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertTrue(archivedShow.getUserDetail().isArchived());
 	}
 
+	/**
+	 * Unarchive.
+	 */
 	@Test
 	public void unarchive() {
 		constructDeleteMockRequest(mockServer, "https://api.betaseries.com/shows/archive?id=13")
@@ -37,6 +65,11 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertFalse(unarchivedShow.getUserDetail().isArchived());
 	}
 
+	/**
+	 * Gets the characters.
+	 *
+	 * @return the characters
+	 */
 	@Test
 	public void getCharacters() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/characters?id=13")
@@ -56,6 +89,11 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals("Chuck Bartowski est un informaticien qui travaille au Nerd Herd (parodie de l'entreprise Geek Squad) d'un grand magasin d'électronique et d'électroménager, le Buy More. Il apparaît à première vue comme étant un loser : en effet, après avoir été renvoyé de Stanford pour avoir prétendument triché, il a également perdu sa petite amie. Après s'être fait renvoyer de Stanford, Chuck a emménagé avec sa soeur, Ellie, et a commencé à travailler au Buy More de Burbank.\n\nSource : Wikipedia", character.getDescription());		
 	}
 
+	/**
+	 * Gets the show.
+	 *
+	 * @return the show
+	 */
 	@Test
 	public void getShow() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/display?id=13")
@@ -65,6 +103,11 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertShow13(show);		
 	}
 
+	/**
+	 * Gets the shows.
+	 *
+	 * @return the shows
+	 */
 	@Test
 	public void getShows() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/display?id=13,14")
@@ -76,6 +119,11 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertShow13(shows.get(0));
 	}
 
+	/**
+	 * Gets the show13 episodes.
+	 *
+	 * @return the show13 episodes
+	 */
 	@Test
 	public void getShow13Episodes() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/episodes?id=13")
@@ -87,6 +135,11 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(0, episodes.get(0).getSubtitles().size());
 	}
 	
+	/**
+	 * Gets the show13 season1 episodes.
+	 *
+	 * @return the show13 season1 episodes
+	 */
 	@Test
 	public void getShow13Season1Episodes() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/episodes?id=13&season=1")
@@ -98,6 +151,11 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(0, episodes.get(0).getSubtitles().size());
 	}
 	
+	/**
+	 * Gets the show13 season1 episode1.
+	 *
+	 * @return the show13 season1 episode1
+	 */
 	@Test
 	public void getShow13Season1Episode1() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/episodes?id=13&season=1&episode=1")
@@ -109,6 +167,11 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(0, episodes.get(0).getSubtitles().size());
 	}
 
+	/**
+	 * Gets the show13 season1 episode1 with subtitles.
+	 *
+	 * @return the show13 season1 episode1 with subtitles
+	 */
 	@Test
 	public void getShow13Season1Episode1WithSubtitles() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/episodes?id=13&season=1&episode=1&subtitles=1")
@@ -119,6 +182,10 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(1, episodes.size());
 		assertEquals(4, episodes.get(0).getSubtitles().size());
 	}
+	
+	/**
+	 * Adds the to favorite.
+	 */
 	@Test
 	public void addToFavorite() {
 		constructPostMockRequest(mockServer, "https://api.betaseries.com/shows/favorite")
@@ -130,6 +197,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertTrue(show.getUserDetail().isFavorited());
 	}
 
+	/**
+	 * Removes the from favorite.
+	 */
 	@Test
 	public void removeFromFavorite() {
 		constructDeleteMockRequest(mockServer, "https://api.betaseries.com/shows/favorite?id=13")		
@@ -140,6 +210,11 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertFalse(show.getUserDetail().isFavorited());
 	}
 
+	/**
+	 * Gets the favorites show.
+	 *
+	 * @return the favorites show
+	 */
 	@Test
 	public void getFavoritesShow() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/favorites")		
@@ -151,6 +226,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertShow13(shows.get(0));
 	}
 
+	/**
+	 * List.
+	 */
 	@Test
 	public void list() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/list")
@@ -161,6 +239,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(9801, shows.size());
 	}
 
+	/**
+	 * List bs show order.
+	 */
 	@Test
 	public void listBSShowOrder() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/list?order=popularity")
@@ -171,6 +252,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(7597, shows.get(0).getId());
 	}
 
+	/**
+	 * List bs show order date.
+	 */
 	@Test
 	public void listBSShowOrderDate() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/list?order=popularity&since=1323157023000")
@@ -181,6 +265,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(0, shows.size());		
 	}
 
+	/**
+	 * Rate show.
+	 */
 	@Test
 	public void rateShow() {
 		constructPostMockRequest(mockServer, "https://api.betaseries.com/shows/note")
@@ -191,6 +278,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(5, show.get(0).getNote().getUserNote(), 5);
 	}
 
+	/**
+	 * Un rate show.
+	 */
 	@Test
 	public void unRateShow() {
 		constructDeleteMockRequest(mockServer, "https://api.betaseries.com/shows/note?id=13")
@@ -200,6 +290,11 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(0, show.get(0).getNote().getUserNote(),0);
 	}
 
+	/**
+	 * Gets the show pictures.
+	 *
+	 * @return the show pictures
+	 */
 	@Test
 	public void getShowPictures() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/pictures?id=13")
@@ -218,6 +313,11 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(BSPictureType.NONE, pictures.get(0).getType());
 	}
 
+	/**
+	 * Gets the random show.
+	 *
+	 * @return the random show
+	 */
 	@Test
 	public void getRandomShow() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/random?nb=5")
@@ -227,6 +327,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(5, shows.size());		
 	}
 
+	/**
+	 * Send recommendation.
+	 */
 	@Test
 	public void sendRecommendation() {
 		constructPostMockRequest(mockServer, "https://api.betaseries.com/shows/recommendation")
@@ -243,6 +346,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals("An awesome serie", recommendation.getComments());
 	}
 
+	/**
+	 * Delete recomendation.
+	 */
 	@Test
 	public void deleteRecomendation() {
 		constructDeleteMockRequest(mockServer, "https://api.betaseries.com/shows/recommendation?id=77535")		
@@ -258,6 +364,11 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals("An awesome serie", recommendation.getComments());
 	}
 	
+	/**
+	 * Gets the recommendations.
+	 *
+	 * @return the recommendations
+	 */
 	@Test
 	public void getRecommendations() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/recommendations")		
@@ -273,6 +384,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals("An awesome serie", recommendations.get(0).getComments());
 	}
 	
+	/**
+	 * Search.
+	 */
 	@Test
 	public void search() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/search?title=shin")
@@ -284,6 +398,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals("Shin Chan", shows.get(0).getTitle());
 	}
 	
+	/**
+	 * Search with order.
+	 */
 	@Test
 	public void searchWithOrder() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/search?title=shin&order=popularity")
@@ -295,6 +412,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals("Rage of Bahamut: Genesis", shows.get(0).getTitle());
 	}
 	
+	/**
+	 * Search with order nbpp.
+	 */
 	@Test
 	public void searchWithOrderNbpp() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/search?title=shin&order=popularity&nbpp=10")
@@ -306,6 +426,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals("Rage of Bahamut: Genesis", shows.get(0).getTitle());
 	}
 	
+	/**
+	 * Search with order nbpp page.
+	 */
 	@Test
 	public void searchWithOrderNbppPage() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/search?title=shin&order=popularity&nbpp=10&page=2")
@@ -317,6 +440,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals("Shin Chan", shows.get(0).getTitle());
 	}
 	
+	/**
+	 * Search with order nbpp page summary.
+	 */
 	@Test
 	public void searchWithOrderNbppPageSummary() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/search?title=shin&order=popularity&nbpp=10&page=2&summary=1")
@@ -329,6 +455,11 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertNull(shows.get(0).getNote());
 	}
 	
+	/**
+	 * Gets the similars show.
+	 *
+	 * @return the similars show
+	 */
 	@Test
 	public void getSimilarsShow() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/similars?id=13")
@@ -340,6 +471,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals("Family Guy", shows.get(0).getShowTitle());
 	}
 	
+	/**
+	 * Adds the show tags show.
+	 */
 	@Test
 	public void addShowTagsShow() {
 		constructPostMockRequest(mockServer, "https://api.betaseries.com/shows/tags")
@@ -350,6 +484,11 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals("humour", show.getUserDetail().getTags());		
 	}
 	
+	/**
+	 * Gets the show videos.
+	 *
+	 * @return the show videos
+	 */
 	@Test
 	public void getShowVideos() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/shows/videos?id=13")
@@ -369,6 +508,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(401337, videos.get(0).getLoginId()); 
 	}
 	
+	/**
+	 * Adds the show.
+	 */
 	@Test
 	public void addShow() {
 		constructPostMockRequest(mockServer, "https://api.betaseries.com/shows/show")
@@ -381,6 +523,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertTrue(show.isInAccount());
 	}
 	
+	/**
+	 * Adds the shows.
+	 */
 	@Test
 	public void addShows() {
 		constructPostMockRequest(mockServer, "https://api.betaseries.com/shows/show")
@@ -396,6 +541,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertTrue(shows.get(1).isInAccount());
 	}
 	
+	/**
+	 * Removes the show.
+	 */
 	@Test
 	public void removeShow() {
 		constructDeleteMockRequest(mockServer, "https://api.betaseries.com/shows/show?id=13")		
@@ -407,6 +555,9 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertFalse(show.isInAccount());
 	}
 	
+	/**
+	 * Removes the shows.
+	 */
 	@Test
 	public void removeShows() {
 		constructDeleteMockRequest(mockServer, "https://api.betaseries.com/shows/show?id=4267,3903")
@@ -421,6 +572,11 @@ public class ShowTemplateTest extends AbstractBetaSeriesApiTest {
 		assertFalse(shows.get(1).isInAccount());
 	}
 	
+	/**
+	 * Assert show13.
+	 *
+	 * @param show the show
+	 */
 	private void assertShow13(Show show) {
 		assertNotNull(show);
 		assertEquals(13, show.getId());

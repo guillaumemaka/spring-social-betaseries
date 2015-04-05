@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 [name of copyright owner]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -54,6 +54,7 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	/** The login. */
 	private final String login;
 	
+	/** The avatar url. */
 	private final String avatarUrl;
 	
 	/** The created at. */
@@ -68,24 +69,21 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	/** The in reply to. */
 	private final int inReplyTo;
 	
+	/** The number of replies. */
 	private final int numberOfReplies;
+	
 	/**
 	 * Instantiates a new comment.
-	 * 
-	 * @param id
-	 *            the id
-	 * @param userId
-	 *            the user id
-	 * @param login
-	 *            the login
-	 * @param createdAt
-	 *            the created at
-	 * @param text
-	 *            the text
-	 * @param innerId
-	 *            the inner id
-	 * @param inReplyTo
-	 *            the in reply to
+	 *
+	 * @param id            the id
+	 * @param userId            the user id
+	 * @param login            the login
+	 * @param avatarUrl the avatar url
+	 * @param createdAt            the created at
+	 * @param text            the text
+	 * @param innerId            the inner id
+	 * @param inReplyTo            the in reply to
+	 * @param numberOfReplies the number of replies
 	 */
 	public Comment(int id, int userId, String login,String avatarUrl, Date createdAt,
 			String text, int innerId, int inReplyTo, int numberOfReplies) {
@@ -102,6 +100,8 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
+	 * Gets the serialversionuid.
+	 *
 	 * @return the serialversionuid
 	 */
 	public static long getSerialversionuid() {
@@ -109,6 +109,8 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
+	 * Gets the id.
+	 *
 	 * @return the id
 	 */
 	public int getId() {
@@ -116,6 +118,8 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
+	 * Gets the user id.
+	 *
 	 * @return the userId
 	 */
 	public int getUserId() {
@@ -123,6 +127,8 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
+	 * Gets the login.
+	 *
 	 * @return the login
 	 */
 	public String getLogin() {
@@ -130,6 +136,8 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
+	 * Gets the avatar url.
+	 *
 	 * @return the avatarUrl
 	 */
 	public String getAvatarUrl() {
@@ -137,6 +145,8 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
+	 * Gets the created at.
+	 *
 	 * @return the createdAt
 	 */
 	public Date getCreatedAt() {
@@ -144,6 +154,8 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
+	 * Gets the text.
+	 *
 	 * @return the text
 	 */
 	public String getText() {
@@ -151,6 +163,8 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
+	 * Gets the inner id.
+	 *
 	 * @return the innerId
 	 */
 	public int getInnerId() {
@@ -158,6 +172,8 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
+	 * Gets the in reply to.
+	 *
 	 * @return the inReplyTo
 	 */
 	public int getInReplyTo() {
@@ -165,6 +181,8 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
+	 * Gets the number of replies.
+	 *
 	 * @return the numberOfReplies
 	 */
 	public int getNumberOfReplies() {

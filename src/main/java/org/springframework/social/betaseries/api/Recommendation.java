@@ -1,19 +1,55 @@
+/**
+ * Copyright 2015 [name of copyright owner]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Recommendation.
+ *
+ * @author Guillaume Maka
+ */
 public class Recommendation extends BetaSeriesObject {
+	
+	/** The id. */
 	private final int id;
+	
+	/** The from id. */
 	private final int fromId;
+	
+	/** The to id. */
 	private final int toId;
+	
+	/** The show id. */
 	private final int showId;
+	
+	/** The status. */
 	private final String status;
+	
+	/** The comments. */
 	private final String comments;
+	
 	/**
-	 * @param id
-	 * @param fromId
-	 * @param toId
-	 * @param showId
-	 * @param status
-	 * @param comments
+	 * Instantiates a new recommendation.
+	 *
+	 * @param id the id
+	 * @param fromId the from id
+	 * @param toId the to id
+	 * @param showId the show id
+	 * @param status the status
+	 * @param comments the comments
 	 */
 	public Recommendation(int id, int fromId, int toId, int showId,
 			String status, String comments) {
@@ -25,37 +61,55 @@ public class Recommendation extends BetaSeriesObject {
 		this.status = status;
 		this.comments = comments;
 	}
+	
 	/**
+	 * Gets the id.
+	 *
 	 * @return the id
 	 */
 	public int getId() {
 		return id;
 	}
+	
 	/**
+	 * Gets the from id.
+	 *
 	 * @return the fromId
 	 */
 	public int getFromId() {
 		return fromId;
 	}
+	
 	/**
+	 * Gets the to id.
+	 *
 	 * @return the toId
 	 */
 	public int getToId() {
 		return toId;
 	}
+	
 	/**
+	 * Gets the show id.
+	 *
 	 * @return the showId
 	 */
 	public int getShowId() {
 		return showId;
 	}
+	
 	/**
+	 * Gets the status.
+	 *
 	 * @return the status
 	 */
 	public String getStatus() {
 		return status;
 	}
+	
 	/**
+	 * Gets the comments.
+	 *
 	 * @return the comments
 	 */
 	public String getComments() {

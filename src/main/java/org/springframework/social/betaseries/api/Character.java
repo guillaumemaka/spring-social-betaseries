@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 [name of copyright owner]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,7 @@
  */
 package org.springframework.social.betaseries.api;
 
+// TODO: Auto-generated Javadoc
 /**
  * The Class BSCharacter.
  * 
@@ -44,13 +45,15 @@ public class Character extends BetaSeriesObject {
 	private final String description;
 
 	/**
-	 * @param id
-	 * @param showId
-	 * @param name
-	 * @param role
-	 * @param actor
-	 * @param pictureUrl
-	 * @param description
+	 * Instantiates a new character.
+	 *
+	 * @param id the id
+	 * @param showId the show id
+	 * @param name the name
+	 * @param role the role
+	 * @param actor the actor
+	 * @param pictureUrl the picture url
+	 * @param description the description
 	 */
 	public Character(int id, int showId, String name, String role,
 			String actor, String pictureUrl, String description) {
@@ -65,6 +68,8 @@ public class Character extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the id.
+	 *
 	 * @return the id
 	 */
 	public int getId() {
@@ -72,6 +77,8 @@ public class Character extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the show id.
+	 *
 	 * @return the showId
 	 */
 	public int getShowId() {
@@ -79,6 +86,8 @@ public class Character extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the name.
+	 *
 	 * @return the name
 	 */
 	public String getName() {
@@ -86,6 +95,8 @@ public class Character extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the role.
+	 *
 	 * @return the role
 	 */
 	public String getRole() {
@@ -93,6 +104,8 @@ public class Character extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the actor.
+	 *
 	 * @return the actor
 	 */
 	public String getActor() {
@@ -100,6 +113,8 @@ public class Character extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the picture url.
+	 *
 	 * @return the pictureUrl
 	 */
 	public String getPictureUrl() {
@@ -107,6 +122,8 @@ public class Character extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the description.
+	 *
 	 * @return the desctription
 	 */
 	public String getDescription() {

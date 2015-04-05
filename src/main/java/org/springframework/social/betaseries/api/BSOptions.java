@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 [name of copyright owner]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -44,7 +44,7 @@ public class BSOptions extends BetaSeriesObject {
 	List<SubtitleSource> sources;
 	
 	/**
-	 * 
+	 * Instantiates a new BS options.
 	 */
 	public BSOptions() {
 		super();
@@ -52,6 +52,8 @@ public class BSOptions extends BetaSeriesObject {
 	}
 
 	/**
+	 * Checks if is notation enabled.
+	 *
 	 * @return the notationEnabled
 	 */
 	public boolean isNotationEnabled() {
@@ -59,6 +61,8 @@ public class BSOptions extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the notation enabled.
+	 *
 	 * @param notationEnabled the notationEnabled to set
 	 */
 	public void setNotationEnabled(boolean notationEnabled) {
@@ -66,6 +70,8 @@ public class BSOptions extends BetaSeriesObject {
 	}
 
 	/**
+	 * Checks if is downloaded enabled.
+	 *
 	 * @return the downloadedEnabled
 	 */
 	public boolean isDownloadedEnabled() {
@@ -73,6 +79,8 @@ public class BSOptions extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the downloaded enabled.
+	 *
 	 * @param downloadedEnabled the downloadedEnabled to set
 	 */
 	public void setDownloadedEnabled(boolean downloadedEnabled) {
@@ -80,6 +88,8 @@ public class BSOptions extends BetaSeriesObject {
 	}
 
 	/**
+	 * Checks if is global enabled.
+	 *
 	 * @return the globalEnabled
 	 */
 	public boolean isGlobalEnabled() {
@@ -87,6 +97,8 @@ public class BSOptions extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the global enabled.
+	 *
 	 * @param globalEnabled the globalEnabled to set
 	 */
 	public void setGlobalEnabled(boolean globalEnabled) {
@@ -94,6 +106,8 @@ public class BSOptions extends BetaSeriesObject {
 	}
 
 	/**
+	 * Checks if is timelag enabled.
+	 *
 	 * @return the timelagEnabled
 	 */
 	public boolean isTimelagEnabled() {
@@ -101,6 +115,8 @@ public class BSOptions extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the timelag enabled.
+	 *
 	 * @param timelagEnabled the timelagEnabled to set
 	 */
 	public void setTimelagEnabled(boolean timelagEnabled) {
@@ -108,6 +124,8 @@ public class BSOptions extends BetaSeriesObject {
 	}
 
 	/**
+	 * Checks if is friendship enabled.
+	 *
 	 * @return the friendshipEnabled
 	 */
 	public boolean isFriendshipEnabled() {
@@ -115,6 +133,8 @@ public class BSOptions extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the friendship enabled.
+	 *
 	 * @param friendshipEnabled the friendshipEnabled to set
 	 */
 	public void setFriendshipEnabled(boolean friendshipEnabled) {
@@ -122,6 +142,8 @@ public class BSOptions extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the sources.
+	 *
 	 * @return the sources
 	 */
 	public List<SubtitleSource> getSources() {
@@ -129,6 +151,8 @@ public class BSOptions extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the sources.
+	 *
 	 * @param sources the sources to set
 	 */
 	public void setSources(List<SubtitleSource> sources) {

@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 [name of copyright owner]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,6 +17,7 @@ package org.springframework.social.betaseries.api;
 
 import java.util.List;
 
+// TODO: Auto-generated Javadoc
 /**
  * The Class Member.
  * 
@@ -36,6 +37,7 @@ public class Member extends BetaSeriesObject {
 	/** The avatar url. */
 	private String avatarUrl;
 	
+	/** The cached. */
 	private int cached;
 	
 	/** The in account. */
@@ -47,20 +49,24 @@ public class Member extends BetaSeriesObject {
 	/** The shows. */
 	private List<Show> shows;
 	
+	/** The movies. */
 	private List<Movie> movies;
 	
+	/** The options. */
 	private MemberOptions options;
 	
 	
 
 	/**
-	 * 
+	 * Instantiates a new member.
 	 */
 	public Member() {
 		super();
 	}
 
 	/**
+	 * Gets the member id.
+	 *
 	 * @return the id
 	 */
 	public String getMemberId() {
@@ -68,6 +74,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the member id.
+	 *
 	 * @param id the id to set
 	 */
 	public void setMemberId(String id) {
@@ -75,6 +83,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the login.
+	 *
 	 * @return the login
 	 */
 	public String getLogin() {
@@ -82,6 +92,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the login.
+	 *
 	 * @param login the login to set
 	 */
 	public void setLogin(String login) {
@@ -89,6 +101,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the xp.
+	 *
 	 * @return the xp
 	 */
 	public int getXp() {
@@ -96,6 +110,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the xp.
+	 *
 	 * @param xp the xp to set
 	 */
 	public void setXp(int xp) {
@@ -103,6 +119,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the avatar url.
+	 *
 	 * @return the avatarUrl
 	 */
 	public String getAvatarUrl() {
@@ -110,6 +128,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the avatar url.
+	 *
 	 * @param avatarUrl the avatarUrl to set
 	 */
 	public void setAvatarUrl(String avatarUrl) {
@@ -117,6 +137,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the cached.
+	 *
 	 * @return the cached
 	 */
 	public int getCached() {
@@ -124,6 +146,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the cached.
+	 *
 	 * @param cached the cached to set
 	 */
 	public void setCached(int cached) {
@@ -131,6 +155,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Checks if is in account.
+	 *
 	 * @return the inAccount
 	 */
 	public boolean isInAccount() {
@@ -138,6 +164,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the in account.
+	 *
 	 * @param inAccount the inAccount to set
 	 */
 	public void setInAccount(boolean inAccount) {
@@ -145,6 +173,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the stats.
+	 *
 	 * @return the stats
 	 */
 	public MemberStats getStats() {
@@ -152,6 +182,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the stats.
+	 *
 	 * @param stats the stats to set
 	 */
 	public void setStats(MemberStats stats) {
@@ -159,6 +191,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the shows.
+	 *
 	 * @return the shows
 	 */
 	public List<Show> getShows() {
@@ -166,6 +200,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the shows.
+	 *
 	 * @param shows the shows to set
 	 */
 	public void setShows(List<Show> shows) {
@@ -173,6 +209,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the movies.
+	 *
 	 * @return the movies
 	 */
 	public List<Movie> getMovies() {
@@ -180,6 +218,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the movies.
+	 *
 	 * @param movies the movies to set
 	 */
 	public void setMovies(List<Movie> movies) {
@@ -187,6 +227,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the options.
+	 *
 	 * @return the options
 	 */
 	public MemberOptions getOptions() {
@@ -194,6 +236,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the options.
+	 *
 	 * @param options the options to set
 	 */
 	public void setOptions(MemberOptions options) {

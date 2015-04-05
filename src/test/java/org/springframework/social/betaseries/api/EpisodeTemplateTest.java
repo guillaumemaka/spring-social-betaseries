@@ -1,3 +1,18 @@
+/**
+ * Copyright 2015 [name of copyright owner]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
 import static org.junit.Assert.assertEquals;
@@ -10,7 +25,19 @@ import java.util.List;
 import org.junit.Test;
 import org.springframework.http.MediaType;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class EpisodeTemplateTest.
+ *
+ * @author Guillaume Maka
+ */
 public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
+	
+	/**
+	 * Gets the by ids.
+	 *
+	 * @return the by ids
+	 */
 	@Test
 	public void getByIds() {
 		constructGetMockRequest(mockServer,
@@ -30,6 +57,11 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEpisode2(episode2);
 	}
 
+	/**
+	 * Gets the by tv db ids.
+	 *
+	 * @return the by tv db ids
+	 */
 	@Test
 	public void getByTvDbIds() {
 		constructGetMockRequest(mockServer,
@@ -49,6 +81,11 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEpisode2(episode2);
 	}
 
+	/**
+	 * Gets the by ids subtitles.
+	 *
+	 * @return the by ids subtitles
+	 */
 	public void getByIdsSubtitles() {
 		constructGetMockRequest(mockServer,
 				"https://api.betaseries.com/episodes/display?id=264473,264474&subtitles=true")
@@ -78,6 +115,11 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEpisode2Subtitles2(subtitleE2s2);
 	}
 
+	/**
+	 * Gets the by tv db ids subtitles.
+	 *
+	 * @return the by tv db ids subtitles
+	 */
 	@Test
 	public void getByTvDbIdsSubtitles() {
 		constructGetMockRequest(
@@ -112,6 +154,11 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEpisode2Subtitles2(subtitleE2s2);
 	}
 
+	/**
+	 * Gets the episodes to be watch.
+	 *
+	 * @return the episodes to be watch
+	 */
 	@Test
 	public void getEpisodesToBeWatch() {
 		constructGetMockRequest(mockServer,
@@ -135,6 +182,11 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEpisode2(episode);
 	}
 
+	/**
+	 * Gets the episodes to be watch with subtitles.
+	 *
+	 * @return the episodes to be watch with subtitles
+	 */
 	@Test
 	public void getEpisodesToBeWatchWithSubtitles() {
 		constructGetMockRequest(mockServer,
@@ -160,6 +212,9 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(2, episode.getSubtitles().size());
 	}
 
+	/**
+	 * Search.
+	 */
 	@Test
 	public void search() {
 		constructGetMockRequest(mockServer,
@@ -173,6 +228,9 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEpisode1(result);
 	}
 
+	/**
+	 * Search subtitles include.
+	 */
 	@Test
 	public void searchSubtitlesInclude() {
 		constructGetMockRequest(mockServer,
@@ -187,6 +245,11 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEpisode1Subtitles1(result.getSubtitles().get(0));
 	}
 
+	/**
+	 * Gets the by id.
+	 *
+	 * @return the by id
+	 */
 	@Test
 	public void getById() {
 		constructGetMockRequest(mockServer,
@@ -200,6 +263,11 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEpisode1(episode);
 	}
 
+	/**
+	 * Gets the by the tv db id.
+	 *
+	 * @return the by the tv db id
+	 */
 	@Test
 	public void getByTheTvDbId() {
 		constructGetMockRequest(mockServer,
@@ -214,6 +282,11 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEpisode1(episode);
 	}
 
+	/**
+	 * Gets the by id subtitles.
+	 *
+	 * @return the by id subtitles
+	 */
 	@Test
 	public void getByIdSubtitles() {
 		constructGetMockRequest(mockServer,
@@ -229,6 +302,11 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEpisode1Subtitles1(episode.getSubtitles().get(0));
 	}
 
+	/**
+	 * Gets the by the tv db id subtitles.
+	 *
+	 * @return the by the tv db id subtitles
+	 */
 	@Test
 	public void getByTheTvDbIdSubtitles() {
 		constructGetMockRequest(mockServer,
@@ -244,6 +322,9 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEpisode1Subtitles1(episode.getSubtitles().get(0));
 	}
 
+	/**
+	 * Mark as downloaded.
+	 */
 	@Test
 	public void markAsDownloaded() {
 		constructPostMockRequest(mockServer,
@@ -257,6 +338,9 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertTrue(episode.isDownloaded());
 	}
 
+	/**
+	 * Unmark as downloaded.
+	 */
 	@Test
 	public void unmarkAsDownloaded() {
 		constructDeleteMockRequest(mockServer,
@@ -270,6 +354,9 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertFalse(episode.isDownloaded());
 	}
 
+	/**
+	 * Mark as watched.
+	 */
 	@Test
 	public void markAsWatched() {
 		constructPostMockRequest(mockServer,
@@ -283,6 +370,9 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertTrue(episode.isSeen());
 	}
 
+	/**
+	 * Un mark as watched.
+	 */
 	@Test
 	public void unMarkAsWatched() {
 		constructDeleteMockRequest(mockServer,
@@ -296,6 +386,9 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertFalse(episode.isSeen());
 	}
 
+	/**
+	 * Rate episode.
+	 */
 	@Test
 	public void rateEpisode() {
 		constructPostMockRequest(mockServer,
@@ -308,6 +401,9 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(5, episode.getNote().getUserNote(), 5);
 	}
 
+	/**
+	 * Un rate episode.
+	 */
 	@Test
 	public void unRateEpisode() {
 		constructDeleteMockRequest(mockServer,
@@ -321,6 +417,11 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(0, episode.getNote().getUserNote(), 0);
 	}
 
+	/**
+	 * Assert episode2.
+	 *
+	 * @param episode the episode
+	 */
 	private void assertEpisode2(Episode episode) {
 		assertEquals(264474, episode.getId());
 		assertEquals(55453, episode.getTheTvDbId());
@@ -344,6 +445,11 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(0, episode.getNumberOfComment());
 	}
 
+	/**
+	 * Assert episode1.
+	 *
+	 * @param episode the episode
+	 */
 	private void assertEpisode1(Episode episode) {
 		assertEquals(264473, episode.getId());
 		assertEquals(55452, episode.getTheTvDbId());
@@ -367,6 +473,11 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(4, episode.getNumberOfComment());
 	}
 
+	/**
+	 * Assert episode1 subtitles1.
+	 *
+	 * @param subtitle the subtitle
+	 */
 	private void assertEpisode1Subtitles1(Subtitle subtitle) {
 		assertEquals(129901, subtitle.getId());
 		assertEquals("VO", subtitle.getLanguage());
@@ -379,6 +490,11 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 				subtitle.getDate());
 	}
 
+	/**
+	 * Assert episode1 subtitles2.
+	 *
+	 * @param subtitle the subtitle
+	 */
 	private void assertEpisode1Subtitles2(Subtitle subtitle) {
 		assertEquals(129907, subtitle.getId());
 		assertEquals("VF", subtitle.getLanguage());
@@ -391,6 +507,11 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 				subtitle.getDate());
 	}
 
+	/**
+	 * Assert episode2 subtitles1.
+	 *
+	 * @param subtitle the subtitle
+	 */
 	private void assertEpisode2Subtitles1(Subtitle subtitle) {
 		assertEquals(129889, subtitle.getId());
 		assertEquals("VO", subtitle.getLanguage());
@@ -403,6 +524,11 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 				subtitle.getDate());
 	}
 
+	/**
+	 * Assert episode2 subtitles2.
+	 *
+	 * @param subtitle the subtitle
+	 */
 	private void assertEpisode2Subtitles2(Subtitle subtitle) {
 		assertEquals(129895, subtitle.getId());
 		assertEquals("VF", subtitle.getLanguage());

@@ -1,3 +1,18 @@
+/**
+ * Copyright 2015 [name of copyright owner]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api.impl;
 
 import java.security.MessageDigest;
@@ -32,28 +47,54 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.util.StringUtils;
 import org.springframework.web.client.RestTemplate;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class MemberTemplate.
+ *
+ * @author Guillaume Maka
+ */
 public class MemberTemplate extends AbstractBetaSeriesOperations implements
 		MemberOperations {
 	
+	/** The rest template. */
 	private final RestTemplate restTemplate;
 
+	/**
+	 * Instantiates a new member template.
+	 *
+	 * @param restTemplate the rest template
+	 * @param isUserAuthorized the is user authorized
+	 * @param isAppAuthorized the is app authorized
+	 */
 	public MemberTemplate(RestTemplate restTemplate, boolean isUserAuthorized, boolean isAppAuthorized) {
 		super(isUserAuthorized, isAppAuthorized);
 		this.restTemplate = restTemplate;
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#getMemberInfos()
+	 */
 	public Member getMemberInfos() {					
 		return getMemberInfos(null);
 	}
 	
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#getMemberInfos(java.lang.String)
+	 */
 	public Member getMemberInfos(String memberId) {		
 		return getMemberInfos(memberId, false);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#getMemberInfos(java.lang.String, boolean)
+	 */
 	public Member getMemberInfos(String memberId, boolean summary) {		
 		return getMemberInfos(memberId, summary, null);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#getMemberInfos(java.lang.String, boolean, org.springframework.social.betaseries.api.BSObjectType)
+	 */
 	public Member getMemberInfos(String memberId, boolean summary,
 			BSObjectType showOnly) {
 		requireEitherUserOrAppAuthorization();
@@ -86,6 +127,9 @@ public class MemberTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.getForObject(buildUri("members/infos", params), BetaSeriesMemberSingleObject.class).getObject();
 	} 
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#isActive()
+	 */
 	public boolean isActive() {
 		requireEitherUserOrAppAuthorization();
 		try {
@@ -96,6 +140,9 @@ public class MemberTemplate extends AbstractBetaSeriesOperations implements
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#getBadges(java.lang.String)
+	 */
 	public List<Badge> getBadges(String userId) {
 		requireEitherUserOrAppAuthorization();
 				
@@ -106,28 +153,46 @@ public class MemberTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.getForObject(buildUri("members/badges", params), BetaSeriesBadgeList.class).getList();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#getNotifications()
+	 */
 	public List<Notification> getNotifications() {		
 		return getNotifications(null);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#getNotifications(java.lang.String)
+	 */
 	public List<Notification> getNotifications(String sinceId) {		
 		return getNotifications(sinceId, null);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#getNotifications(java.lang.String, java.lang.String)
+	 */
 	public List<Notification> getNotifications(String sinceId, String limit) {		
 		return getNotifications(sinceId, limit, null);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#getNotifications(java.lang.String, java.lang.String, org.springframework.social.betaseries.api.BSSortOrder)
+	 */
 	public List<Notification> getNotifications(String sinceId, String limit,
 			BSSortOrder order) {
 		return getNotifications(sinceId, limit, order, null);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#getNotifications(java.lang.String, java.lang.String, org.springframework.social.betaseries.api.BSSortOrder, org.springframework.social.betaseries.api.BSNotificationType[])
+	 */
 	public List<Notification> getNotifications(String sinceId, String limit,
 			BSSortOrder order, BSNotificationType[] notificationTypes) {
 		return getNotifications(sinceId, limit, order, notificationTypes, false);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#getNotifications(java.lang.String, java.lang.String, org.springframework.social.betaseries.api.BSSortOrder, org.springframework.social.betaseries.api.BSNotificationType[], boolean)
+	 */
 	public List<Notification> getNotifications(String sinceId, String limit,
 			BSSortOrder order, BSNotificationType[] notificationTypes,
 			boolean autoDelete) {
@@ -168,11 +233,17 @@ public class MemberTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.getForObject(buildUri("members/notifications"), BetaSeriesNotificationList.class).getList();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#getMemberOptions()
+	 */
 	public BSOptions getMemberOptions() {		
 		requireEitherUserOrAppAuthorization();			
 		return restTemplate.getForObject(buildUri("members/options"), BSOptions.class);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#search(java.lang.String)
+	 */
 	public List<BSUser> search(String login) {
 		requireEitherUserOrAppAuthorization();
 		
@@ -183,6 +254,9 @@ public class MemberTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.getForObject(buildUri("members/search", params), BetaSeriesUserList.class).getList();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#getAvailableUsernames(java.lang.String)
+	 */
 	public String[] getAvailableUsernames(String username) {
 		requireEitherUserOrAppAuthorization();
 		
@@ -192,6 +266,9 @@ public class MemberTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.getForObject(buildUri("members/username", params),  BetaSeriesAvailableUsernamesObject.class).getObject();
 	}
 	
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#uploadAvatar(org.springframework.core.io.Resource)
+	 */
 	public Member uploadAvatar(Resource avatar) {
 		requireEitherUserOrAppAuthorization();
 		
@@ -201,16 +278,25 @@ public class MemberTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.postForObject(buildUri("members/avatar"),data, BetaSeriesMemberSingleObject.class).getObject();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#deleteAvatar()
+	 */
 	public Member deleteAvatar() {
 		requireEitherUserOrAppAuthorization();
 		return restTemplate.exchange(buildUri("members/avatar"), HttpMethod.DELETE, null, BetaSeriesMemberSingleObject.class).getBody().getObject();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#logOut()
+	 */
 	public void logOut() {
 		requireEitherUserOrAppAuthorization();
 		restTemplate.delete(buildUri("members/destroy"));
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#resetPassword(java.lang.String)
+	 */
 	public void resetPassword(String emailOrUsername) {
 		requireEitherUserOrAppAuthorization();
 		
@@ -221,6 +307,9 @@ public class MemberTemplate extends AbstractBetaSeriesOperations implements
 		restTemplate.postForObject(buildUri("members/lost"), params, String.class);
 	}
 	
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#setOption(org.springframework.social.betaseries.api.BSMemberOptionName, org.springframework.social.betaseries.api.BSMemberOptionValue)
+	 */
 	public void setOption(BSMemberOptionName name, BSMemberOptionValue value) {
 		requireEitherUserOrAppAuthorization();
 		
@@ -258,10 +347,16 @@ public class MemberTemplate extends AbstractBetaSeriesOperations implements
 		restTemplate.postForObject(buildUri("members/option"), params, String.class);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#signUp(java.lang.String, java.lang.String)
+	 */
 	public BSAuthObject signUp(String login, String email) {
 		return signUp(login, null, email);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#signUp(java.lang.String, java.lang.String, java.lang.String)
+	 */
 	public BSAuthObject signUp(String login, String password, String email) {
 		requireEitherUserOrAppAuthorization();
 		
@@ -280,6 +375,9 @@ public class MemberTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.postForObject(buildUri("members/signup"), params, BetaSeriesAuthObjectWrapper.class).getAuthenticatedUser();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.MemberOperations#sync(java.lang.String[])
+	 */
 	public List<BSUser> sync(String[] emails) {
 		requireEitherUserOrAppAuthorization();
 		
@@ -305,8 +403,10 @@ public class MemberTemplate extends AbstractBetaSeriesOperations implements
 	}
 	
 	/**
-	 * Helpers
-	 * 
+	 * Helpers.
+	 *
+	 * @param password the password
+	 * @return the string
 	 */
 	
 	/**
@@ -332,12 +432,27 @@ public class MemberTemplate extends AbstractBetaSeriesOperations implements
 		}		
 	}
 	
+	/**
+	 * The Class MemberList.
+	 *
+	 * @author Guillaume Maka
+	 */
 	@SuppressWarnings("serial")
 	static class MemberList extends ArrayList<Member>{}
 	
+	/**
+	 * The Class UsernameList.
+	 *
+	 * @author Guillaume Maka
+	 */
 	@SuppressWarnings("serial")
 	static class UsernameList extends ArrayList<String>{}
 	
+	/**
+	 * The Class BadgeList.
+	 *
+	 * @author Guillaume Maka
+	 */
 	@SuppressWarnings("serial")
 	static class BadgeList extends ArrayList<Badge>{}
 }

@@ -1,3 +1,18 @@
+/**
+ * Copyright 2015 [name of copyright owner]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api.impl;
 
 import java.util.Date;
@@ -29,15 +44,33 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.util.StringUtils;
 import org.springframework.web.client.RestTemplate;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class ShowTemplate.
+ *
+ * @author Guillaume Maka
+ */
 public class ShowTemplate extends AbstractBetaSeriesOperations implements
 		ShowOperations {
+	
+	/** The rest template. */
 	private final RestTemplate restTemplate;
 	
+	/**
+	 * Instantiates a new show template.
+	 *
+	 * @param restTemplate the rest template
+	 * @param isUserAuthorized the is user authorized
+	 * @param isAppAuthorized the is app authorized
+	 */
 	public ShowTemplate(RestTemplate restTemplate, boolean isUserAuthorized, boolean isAppAuthorized) {
 		super(isUserAuthorized, isAppAuthorized);
 		this.restTemplate = restTemplate;
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#archive(int)
+	 */
 	public Show archive(int showId) {
 		requireEitherUserOrAppAuthorization();
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
@@ -45,6 +78,9 @@ public class ShowTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.postForObject(buildUri("shows/archive"), params, BetaSeriesShowSingleObject.class).getObject();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#unarchive(int)
+	 */
 	public Show unarchive(int showId) {
 		requireEitherUserOrAppAuthorization();
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
@@ -52,6 +88,9 @@ public class ShowTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.exchange(buildUri("shows/archive", params), HttpMethod.DELETE, null, BetaSeriesShowSingleObject.class).getBody().getObject();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#getCharacters(int)
+	 */
 	public List<Character> getCharacters(int showId) {
 		requireAppAuthorization();		
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
@@ -59,6 +98,9 @@ public class ShowTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.getForObject(buildUri("shows/characters", params), BetaSeriesCharacterList.class).getList();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#getShow(int)
+	 */
 	public Show getShow(int showId) {
 		requireAppAuthorization();
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
@@ -66,6 +108,9 @@ public class ShowTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.getForObject(buildUri("shows/display", params), BetaSeriesShowSingleObject.class).getObject();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#getShows(java.lang.String[])
+	 */
 	public List<Show> getShows(String... showIds) {
 		requireAppAuthorization();
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
@@ -73,19 +118,31 @@ public class ShowTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.getForObject(buildUri("shows/display", params), BetaSeriesShowList.class).getList();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#getShowEpisodes(int)
+	 */
 	public List<Episode> getShowEpisodes(int showId) {		
 		return getShowEpisodes(showId, 0);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#getShowEpisodes(int, int)
+	 */
 	public List<Episode> getShowEpisodes(int showId, int seasonNumber) {		
 		return getShowEpisodes(showId, seasonNumber, 0);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#getShowEpisodes(int, int, int)
+	 */
 	public List<Episode> getShowEpisodes(int showId, int seasonNumber,
 			int episodeNumber) {		
 		return getShowEpisodes(showId, seasonNumber, episodeNumber, false);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#getShowEpisodes(int, int, int, boolean)
+	 */
 	public List<Episode> getShowEpisodes(int showId, int seasonNumber,
 			int episodeNumber, boolean includeSubtitles) {
 		requireAppAuthorization();
@@ -107,6 +164,9 @@ public class ShowTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.getForObject(buildUri("shows/episodes", params), BetaSeriesEpisodeList.class).getList();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#addToFavorite(int)
+	 */
 	public Show addToFavorite(int showId) {
 		requireEitherUserOrAppAuthorization();
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
@@ -114,6 +174,9 @@ public class ShowTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.postForObject(buildUri("shows/favorite"), params, BetaSeriesShowSingleObject.class).getObject();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#removeFromFavorite(int)
+	 */
 	public Show removeFromFavorite(int showId) {
 		requireEitherUserOrAppAuthorization();
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
@@ -121,10 +184,16 @@ public class ShowTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.exchange(buildUri("shows/favorite", params), HttpMethod.DELETE, null, BetaSeriesShowSingleObject.class).getBody().getObject();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#getFavoritesShow()
+	 */
 	public List<Show> getFavoritesShow() {		
 		return getFavoritesShow(null);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#getFavoritesShow(java.lang.Long)
+	 */
 	public List<Show> getFavoritesShow(Long memberId) {
 		requireEitherUserOrAppAuthorization();
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
@@ -136,14 +205,23 @@ public class ShowTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.getForObject(buildUri("shows/favorites", params), BetaSeriesShowList.class).getList();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#list()
+	 */
 	public List<Show> list() {
 		return list(null);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#list(org.springframework.social.betaseries.api.BSShowOrder)
+	 */
 	public List<Show> list(BSShowOrder order) {		
 		return list(order, null);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#list(org.springframework.social.betaseries.api.BSShowOrder, java.util.Date)
+	 */
 	public List<Show> list(BSShowOrder order, Date sinceDate) {
 		requireAppAuthorization();
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
@@ -159,6 +237,9 @@ public class ShowTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.getForObject(buildUri("shows/list", params), BetaSeriesShowList.class).getList();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#rateShow(int, int)
+	 */
 	public List<Show> rateShow(int showId, int note) {
 		requireEitherUserOrAppAuthorization();
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
@@ -167,6 +248,9 @@ public class ShowTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.postForObject(buildUri("shows/note"), params, BetaSeriesRatedShowList.class).getList();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#unRateShow(int)
+	 */
 	public List<Show> unRateShow(int showId) {
 		requireEitherUserOrAppAuthorization();
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
@@ -174,6 +258,9 @@ public class ShowTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.exchange(buildUri("shows/note", params), HttpMethod.DELETE, null, BetaSeriesRatedShowList.class).getBody().getList();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#getShowPictures(int)
+	 */
 	public List<Picture> getShowPictures(int showId) {
 		requireAppAuthorization();
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
@@ -181,14 +268,23 @@ public class ShowTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.getForObject(buildUri("shows/pictures", params), BetaSeriesPictureList.class).getList();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#getRandomShow()
+	 */
 	public List<Show> getRandomShow() {		
 		return getRandomShow(1);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#getRandomShow(int)
+	 */
 	public List<Show> getRandomShow(int limit) {		
 		return getRandomShow(limit, false);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#getRandomShow(int, boolean)
+	 */
 	public List<Show> getRandomShow(int limit, boolean summary) {
 		requireAppAuthorization();
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
@@ -204,10 +300,16 @@ public class ShowTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.getForObject(buildUri("shows/random", params), BetaSeriesShowList.class).getList();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#sendRecommendation(int, int)
+	 */
 	public Recommendation sendRecommendation(int showId, int toMemberId) {		
 		return sendRecommendation(showId, toMemberId, null);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#sendRecommendation(int, int, java.lang.String)
+	 */
 	public Recommendation sendRecommendation(int showId, int toMemberId, String comments) {
 		requireEitherUserOrAppAuthorization();
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
@@ -231,6 +333,9 @@ public class ShowTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.getForObject(buildUri("shows/recommendations"), BetaSeriesRecommendationList.class).getList();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.ShowOperations#deleteRecomendation(int)
+	 */
 	public Recommendation deleteRecomendation(int recomendationId) {
 		requireEitherUserOrAppAuthorization();
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();

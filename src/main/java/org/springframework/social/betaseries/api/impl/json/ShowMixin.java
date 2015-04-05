@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 [name of copyright owner]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,6 +25,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+// TODO: Auto-generated Javadoc
 /**
  * The Class ShowMixin.
  * 
@@ -118,6 +119,7 @@ abstract class ShowMixin extends BetaSeriesObjectMixin {
 	@JsonProperty("in_account")
 	Note inAccount;
 
+	/** The user detail. */
 	@JsonProperty("user")
 	UserDetail userDetail;
 
@@ -125,16 +127,44 @@ abstract class ShowMixin extends BetaSeriesObjectMixin {
 	@JsonProperty("resource_url")
 	String resourceUrl;
 	
+	/**
+	 * The Class SeasonDetailMixin.
+	 *
+	 * @author Guillaume Maka
+	 */
 	@JsonIgnoreProperties(ignoreUnknown=true)
 	static abstract class SeasonDetailMixin extends BetaSeriesObjectMixin {
+		
+		/**
+		 * Instantiates a new season detail mixin.
+		 *
+		 * @param seasonNumber the season number
+		 * @param numberOfEpisode the number of episode
+		 */
 		@JsonCreator
 		public SeasonDetailMixin(
 				@JsonProperty("number") int seasonNumber, 
 				@JsonProperty("episodes") int numberOfEpisode) {}
 	}
 	
+	/**
+	 * The Class UserDetailMixin.
+	 *
+	 * @author Guillaume Maka
+	 */
 	@JsonIgnoreProperties(ignoreUnknown=true)
 	static abstract class UserDetailMixin extends BetaSeriesObjectMixin {
+		
+		/**
+		 * Instantiates a new user detail mixin.
+		 *
+		 * @param archived the archived
+		 * @param favorited the favorited
+		 * @param remaining the remaining
+		 * @param status the status
+		 * @param last the last
+		 * @param tags the tags
+		 */
 		@JsonCreator
 		public UserDetailMixin(
 				@JsonProperty("archived") boolean archived, 

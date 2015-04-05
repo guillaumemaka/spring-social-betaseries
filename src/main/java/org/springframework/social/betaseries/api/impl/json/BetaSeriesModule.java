@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 [name of copyright owner]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -43,6 +43,7 @@ import org.springframework.social.betaseries.api.Video;
 
 import com.fasterxml.jackson.databind.module.SimpleModule;
 
+// TODO: Auto-generated Javadoc
 /**
  * The Class BetaSeriesModule.
  * 
@@ -50,6 +51,7 @@ import com.fasterxml.jackson.databind.module.SimpleModule;
  */
 public class BetaSeriesModule extends SimpleModule {
 	
+	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = 1L;
 
 	/**

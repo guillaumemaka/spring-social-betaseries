@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 [name of copyright owner]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -79,8 +79,10 @@ public class BetaSeriesTemplate extends AbstractOAuth2ApiBinding implements
 	/** The timeline operations. */
 	private TimelineOperations timelineOperations;
 		
+	/** The access token. */
 	private String accessToken;
 	
+	/** The api key. */
 	private String apiKey;
 	
 	/**
@@ -98,6 +100,9 @@ public class BetaSeriesTemplate extends AbstractOAuth2ApiBinding implements
 		initialize();
 	}
 
+	/**
+	 * Initialize.
+	 */
 	private void initialize() {
 		getRestTemplate().getInterceptors().clear();
 		getRestTemplate().getInterceptors().add(new BetaSeriesApiVersionHeaderParameterInterceptor("2.4"));
@@ -201,6 +206,9 @@ public class BetaSeriesTemplate extends AbstractOAuth2ApiBinding implements
 		return converter;
 	}
 	
+	/* (non-Javadoc)
+	 * @see org.springframework.social.oauth2.AbstractOAuth2ApiBinding#setRequestFactory(org.springframework.http.client.ClientHttpRequestFactory)
+	 */
 	@Override
 	public void setRequestFactory(ClientHttpRequestFactory requestFactory) {
 		// Wrap the request factory with a BufferingClientHttpRequestFactory so that the error handler can do repeat reads on the response.getBody()
@@ -215,15 +223,28 @@ public class BetaSeriesTemplate extends AbstractOAuth2ApiBinding implements
 		restTemplate.setErrorHandler(new BetaSerieErrorHandler());			
 	}
 	
+	/* (non-Javadoc)
+	 * @see org.springframework.social.oauth2.AbstractOAuth2ApiBinding#isAuthorized()
+	 */
 	@Override
 	public boolean isAuthorized() {
 		return (this.accessToken != null && this.apiKey != null);		
 	}
 	
+	/**
+	 * Checks if is app authorized.
+	 *
+	 * @return true, if is app authorized
+	 */
 	public boolean isAppAuthorized() {
 		return this.apiKey != null;
 	}
 	
+	/**
+	 * Checks if is user authorized.
+	 *
+	 * @return true, if is user authorized
+	 */
 	public boolean isUserAuthorized() {
 		return this.accessToken != null;
 	}

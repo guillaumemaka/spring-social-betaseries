@@ -1,30 +1,73 @@
+/**
+ * Copyright 2015 [name of copyright owner]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
 import java.util.Date;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Message.
+ *
+ * @author Guillaume Maka
+ */
 public class Message extends BetaSeriesObject {
+	
+	/** The id. */
 	private final int id;
+	
+	/** The message id. */
 	private final int messageId;
+	
+	/** The inner id. */
 	private final int innerId;
+	
+	/** The sender. */
 	private final BSUser sender;
+	
+	/** The recipient. */
 	private final BSUser recipient;
+	
+	/** The date. */
 	private final Date date;
+	
+	/** The title. */
 	private final String title;
+	
+	/** The text. */
 	private final String text;
+	
+	/** The unread. */
 	private final boolean unread;
+	
+	/** The has unread. */
 	private final boolean hasUnread;
 
 	/**
-	 * @param id
-	 * @param messageId
-	 * @param innerId
-	 * @param sender
-	 * @param recipient
-	 * @param date
-	 * @param title
-	 * @param text
-	 * @param unread
-	 * @param hasUnread
+	 * Instantiates a new message.
+	 *
+	 * @param id the id
+	 * @param messageId the message id
+	 * @param innerId the inner id
+	 * @param sender the sender
+	 * @param recipient the recipient
+	 * @param date the date
+	 * @param title the title
+	 * @param text the text
+	 * @param unread the unread
+	 * @param hasUnread the has unread
 	 */
 	public Message(int id, int messageId, int innerId, BSUser sender,
 			BSUser recipient, Date date, String title, String text,
@@ -43,6 +86,8 @@ public class Message extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the id.
+	 *
 	 * @return the id
 	 */
 	public int getId() {
@@ -50,6 +95,8 @@ public class Message extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the message id.
+	 *
 	 * @return the messageId
 	 */
 	public int getMessageId() {
@@ -57,6 +104,8 @@ public class Message extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the inner id.
+	 *
 	 * @return the innerId
 	 */
 	public int getInnerId() {
@@ -64,6 +113,8 @@ public class Message extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the sender.
+	 *
 	 * @return the sender
 	 */
 	public BSUser getSender() {
@@ -71,6 +122,8 @@ public class Message extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the recipient.
+	 *
 	 * @return the recipient
 	 */
 	public BSUser getRecipient() {
@@ -78,6 +131,8 @@ public class Message extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the date.
+	 *
 	 * @return the date
 	 */
 	public Date getDate() {
@@ -85,6 +140,8 @@ public class Message extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the title.
+	 *
 	 * @return the title
 	 */
 	public String getTitle() {
@@ -92,6 +149,8 @@ public class Message extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the text.
+	 *
 	 * @return the text
 	 */
 	public String getText() {
@@ -99,6 +158,8 @@ public class Message extends BetaSeriesObject {
 	}
 
 	/**
+	 * Checks if is unread.
+	 *
 	 * @return the unread
 	 */
 	public boolean isUnread() {
@@ -106,6 +167,8 @@ public class Message extends BetaSeriesObject {
 	}
 
 	/**
+	 * Checks for unread.
+	 *
 	 * @return the hasUnread
 	 */
 	public boolean hasUnread() {

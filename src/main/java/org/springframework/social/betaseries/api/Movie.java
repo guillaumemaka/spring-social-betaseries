@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 [name of copyright owner]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,6 +17,7 @@ package org.springframework.social.betaseries.api;
 
 import java.util.Date;
 
+// TODO: Auto-generated Javadoc
 /**
  * The Class Movie.
  * 
@@ -72,29 +73,33 @@ public class Movie extends BetaSeriesObject {
 	/** The note. */
 	private final Note note;
 
+	/** The followers. */
 	private final int followers;
 	
+	/** The user detail. */
 	private final UserDetail userDetail;
 
 	/**
-	 * @param id
-	 * @param titlw
-	 * @param originalTitlw
-	 * @param theMovieDbId
-	 * @param imDbId
-	 * @param url
-	 * @param posterUrl
-	 * @param productionYear
-	 * @param releaseDate
-	 * @param saleDate
-	 * @param director
-	 * @param length
-	 * @param genres
-	 * @param synopsis
-	 * @param language
-	 * @param note
-	 * @param followers
-	 * @param userDetail
+	 * Instantiates a new movie.
+	 *
+	 * @param id the id
+	 * @param titlw the titlw
+	 * @param originalTitlw the original titlw
+	 * @param theMovieDbId the the movie db id
+	 * @param imDbId the im db id
+	 * @param url the url
+	 * @param posterUrl the poster url
+	 * @param productionYear the production year
+	 * @param releaseDate the release date
+	 * @param saleDate the sale date
+	 * @param director the director
+	 * @param length the length
+	 * @param genres the genres
+	 * @param synopsis the synopsis
+	 * @param language the language
+	 * @param note the note
+	 * @param followers the followers
+	 * @param userDetail the user detail
 	 */
 	public Movie(Integer id, String titlw, String originalTitlw,
 			int theMovieDbId, String imDbId, String url, String posterUrl,
@@ -123,6 +128,8 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the id.
+	 *
 	 * @return the id
 	 */
 	public Integer getId() {
@@ -130,6 +137,8 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the titlw.
+	 *
 	 * @return the titlw
 	 */
 	public String getTitlw() {
@@ -137,6 +146,8 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the original titlw.
+	 *
 	 * @return the originalTitlw
 	 */
 	public String getOriginalTitlw() {
@@ -144,6 +155,8 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the the movie db id.
+	 *
 	 * @return the theMovieDbId
 	 */
 	public int getTheMovieDbId() {
@@ -151,6 +164,8 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the im db id.
+	 *
 	 * @return the imDbId
 	 */
 	public String getImDbId() {
@@ -158,6 +173,8 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the url.
+	 *
 	 * @return the url
 	 */
 	public String getUrl() {
@@ -165,6 +182,8 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the poster url.
+	 *
 	 * @return the posterUrl
 	 */
 	public String getPosterUrl() {
@@ -172,6 +191,8 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the production year.
+	 *
 	 * @return the productionYear
 	 */
 	public String getProductionYear() {
@@ -179,6 +200,8 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the release date.
+	 *
 	 * @return the releaseDate
 	 */
 	public Date getReleaseDate() {
@@ -186,6 +209,8 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the sale date.
+	 *
 	 * @return the saleDate
 	 */
 	public Date getSaleDate() {
@@ -193,6 +218,8 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the director.
+	 *
 	 * @return the director
 	 */
 	public String getDirector() {
@@ -200,6 +227,8 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the length.
+	 *
 	 * @return the length
 	 */
 	public String getLength() {
@@ -207,6 +236,8 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the genres.
+	 *
 	 * @return the genres
 	 */
 	public String[] getGenres() {
@@ -214,6 +245,8 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the synopsis.
+	 *
 	 * @return the synopsis
 	 */
 	public String getSynopsis() {
@@ -221,6 +254,8 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the language.
+	 *
 	 * @return the language
 	 */
 	public String getLanguage() {
@@ -228,6 +263,8 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the note.
+	 *
 	 * @return the note
 	 */
 	public Note getNote() {
@@ -235,6 +272,8 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the followers.
+	 *
 	 * @return the followers
 	 */
 	public int getFollowers() {
@@ -242,19 +281,32 @@ public class Movie extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the user detail.
+	 *
 	 * @return the userDetail
 	 */
 	public UserDetail getUserDetail() {
 		return userDetail;
 	}
 
+	/**
+	 * The Class UserDetail.
+	 *
+	 * @author Guillaume Maka
+	 */
 	static public class UserDetail extends BetaSeriesObject {
+		
+		/** The in account. */
 		private final boolean inAccount;
+		
+		/** The status. */
 		private final BSMovieUserState status;
 
 		/**
-		 * @param inAccount
-		 * @param status
+		 * Instantiates a new user detail.
+		 *
+		 * @param inAccount the in account
+		 * @param status the status
 		 */
 		public UserDetail(boolean inAccount, BSMovieUserState status) {
 			super();
@@ -263,6 +315,8 @@ public class Movie extends BetaSeriesObject {
 		}
 
 		/**
+		 * Checks if is in account.
+		 *
 		 * @return the inAccount
 		 */
 		public boolean isInAccount() {
@@ -270,6 +324,8 @@ public class Movie extends BetaSeriesObject {
 		}
 
 		/**
+		 * Gets the status.
+		 *
 		 * @return the status
 		 */
 		public BSMovieUserState getStatus() {
@@ -326,19 +382,36 @@ public class Movie extends BetaSeriesObject {
 		}
 	}
 
+	/**
+	 * The Class SummarizedMovie.
+	 *
+	 * @author Guillaume Maka
+	 */
 	public static class SummarizedMovie extends BetaSeriesObject {
+		
+		/** The id. */
 		private final Integer id;
+		
+		/** The title. */
 		private final String title;
+		
+		/** The tmdb id. */
 		private final String tmdbId;
+		
+		/** The imdb id. */
 		private final String imdbId;
+		
+		/** The followers. */
 		private final Integer followers;
 
 		/**
-		 * @param id
-		 * @param title
-		 * @param tmdbId
-		 * @param imdbId
-		 * @param followers
+		 * Instantiates a new summarized movie.
+		 *
+		 * @param id the id
+		 * @param title the title
+		 * @param tmdbId the tmdb id
+		 * @param imdbId the imdb id
+		 * @param followers the followers
 		 */
 		public SummarizedMovie(Integer id, String title, String tmdbId,
 				String imdbId, Integer followers) {
@@ -351,6 +424,8 @@ public class Movie extends BetaSeriesObject {
 		}
 
 		/**
+		 * Gets the id.
+		 *
 		 * @return the id
 		 */
 		public Integer getId() {
@@ -358,6 +433,8 @@ public class Movie extends BetaSeriesObject {
 		}
 
 		/**
+		 * Gets the title.
+		 *
 		 * @return the title
 		 */
 		public String getTitle() {
@@ -365,6 +442,8 @@ public class Movie extends BetaSeriesObject {
 		}
 
 		/**
+		 * Gets the tmdb id.
+		 *
 		 * @return the tmdbId
 		 */
 		public String getTmdbId() {
@@ -372,6 +451,8 @@ public class Movie extends BetaSeriesObject {
 		}
 
 		/**
+		 * Gets the imdb id.
+		 *
 		 * @return the imdbId
 		 */
 		public String getImdbId() {
@@ -379,6 +460,8 @@ public class Movie extends BetaSeriesObject {
 		}
 
 		/**
+		 * Gets the followers.
+		 *
 		 * @return the followers
 		 */
 		public Integer getFollowers() {

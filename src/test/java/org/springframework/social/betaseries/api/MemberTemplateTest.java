@@ -1,3 +1,18 @@
+/**
+ * Copyright 2015 [name of copyright owner]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withBadRequest;
@@ -11,8 +26,17 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.MediaType;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class MemberTemplateTest.
+ *
+ * @author Guillaume Maka
+ */
 public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 
+	/**
+	 * Members_get member infos_test.
+	 */
 	@Test
 	public void members_getMemberInfos_test() {
 		constructGetMockRequest(mockServer,
@@ -35,6 +59,9 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 		assertMovie(movie);
 	}
 
+	/**
+	 * Members_is active success test.
+	 */
 	@Test
 	public void members_isActiveSuccessTest() {
 		constructGetMockRequest(mockServer,
@@ -45,6 +72,9 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 		Assert.assertTrue(betaSeries.memberOperations().isActive());
 	}
 	
+	/**
+	 * Members_is active fail test.
+	 */
 	@Test
 	public void members_isActiveFailTest() {
 		constructGetMockRequest(mockServer,
@@ -55,6 +85,9 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 		Assert.assertFalse(betaSeries.memberOperations().isActive());
 	}
 	
+	/**
+	 * Members_get badges test.
+	 */
 	@Test
 	public void members_getBadgesTest() {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/members/badges?id=130446")
@@ -72,6 +105,9 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 	}
 	
 	
+	/**
+	 * Members_get notifications test.
+	 */
 	@Test
 	public void members_getNotificationsTest() {
 		constructGetMockRequest(mockServer,
@@ -212,7 +248,10 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 //		Assert.assertFalse(notif2.isSeen());
 //	}
 
-	@Test
+	/**
+ * Members_get options test.
+ */
+@Test
 	public void members_getOptionsTest() {
 		constructGetMockRequest(mockServer,
 				"https://api.betaseries.com/members/options").andRespond(
@@ -232,6 +271,9 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 		Assert.assertTrue(source.isEnabled());
 	}
 
+	/**
+	 * Members_search raise3002 exception.
+	 */
 	@Test(expected = MalfornedTermException.class)
 	public void members_searchRaise3002Exception() {
 		constructGetMockRequest(mockServer,
@@ -244,6 +286,9 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 		betaSeries.memberOperations().search("b");
 	}
 
+	/**
+	 * Members_search test.
+	 */
 	@Test
 	public void members_searchTest() {
 		constructGetMockRequest(mockServer,
@@ -262,6 +307,9 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 		Assert.assertFalse(user.isInAccount());
 	}
 
+	/**
+	 * Members_simple authentication test.
+	 */
 	@Test
 	public void members_simpleAuthenticationTest() {
 		constructPostMockRequest(mockServer,
@@ -279,6 +327,9 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 		Assert.assertEquals("5e8edd851d2fdfbd7415232c67367cc3", auth.getHash());
 	}
 
+	/**
+	 * Members_upload avatar test.
+	 */
 	@Test
 	public void members_uploadAvatarTest() {
 		Resource avatar = new ClassPathResource("avatar.png", getClass());
@@ -291,6 +342,9 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 		betaSeries.memberOperations().uploadAvatar(avatar);				
 	}
 	
+	/**
+	 * Members_delete avatar test.
+	 */
 	@Test
 	public void members_deleteAvatarTest() {
 		constructDeleteMockRequest(mockServer, "https://api.betaseries.com/members/avatar")
@@ -302,6 +356,9 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 		Assert.assertEquals("Dev040", member.getLogin());
 	}
 	
+	/**
+	 * Members_sign up test.
+	 */
 	@Test
 	public void members_signUpTest() {
 		constructPostMockRequest(mockServer, "https://api.betaseries.com/members/signup")
@@ -317,6 +374,9 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 		Assert.assertEquals("da664dbd14838cb385e5ef7cad8858ef", newUser.getHash());
 	}
 	
+	/**
+	 * Members_sync test.
+	 */
 	@Test
 	public void members_syncTest() {
 		constructPostMockRequest(mockServer, "https://api.betaseries.com/members/sync")
@@ -330,6 +390,11 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 		Assert.assertTrue(user.isInAccount());//		
 	}	
 
+	/**
+	 * Assert member stats.
+	 *
+	 * @param member the member
+	 */
 	private void assertMemberStats(Member member) {
 		Assert.assertEquals(2, member.getStats().getNumberOfFriends());
 		Assert.assertEquals(2, member.getStats().getNumberOfFriends());
@@ -343,6 +408,11 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 		Assert.assertEquals(25, member.getStats().getBadges());
 	}
 
+	/**
+	 * Assert member.
+	 *
+	 * @param member the member
+	 */
 	private void assertMember(Member member) {
 		Assert.assertNotNull("member should not be null", member);
 		Assert.assertEquals("130446", member.getMemberId());
@@ -363,6 +433,11 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 				.getFriendshipStatus());
 	}
 
+	/**
+	 * Assert show.
+	 *
+	 * @param show the show
+	 */
 	private void assertShow(Show show) {
 		Assert.assertEquals(9, show.getId());
 		Assert.assertEquals(76290, show.getTheTvDbId());
@@ -390,6 +465,11 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 		Assert.assertEquals(4.3684, show.getNote().getAverage(), 4.3684);
 	}
 
+	/**
+	 * Assert movie.
+	 *
+	 * @param movie the movie
+	 */
 	private void assertMovie(Movie movie) {
 		Assert.assertEquals(new Integer(409), movie.getId());
 		Assert.assertEquals("Very Bad Trip 2", movie.getTitlw());

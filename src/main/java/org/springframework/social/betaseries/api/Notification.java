@@ -1,7 +1,28 @@
+/**
+ * Copyright 2015 [name of copyright owner]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
 import java.util.Date;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Notification.
+ *
+ * @author Guillaume Maka
+ */
 public class Notification extends BetaSeriesObject {
 //	Json Representtation
 //	{
@@ -13,25 +34,37 @@ public class Notification extends BetaSeriesObject {
 //        "date": "2014-11-09 00:03:16",
 //        "seen": null
 //    }
-	private Long id;
+	/** The id. */
+private Long id;
 	
+	/** The type. */
 	private BSNotificationType type;
 	
+	/** The ref id. */
 	private String refId;
 	
+	/** The text. */
 	private String text;
 	
+	/** The html. */
 	private String html;
 	
+	/** The date. */
 	private Date date;
 	
+	/** The seen. */
 	private boolean seen;
 	
+	/**
+	 * Instantiates a new notification.
+	 */
 	public Notification() {
 		super();
 	}
 
 	/**
+	 * Gets the id.
+	 *
 	 * @return the id
 	 */
 	public Long getId() {
@@ -39,6 +72,8 @@ public class Notification extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the id.
+	 *
 	 * @param id the id to set
 	 */
 	public void setId(Long id) {
@@ -46,6 +81,8 @@ public class Notification extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the type.
+	 *
 	 * @return the type
 	 */
 	public BSNotificationType getType() {
@@ -53,6 +90,8 @@ public class Notification extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the type.
+	 *
 	 * @param type the type to set
 	 */
 	public void setType(BSNotificationType type) {
@@ -60,6 +99,8 @@ public class Notification extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the ref id.
+	 *
 	 * @return the refId
 	 */
 	public String getRefId() {
@@ -67,6 +108,8 @@ public class Notification extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the ref id.
+	 *
 	 * @param refId the refId to set
 	 */
 	public void setRefId(String refId) {
@@ -74,6 +117,8 @@ public class Notification extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the text.
+	 *
 	 * @return the text
 	 */
 	public String getText() {
@@ -81,6 +126,8 @@ public class Notification extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the text.
+	 *
 	 * @param text the text to set
 	 */
 	public void setText(String text) {
@@ -88,6 +135,8 @@ public class Notification extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the html.
+	 *
 	 * @return the html
 	 */
 	public String getHtml() {
@@ -95,6 +144,8 @@ public class Notification extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the html.
+	 *
 	 * @param html the html to set
 	 */
 	public void setHtml(String html) {
@@ -102,6 +153,8 @@ public class Notification extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the date.
+	 *
 	 * @return the date
 	 */
 	public Date getDate() {
@@ -109,6 +162,8 @@ public class Notification extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the date.
+	 *
 	 * @param date the date to set
 	 */
 	public void setDate(Date date) {
@@ -116,6 +171,8 @@ public class Notification extends BetaSeriesObject {
 	}
 
 	/**
+	 * Checks if is seen.
+	 *
 	 * @return the seen
 	 */
 	public boolean isSeen() {
@@ -123,6 +180,8 @@ public class Notification extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the seen.
+	 *
 	 * @param seen the seen to set
 	 */
 	public void setSeen(boolean seen) {

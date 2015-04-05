@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 [name of copyright owner]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,25 +30,19 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 abstract class CommentMixin extends BetaSeriesObjectMixin {
+	
 	/**
 	 * Instantiates a new comment mixin.
-	 * 
-	 * @param id
-	 *            the id
-	 * @param userId
-	 *            the user id
-	 * @param login
-	 *            the login
-	 * @param avatar
-	 *            the avatar
-	 * @param createdAt
-	 *            the created at
-	 * @param text
-	 *            the text
-	 * @param innerId
-	 *            the inner id
-	 * @param inReplyTo
-	 *            the in reply to
+	 *
+	 * @param id            the id
+	 * @param userId            the user id
+	 * @param login            the login
+	 * @param avatarUrl the avatar url
+	 * @param createdAt            the created at
+	 * @param text            the text
+	 * @param innerId            the inner id
+	 * @param inReplyTo            the in reply to
+	 * @param numberOfReplies the number of replies
 	 */
 	@JsonCreator
 	public CommentMixin(

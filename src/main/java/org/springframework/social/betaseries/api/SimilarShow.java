@@ -1,21 +1,59 @@
+/**
+ * Copyright 2015 [name of copyright owner]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class SimilarShow.
+ *
+ * @author Guillaume Maka
+ */
 public class SimilarShow extends BetaSeriesObject {
+	
+	/** The id. */
 	private final int id;
+	
+	/** The show title. */
 	private final String showTitle;
+	
+	/** The show id. */
 	private final int showId;
+	
+	/** The tv db id. */
 	private final int theTvDbId;
+	
+	/** The login. */
 	private final String login;
+	
+	/** The login id. */
 	private final int loginId;
+	
+	/** The notes. */
 	private final String notes;
+	
 	/**
-	 * @param id
-	 * @param showTitle
-	 * @param showId
-	 * @param theTvDbId
-	 * @param login
-	 * @param loginId
-	 * @param notes
+	 * Instantiates a new similar show.
+	 *
+	 * @param id the id
+	 * @param showTitle the show title
+	 * @param showId the show id
+	 * @param theTvDbId the the tv db id
+	 * @param login the login
+	 * @param loginId the login id
+	 * @param notes the notes
 	 */
 	public SimilarShow(int id, String showTitle, int showId, int theTvDbId,
 			String login, int loginId, String notes) {
@@ -28,43 +66,64 @@ public class SimilarShow extends BetaSeriesObject {
 		this.loginId = loginId;
 		this.notes = notes;
 	}
+	
 	/**
+	 * Gets the id.
+	 *
 	 * @return the id
 	 */
 	public int getId() {
 		return id;
 	}
+	
 	/**
+	 * Gets the show title.
+	 *
 	 * @return the showTitle
 	 */
 	public String getShowTitle() {
 		return showTitle;
 	}
+	
 	/**
+	 * Gets the show id.
+	 *
 	 * @return the showId
 	 */
 	public int getShowId() {
 		return showId;
 	}
+	
 	/**
+	 * Gets the the tv db id.
+	 *
 	 * @return the theTvDbId
 	 */
 	public int getTheTvDbId() {
 		return theTvDbId;
 	}
+	
 	/**
+	 * Gets the login.
+	 *
 	 * @return the login
 	 */
 	public String getLogin() {
 		return login;
 	}
+	
 	/**
+	 * Gets the login id.
+	 *
 	 * @return the login_id
 	 */
 	public int getLoginId() {
 		return loginId;
 	}
+	
 	/**
+	 * Gets the notes.
+	 *
 	 * @return the notes
 	 */
 	public String getNotes() {

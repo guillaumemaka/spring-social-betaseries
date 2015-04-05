@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 [name of copyright owner]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,6 @@ package org.springframework.social.betaseries.api;
 import java.util.List;
 
 import org.springframework.core.io.Resource;
-import org.springframework.social.MissingAuthorizationException;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -35,17 +34,37 @@ public interface MemberOperations {
 	 */
 	Member getMemberInfos();
 	
+	/**
+	 * Gets the member infos.
+	 *
+	 * @param memberId the member id
+	 * @return the member infos
+	 */
 	Member getMemberInfos(String memberId);
 	
+	/**
+	 * Gets the member infos.
+	 *
+	 * @param memberId the member id
+	 * @param summary the summary
+	 * @return the member infos
+	 */
 	Member getMemberInfos(String memberId, boolean summary);
 	
+	/**
+	 * Gets the member infos.
+	 *
+	 * @param memberId the member id
+	 * @param summary the summary
+	 * @param showOnly the show only
+	 * @return the member infos
+	 */
 	Member getMemberInfos(String memberId, boolean summary, BSObjectType showOnly);
 	
 	/**
 	 * Checks if is active.
+	 *
 	 * @return TODO
-	 * 
-	 * @throws MissingAuthorizationException
 	 */
 	boolean isActive();
 	
@@ -166,8 +185,9 @@ public interface MemberOperations {
 	
 	/**
 	 * Delete avatar.
+	 *
 	 * @return TODO
-	 * @return TODO
+	 * TODO
 	 */
 	Member deleteAvatar();
 	
@@ -186,9 +206,9 @@ public interface MemberOperations {
 	
 	/**
 	 * Sets the options.
-	 * 
-	 * @param options
-	 *            the new options {@link MemberOptions}
+	 *
+	 * @param name the name
+	 * @param value the value
 	 */
 	void setOption(BSMemberOptionName name, BSMemberOptionValue value);
 	
@@ -225,5 +245,12 @@ public interface MemberOperations {
 	 */
 	List<BSUser> sync(String[] emails);
 	
+	/**
+	 * Simple authentication.
+	 *
+	 * @param login the login
+	 * @param password the password
+	 * @return the BS auth object
+	 */
 	BSAuthObject simpleAuthentication(String login, String password);
 }

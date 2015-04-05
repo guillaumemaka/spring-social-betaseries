@@ -1,3 +1,18 @@
+/**
+ * Copyright 2015 [name of copyright owner]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
 import static org.junit.Assert.assertEquals;
@@ -12,8 +27,19 @@ import java.util.List;
 import org.junit.Test;
 import org.springframework.http.MediaType;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class FriendTemplateTest.
+ *
+ * @author Guillaume Maka
+ */
 public class FriendTemplateTest extends AbstractBetaSeriesApiTest {
 
+	/**
+	 * Block.
+	 *
+	 * @throws Exception the exception
+	 */
 	@Test
 	public void block() throws Exception {
 		constructPostMockRequest(mockServer,
@@ -41,6 +67,11 @@ public class FriendTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(0, blockedMember.getStats().getBadges());		
 	}
 	
+	/**
+	 * Unblock.
+	 *
+	 * @throws Exception the exception
+	 */
 	@Test
 	public void unblock() throws Exception {
 		constructDeleteMockRequest(mockServer,
@@ -68,6 +99,12 @@ public class FriendTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(0, unblockedMember.getStats().getBadges());		
 	}
 	
+	/**
+	 * Gets the friends list.
+	 *
+	 * @return the friends list
+	 * @throws Exception the exception
+	 */
 	@Test
 	public void getFriendsList() throws Exception {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/friends/list")
@@ -79,6 +116,12 @@ public class FriendTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals("blackstones", friends.get(0).getLogin());
 	}
 	
+	/**
+	 * Gets the blocked friends list.
+	 *
+	 * @return the blocked friends list
+	 * @throws Exception the exception
+	 */
 	@Test
 	public void getBlockedFriendsList() throws Exception {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/friends/list?blocked=1")

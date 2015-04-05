@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 [name of copyright owner]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,7 @@
  */
 package org.springframework.social.betaseries.api;
 
+// TODO: Auto-generated Javadoc
 /**
  * The Class MemberOptions.
  * 
@@ -37,16 +38,17 @@ public class MemberOptions extends BetaSeriesObject {
 	/** The friendship enabled. */
 	private BSMemberOptionValue friendshipStatus;
 	
+	/**
+	 * Instantiates a new member options.
+	 */
 	public MemberOptions() {
 		super();
 	}	
 	
 	/**
-	 * @param notationEnabled
-	 * @param downloadedEnabled
-	 * @param globalEnabled
-	 * @param timelagEnabled
-	 * @param friendshipEnabled
+	 * Checks if is notation enabled.
+	 *
+	 * @return true, if is notation enabled
 	 */
 //	public MemberOptions(boolean notationEnabled, boolean downloadedEnabled,
 //			boolean globalEnabled, boolean timelagEnabled,
@@ -64,56 +66,83 @@ public class MemberOptions extends BetaSeriesObject {
 	public boolean isNotationEnabled() {
 		return notationEnabled;
 	}
+	
 	/**
+	 * Sets the notation enabled.
+	 *
 	 * @param notationEnabled the notationEnabled to set
 	 */
 	public void setNotationEnabled(boolean notationEnabled) {
 		this.notationEnabled = notationEnabled;
 	}
+	
 	/**
+	 * Checks if is downloaded enabled.
+	 *
 	 * @return the downloadedEnabled
 	 */
 	public boolean isDownloadedEnabled() {
 		return downloadedEnabled;
 	}
+	
 	/**
+	 * Sets the downloaded enabled.
+	 *
 	 * @param downloadedEnabled the downloadedEnabled to set
 	 */
 	public void setDownloadedEnabled(boolean downloadedEnabled) {
 		this.downloadedEnabled = downloadedEnabled;
 	}
+	
 	/**
+	 * Checks if is global enabled.
+	 *
 	 * @return the globalEnabled
 	 */
 	public boolean isGlobalEnabled() {
 		return globalEnabled;
 	}
+	
 	/**
+	 * Sets the global enabled.
+	 *
 	 * @param globalEnabled the globalEnabled to set
 	 */
 	public void setGlobalEnabled(boolean globalEnabled) {
 		this.globalEnabled = globalEnabled;
 	}
+	
 	/**
+	 * Checks if is timelag enabled.
+	 *
 	 * @return the timelagEnabled
 	 */
 	public boolean isTimelagEnabled() {
 		return timelagEnabled;
 	}
+	
 	/**
+	 * Sets the timelag enabled.
+	 *
 	 * @param timelagEnabled the timelagEnabled to set
 	 */
 	public void setTimelagEnabled(boolean timelagEnabled) {
 		this.timelagEnabled = timelagEnabled;
 	}
+	
 	/**
+	 * Gets the friendship status.
+	 *
 	 * @return the friendshipEnabled
 	 */
 	public BSMemberOptionValue getFriendshipStatus() {
 		return friendshipStatus;
 	}
+	
 	/**
-	 * @param friendshipEnabled the friendshipEnabled to set
+	 * Sets the friendship status.
+	 *
+	 * @param friendshipStatus the new friendship status
 	 */
 	public void setFriendshipStatus(BSMemberOptionValue friendshipStatus) {
 		this.friendshipStatus = friendshipStatus;

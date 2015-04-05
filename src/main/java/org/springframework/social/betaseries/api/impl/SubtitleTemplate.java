@@ -1,3 +1,18 @@
+/**
+ * Copyright 2015 [name of copyright owner]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api.impl;
 
 import java.util.List;
@@ -11,10 +26,25 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class SubtitleTemplate.
+ *
+ * @author Guillaume Maka
+ */
 public class SubtitleTemplate extends AbstractBetaSeriesOperations implements
 		SubtitleOperations {
+	
+	/** The rest template. */
 	private final RestTemplate restTemplate;
 	
+	/**
+	 * Instantiates a new subtitle template.
+	 *
+	 * @param restTemplate the rest template
+	 * @param isUserAuthorized the is user authorized
+	 * @param isAppAuthorized the is app authorized
+	 */
 	public SubtitleTemplate(RestTemplate restTemplate, boolean isUserAuthorized,
 			boolean isAppAuthorized) {
 		super(isUserAuthorized, isAppAuthorized);
@@ -52,6 +82,9 @@ public class SubtitleTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.getForObject(buildUri("subtitles/show", buildParams(showId, language)), BetaSeriesSubtitleList.class).getList();
 	}
 	
+	/* (non-Javadoc)
+	 * @see org.springframework.social.betaseries.api.SubtitleOperations#getLastAddedSubtitles()
+	 */
 	public List<Subtitle> getLastAddedSubtitles(){
 		return getLastAddedSubtitles(-1);
 	}
@@ -93,6 +126,13 @@ public class SubtitleTemplate extends AbstractBetaSeriesOperations implements
 		return restTemplate.postForObject(buildUri("subtitles/report"), params, BetaSeriesSubtitleSingleObject.class).getObject();
 	}
 	
+	/**
+	 * Builds the params.
+	 *
+	 * @param elementId the element id
+	 * @param language the language
+	 * @return the multi value map
+	 */
 	private MultiValueMap<String, String> buildParams(int elementId, BSSubtitles language) {
 		final MultiValueMap<String, String> params = new LinkedMultiValueMap<String, String>();
 		params.set("id", String.valueOf(elementId));

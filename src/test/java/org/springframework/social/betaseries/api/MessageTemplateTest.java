@@ -1,3 +1,18 @@
+/**
+ * Copyright 2015 [name of copyright owner]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
 import static org.junit.Assert.assertEquals;
@@ -11,7 +26,20 @@ import java.util.List;
 import org.junit.Test;
 import org.springframework.http.MediaType;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class MessageTemplateTest.
+ *
+ * @author Guillaume Maka
+ */
 public class MessageTemplateTest extends AbstractBetaSeriesApiTest {
+	
+	/**
+	 * Gets the discussion.
+	 *
+	 * @return the discussion
+	 * @throws Exception the exception
+	 */
 	@Test
 	public void getDiscussion() throws Exception {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/messages/discussion?id=62541")
@@ -34,6 +62,12 @@ public class MessageTemplateTest extends AbstractBetaSeriesApiTest {
 		assertFalse(messages.get(0).hasUnread());
 	}
 	
+	/**
+	 * Gets the member inbox.
+	 *
+	 * @return the member inbox
+	 * @throws Exception the exception
+	 */
 	@Test
 	public void getMemberInbox() throws Exception {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/messages/inbox")
@@ -41,6 +75,12 @@ public class MessageTemplateTest extends AbstractBetaSeriesApiTest {
 		betaSeries.messageOperations().getMemberInbox();
 	}
 	
+	/**
+	 * Gets the member inbox page.
+	 *
+	 * @return the member inbox page
+	 * @throws Exception the exception
+	 */
 	@Test
 	public void getMemberInboxPage() throws Exception {
 		constructGetMockRequest(mockServer, "https://api.betaseries.com/messages/inbox?page=2")
@@ -48,6 +88,11 @@ public class MessageTemplateTest extends AbstractBetaSeriesApiTest {
 		betaSeries.messageOperations().getMemberInbox(2);
 	}
 	
+	/**
+	 * Post message.
+	 *
+	 * @throws Exception the exception
+	 */
 	@Test
 	public void postMessage() throws Exception {
 		constructPostMockRequest(mockServer, "https://api.betaseries.com/messages/message")
@@ -56,6 +101,11 @@ public class MessageTemplateTest extends AbstractBetaSeriesApiTest {
 		betaSeries.messageOperations().sendMessageTo(2222, "Hello", "Welcome", null);
 	}
 	
+	/**
+	 * Post message wirh discussion id.
+	 *
+	 * @throws Exception the exception
+	 */
 	@Test
 	public void postMessageWirhDiscussionId() throws Exception {
 		constructPostMockRequest(mockServer, "https://api.betaseries.com/messages/message")
@@ -64,6 +114,11 @@ public class MessageTemplateTest extends AbstractBetaSeriesApiTest {
 		betaSeries.messageOperations().sendMessageTo(2222, "Hello", "Welcome", 3333);
 	}
 	
+	/**
+	 * Delete message.
+	 *
+	 * @throws Exception the exception
+	 */
 	@Test
 	public void deleteMessage() throws Exception {
 		constructDeleteMockRequest(mockServer, "https://api.betaseries.com/messages/message?id=2222")
@@ -71,6 +126,11 @@ public class MessageTemplateTest extends AbstractBetaSeriesApiTest {
 		betaSeries.messageOperations().deleteMessage(2222);
 	}
 	
+	/**
+	 * Mark message as read.
+	 *
+	 * @throws Exception the exception
+	 */
 	@Test
 	public void markMessageAsRead() throws Exception {
 		constructPostMockRequest(mockServer, "https://api.betaseries.com/messages/read")
