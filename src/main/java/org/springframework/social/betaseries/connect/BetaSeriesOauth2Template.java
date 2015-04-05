@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,14 +20,14 @@ import org.springframework.social.oauth2.OAuth2Template;
 // TODO: Auto-generated Javadoc
 /**
  * The Class BetaSeriesOauth2Template.
- * 
+ *
  * @author Guillaume Maka
  */
 public class BetaSeriesOauth2Template extends OAuth2Template {		
 	
 	/**
 	 * Instantiates a new beta series oauth2 template.
-	 * 
+	 *
 	 * @param clientId
 	 *            the client id
 	 * @param clientSecret

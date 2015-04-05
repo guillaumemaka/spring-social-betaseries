@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,8 +25,8 @@ import org.springframework.social.support.HttpRequestDecorator;
 
 // TODO: Auto-generated Javadoc
 /**
- * The Class BetaSeriesOAuth2TokenParameterInterceptor.
- * 
+ * The Class BetaSeriesOAuth2TokenHeaderParameterInterceptor.
+ *
  * @author Guillaume Maka
  */
 public class BetaSeriesOAuth2TokenHeaderParameterInterceptor implements
@@ -39,8 +39,9 @@ public class BetaSeriesOAuth2TokenHeaderParameterInterceptor implements
 	private final String parameterName;
 	
 	/**
-	 * Instantiates a new beta series o auth2 token parameter interceptor.
-	 * 
+	 * Instantiates a new beta series o auth2 token header parameter
+	 * interceptor.
+	 *
 	 * @param accessToken
 	 *            the access token
 	 */
@@ -49,8 +50,9 @@ public class BetaSeriesOAuth2TokenHeaderParameterInterceptor implements
 	}
 	
 	/**
-	 * Instantiates a new beta series o auth2 token parameter interceptor.
-	 * 
+	 * Instantiates a new beta series o auth2 token header parameter
+	 * interceptor.
+	 *
 	 * @param accessToken
 	 *            the access token
 	 * @param parameterName

@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,9 +35,12 @@ public class BSUser extends BetaSeriesObject {
 	/**
 	 * Instantiates a new BS user.
 	 *
-	 * @param id the id
-	 * @param login the login
-	 * @param inAccount the in account
+	 * @param id
+	 *            the id
+	 * @param login
+	 *            the login
+	 * @param inAccount
+	 *            the in account
 	 */
 	public BSUser(Integer id, String login, boolean inAccount) {
 		super();
@@ -67,7 +70,7 @@ public class BSUser extends BetaSeriesObject {
 	/**
 	 * Checks if is in account.
 	 *
-	 * @return the inAccount
+	 * @return true, if is in account
 	 */
 	public boolean isInAccount() {
 		return inAccount;

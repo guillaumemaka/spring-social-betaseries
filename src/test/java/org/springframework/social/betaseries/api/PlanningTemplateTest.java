@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,7 +38,8 @@ public class PlanningTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the general planning.
 	 *
 	 * @return the general planning
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getGeneralPlanning() throws Exception {
@@ -55,7 +56,8 @@ public class PlanningTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the general planning for date.
 	 *
 	 * @return the general planning for date
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getGeneralPlanningForDate() throws Exception {
@@ -68,7 +70,8 @@ public class PlanningTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the general planning for date before.
 	 *
 	 * @return the general planning for date before
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getGeneralPlanningForDateBefore() throws Exception {
@@ -81,7 +84,8 @@ public class PlanningTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the general planning for date before and after.
 	 *
 	 * @return the general planning for date before and after
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getGeneralPlanningForDateBeforeAndAfter() throws Exception {
@@ -94,7 +98,8 @@ public class PlanningTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the general planning for date before and after with type.
 	 *
 	 * @return the general planning for date before and after with type
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getGeneralPlanningForDateBeforeAndAfterWithType() throws Exception {
@@ -107,7 +112,8 @@ public class PlanningTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the incoming planning.
 	 *
 	 * @return the incoming planning
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getIncomingPlanning() throws Exception {
@@ -120,7 +126,8 @@ public class PlanningTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the current member planning.
 	 *
 	 * @return the current member planning
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getCurrentMemberPlanning() throws Exception {
@@ -133,7 +140,8 @@ public class PlanningTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the current member planning unseen only.
 	 *
 	 * @return the current member planning unseen only
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getCurrentMemberPlanningUnseenOnly() throws Exception {
@@ -146,7 +154,8 @@ public class PlanningTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the current member planning unseen only for month.
 	 *
 	 * @return the current member planning unseen only for month
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getCurrentMemberPlanningUnseenOnlyForMonth() throws Exception {
@@ -161,7 +170,8 @@ public class PlanningTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the t member planning.
 	 *
 	 * @return the t member planning
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void gettMemberPlanning() throws Exception {
@@ -174,7 +184,8 @@ public class PlanningTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the member planning unseen only.
 	 *
 	 * @return the member planning unseen only
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getMemberPlanningUnseenOnly() throws Exception {
@@ -187,7 +198,8 @@ public class PlanningTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the member planning unseen only for month.
 	 *
 	 * @return the member planning unseen only for month
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getMemberPlanningUnseenOnlyForMonth() throws Exception {

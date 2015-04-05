@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -44,9 +44,12 @@ public class BetaSeriesAuthObjectWrapper {
 	/**
 	 * Instantiates a new beta series auth object wrapper.
 	 *
-	 * @param user the user
-	 * @param token the token
-	 * @param hash the hash
+	 * @param user
+	 *            the user
+	 * @param token
+	 *            the token
+	 * @param hash
+	 *            the hash
 	 */
 	@JsonCreator
 	public BetaSeriesAuthObjectWrapper(

@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,12 +32,18 @@ abstract class RecommendationMixin extends BetaSeriesObjectMixin {
 	/**
 	 * Instantiates a new recommendation mixin.
 	 *
-	 * @param id the id
-	 * @param fromId the from id
-	 * @param toId the to id
-	 * @param showId the show id
-	 * @param status the status
-	 * @param comments the comments
+	 * @param id
+	 *            the id
+	 * @param fromId
+	 *            the from id
+	 * @param toId
+	 *            the to id
+	 * @param showId
+	 *            the show id
+	 * @param status
+	 *            the status
+	 * @param comments
+	 *            the comments
 	 */
 	@JsonCreator
 	public RecommendationMixin(

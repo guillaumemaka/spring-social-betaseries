@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -47,13 +47,20 @@ public class SimilarShow extends BetaSeriesObject {
 	/**
 	 * Instantiates a new similar show.
 	 *
-	 * @param id the id
-	 * @param showTitle the show title
-	 * @param showId the show id
-	 * @param theTvDbId the the tv db id
-	 * @param login the login
-	 * @param loginId the login id
-	 * @param notes the notes
+	 * @param id
+	 *            the id
+	 * @param showTitle
+	 *            the show title
+	 * @param showId
+	 *            the show id
+	 * @param theTvDbId
+	 *            the the tv db id
+	 * @param login
+	 *            the login
+	 * @param loginId
+	 *            the login id
+	 * @param notes
+	 *            the notes
 	 */
 	public SimilarShow(int id, String showTitle, int showId, int theTvDbId,
 			String login, int loginId, String notes) {
@@ -79,7 +86,7 @@ public class SimilarShow extends BetaSeriesObject {
 	/**
 	 * Gets the show title.
 	 *
-	 * @return the showTitle
+	 * @return the show title
 	 */
 	public String getShowTitle() {
 		return showTitle;
@@ -88,7 +95,7 @@ public class SimilarShow extends BetaSeriesObject {
 	/**
 	 * Gets the show id.
 	 *
-	 * @return the showId
+	 * @return the show id
 	 */
 	public int getShowId() {
 		return showId;
@@ -97,7 +104,7 @@ public class SimilarShow extends BetaSeriesObject {
 	/**
 	 * Gets the the tv db id.
 	 *
-	 * @return the theTvDbId
+	 * @return the the tv db id
 	 */
 	public int getTheTvDbId() {
 		return theTvDbId;
@@ -115,7 +122,7 @@ public class SimilarShow extends BetaSeriesObject {
 	/**
 	 * Gets the login id.
 	 *
-	 * @return the login_id
+	 * @return the login id
 	 */
 	public int getLoginId() {
 		return loginId;

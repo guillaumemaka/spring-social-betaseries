@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ import java.util.List;
 // TODO: Auto-generated Javadoc
 /**
  * The Interface ShowOperations.
- * 
+ *
  * @author Guillaume Maka
  */
 public interface ShowOperations {
@@ -29,7 +29,8 @@ public interface ShowOperations {
 	/**
 	 * Archive.
 	 *
-	 * @param showId the show id
+	 * @param showId
+	 *            the show id
 	 * @return the show
 	 */
 	Show archive(int showId);	
@@ -37,7 +38,8 @@ public interface ShowOperations {
 	/**
 	 * Unarchive.
 	 *
-	 * @param showId the show id
+	 * @param showId
+	 *            the show id
 	 * @return the show
 	 */
 	Show unarchive(int showId);
@@ -45,7 +47,8 @@ public interface ShowOperations {
 	/**
 	 * Gets the characters.
 	 *
-	 * @param showId the show id
+	 * @param showId
+	 *            the show id
 	 * @return the characters
 	 */
 	List<Character> getCharacters(int showId);
@@ -53,7 +56,8 @@ public interface ShowOperations {
 	/**
 	 * Gets the show.
 	 *
-	 * @param showId the show id
+	 * @param showId
+	 *            the show id
 	 * @return the show
 	 */
 	Show getShow(int showId);
@@ -61,7 +65,8 @@ public interface ShowOperations {
 	/**
 	 * Gets the shows.
 	 *
-	 * @param showIds the show ids
+	 * @param showIds
+	 *            the show ids
 	 * @return the shows
 	 */
 	List<Show> getShows(String... showIds);
@@ -69,7 +74,8 @@ public interface ShowOperations {
 	/**
 	 * Gets the show episodes.
 	 *
-	 * @param showId the show id
+	 * @param showId
+	 *            the show id
 	 * @return the show episodes
 	 */
 	List<Episode> getShowEpisodes(int showId);
@@ -77,8 +83,10 @@ public interface ShowOperations {
 	/**
 	 * Gets the show episodes.
 	 *
-	 * @param showId the show id
-	 * @param seasonNumber the season number
+	 * @param showId
+	 *            the show id
+	 * @param seasonNumber
+	 *            the season number
 	 * @return the show episodes
 	 */
 	List<Episode> getShowEpisodes(int showId, int seasonNumber);
@@ -86,9 +94,12 @@ public interface ShowOperations {
 	/**
 	 * Gets the show episodes.
 	 *
-	 * @param showId the show id
-	 * @param seasonNumber the season number
-	 * @param episodeNumber the episode number
+	 * @param showId
+	 *            the show id
+	 * @param seasonNumber
+	 *            the season number
+	 * @param episodeNumber
+	 *            the episode number
 	 * @return the show episodes
 	 */
 	List<Episode> getShowEpisodes(int showId, int seasonNumber, int episodeNumber);
@@ -96,10 +107,14 @@ public interface ShowOperations {
 	/**
 	 * Gets the show episodes.
 	 *
-	 * @param showId the show id
-	 * @param seasonNumber the season number
-	 * @param episodeNumber the episode number
-	 * @param includeSubtitles the include subtitles
+	 * @param showId
+	 *            the show id
+	 * @param seasonNumber
+	 *            the season number
+	 * @param episodeNumber
+	 *            the episode number
+	 * @param includeSubtitles
+	 *            the include subtitles
 	 * @return the show episodes
 	 */
 	List<Episode> getShowEpisodes(int showId, int seasonNumber, int episodeNumber, boolean includeSubtitles);
@@ -107,7 +122,8 @@ public interface ShowOperations {
 	/**
 	 * Adds the to favorite.
 	 *
-	 * @param showId the show id
+	 * @param showId
+	 *            the show id
 	 * @return the show
 	 */
 	Show addToFavorite(int showId);
@@ -115,7 +131,8 @@ public interface ShowOperations {
 	/**
 	 * Removes the from favorite.
 	 *
-	 * @param showId the show id
+	 * @param showId
+	 *            the show id
 	 * @return the show
 	 */
 	Show removeFromFavorite(int showId);
@@ -130,7 +147,8 @@ public interface ShowOperations {
 	/**
 	 * Gets the favorites show.
 	 *
-	 * @param memberId the member id
+	 * @param memberId
+	 *            the member id
 	 * @return the favorites show
 	 */
 	List<Show> getFavoritesShow(Long memberId);
@@ -145,7 +163,8 @@ public interface ShowOperations {
 	/**
 	 * List.
 	 *
-	 * @param order the order
+	 * @param order
+	 *            the order
 	 * @return the list
 	 */
 	List<Show> list(BSShowOrder order);
@@ -153,8 +172,10 @@ public interface ShowOperations {
 	/**
 	 * List.
 	 *
-	 * @param order the order
-	 * @param sinceDate the since date
+	 * @param order
+	 *            the order
+	 * @param sinceDate
+	 *            the since date
 	 * @return the list
 	 */
 	List<Show> list(BSShowOrder order, Date sinceDate);
@@ -162,8 +183,10 @@ public interface ShowOperations {
 	/**
 	 * Rate show.
 	 *
-	 * @param showId the show id
-	 * @param note the note
+	 * @param showId
+	 *            the show id
+	 * @param note
+	 *            the note
 	 * @return the list
 	 */
 	List<Show> rateShow(int showId, int note);
@@ -171,7 +194,8 @@ public interface ShowOperations {
 	/**
 	 * Un rate show.
 	 *
-	 * @param showId the show id
+	 * @param showId
+	 *            the show id
 	 * @return the list
 	 */
 	List<Show> unRateShow(int showId);
@@ -179,7 +203,8 @@ public interface ShowOperations {
 	/**
 	 * Gets the show pictures.
 	 *
-	 * @param showId the show id
+	 * @param showId
+	 *            the show id
 	 * @return the show pictures
 	 */
 	List<Picture> getShowPictures(int showId);
@@ -194,7 +219,8 @@ public interface ShowOperations {
 	/**
 	 * Gets the random show.
 	 *
-	 * @param limit the limit
+	 * @param limit
+	 *            the limit
 	 * @return the random show
 	 */
 	List<Show> getRandomShow(int limit);
@@ -202,8 +228,10 @@ public interface ShowOperations {
 	/**
 	 * Gets the random show.
 	 *
-	 * @param limit the limit
-	 * @param summary the summary
+	 * @param limit
+	 *            the limit
+	 * @param summary
+	 *            the summary
 	 * @return the random show
 	 */
 	List<Show> getRandomShow(int limit, boolean summary);
@@ -211,8 +239,10 @@ public interface ShowOperations {
 	/**
 	 * Send recommendation.
 	 *
-	 * @param showId the show id
-	 * @param toMemberId the to member id
+	 * @param showId
+	 *            the show id
+	 * @param toMemberId
+	 *            the to member id
 	 * @return the recommendation
 	 */
 	Recommendation sendRecommendation(int showId, int toMemberId);
@@ -220,9 +250,12 @@ public interface ShowOperations {
 	/**
 	 * Send recommendation.
 	 *
-	 * @param showId the show id
-	 * @param toMemberId the to member id
-	 * @param comments the comments
+	 * @param showId
+	 *            the show id
+	 * @param toMemberId
+	 *            the to member id
+	 * @param comments
+	 *            the comments
 	 * @return the recommendation
 	 */
 	Recommendation sendRecommendation(int showId, int toMemberId, String comments);
@@ -237,7 +270,8 @@ public interface ShowOperations {
 	/**
 	 * Delete recomendation.
 	 *
-	 * @param recomendationId the recomendation id
+	 * @param recomendationId
+	 *            the recomendation id
 	 * @return the recommendation
 	 */
 	Recommendation deleteRecomendation(int recomendationId);
@@ -245,7 +279,8 @@ public interface ShowOperations {
 	/**
 	 * Search.
 	 *
-	 * @param title the title
+	 * @param title
+	 *            the title
 	 * @return the list
 	 */
 	List<Show> search(String title);
@@ -253,8 +288,10 @@ public interface ShowOperations {
 	/**
 	 * Search.
 	 *
-	 * @param title the title
-	 * @param order the order
+	 * @param title
+	 *            the title
+	 * @param order
+	 *            the order
 	 * @return the list
 	 */
 	List<Show> search(String title, BSSearchOrder order);
@@ -262,9 +299,12 @@ public interface ShowOperations {
 	/**
 	 * Search.
 	 *
-	 * @param title the title
-	 * @param order the order
-	 * @param nbpp the nbpp
+	 * @param title
+	 *            the title
+	 * @param order
+	 *            the order
+	 * @param nbpp
+	 *            the nbpp
 	 * @return the list
 	 */
 	List<Show> search(String title, BSSearchOrder order, int nbpp);
@@ -272,10 +312,14 @@ public interface ShowOperations {
 	/**
 	 * Search.
 	 *
-	 * @param title the title
-	 * @param order the order
-	 * @param nbpp the nbpp
-	 * @param page the page
+	 * @param title
+	 *            the title
+	 * @param order
+	 *            the order
+	 * @param nbpp
+	 *            the nbpp
+	 * @param page
+	 *            the page
 	 * @return the list
 	 */
 	List<Show> search(String title, BSSearchOrder order, int nbpp, int page);
@@ -283,11 +327,16 @@ public interface ShowOperations {
 	/**
 	 * Search.
 	 *
-	 * @param title the title
-	 * @param order the order
-	 * @param nbpp the nbpp
-	 * @param page the page
-	 * @param summary the summary
+	 * @param title
+	 *            the title
+	 * @param order
+	 *            the order
+	 * @param nbpp
+	 *            the nbpp
+	 * @param page
+	 *            the page
+	 * @param summary
+	 *            the summary
 	 * @return the list
 	 */
 	List<Show> search(String title, BSSearchOrder order, int nbpp, int page, boolean summary);
@@ -295,7 +344,8 @@ public interface ShowOperations {
 	/**
 	 * Gets the similars show.
 	 *
-	 * @param showId the show id
+	 * @param showId
+	 *            the show id
 	 * @return the similars show
 	 */
 	List<SimilarShow> getSimilarsShow(int showId);
@@ -303,8 +353,10 @@ public interface ShowOperations {
 	/**
 	 * Adds the show tags show.
 	 *
-	 * @param showId the show id
-	 * @param tags the tags
+	 * @param showId
+	 *            the show id
+	 * @param tags
+	 *            the tags
 	 * @return the show
 	 */
 	Show addShowTagsShow(int showId, String... tags);
@@ -312,7 +364,8 @@ public interface ShowOperations {
 	/**
 	 * Gets the show videos.
 	 *
-	 * @param showId the show id
+	 * @param showId
+	 *            the show id
 	 * @return the show videos
 	 */
 	List<Video> getShowVideos(int showId);
@@ -320,7 +373,8 @@ public interface ShowOperations {
 	/**
 	 * Adds the show.
 	 *
-	 * @param showId the show id
+	 * @param showId
+	 *            the show id
 	 * @return the show
 	 */
 	Show addShow(int showId);
@@ -328,8 +382,10 @@ public interface ShowOperations {
 	/**
 	 * Adds the show.
 	 *
-	 * @param showId the show id
-	 * @param lastSeenEpisodeId the last seen episode id
+	 * @param showId
+	 *            the show id
+	 * @param lastSeenEpisodeId
+	 *            the last seen episode id
 	 * @return the show
 	 */
 	Show addShow(int showId, int lastSeenEpisodeId);
@@ -337,7 +393,8 @@ public interface ShowOperations {
 	/**
 	 * Adds the shows.
 	 *
-	 * @param showIds the show ids
+	 * @param showIds
+	 *            the show ids
 	 * @return the list
 	 */
 	List<Show> addShows(String[] showIds);
@@ -345,8 +402,10 @@ public interface ShowOperations {
 	/**
 	 * Adds the shows.
 	 *
-	 * @param showIds the show ids
-	 * @param lastSeenEpisodeIds the last seen episode ids
+	 * @param showIds
+	 *            the show ids
+	 * @param lastSeenEpisodeIds
+	 *            the last seen episode ids
 	 * @return the list
 	 */
 	List<Show> addShows(String[] showIds, String[] lastSeenEpisodeIds);
@@ -354,7 +413,8 @@ public interface ShowOperations {
 	/**
 	 * Removes the show.
 	 *
-	 * @param showId the show id
+	 * @param showId
+	 *            the show id
 	 * @return the show
 	 */
 	Show removeShow(int showId);
@@ -362,8 +422,10 @@ public interface ShowOperations {
 	/**
 	 * Removes the show.
 	 *
-	 * @param showId the show id
-	 * @param lastSeenEpisodeId the last seen episode id
+	 * @param showId
+	 *            the show id
+	 * @param lastSeenEpisodeId
+	 *            the last seen episode id
 	 * @return the show
 	 */
 	Show removeShow(int showId, int lastSeenEpisodeId);
@@ -371,7 +433,8 @@ public interface ShowOperations {
 	/**
 	 * Removes the shows.
 	 *
-	 * @param showIds the show ids
+	 * @param showIds
+	 *            the show ids
 	 * @return the list
 	 */
 	List<Show> removeShows(String[] showIds);
@@ -379,8 +442,10 @@ public interface ShowOperations {
 	/**
 	 * Removes the shows.
 	 *
-	 * @param showIds the show ids
-	 * @param lastSeenEpisodeIds the last seen episode ids
+	 * @param showIds
+	 *            the show ids
+	 * @param lastSeenEpisodeIds
+	 *            the last seen episode ids
 	 * @return the list
 	 */
 	List<Show> removeShows(String[] showIds, String[] lastSeenEpisodeIds);

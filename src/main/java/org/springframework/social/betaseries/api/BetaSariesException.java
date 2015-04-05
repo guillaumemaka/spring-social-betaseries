@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,10 +17,9 @@ package org.springframework.social.betaseries.api;
 
 import org.springframework.social.SocialException;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class BetaSariesException.
- * 
+ *
  * @author Guillaume Maka
  */
 @SuppressWarnings("serial")
@@ -31,7 +30,7 @@ public abstract class BetaSariesException extends SocialException {
 
 	/**
 	 * Instantiates a new beta saries exception.
-	 * 
+	 *
 	 * @param providerId
 	 *            the provider id
 	 * @param message
@@ -43,7 +42,7 @@ public abstract class BetaSariesException extends SocialException {
 
 	/**
 	 * Instantiates a new beta saries exception.
-	 * 
+	 *
 	 * @param providerId
 	 *            the provider id
 	 * @param message
@@ -58,7 +57,7 @@ public abstract class BetaSariesException extends SocialException {
 
 	/**
 	 * Gets the provider id.
-	 * 
+	 *
 	 * @return the provider id
 	 */
 	public String getProviderId() {

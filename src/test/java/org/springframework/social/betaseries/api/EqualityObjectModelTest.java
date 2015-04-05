@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -176,8 +176,10 @@ public class EqualityObjectModelTest {
 	/**
 	 * Assert common equality.
 	 *
-	 * @param obj1 the obj1
-	 * @param obj2 the obj2
+	 * @param obj1
+	 *            the obj1
+	 * @param obj2
+	 *            the obj2
 	 */
 	private void assertCommonEquality(Object obj1, Object obj2) {
 		assertEquals(obj1, obj2);
@@ -188,8 +190,10 @@ public class EqualityObjectModelTest {
 	/**
 	 * Assert common not equality.
 	 *
-	 * @param obj1 the obj1
-	 * @param obj2 the obj2
+	 * @param obj1
+	 *            the obj1
+	 * @param obj2
+	 *            the obj2
 	 */
 	private void assertCommonNotEquality(Object obj1, Object obj2) {
 		assertNotEquals(obj1, obj2);
@@ -200,7 +204,8 @@ public class EqualityObjectModelTest {
 	/**
 	 * Json resource.
 	 *
-	 * @param file the file
+	 * @param file
+	 *            the file
 	 * @return the resource
 	 */
 	private static Resource jsonResource(String file) {

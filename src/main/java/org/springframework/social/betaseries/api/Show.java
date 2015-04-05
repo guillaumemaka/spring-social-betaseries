@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ import java.util.List;
 // TODO: Auto-generated Javadoc
 /**
  * The Class Show.
- * 
+ *
  * @author Guillaume Maka
  */
 public class Show extends BetaSeriesObject {
@@ -41,7 +41,7 @@ public class Show extends BetaSeriesObject {
 	/** The description. */
 	private String description;
 
-	/** The seasons. */
+	/** The number of seasons. */
 	private String numberOfSeasons;
 
 	/** The seasons details. */
@@ -83,7 +83,7 @@ public class Show extends BetaSeriesObject {
 	/** The language. */
 	private String language;
 
-	/** The notes. */
+	/** The note. */
 	private Note note;
 
 	/** The in account. */
@@ -97,7 +97,7 @@ public class Show extends BetaSeriesObject {
 
 	/**
 	 * Instantiates a new show.
-	 * 
+	 *
 	 * @param id
 	 *            the id
 	 * @param theTvDbId
@@ -141,7 +141,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the id.
 	 *
-	 * @param id            the id to set
+	 * @param id
+	 *            the new id
 	 */
 	public void setId(int id) {
 		this.id = id;
@@ -150,7 +151,7 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Gets the the tv db id.
 	 *
-	 * @return the theTvDbId
+	 * @return the the tv db id
 	 */
 	public int getTheTvDbId() {
 		return theTvDbId;
@@ -159,7 +160,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the the tv db id.
 	 *
-	 * @param theTvDbId            the theTvDbId to set
+	 * @param theTvDbId
+	 *            the new the tv db id
 	 */
 	public void setTheTvDbId(int theTvDbId) {
 		this.theTvDbId = theTvDbId;
@@ -168,7 +170,7 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Gets the im db id.
 	 *
-	 * @return the imDbId
+	 * @return the im db id
 	 */
 	public String getImDbId() {
 		return imDbId;
@@ -177,7 +179,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the im db id.
 	 *
-	 * @param imDbId            the imDbId to set
+	 * @param imDbId
+	 *            the new im db id
 	 */
 	public void setImDbId(String imDbId) {
 		this.imDbId = imDbId;
@@ -195,7 +198,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the title.
 	 *
-	 * @param title            the title to set
+	 * @param title
+	 *            the new title
 	 */
 	public void setTitle(String title) {
 		this.title = title;
@@ -213,7 +217,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the description.
 	 *
-	 * @param description            the description to set
+	 * @param description
+	 *            the new description
 	 */
 	public void setDescription(String description) {
 		this.description = description;
@@ -222,7 +227,7 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Gets the number of seasons.
 	 *
-	 * @return the numberOfSeasons
+	 * @return the number of seasons
 	 */
 	public String getNumberOfSeasons() {
 		return numberOfSeasons;
@@ -231,7 +236,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the number of seasons.
 	 *
-	 * @param numberOfSeasons            the numberOfSeasons to set
+	 * @param numberOfSeasons
+	 *            the new number of seasons
 	 */
 	public void setNumberOfSeasons(String numberOfSeasons) {
 		this.numberOfSeasons = numberOfSeasons;
@@ -240,7 +246,7 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Gets the seasons details.
 	 *
-	 * @return the seasonsDetails
+	 * @return the seasons details
 	 */
 	public List<SeasonDetail> getSeasonsDetails() {
 		return seasonsDetails;
@@ -249,7 +255,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the seasons details.
 	 *
-	 * @param seasonsDetails            the seasonsDetails to set
+	 * @param seasonsDetails
+	 *            the new seasons details
 	 */
 	public void setSeasonsDetails(List<SeasonDetail> seasonsDetails) {
 		this.seasonsDetails = seasonsDetails;
@@ -258,7 +265,7 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Gets the number of episodes.
 	 *
-	 * @return the numberOfEpisodes
+	 * @return the number of episodes
 	 */
 	public String getNumberOfEpisodes() {
 		return numberOfEpisodes;
@@ -267,7 +274,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the number of episodes.
 	 *
-	 * @param numberOfEpisodes            the numberOfEpisodes to set
+	 * @param numberOfEpisodes
+	 *            the new number of episodes
 	 */
 	public void setNumberOfEpisodes(String numberOfEpisodes) {
 		this.numberOfEpisodes = numberOfEpisodes;
@@ -276,7 +284,7 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Gets the number of followers.
 	 *
-	 * @return the numberOfFollowers
+	 * @return the number of followers
 	 */
 	public String getNumberOfFollowers() {
 		return numberOfFollowers;
@@ -285,7 +293,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the number of followers.
 	 *
-	 * @param numberOfFollowers            the numberOfFollowers to set
+	 * @param numberOfFollowers
+	 *            the new number of followers
 	 */
 	public void setNumberOfFollowers(String numberOfFollowers) {
 		this.numberOfFollowers = numberOfFollowers;
@@ -294,7 +303,7 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Gets the number of comments.
 	 *
-	 * @return the numberOfComments
+	 * @return the number of comments
 	 */
 	public String getNumberOfComments() {
 		return numberOfComments;
@@ -303,7 +312,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the number of comments.
 	 *
-	 * @param numberOfComments            the numberOfComments to set
+	 * @param numberOfComments
+	 *            the new number of comments
 	 */
 	public void setNumberOfComments(String numberOfComments) {
 		this.numberOfComments = numberOfComments;
@@ -321,7 +331,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the similars.
 	 *
-	 * @param similars            the similars to set
+	 * @param similars
+	 *            the new similars
 	 */
 	public void setSimilars(String similars) {
 		this.similars = similars;
@@ -339,7 +350,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the characters.
 	 *
-	 * @param characters            the characters to set
+	 * @param characters
+	 *            the new characters
 	 */
 	public void setCharacters(String characters) {
 		this.characters = characters;
@@ -348,7 +360,7 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Gets the years of production.
 	 *
-	 * @return the yearsOfProduction
+	 * @return the years of production
 	 */
 	public String getYearsOfProduction() {
 		return yearsOfProduction;
@@ -357,7 +369,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the years of production.
 	 *
-	 * @param yearsOfProduction            the yearsOfProduction to set
+	 * @param yearsOfProduction
+	 *            the new years of production
 	 */
 	public void setYearsOfProduction(String yearsOfProduction) {
 		this.yearsOfProduction = yearsOfProduction;
@@ -375,7 +388,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the genres.
 	 *
-	 * @param genres            the genres to set
+	 * @param genres
+	 *            the new genres
 	 */
 	public void setGenres(String[] genres) {
 		this.genres = genres;
@@ -384,7 +398,7 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Gets the episode length.
 	 *
-	 * @return the episodeLength
+	 * @return the episode length
 	 */
 	public String getEpisodeLength() {
 		return episodeLength;
@@ -393,7 +407,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the episode length.
 	 *
-	 * @param episodeLength            the episodeLength to set
+	 * @param episodeLength
+	 *            the new episode length
 	 */
 	public void setEpisodeLength(String episodeLength) {
 		this.episodeLength = episodeLength;
@@ -411,7 +426,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the network.
 	 *
-	 * @param network            the network to set
+	 * @param network
+	 *            the new network
 	 */
 	public void setNetwork(String network) {
 		this.network = network;
@@ -429,7 +445,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the rating.
 	 *
-	 * @param rating            the rating to set
+	 * @param rating
+	 *            the new rating
 	 */
 	public void setRating(String rating) {
 		this.rating = rating;
@@ -447,7 +464,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the status.
 	 *
-	 * @param status            the status to set
+	 * @param status
+	 *            the new status
 	 */
 	public void setStatus(String status) {
 		this.status = status;
@@ -465,7 +483,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the language.
 	 *
-	 * @param language            the language to set
+	 * @param language
+	 *            the new language
 	 */
 	public void setLanguage(String language) {
 		this.language = language;
@@ -474,7 +493,7 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Gets the note.
 	 *
-	 * @return the notes
+	 * @return the note
 	 */
 	public Note getNote() {
 		return note;
@@ -483,7 +502,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the note.
 	 *
-	 * @param notes            the notes to set
+	 * @param notes
+	 *            the new note
 	 */
 	public void setNote(Note notes) {
 		this.note = notes;
@@ -492,7 +512,7 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Checks if is in account.
 	 *
-	 * @return the inAccount
+	 * @return true, if is in account
 	 */
 	public boolean isInAccount() {
 		return inAccount;
@@ -501,7 +521,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the in account.
 	 *
-	 * @param inAccount            the inAccount to set
+	 * @param inAccount
+	 *            the new in account
 	 */
 	public void setInAccount(boolean inAccount) {
 		this.inAccount = inAccount;
@@ -510,7 +531,7 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Gets the user detail.
 	 *
-	 * @return the user
+	 * @return the user detail
 	 */
 	public UserDetail getUserDetail() {
 		return userDetail;
@@ -519,7 +540,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the user.
 	 *
-	 * @param user            the user to set
+	 * @param user
+	 *            the new user
 	 */
 	public void setUser(UserDetail user) {
 		this.userDetail = user;
@@ -528,7 +550,7 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Gets the resource url.
 	 *
-	 * @return the resourceUrl
+	 * @return the resource url
 	 */
 	public String getResourceUrl() {
 		return resourceUrl;
@@ -537,7 +559,8 @@ public class Show extends BetaSeriesObject {
 	/**
 	 * Sets the resource url.
 	 *
-	 * @param resourceUrl            the resourceUrl to set
+	 * @param resourceUrl
+	 *            the new resource url
 	 */
 	public void setResourceUrl(String resourceUrl) {
 		this.resourceUrl = resourceUrl;
@@ -757,8 +780,10 @@ public class Show extends BetaSeriesObject {
 		/**
 		 * Instantiates a new season detail.
 		 *
-		 * @param seasonNumber the season number
-		 * @param numberOfEpisode the number of episode
+		 * @param seasonNumber
+		 *            the season number
+		 * @param numberOfEpisode
+		 *            the number of episode
 		 */
 		public SeasonDetail(int seasonNumber, int numberOfEpisode) {
 			this.seasonNumber = seasonNumber;
@@ -768,7 +793,7 @@ public class Show extends BetaSeriesObject {
 		/**
 		 * Gets the season number.
 		 *
-		 * @return the seasonNumber
+		 * @return the season number
 		 */
 		public int getSeasonNumber() {
 			return seasonNumber;
@@ -777,7 +802,7 @@ public class Show extends BetaSeriesObject {
 		/**
 		 * Gets the number of episode.
 		 *
-		 * @return the numberOfEpisode
+		 * @return the number of episode
 		 */
 		public int getNumberOfEpisode() {
 			return numberOfEpisode;
@@ -859,12 +884,18 @@ public class Show extends BetaSeriesObject {
 		/**
 		 * Instantiates a new user detail.
 		 *
-		 * @param archived the archived
-		 * @param favorited the favorited
-		 * @param remaining the remaining
-		 * @param status the status
-		 * @param last the last
-		 * @param tags the tags
+		 * @param archived
+		 *            the archived
+		 * @param favorited
+		 *            the favorited
+		 * @param remaining
+		 *            the remaining
+		 * @param status
+		 *            the status
+		 * @param last
+		 *            the last
+		 * @param tags
+		 *            the tags
 		 */
 		public UserDetail(boolean archived, boolean favorited, String remaining,
 				String status, String last, String tags) {
@@ -880,7 +911,7 @@ public class Show extends BetaSeriesObject {
 		/**
 		 * Checks if is archived.
 		 *
-		 * @return the archived
+		 * @return true, if is archived
 		 */
 		public boolean isArchived() {
 			return archived;
@@ -889,7 +920,7 @@ public class Show extends BetaSeriesObject {
 		/**
 		 * Checks if is favorited.
 		 *
-		 * @return the favorited
+		 * @return true, if is favorited
 		 */
 		public boolean isFavorited() {
 			return favorited;

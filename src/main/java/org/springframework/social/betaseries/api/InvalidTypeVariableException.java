@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ package org.springframework.social.betaseries.api;
 // TODO: Auto-generated Javadoc
 /**
  * The Class InvalidTypeVariableException.
- * 
+ *
  * @author Guillaume Maka
  */
 @SuppressWarnings("serial")
@@ -26,7 +26,7 @@ public class InvalidTypeVariableException extends BetaSariesException {
 
 	/**
 	 * Instantiates a new invalid type variable exception.
-	 * 
+	 *
 	 * @param providerId
 	 *            the provider id
 	 * @param message

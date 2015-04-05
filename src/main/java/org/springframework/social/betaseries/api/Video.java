@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -53,15 +53,24 @@ public class Video extends BetaSeriesObject {
 	/**
 	 * Instantiates a new video.
 	 *
-	 * @param id the id
-	 * @param showId the show id
-	 * @param youtubeId the youtube id
-	 * @param youtubeUrl the youtube url
-	 * @param title the title
-	 * @param season the season
-	 * @param episode the episode
-	 * @param login the login
-	 * @param loginId the login id
+	 * @param id
+	 *            the id
+	 * @param showId
+	 *            the show id
+	 * @param youtubeId
+	 *            the youtube id
+	 * @param youtubeUrl
+	 *            the youtube url
+	 * @param title
+	 *            the title
+	 * @param season
+	 *            the season
+	 * @param episode
+	 *            the episode
+	 * @param login
+	 *            the login
+	 * @param loginId
+	 *            the login id
 	 */
 	public Video(int id, int showId, String youtubeId, String youtubeUrl,
 			String title, int season, int episode, String login, int loginId) {
@@ -89,7 +98,7 @@ public class Video extends BetaSeriesObject {
 	/**
 	 * Gets the show id.
 	 *
-	 * @return the showId
+	 * @return the show id
 	 */
 	public int getShowId() {
 		return showId;
@@ -98,7 +107,7 @@ public class Video extends BetaSeriesObject {
 	/**
 	 * Gets the youtube id.
 	 *
-	 * @return the youtubeId
+	 * @return the youtube id
 	 */
 	public String getYoutubeId() {
 		return youtubeId;
@@ -107,7 +116,7 @@ public class Video extends BetaSeriesObject {
 	/**
 	 * Gets the youtube url.
 	 *
-	 * @return the youtubeUrl
+	 * @return the youtube url
 	 */
 	public String getYoutubeUrl() {
 		return youtubeUrl;
@@ -152,7 +161,7 @@ public class Video extends BetaSeriesObject {
 	/**
 	 * Gets the login id.
 	 *
-	 * @return the loginId
+	 * @return the login id
 	 */
 	public int getLoginId() {
 		return loginId;

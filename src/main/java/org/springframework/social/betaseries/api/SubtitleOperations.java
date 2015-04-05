@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ import java.util.List;
 // TODO: Auto-generated Javadoc
 /**
  * The Interface SubtitleOperations.
- * 
+ *
  * @author Guillaume Maka
  */
 public interface SubtitleOperations {
@@ -28,7 +28,8 @@ public interface SubtitleOperations {
 	/**
 	 * Gets the subtitles for episode.
 	 *
-	 * @param episodeId the episode id
+	 * @param episodeId
+	 *            the episode id
 	 * @return the subtitles for episode
 	 */
 	List<Subtitle> getSubtitlesForEpisode(int episodeId);
@@ -36,8 +37,10 @@ public interface SubtitleOperations {
 	/**
 	 * Gets the subtitles for episode.
 	 *
-	 * @param episodeId the episode id
-	 * @param language the language
+	 * @param episodeId
+	 *            the episode id
+	 * @param language
+	 *            the language
 	 * @return the subtitles for episode
 	 */
 	List<Subtitle> getSubtitlesForEpisode(int episodeId, BSSubtitles language);
@@ -45,7 +48,8 @@ public interface SubtitleOperations {
 	/**
 	 * Gets the subtitles for show.
 	 *
-	 * @param showId the show id
+	 * @param showId
+	 *            the show id
 	 * @return the subtitles for show
 	 */
 	List<Subtitle> getSubtitlesForShow(int showId);
@@ -53,8 +57,10 @@ public interface SubtitleOperations {
 	/**
 	 * Gets the subtitles for show.
 	 *
-	 * @param showId the show id
-	 * @param language the language
+	 * @param showId
+	 *            the show id
+	 * @param language
+	 *            the language
 	 * @return the subtitles for show
 	 */
 	List<Subtitle> getSubtitlesForShow(int showId, BSSubtitles language);
@@ -69,7 +75,8 @@ public interface SubtitleOperations {
 	/**
 	 * Gets the last added subtitles.
 	 *
-	 * @param number the number
+	 * @param number
+	 *            the number
 	 * @return the last added subtitles
 	 */
 	List<Subtitle> getLastAddedSubtitles(int number);
@@ -77,8 +84,10 @@ public interface SubtitleOperations {
 	/**
 	 * Gets the last added subtitles.
 	 *
-	 * @param number the number
-	 * @param language the language
+	 * @param number
+	 *            the number
+	 * @param language
+	 *            the language
 	 * @return the last added subtitles
 	 */
 	List<Subtitle> getLastAddedSubtitles(int number, BSSubtitles language);
@@ -86,8 +95,10 @@ public interface SubtitleOperations {
 	/**
 	 * Report incorrect subtitle.
 	 *
-	 * @param subtitleId the subtitle id
-	 * @param reason the reason
+	 * @param subtitleId
+	 *            the subtitle id
+	 * @param reason
+	 *            the reason
 	 * @return the subtitle
 	 */
 	Subtitle reportIncorrectSubtitle(int subtitleId, String reason);

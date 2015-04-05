@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -124,7 +124,8 @@ public class AbstractBetaSeriesApiTest {
 	/**
 	 * Json resource.
 	 *
-	 * @param filename the filename
+	 * @param filename
+	 *            the filename
 	 * @return the resource
 	 */
 	protected Resource jsonResource(String filename) {
@@ -134,7 +135,8 @@ public class AbstractBetaSeriesApiTest {
 	/**
 	 * Image resource.
 	 *
-	 * @param filename the filename
+	 * @param filename
+	 *            the filename
 	 * @return the resource
 	 */
 	protected Resource imageResource(String filename) {
@@ -144,7 +146,8 @@ public class AbstractBetaSeriesApiTest {
 	/**
 	 * Date from string.
 	 *
-	 * @param strDate the str date
+	 * @param strDate
+	 *            the str date
 	 * @return the date
 	 */
 	protected Date dateFromString(String strDate) {
@@ -154,8 +157,10 @@ public class AbstractBetaSeriesApiTest {
 	/**
 	 * Date from string.
 	 *
-	 * @param strDate the str date
-	 * @param pattern the pattern
+	 * @param strDate
+	 *            the str date
+	 * @param pattern
+	 *            the pattern
 	 * @return the date
 	 */
 	protected Date dateFromString(String strDate, String pattern) {
@@ -171,7 +176,8 @@ public class AbstractBetaSeriesApiTest {
 	/**
 	 * To byte.
 	 *
-	 * @param obj the obj
+	 * @param obj
+	 *            the obj
 	 * @return the byte[]
 	 */
 	@SuppressWarnings("unused")
@@ -189,11 +195,13 @@ public class AbstractBetaSeriesApiTest {
 	}
 
 	/**
-	 * Configure common request expectation request.
+	 * Construct get mock request.
 	 *
-	 * @param server the server
-	 * @param url the url
-	 * @return {@link ResponseActions}
+	 * @param server
+	 *            the server
+	 * @param url
+	 *            the url
+	 * @return the response actions
 	 */
 	protected ResponseActions constructGetMockRequest(
 			MockRestServiceServer server, String url) {
@@ -204,8 +212,10 @@ public class AbstractBetaSeriesApiTest {
 	/**
 	 * Construct post mock request.
 	 *
-	 * @param server the server
-	 * @param url the url
+	 * @param server
+	 *            the server
+	 * @param url
+	 *            the url
 	 * @return the response actions
 	 */
 	protected ResponseActions constructPostMockRequest(
@@ -217,8 +227,10 @@ public class AbstractBetaSeriesApiTest {
 	/**
 	 * Construct delete mock request.
 	 *
-	 * @param server the server
-	 * @param url the url
+	 * @param server
+	 *            the server
+	 * @param url
+	 *            the url
 	 * @return the response actions
 	 */
 	protected ResponseActions constructDeleteMockRequest(
@@ -230,8 +242,10 @@ public class AbstractBetaSeriesApiTest {
 	/**
 	 * Construct unauthorized get mock request.
 	 *
-	 * @param server the server
-	 * @param url the url
+	 * @param server
+	 *            the server
+	 * @param url
+	 *            the url
 	 * @return the response actions
 	 */
 	protected ResponseActions constructUnauthorizedGetMockRequest(
@@ -243,8 +257,10 @@ public class AbstractBetaSeriesApiTest {
 	/**
 	 * Construct request.
 	 *
-	 * @param action the action
-	 * @param method the method
+	 * @param action
+	 *            the action
+	 * @param method
+	 *            the method
 	 * @return the response actions
 	 */
 	protected ResponseActions constructRequest(ResponseActions action,
@@ -255,8 +271,10 @@ public class AbstractBetaSeriesApiTest {
 	/**
 	 * Gets the configured request.
 	 *
-	 * @param server the server
-	 * @param url the url
+	 * @param server
+	 *            the server
+	 * @param url
+	 *            the url
 	 * @return the configured request
 	 */
 	protected ResponseActions getConfiguredRequest(
@@ -273,8 +291,10 @@ public class AbstractBetaSeriesApiTest {
 	/**
 	 * Gets the bad configured request.
 	 *
-	 * @param server the server
-	 * @param url the url
+	 * @param server
+	 *            the server
+	 * @param url
+	 *            the url
 	 * @return the bad configured request
 	 */
 	protected ResponseActions getBadConfiguredRequest(
@@ -291,7 +311,8 @@ public class AbstractBetaSeriesApiTest {
 	/**
 	 * Url encode.
 	 *
-	 * @param url the url
+	 * @param url
+	 *            the url
 	 * @return the string
 	 */
 	private String urlEncode(String url) {
@@ -312,7 +333,8 @@ public class AbstractBetaSeriesApiTest {
 	/**
 	 * Builds the url encoded query string.
 	 *
-	 * @param queryParametersAsString the query parameters as string
+	 * @param queryParametersAsString
+	 *            the query parameters as string
 	 * @return the string
 	 */
 	protected String buildUrlEncodedQueryString(String queryParametersAsString) {
@@ -343,7 +365,8 @@ public class AbstractBetaSeriesApiTest {
 	/**
 	 * Body form encode.
 	 *
-	 * @param body the body
+	 * @param body
+	 *            the body
 	 * @return the string
 	 */
 	protected String bodyFormEncode(String body) {
@@ -353,7 +376,8 @@ public class AbstractBetaSeriesApiTest {
 	/**
 	 * Form encode.
 	 *
-	 * @param value the value
+	 * @param value
+	 *            the value
 	 * @return the string
 	 */
 	protected String formEncode(String value) {		

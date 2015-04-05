@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -43,11 +43,16 @@ public class UnseenEpisode extends BetaSeriesObject {
 	/**
 	 * Instantiates a new unseen episode.
 	 *
-	 * @param showId the show id
-	 * @param theTvDbId the the tv db id
-	 * @param title the title
-	 * @param remaining the remaining
-	 * @param episodes the episodes
+	 * @param showId
+	 *            the show id
+	 * @param theTvDbId
+	 *            the the tv db id
+	 * @param title
+	 *            the title
+	 * @param remaining
+	 *            the remaining
+	 * @param episodes
+	 *            the episodes
 	 */
 	public UnseenEpisode(int showId, int theTvDbId, String title,
 			int remaining, List<Episode> episodes) {
@@ -62,7 +67,7 @@ public class UnseenEpisode extends BetaSeriesObject {
 	/**
 	 * Gets the show id.
 	 *
-	 * @return the showId
+	 * @return the show id
 	 */
 	public int getShowId() {
 		return showId;
@@ -71,7 +76,7 @@ public class UnseenEpisode extends BetaSeriesObject {
 	/**
 	 * Gets the the tv db id.
 	 *
-	 * @return the theTvDbId
+	 * @return the the tv db id
 	 */
 	public int getTheTvDbId() {
 		return theTvDbId;

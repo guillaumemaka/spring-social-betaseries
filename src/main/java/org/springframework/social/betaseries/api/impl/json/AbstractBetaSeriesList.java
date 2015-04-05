@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,8 @@ import java.util.List;
  * The Class AbstractBetaSeriesList.
  *
  * @author Guillaume Maka
- * @param <T> the generic type
+ * @param <T>
+ *            the generic type
  */
 public abstract class AbstractBetaSeriesList<T> {
 	
@@ -32,7 +33,8 @@ public abstract class AbstractBetaSeriesList<T> {
 	/**
 	 * Instantiates a new abstract beta series list.
 	 *
-	 * @param list the list
+	 * @param list
+	 *            the list
 	 */
 	public AbstractBetaSeriesList(List<T> list){
 		this.list = list;

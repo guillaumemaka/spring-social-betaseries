@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ import org.springframework.util.MultiValueMap;
 // TODO: Auto-generated Javadoc
 /**
  * The Class AbstractBetaSeriesOperations.
- * 
+ *
  * @author Guillaume Maka
  */
 public class AbstractBetaSeriesOperations {
@@ -38,7 +38,7 @@ public class AbstractBetaSeriesOperations {
 
 	/**
 	 * Instantiates a new abstract beta series operations.
-	 * 
+	 *
 	 * @param isUserAuthorized
 	 *            the is user authorized
 	 * @param isAppAuthorized
@@ -78,7 +78,7 @@ public class AbstractBetaSeriesOperations {
 	
 	/**
 	 * Builds the uri.
-	 * 
+	 *
 	 * @param path
 	 *            the path
 	 * @return the uri
@@ -89,7 +89,7 @@ public class AbstractBetaSeriesOperations {
 	
 	/**
 	 * Builds the uri.
-	 * 
+	 *
 	 * @param path
 	 *            the path
 	 * @param parameterName
@@ -106,7 +106,7 @@ public class AbstractBetaSeriesOperations {
 	
 	/**
 	 * Builds the uri.
-	 * 
+	 *
 	 * @param path
 	 *            the path
 	 * @param parameters

@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,24 +39,42 @@ abstract class MovieMixin extends BetaSeriesObjectMixin {
 	/**
 	 * Instantiates a new movie mixin.
 	 *
-	 * @param id the id
-	 * @param titlw the titlw
-	 * @param originalTitlw the original titlw
-	 * @param theMovieDbId the the movie db id
-	 * @param imDbId the im db id
-	 * @param url the url
-	 * @param posterUrl the poster url
-	 * @param productionYear the production year
-	 * @param releaseDate the release date
-	 * @param saleDate the sale date
-	 * @param director the director
-	 * @param length the length
-	 * @param genres the genres
-	 * @param synopsis the synopsis
-	 * @param language the language
-	 * @param note the note
-	 * @param followers the followers
-	 * @param userDetail the user detail
+	 * @param id
+	 *            the id
+	 * @param titlw
+	 *            the titlw
+	 * @param originalTitlw
+	 *            the original titlw
+	 * @param theMovieDbId
+	 *            the the movie db id
+	 * @param imDbId
+	 *            the im db id
+	 * @param url
+	 *            the url
+	 * @param posterUrl
+	 *            the poster url
+	 * @param productionYear
+	 *            the production year
+	 * @param releaseDate
+	 *            the release date
+	 * @param saleDate
+	 *            the sale date
+	 * @param director
+	 *            the director
+	 * @param length
+	 *            the length
+	 * @param genres
+	 *            the genres
+	 * @param synopsis
+	 *            the synopsis
+	 * @param language
+	 *            the language
+	 * @param note
+	 *            the note
+	 * @param followers
+	 *            the followers
+	 * @param userDetail
+	 *            the user detail
 	 */
 	@JsonCreator
 	public MovieMixin(
@@ -91,8 +109,10 @@ abstract class MovieMixin extends BetaSeriesObjectMixin {
 		/**
 		 * Instantiates a new user detail mixin.
 		 *
-		 * @param inAccount the in account
-		 * @param status the status
+		 * @param inAccount
+		 *            the in account
+		 * @param status
+		 *            the status
 		 */
 		@JsonCreator
 		public UserDetailMixin(
@@ -112,11 +132,16 @@ abstract class MovieMixin extends BetaSeriesObjectMixin {
 		/**
 		 * Instantiates a new summarized movie mixin.
 		 *
-		 * @param id the id
-		 * @param title the title
-		 * @param tmdbId the tmdb id
-		 * @param imdbId the imdb id
-		 * @param followers the followers
+		 * @param id
+		 *            the id
+		 * @param title
+		 *            the title
+		 * @param tmdbId
+		 *            the tmdb id
+		 * @param imdbId
+		 *            the imdb id
+		 * @param followers
+		 *            the followers
 		 */
 		@JsonCreator
 		public SummarizedMovieMixin(

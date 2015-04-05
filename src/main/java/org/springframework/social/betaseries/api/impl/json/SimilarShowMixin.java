@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,13 +31,20 @@ abstract class SimilarShowMixin extends BetaSeriesObjectMixin {
 	/**
 	 * Instantiates a new similar show mixin.
 	 *
-	 * @param id the id
-	 * @param showTitle the show title
-	 * @param showId the show id
-	 * @param theTvDbId the the tv db id
-	 * @param login the login
-	 * @param loginId the login id
-	 * @param notes the notes
+	 * @param id
+	 *            the id
+	 * @param showTitle
+	 *            the show title
+	 * @param showId
+	 *            the show id
+	 * @param theTvDbId
+	 *            the the tv db id
+	 * @param login
+	 *            the login
+	 * @param loginId
+	 *            the login id
+	 * @param notes
+	 *            the notes
 	 */
 	@JsonCreator
 	public SimilarShowMixin(

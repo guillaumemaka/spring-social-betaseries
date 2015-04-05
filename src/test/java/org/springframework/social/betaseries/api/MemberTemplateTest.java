@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -393,7 +393,8 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 	/**
 	 * Assert member stats.
 	 *
-	 * @param member the member
+	 * @param member
+	 *            the member
 	 */
 	private void assertMemberStats(Member member) {
 		Assert.assertEquals(2, member.getStats().getNumberOfFriends());
@@ -411,7 +412,8 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 	/**
 	 * Assert member.
 	 *
-	 * @param member the member
+	 * @param member
+	 *            the member
 	 */
 	private void assertMember(Member member) {
 		Assert.assertNotNull("member should not be null", member);
@@ -436,7 +438,8 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 	/**
 	 * Assert show.
 	 *
-	 * @param show the show
+	 * @param show
+	 *            the show
 	 */
 	private void assertShow(Show show) {
 		Assert.assertEquals(9, show.getId());
@@ -468,7 +471,8 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 	/**
 	 * Assert movie.
 	 *
-	 * @param movie the movie
+	 * @param movie
+	 *            the movie
 	 */
 	private void assertMovie(Movie movie) {
 		Assert.assertEquals(new Integer(409), movie.getId());

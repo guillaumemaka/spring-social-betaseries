@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -74,7 +74,8 @@ private Long id;
 	/**
 	 * Sets the id.
 	 *
-	 * @param id the id to set
+	 * @param id
+	 *            the new id
 	 */
 	public void setId(Long id) {
 		this.id = id;
@@ -92,7 +93,8 @@ private Long id;
 	/**
 	 * Sets the type.
 	 *
-	 * @param type the type to set
+	 * @param type
+	 *            the new type
 	 */
 	public void setType(BSNotificationType type) {
 		this.type = type;
@@ -101,7 +103,7 @@ private Long id;
 	/**
 	 * Gets the ref id.
 	 *
-	 * @return the refId
+	 * @return the ref id
 	 */
 	public String getRefId() {
 		return refId;
@@ -110,7 +112,8 @@ private Long id;
 	/**
 	 * Sets the ref id.
 	 *
-	 * @param refId the refId to set
+	 * @param refId
+	 *            the new ref id
 	 */
 	public void setRefId(String refId) {
 		this.refId = refId;
@@ -128,7 +131,8 @@ private Long id;
 	/**
 	 * Sets the text.
 	 *
-	 * @param text the text to set
+	 * @param text
+	 *            the new text
 	 */
 	public void setText(String text) {
 		this.text = text;
@@ -146,7 +150,8 @@ private Long id;
 	/**
 	 * Sets the html.
 	 *
-	 * @param html the html to set
+	 * @param html
+	 *            the new html
 	 */
 	public void setHtml(String html) {
 		this.html = html;
@@ -164,7 +169,8 @@ private Long id;
 	/**
 	 * Sets the date.
 	 *
-	 * @param date the date to set
+	 * @param date
+	 *            the new date
 	 */
 	public void setDate(Date date) {
 		this.date = date;
@@ -173,7 +179,7 @@ private Long id;
 	/**
 	 * Checks if is seen.
 	 *
-	 * @return the seen
+	 * @return true, if is seen
 	 */
 	public boolean isSeen() {
 		return seen;
@@ -182,7 +188,8 @@ private Long id;
 	/**
 	 * Sets the seen.
 	 *
-	 * @param seen the seen to set
+	 * @param seen
+	 *            the new seen
 	 */
 	public void setSeen(boolean seen) {
 		this.seen = seen;

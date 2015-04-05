@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ import org.springframework.social.oauth2.AbstractOAuth2ServiceProvider;
 // TODO: Auto-generated Javadoc
 /**
  * The Class BetaSeriesServiceProvider.
- * 
+ *
  * @author Guillaume Maka
  */
 public class BetaSeriesServiceProvider extends AbstractOAuth2ServiceProvider<BetaSeries> {
@@ -32,7 +32,7 @@ public class BetaSeriesServiceProvider extends AbstractOAuth2ServiceProvider<Bet
 	
 	/**
 	 * Instantiates a new beta series service provider.
-	 * 
+	 *
 	 * @param apiKey
 	 *            the api key
 	 * @param clientSecret

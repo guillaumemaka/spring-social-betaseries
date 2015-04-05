@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -44,12 +44,18 @@ public class Recommendation extends BetaSeriesObject {
 	/**
 	 * Instantiates a new recommendation.
 	 *
-	 * @param id the id
-	 * @param fromId the from id
-	 * @param toId the to id
-	 * @param showId the show id
-	 * @param status the status
-	 * @param comments the comments
+	 * @param id
+	 *            the id
+	 * @param fromId
+	 *            the from id
+	 * @param toId
+	 *            the to id
+	 * @param showId
+	 *            the show id
+	 * @param status
+	 *            the status
+	 * @param comments
+	 *            the comments
 	 */
 	public Recommendation(int id, int fromId, int toId, int showId,
 			String status, String comments) {
@@ -74,7 +80,7 @@ public class Recommendation extends BetaSeriesObject {
 	/**
 	 * Gets the from id.
 	 *
-	 * @return the fromId
+	 * @return the from id
 	 */
 	public int getFromId() {
 		return fromId;
@@ -83,7 +89,7 @@ public class Recommendation extends BetaSeriesObject {
 	/**
 	 * Gets the to id.
 	 *
-	 * @return the toId
+	 * @return the to id
 	 */
 	public int getToId() {
 		return toId;
@@ -92,7 +98,7 @@ public class Recommendation extends BetaSeriesObject {
 	/**
 	 * Gets the show id.
 	 *
-	 * @return the showId
+	 * @return the show id
 	 */
 	public int getShowId() {
 		return showId;

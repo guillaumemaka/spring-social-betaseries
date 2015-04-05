@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,9 +37,12 @@ public class PictureTemplate extends AbstractBetaSeriesOperations implements
 	/**
 	 * Instantiates a new picture template.
 	 *
-	 * @param restTemplate the rest template
-	 * @param isUserAuthorized the is user authorized
-	 * @param isAppAuthorized the is app authorized
+	 * @param restTemplate
+	 *            the rest template
+	 * @param isUserAuthorized
+	 *            the is user authorized
+	 * @param isAppAuthorized
+	 *            the is app authorized
 	 */
 	public PictureTemplate(RestTemplate restTemplate, boolean isUserAuthorized, boolean isAppAuthorized)  {
 		super(isUserAuthorized,isAppAuthorized);		
@@ -133,10 +136,14 @@ public class PictureTemplate extends AbstractBetaSeriesOperations implements
 	/**
 	 * Gets the image.
 	 *
-	 * @param path the path
-	 * @param objectId the object id
-	 * @param height the height
-	 * @param width the width
+	 * @param path
+	 *            the path
+	 * @param objectId
+	 *            the object id
+	 * @param height
+	 *            the height
+	 * @param width
+	 *            the width
 	 * @return the image
 	 */
 	private byte[] getImage(String path, Integer objectId, Integer height, Integer width) {

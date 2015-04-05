@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,16 +36,26 @@ abstract class MessageMixin extends BetaSeriesObjectMixin {
 	/**
 	 * Instantiates a new message mixin.
 	 *
-	 * @param id the id
-	 * @param messageId the message id
-	 * @param innerId the inner id
-	 * @param sender the sender
-	 * @param recipient the recipient
-	 * @param date the date
-	 * @param title the title
-	 * @param text the text
-	 * @param unread the unread
-	 * @param hasUnread the has unread
+	 * @param id
+	 *            the id
+	 * @param messageId
+	 *            the message id
+	 * @param innerId
+	 *            the inner id
+	 * @param sender
+	 *            the sender
+	 * @param recipient
+	 *            the recipient
+	 * @param date
+	 *            the date
+	 * @param title
+	 *            the title
+	 * @param text
+	 *            the text
+	 * @param unread
+	 *            the unread
+	 * @param hasUnread
+	 *            the has unread
 	 */
 	@JsonCreator
 	public MessageMixin(

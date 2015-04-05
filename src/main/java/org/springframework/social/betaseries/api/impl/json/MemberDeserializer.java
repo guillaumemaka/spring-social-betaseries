@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -84,7 +84,8 @@ public class MemberDeserializer extends JsonDeserializer<Member> {
 	/**
 	 * Deserialize.
 	 *
-	 * @param node the node
+	 * @param node
+	 *            the node
 	 * @return the member
 	 */
 	private Member deserialize(JsonNode node) {
@@ -142,7 +143,8 @@ public class MemberDeserializer extends JsonDeserializer<Member> {
 	/**
 	 * Deserialize member stats.
 	 *
-	 * @param node the node
+	 * @param node
+	 *            the node
 	 * @return the member stats
 	 */
 	private MemberStats deserializeMemberStats(JsonNode node) {
@@ -175,7 +177,8 @@ public class MemberDeserializer extends JsonDeserializer<Member> {
 	/**
 	 * Deserialize member options.
 	 *
-	 * @param node the node
+	 * @param node
+	 *            the node
 	 * @return the member options
 	 */
 	private MemberOptions deserializeMemberOptions(JsonNode node) {
@@ -196,7 +199,8 @@ public class MemberDeserializer extends JsonDeserializer<Member> {
 	/**
 	 * Deserialize show.
 	 *
-	 * @param node the node
+	 * @param node
+	 *            the node
 	 * @return the show
 	 */
 	private Show deserializeShow(JsonNode node) {
@@ -218,7 +222,8 @@ public class MemberDeserializer extends JsonDeserializer<Member> {
 	/**
 	 * Deserialize movie.
 	 *
-	 * @param node the node
+	 * @param node
+	 *            the node
 	 * @return the movie
 	 */
 	private Movie deserializeMovie(JsonNode node) {
@@ -248,8 +253,10 @@ public class MemberDeserializer extends JsonDeserializer<Member> {
 	/**
 	 * Debug.
 	 *
-	 * @param tag the tag
-	 * @param exception the exception
+	 * @param tag
+	 *            the tag
+	 * @param exception
+	 *            the exception
 	 */
 	private void debug(String tag, Object exception) {		
 		if(logger.isDebugEnabled()) logger.debug(TAG, exception);		

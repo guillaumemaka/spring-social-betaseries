@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,7 +34,8 @@ public class BetaSeriesMovieSingleObject extends
 	/**
 	 * Instantiates a new beta series movie single object.
 	 *
-	 * @param object the object
+	 * @param object
+	 *            the object
 	 */
 	@JsonCreator
 	public BetaSeriesMovieSingleObject(@JsonProperty("movie") Movie object) {

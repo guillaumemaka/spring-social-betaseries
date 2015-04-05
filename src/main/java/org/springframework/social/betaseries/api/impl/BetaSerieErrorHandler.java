@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -49,7 +49,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 // TODO: Auto-generated Javadoc
 /**
  * The Class BetaSerieErrorHandler.
- * 
+ *
  * @author Guillaume Maka
  */
 public class BetaSerieErrorHandler extends DefaultResponseErrorHandler {
@@ -84,7 +84,7 @@ public class BetaSerieErrorHandler extends DefaultResponseErrorHandler {
 
 	/**
 	 * Handle beta series error.
-	 * 
+	 *
 	 * @param errorDetails
 	 *            the error details
 	 */
@@ -105,7 +105,7 @@ public class BetaSerieErrorHandler extends DefaultResponseErrorHandler {
 
 	/**
 	 * Handle base error.
-	 * 
+	 *
 	 * @param code
 	 *            the code
 	 * @param message
@@ -126,7 +126,7 @@ public class BetaSerieErrorHandler extends DefaultResponseErrorHandler {
 
 	/**
 	 * Handle variable error.
-	 * 
+	 *
 	 * @param code
 	 *            the code
 	 * @param message
@@ -151,7 +151,7 @@ public class BetaSerieErrorHandler extends DefaultResponseErrorHandler {
 
 	/**
 	 * Handle user error.
-	 * 
+	 *
 	 * @param code
 	 *            the code
 	 * @param message
@@ -166,7 +166,7 @@ public class BetaSerieErrorHandler extends DefaultResponseErrorHandler {
 
 	/**
 	 * Handle uncategorized error.
-	 * 
+	 *
 	 * @param response
 	 *            the response
 	 * @param errorDetails
@@ -193,7 +193,7 @@ public class BetaSerieErrorHandler extends DefaultResponseErrorHandler {
 	 */
 	/**
 	 * Extract error details from response.
-	 * 
+	 *
 	 * @param response
 	 *            the response
 	 * @return the map
@@ -250,7 +250,7 @@ public class BetaSerieErrorHandler extends DefaultResponseErrorHandler {
 
 	/**
 	 * Read fully.
-	 * 
+	 *
 	 * @param in
 	 *            the in
 	 * @return the string

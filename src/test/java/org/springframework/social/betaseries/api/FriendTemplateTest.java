@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,7 +38,8 @@ public class FriendTemplateTest extends AbstractBetaSeriesApiTest {
 	/**
 	 * Block.
 	 *
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void block() throws Exception {
@@ -70,7 +71,8 @@ public class FriendTemplateTest extends AbstractBetaSeriesApiTest {
 	/**
 	 * Unblock.
 	 *
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void unblock() throws Exception {
@@ -103,7 +105,8 @@ public class FriendTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the friends list.
 	 *
 	 * @return the friends list
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getFriendsList() throws Exception {
@@ -120,7 +123,8 @@ public class FriendTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the blocked friends list.
 	 *
 	 * @return the blocked friends list
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getBlockedFriendsList() throws Exception {

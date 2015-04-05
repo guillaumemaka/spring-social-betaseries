@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,8 +17,8 @@ package org.springframework.social.betaseries.api;
 
 // TODO: Auto-generated Javadoc
 /**
- * The Class BSCharacter.
- * 
+ * The Class Character.
+ *
  * @author Guillaume Maka
  */
 public class Character extends BetaSeriesObject {
@@ -41,19 +41,26 @@ public class Character extends BetaSeriesObject {
 	/** The picture url. */
 	private final String pictureUrl;
 
-	/** The desctription. */
+	/** The description. */
 	private final String description;
 
 	/**
 	 * Instantiates a new character.
 	 *
-	 * @param id the id
-	 * @param showId the show id
-	 * @param name the name
-	 * @param role the role
-	 * @param actor the actor
-	 * @param pictureUrl the picture url
-	 * @param description the description
+	 * @param id
+	 *            the id
+	 * @param showId
+	 *            the show id
+	 * @param name
+	 *            the name
+	 * @param role
+	 *            the role
+	 * @param actor
+	 *            the actor
+	 * @param pictureUrl
+	 *            the picture url
+	 * @param description
+	 *            the description
 	 */
 	public Character(int id, int showId, String name, String role,
 			String actor, String pictureUrl, String description) {
@@ -79,7 +86,7 @@ public class Character extends BetaSeriesObject {
 	/**
 	 * Gets the show id.
 	 *
-	 * @return the showId
+	 * @return the show id
 	 */
 	public int getShowId() {
 		return showId;
@@ -115,7 +122,7 @@ public class Character extends BetaSeriesObject {
 	/**
 	 * Gets the picture url.
 	 *
-	 * @return the pictureUrl
+	 * @return the picture url
 	 */
 	public String getPictureUrl() {
 		return pictureUrl;
@@ -124,7 +131,7 @@ public class Character extends BetaSeriesObject {
 	/**
 	 * Gets the description.
 	 *
-	 * @return the desctription
+	 * @return the description
 	 */
 	public String getDescription() {
 		return description;

@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,7 +41,8 @@ public enum BSMovieUserState {
 	/**
 	 * Instantiates a new BS movie user state.
 	 *
-	 * @param value the value
+	 * @param value
+	 *            the value
 	 */
 	BSMovieUserState(String value) {
 		this.value = value;
@@ -66,7 +67,8 @@ public enum BSMovieUserState {
 	/**
 	 * From string.
 	 *
-	 * @param value the value
+	 * @param value
+	 *            the value
 	 * @return the BS movie user state
 	 */
 	public static BSMovieUserState fromString(String value) {
@@ -84,7 +86,8 @@ public enum BSMovieUserState {
 	/**
 	 * From enum.
 	 *
-	 * @param value the value
+	 * @param value
+	 *            the value
 	 * @return the string
 	 */
 	public static String fromEnum(BSMovieUserState value) {

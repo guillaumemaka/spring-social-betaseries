@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ import org.springframework.social.betaseries.api.Movie.SummarizedMovie;
 // TODO: Auto-generated Javadoc
 /**
  * The Interface MovieOperations.
- * 
+ *
  * @author Guillaume Maka
  */
 public interface MovieOperations {
@@ -37,7 +37,8 @@ public interface MovieOperations {
 	/**
 	 * Gets the movie list.
 	 *
-	 * @param start the start
+	 * @param start
+	 *            the start
 	 * @return the movie list
 	 */
 	List<SummarizedMovie> getMovieList(Integer start);
@@ -45,8 +46,10 @@ public interface MovieOperations {
 	/**
 	 * Gets the movie list.
 	 *
-	 * @param start the start
-	 * @param limit the limit
+	 * @param start
+	 *            the start
+	 * @param limit
+	 *            the limit
 	 * @return the movie list
 	 */
 	List<SummarizedMovie> getMovieList(Integer start, Integer limit);
@@ -54,9 +57,12 @@ public interface MovieOperations {
 	/**
 	 * Gets the movie list.
 	 *
-	 * @param start the start
-	 * @param limit the limit
-	 * @param order the order
+	 * @param start
+	 *            the start
+	 * @param limit
+	 *            the limit
+	 * @param order
+	 *            the order
 	 * @return the movie list
 	 */
 	List<SummarizedMovie> getMovieList(Integer start, Integer limit, BSMovieOrder order);
@@ -71,7 +77,8 @@ public interface MovieOperations {
 	/**
 	 * Gets the member movies.
 	 *
-	 * @param state the state
+	 * @param state
+	 *            the state
 	 * @return the member movies
 	 */
 	List<Movie> getMemberMovies(BSMovieUserState state);
@@ -79,8 +86,10 @@ public interface MovieOperations {
 	/**
 	 * Gets the member movies.
 	 *
-	 * @param state the state
-	 * @param start the start
+	 * @param state
+	 *            the state
+	 * @param start
+	 *            the start
 	 * @return the member movies
 	 */
 	List<Movie> getMemberMovies(BSMovieUserState state, Integer start);
@@ -88,9 +97,12 @@ public interface MovieOperations {
 	/**
 	 * Gets the member movies.
 	 *
-	 * @param state the state
-	 * @param start the start
-	 * @param limit the limit
+	 * @param state
+	 *            the state
+	 * @param start
+	 *            the start
+	 * @param limit
+	 *            the limit
 	 * @return the member movies
 	 */
 	List<Movie> getMemberMovies(BSMovieUserState state, Integer start, Integer limit);
@@ -98,10 +110,14 @@ public interface MovieOperations {
 	/**
 	 * Gets the member movies.
 	 *
-	 * @param state the state
-	 * @param start the start
-	 * @param limit the limit
-	 * @param order the order
+	 * @param state
+	 *            the state
+	 * @param start
+	 *            the start
+	 * @param limit
+	 *            the limit
+	 * @param order
+	 *            the order
 	 * @return the member movies
 	 */
 	List<Movie> getMemberMovies(BSMovieUserState state, Integer start, Integer limit, BSMovieOrder order);
@@ -109,7 +125,8 @@ public interface MovieOperations {
 	/**
 	 * Gets the movie.
 	 *
-	 * @param movieId the movie id
+	 * @param movieId
+	 *            the movie id
 	 * @return the movie
 	 */
 	Movie getMovie(Integer movieId);	
@@ -117,7 +134,8 @@ public interface MovieOperations {
 	/**
 	 * Adds the movie.
 	 *
-	 * @param movieId the movie id
+	 * @param movieId
+	 *            the movie id
 	 * @return the movie
 	 */
 	Movie addMovie(Integer movieId);
@@ -125,8 +143,10 @@ public interface MovieOperations {
 	/**
 	 * Adds the movie.
 	 *
-	 * @param movieId the movie id
-	 * @param enableMailNotification the enable mail notification
+	 * @param movieId
+	 *            the movie id
+	 * @param enableMailNotification
+	 *            the enable mail notification
 	 * @return the movie
 	 */
 	Movie addMovie(Integer movieId, boolean enableMailNotification);
@@ -134,9 +154,12 @@ public interface MovieOperations {
 	/**
 	 * Adds the movie.
 	 *
-	 * @param movieId the movie id
-	 * @param enableMailNotification the enable mail notification
-	 * @param enableTwitterNOtification the enable twitter n otification
+	 * @param movieId
+	 *            the movie id
+	 * @param enableMailNotification
+	 *            the enable mail notification
+	 * @param enableTwitterNOtification
+	 *            the enable twitter n otification
 	 * @return the movie
 	 */
 	Movie addMovie(Integer movieId, boolean enableMailNotification, boolean enableTwitterNOtification);
@@ -144,10 +167,14 @@ public interface MovieOperations {
 	/**
 	 * Adds the movie.
 	 *
-	 * @param movieId the movie id
-	 * @param enableMailNotification the enable mail notification
-	 * @param enableTwitterNOtification the enable twitter n otification
-	 * @param state the state
+	 * @param movieId
+	 *            the movie id
+	 * @param enableMailNotification
+	 *            the enable mail notification
+	 * @param enableTwitterNOtification
+	 *            the enable twitter n otification
+	 * @param state
+	 *            the state
 	 * @return the movie
 	 */
 	Movie addMovie(Integer movieId, boolean enableMailNotification, boolean enableTwitterNOtification, BSMovieUserState state);
@@ -155,11 +182,16 @@ public interface MovieOperations {
 	/**
 	 * Adds the movie.
 	 *
-	 * @param movieId the movie id
-	 * @param enableMailNotification the enable mail notification
-	 * @param enableTwitterNOtification the enable twitter n otification
-	 * @param state the state
-	 * @param displayOnProfile the display on profile
+	 * @param movieId
+	 *            the movie id
+	 * @param enableMailNotification
+	 *            the enable mail notification
+	 * @param enableTwitterNOtification
+	 *            the enable twitter n otification
+	 * @param state
+	 *            the state
+	 * @param displayOnProfile
+	 *            the display on profile
 	 * @return the movie
 	 */
 	Movie addMovie(Integer movieId, boolean enableMailNotification, boolean enableTwitterNOtification, BSMovieUserState state, boolean displayOnProfile);
@@ -167,7 +199,8 @@ public interface MovieOperations {
 	/**
 	 * Delete movie.
 	 *
-	 * @param movieId the movie id
+	 * @param movieId
+	 *            the movie id
 	 * @return the movie
 	 */
 	Movie deleteMovie(Integer movieId);
@@ -182,7 +215,8 @@ public interface MovieOperations {
 	/**
 	 * Gets the random movies.
 	 *
-	 * @param nb the nb
+	 * @param nb
+	 *            the nb
 	 * @return the random movies
 	 */
 	List<Movie> getRandomMovies(Integer nb);
@@ -190,7 +224,8 @@ public interface MovieOperations {
 	/**
 	 * Gets the movie by scraper.
 	 *
-	 * @param file the file
+	 * @param file
+	 *            the file
 	 * @return the movie by scraper
 	 */
 	Movie getMovieByScraper(String file);
@@ -205,8 +240,10 @@ public interface MovieOperations {
 	/**
 	 * Gets the popular movies.
 	 *
-	 * @param nbpp the nbpp
-	 * @param page the page
+	 * @param nbpp
+	 *            the nbpp
+	 * @param page
+	 *            the page
 	 * @return the popular movies
 	 */
 	List<Movie> getPopularMovies(Integer nbpp, Integer page);
@@ -214,10 +251,14 @@ public interface MovieOperations {
 	/**
 	 * Search.
 	 *
-	 * @param title the title
-	 * @param order the order
-	 * @param nbpp the nbpp
-	 * @param page the page
+	 * @param title
+	 *            the title
+	 * @param order
+	 *            the order
+	 * @param nbpp
+	 *            the nbpp
+	 * @param page
+	 *            the page
 	 * @return the list
 	 */
 	List<Movie> search(String title, BSSearchOrder order, Integer nbpp, Integer page);	

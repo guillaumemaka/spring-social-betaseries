@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,8 +25,8 @@ import org.springframework.social.support.HttpRequestDecorator;
 
 // TODO: Auto-generated Javadoc
 /**
- * The Class BetaSeriesApiVersionParameterInterceptor.
- * 
+ * The Class BetaSeriesApiVersionHeaderParameterInterceptor.
+ *
  * @author Guillaume Maka
  */
 public class BetaSeriesApiVersionHeaderParameterInterceptor implements
@@ -39,8 +39,8 @@ public class BetaSeriesApiVersionHeaderParameterInterceptor implements
 	private final String parameterName;
 	
 	/**
-	 * Instantiates a new beta series api version parameter interceptor.
-	 * 
+	 * Instantiates a new beta series api version header parameter interceptor.
+	 *
 	 * @param apiVersion
 	 *            the api version
 	 */
@@ -49,8 +49,8 @@ public class BetaSeriesApiVersionHeaderParameterInterceptor implements
 	}
 	
 	/**
-	 * Instantiates a new beta series api version parameter interceptor.
-	 * 
+	 * Instantiates a new beta series api version header parameter interceptor.
+	 *
 	 * @param apiVersion
 	 *            the api version
 	 * @param parameterName

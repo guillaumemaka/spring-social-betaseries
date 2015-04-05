@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ import java.util.List;
 // TODO: Auto-generated Javadoc
 /**
  * The Class Episode.
- * 
+ *
  * @author Guillaume Maka
  */
 public class Episode extends BetaSeriesObject {
@@ -79,7 +79,7 @@ public class Episode extends BetaSeriesObject {
 	
 	/**
 	 * Instantiates a new episode.
-	 * 
+	 *
 	 * @param id
 	 *            the id
 	 * @param theTvDbId
@@ -96,7 +96,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Gets the id.
-	 * 
+	 *
 	 * @return the id
 	 */
 	public int getId() {
@@ -105,7 +105,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Sets the id.
-	 * 
+	 *
 	 * @param id
 	 *            the new id
 	 */
@@ -115,7 +115,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Gets the the tv db id.
-	 * 
+	 *
 	 * @return the the tv db id
 	 */
 	public int getTheTvDbId() {
@@ -124,7 +124,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Sets the the tv db id.
-	 * 
+	 *
 	 * @param theTvDbId
 	 *            the new the tv db id
 	 */
@@ -134,7 +134,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Gets the title.
-	 * 
+	 *
 	 * @return the title
 	 */
 	public String getTitle() {
@@ -143,7 +143,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Sets the title.
-	 * 
+	 *
 	 * @param title
 	 *            the new title
 	 */
@@ -153,7 +153,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Gets the season number.
-	 * 
+	 *
 	 * @return the season number
 	 */
 	public int getSeasonNumber() {
@@ -162,7 +162,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Sets the season number.
-	 * 
+	 *
 	 * @param seasonNumber
 	 *            the new season number
 	 */
@@ -172,7 +172,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Gets the episode number.
-	 * 
+	 *
 	 * @return the episode number
 	 */
 	public int getEpisodeNumber() {
@@ -181,7 +181,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Sets the episode number.
-	 * 
+	 *
 	 * @param episodeNumber
 	 *            the new episode number
 	 */
@@ -191,7 +191,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Gets the show id.
-	 * 
+	 *
 	 * @return the show id
 	 */
 	public int getShowId() {
@@ -200,7 +200,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Sets the show id.
-	 * 
+	 *
 	 * @param showId
 	 *            the new show id
 	 */
@@ -210,7 +210,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Gets the show tv db id.
-	 * 
+	 *
 	 * @return the show tv db id
 	 */
 	public int getShowTvDbId() {
@@ -219,7 +219,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Sets the show tv db id.
-	 * 
+	 *
 	 * @param showTvDbId
 	 *            the new show tv db id
 	 */
@@ -229,7 +229,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Gets the show title.
-	 * 
+	 *
 	 * @return the show title
 	 */
 	public String getShowTitle() {
@@ -238,7 +238,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Sets the show title.
-	 * 
+	 *
 	 * @param showTitle
 	 *            the new show title
 	 */
@@ -248,7 +248,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Gets the code.
-	 * 
+	 *
 	 * @return the code
 	 */
 	public String getCode() {
@@ -257,7 +257,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Sets the code.
-	 * 
+	 *
 	 * @param code
 	 *            the new code
 	 */
@@ -267,7 +267,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Gets the global.
-	 * 
+	 *
 	 * @return the global
 	 */
 	public int getGlobal() {
@@ -276,7 +276,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Sets the global.
-	 * 
+	 *
 	 * @param global
 	 *            the new global
 	 */
@@ -286,7 +286,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Gets the description.
-	 * 
+	 *
 	 * @return the description
 	 */
 	public String getDescription() {
@@ -295,7 +295,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Sets the description.
-	 * 
+	 *
 	 * @param description
 	 *            the new description
 	 */
@@ -305,7 +305,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Gets the air date.
-	 * 
+	 *
 	 * @return the air date
 	 */
 	public Date getAirDate() {
@@ -314,7 +314,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Sets the air date.
-	 * 
+	 *
 	 * @param airDate
 	 *            the new air date
 	 */
@@ -324,7 +324,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Gets the note.
-	 * 
+	 *
 	 * @return the note
 	 */
 	public Note getNote() {
@@ -333,7 +333,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Sets the note.
-	 * 
+	 *
 	 * @param note
 	 *            the new note
 	 */
@@ -343,7 +343,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Checks if is seen.
-	 * 
+	 *
 	 * @return true, if is seen
 	 */
 	public boolean isSeen() {
@@ -352,7 +352,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Sets the seen.
-	 * 
+	 *
 	 * @param isSeen
 	 *            the new seen
 	 */
@@ -362,7 +362,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Checks if is downloaded.
-	 * 
+	 *
 	 * @return true, if is downloaded
 	 */
 	public boolean isDownloaded() {
@@ -371,7 +371,7 @@ public class Episode extends BetaSeriesObject {
 
 	/**
 	 * Sets the downloaded.
-	 * 
+	 *
 	 * @param isDownloaded
 	 *            the new downloaded
 	 */
@@ -382,7 +382,7 @@ public class Episode extends BetaSeriesObject {
 	/**
 	 * Gets the number of comment.
 	 *
-	 * @return the numberOfComment
+	 * @return the number of comment
 	 */
 	public int getNumberOfComment() {
 		return numberOfComment;
@@ -400,7 +400,8 @@ public class Episode extends BetaSeriesObject {
 	/**
 	 * Sets the subtitles.
 	 *
-	 * @param subtitles the subtitles to set
+	 * @param subtitles
+	 *            the new subtitles
 	 */
 	public void setSubtitles(List<Subtitle> subtitles) {
 		this.subtitles = subtitles;
@@ -409,7 +410,8 @@ public class Episode extends BetaSeriesObject {
 	/**
 	 * Sets the number of comment.
 	 *
-	 * @param numberOfComment the numberOfComment to set
+	 * @param numberOfComment
+	 *            the new number of comment
 	 */
 	public void setNumberOfComment(int numberOfComment) {
 		this.numberOfComment = numberOfComment;

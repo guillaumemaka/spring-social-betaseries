@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ import java.util.Date;
 // TODO: Auto-generated Javadoc
 /**
  * The Class Picture.
- * 
+ *
  * @author Guillaume Maka
  */
 public class Picture extends BetaSeriesObject {
@@ -52,14 +52,22 @@ public class Picture extends BetaSeriesObject {
 	/**
 	 * Instantiates a new picture.
 	 *
-	 * @param id the id
-	 * @param showId the show id
-	 * @param loginId the login id
-	 * @param url the url
-	 * @param width the width
-	 * @param height the height
-	 * @param date the date
-	 * @param type the type
+	 * @param id
+	 *            the id
+	 * @param showId
+	 *            the show id
+	 * @param loginId
+	 *            the login id
+	 * @param url
+	 *            the url
+	 * @param width
+	 *            the width
+	 * @param height
+	 *            the height
+	 * @param date
+	 *            the date
+	 * @param type
+	 *            the type
 	 */
 	public Picture(int id, int showId, int loginId, String url, int width,
 			int height, Date date, BSPictureType type) {
@@ -86,7 +94,7 @@ public class Picture extends BetaSeriesObject {
 	/**
 	 * Gets the show id.
 	 *
-	 * @return the showId
+	 * @return the show id
 	 */
 	public int getShowId() {
 		return showId;
@@ -95,7 +103,7 @@ public class Picture extends BetaSeriesObject {
 	/**
 	 * Gets the login id.
 	 *
-	 * @return the loginId
+	 * @return the login id
 	 */
 	public int getLoginId() {
 		return loginId;

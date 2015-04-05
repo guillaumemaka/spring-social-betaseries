@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -420,7 +420,8 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 	/**
 	 * Assert episode2.
 	 *
-	 * @param episode the episode
+	 * @param episode
+	 *            the episode
 	 */
 	private void assertEpisode2(Episode episode) {
 		assertEquals(264474, episode.getId());
@@ -448,7 +449,8 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 	/**
 	 * Assert episode1.
 	 *
-	 * @param episode the episode
+	 * @param episode
+	 *            the episode
 	 */
 	private void assertEpisode1(Episode episode) {
 		assertEquals(264473, episode.getId());
@@ -476,7 +478,8 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 	/**
 	 * Assert episode1 subtitles1.
 	 *
-	 * @param subtitle the subtitle
+	 * @param subtitle
+	 *            the subtitle
 	 */
 	private void assertEpisode1Subtitles1(Subtitle subtitle) {
 		assertEquals(129901, subtitle.getId());
@@ -493,7 +496,8 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 	/**
 	 * Assert episode1 subtitles2.
 	 *
-	 * @param subtitle the subtitle
+	 * @param subtitle
+	 *            the subtitle
 	 */
 	private void assertEpisode1Subtitles2(Subtitle subtitle) {
 		assertEquals(129907, subtitle.getId());
@@ -510,7 +514,8 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 	/**
 	 * Assert episode2 subtitles1.
 	 *
-	 * @param subtitle the subtitle
+	 * @param subtitle
+	 *            the subtitle
 	 */
 	private void assertEpisode2Subtitles1(Subtitle subtitle) {
 		assertEquals(129889, subtitle.getId());
@@ -527,7 +532,8 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 	/**
 	 * Assert episode2 subtitles2.
 	 *
-	 * @param subtitle the subtitle
+	 * @param subtitle
+	 *            the subtitle
 	 */
 	private void assertEpisode2Subtitles2(Subtitle subtitle) {
 		assertEquals(129895, subtitle.getId());

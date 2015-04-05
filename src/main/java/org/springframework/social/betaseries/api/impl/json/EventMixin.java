@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,14 +36,22 @@ abstract class EventMixin extends BetaSeriesObjectMixin {
 	/**
 	 * Instantiates a new event mixin.
 	 *
-	 * @param id the id
-	 * @param type the type
-	 * @param ref the ref
-	 * @param refId the ref id
-	 * @param user the user
-	 * @param userId the user id
-	 * @param html the html
-	 * @param date the date
+	 * @param id
+	 *            the id
+	 * @param type
+	 *            the type
+	 * @param ref
+	 *            the ref
+	 * @param refId
+	 *            the ref id
+	 * @param user
+	 *            the user
+	 * @param userId
+	 *            the user id
+	 * @param html
+	 *            the html
+	 * @param date
+	 *            the date
 	 */
 	@JsonCreator
 	public EventMixin(

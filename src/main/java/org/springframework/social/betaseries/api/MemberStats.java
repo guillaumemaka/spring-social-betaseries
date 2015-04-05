@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ package org.springframework.social.betaseries.api;
 // TODO: Auto-generated Javadoc
 /**
  * The Class MemberStats.
- * 
+ *
  * @author Guillaume Maka
  */
 public class MemberStats extends BetaSeriesObject {
@@ -60,7 +60,7 @@ public class MemberStats extends BetaSeriesObject {
 	
 	/**
 	 * Instantiates a new member stats.
-	 * 
+	 *
 	 * @param numberOfFriends
 	 *            the number of friends
 	 * @param numberOfShows
@@ -101,7 +101,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Gets the number of friends.
-	 * 
+	 *
 	 * @return the number of friends
 	 */
 	public int getNumberOfFriends() {
@@ -110,7 +110,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Sets the number of friends.
-	 * 
+	 *
 	 * @param numberOfFriends
 	 *            the new number of friends
 	 */
@@ -120,7 +120,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Gets the number of shows.
-	 * 
+	 *
 	 * @return the number of shows
 	 */
 	public int getNumberOfShows() {
@@ -129,7 +129,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Sets the number of shows.
-	 * 
+	 *
 	 * @param numberOfShows
 	 *            the new number of shows
 	 */
@@ -139,7 +139,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Gets the number of seasons.
-	 * 
+	 *
 	 * @return the number of seasons
 	 */
 	public int getNumberOfSeasons() {
@@ -148,7 +148,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Sets the number of seasons.
-	 * 
+	 *
 	 * @param numberOfSeasons
 	 *            the new number of seasons
 	 */
@@ -158,7 +158,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Gets the number of episodes.
-	 * 
+	 *
 	 * @return the number of episodes
 	 */
 	public int getNumberOfEpisodes() {
@@ -167,7 +167,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Sets the number of episodes.
-	 * 
+	 *
 	 * @param numberOfEpisodes
 	 *            the new number of episodes
 	 */
@@ -177,7 +177,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Gets the number of comments.
-	 * 
+	 *
 	 * @return the number of comments
 	 */
 	public int getNumberOfComments() {
@@ -186,7 +186,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Sets the number of comments.
-	 * 
+	 *
 	 * @param numberOfComments
 	 *            the new number of comments
 	 */
@@ -196,7 +196,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Gets the progress.
-	 * 
+	 *
 	 * @return the progress
 	 */
 	public double getProgress() {
@@ -205,7 +205,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Sets the progress.
-	 * 
+	 *
 	 * @param progress
 	 *            the new progress
 	 */
@@ -215,7 +215,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Gets the episodes to watch.
-	 * 
+	 *
 	 * @return the episodes to watch
 	 */
 	public int getEpisodesToWatch() {
@@ -224,7 +224,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Sets the episodes to watch.
-	 * 
+	 *
 	 * @param episodesToWatch
 	 *            the new episodes to watch
 	 */
@@ -234,7 +234,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Gets the time on tv.
-	 * 
+	 *
 	 * @return the time on tv
 	 */
 	public int getTimeOnTv() {
@@ -243,7 +243,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Sets the time on tv.
-	 * 
+	 *
 	 * @param timeOnTv
 	 *            the new time on tv
 	 */
@@ -253,7 +253,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Gets the time to spend.
-	 * 
+	 *
 	 * @return the time to spend
 	 */
 	public int getTimeToSpend() {
@@ -262,7 +262,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Sets the time to spend.
-	 * 
+	 *
 	 * @param timeToSpend
 	 *            the new time to spend
 	 */
@@ -272,7 +272,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Gets the badges.
-	 * 
+	 *
 	 * @return the badges
 	 */
 	public int getBadges() {
@@ -281,7 +281,7 @@ public class MemberStats extends BetaSeriesObject {
 
 	/**
 	 * Sets the badges.
-	 * 
+	 *
 	 * @param badges
 	 *            the new badges
 	 */

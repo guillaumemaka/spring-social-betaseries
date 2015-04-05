@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,7 +36,8 @@ public class CommentTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the comments.
 	 *
 	 * @return the comments
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getComments() throws Exception {
@@ -61,7 +62,8 @@ public class CommentTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the comments nbpp20.
 	 *
 	 * @return the comments nbpp20
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getCommentsNbpp20() throws Exception {

@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,11 +36,16 @@ abstract class BadgeMixin extends BetaSeriesObjectMixin {
 	/**
 	 * Instantiates a new badge mixin.
 	 *
-	 * @param id the id
-	 * @param code the code
-	 * @param name the name
-	 * @param description the description
-	 * @param date the date
+	 * @param id
+	 *            the id
+	 * @param code
+	 *            the code
+	 * @param name
+	 *            the name
+	 * @param description
+	 *            the description
+	 * @param date
+	 *            the date
 	 */
 	@JsonCreator
 	public BadgeMixin(

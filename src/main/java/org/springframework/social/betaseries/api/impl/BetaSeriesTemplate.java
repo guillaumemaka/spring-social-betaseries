@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -40,7 +40,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 // TODO: Auto-generated Javadoc
 /**
  * The Class BetaSeriesTemplate.
- * 
+ *
  * @author Guillaume Maka
  */
 public class BetaSeriesTemplate extends AbstractOAuth2ApiBinding implements
@@ -87,7 +87,7 @@ public class BetaSeriesTemplate extends AbstractOAuth2ApiBinding implements
 	
 	/**
 	 * Instantiates a new beta series template.
-	 * 
+	 *
 	 * @param accessToken
 	 *            the access token
 	 * @param apiKey

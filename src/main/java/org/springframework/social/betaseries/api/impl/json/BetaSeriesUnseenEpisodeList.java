@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,7 +36,8 @@ public class BetaSeriesUnseenEpisodeList extends
 	/**
 	 * Instantiates a new beta series unseen episode list.
 	 *
-	 * @param list the list
+	 * @param list
+	 *            the list
 	 */
 	@JsonCreator
 	public BetaSeriesUnseenEpisodeList(@JsonProperty("shows") List<UnseenEpisode> list) {

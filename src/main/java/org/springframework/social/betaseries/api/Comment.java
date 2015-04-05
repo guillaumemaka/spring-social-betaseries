@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,7 +37,7 @@ import java.util.Date;
  */
 /**
  * The Class Comment.
- * 
+ *
  * @author Guillaume Maka
  */
 public class Comment extends BetaSeriesObject implements Serializable{
@@ -75,15 +75,24 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	/**
 	 * Instantiates a new comment.
 	 *
-	 * @param id            the id
-	 * @param userId            the user id
-	 * @param login            the login
-	 * @param avatarUrl the avatar url
-	 * @param createdAt            the created at
-	 * @param text            the text
-	 * @param innerId            the inner id
-	 * @param inReplyTo            the in reply to
-	 * @param numberOfReplies the number of replies
+	 * @param id
+	 *            the id
+	 * @param userId
+	 *            the user id
+	 * @param login
+	 *            the login
+	 * @param avatarUrl
+	 *            the avatar url
+	 * @param createdAt
+	 *            the created at
+	 * @param text
+	 *            the text
+	 * @param innerId
+	 *            the inner id
+	 * @param inReplyTo
+	 *            the in reply to
+	 * @param numberOfReplies
+	 *            the number of replies
 	 */
 	public Comment(int id, int userId, String login,String avatarUrl, Date createdAt,
 			String text, int innerId, int inReplyTo, int numberOfReplies) {
@@ -120,7 +129,7 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	/**
 	 * Gets the user id.
 	 *
-	 * @return the userId
+	 * @return the user id
 	 */
 	public int getUserId() {
 		return userId;
@@ -138,7 +147,7 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	/**
 	 * Gets the avatar url.
 	 *
-	 * @return the avatarUrl
+	 * @return the avatar url
 	 */
 	public String getAvatarUrl() {
 		return avatarUrl;
@@ -147,7 +156,7 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	/**
 	 * Gets the created at.
 	 *
-	 * @return the createdAt
+	 * @return the created at
 	 */
 	public Date getCreatedAt() {
 		return createdAt;
@@ -165,7 +174,7 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	/**
 	 * Gets the inner id.
 	 *
-	 * @return the innerId
+	 * @return the inner id
 	 */
 	public int getInnerId() {
 		return innerId;
@@ -174,7 +183,7 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	/**
 	 * Gets the in reply to.
 	 *
-	 * @return the inReplyTo
+	 * @return the in reply to
 	 */
 	public int getInReplyTo() {
 		return inReplyTo;
@@ -183,7 +192,7 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	/**
 	 * Gets the number of replies.
 	 *
-	 * @return the numberOfReplies
+	 * @return the number of replies
 	 */
 	public int getNumberOfReplies() {
 		return numberOfReplies;

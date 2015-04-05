@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 // TODO: Auto-generated Javadoc
 /**
  * The Class ShowMixin.
- * 
+ *
  * @author Guillaume Maka
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -36,7 +36,7 @@ abstract class ShowMixin extends BetaSeriesObjectMixin {
 
 	/**
 	 * Instantiates a new show mixin.
-	 * 
+	 *
 	 * @param id
 	 *            the id
 	 * @param theTvDbId
@@ -71,7 +71,7 @@ abstract class ShowMixin extends BetaSeriesObjectMixin {
 	@JsonProperty("followers")
 	String numberOfFollowers;
 
-	/** The comments. */
+	/** The number of comments. */
 	@JsonProperty("comments")
 	String numberOfComments;
 
@@ -111,7 +111,7 @@ abstract class ShowMixin extends BetaSeriesObjectMixin {
 	@JsonProperty("language")
 	String language;
 
-	/** The notes. */
+	/** The note. */
 	@JsonProperty("notes")
 	Note note;
 
@@ -138,8 +138,10 @@ abstract class ShowMixin extends BetaSeriesObjectMixin {
 		/**
 		 * Instantiates a new season detail mixin.
 		 *
-		 * @param seasonNumber the season number
-		 * @param numberOfEpisode the number of episode
+		 * @param seasonNumber
+		 *            the season number
+		 * @param numberOfEpisode
+		 *            the number of episode
 		 */
 		@JsonCreator
 		public SeasonDetailMixin(
@@ -158,12 +160,18 @@ abstract class ShowMixin extends BetaSeriesObjectMixin {
 		/**
 		 * Instantiates a new user detail mixin.
 		 *
-		 * @param archived the archived
-		 * @param favorited the favorited
-		 * @param remaining the remaining
-		 * @param status the status
-		 * @param last the last
-		 * @param tags the tags
+		 * @param archived
+		 *            the archived
+		 * @param favorited
+		 *            the favorited
+		 * @param remaining
+		 *            the remaining
+		 * @param status
+		 *            the status
+		 * @param last
+		 *            the last
+		 * @param tags
+		 *            the tags
 		 */
 		@JsonCreator
 		public UserDetailMixin(

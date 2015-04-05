@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ package org.springframework.social.betaseries.api;
 // TODO: Auto-generated Javadoc
 /**
  * The Class MemberOptions.
- * 
+ *
  * @author Guillaume Maka
  */
 public class MemberOptions extends BetaSeriesObject {
@@ -35,7 +35,7 @@ public class MemberOptions extends BetaSeriesObject {
 	/** The timelag enabled. */
 	private boolean timelagEnabled;
 	
-	/** The friendship enabled. */
+	/** The friendship status. */
 	private BSMemberOptionValue friendshipStatus;
 	
 	/**
@@ -70,7 +70,8 @@ public class MemberOptions extends BetaSeriesObject {
 	/**
 	 * Sets the notation enabled.
 	 *
-	 * @param notationEnabled the notationEnabled to set
+	 * @param notationEnabled
+	 *            the new notation enabled
 	 */
 	public void setNotationEnabled(boolean notationEnabled) {
 		this.notationEnabled = notationEnabled;
@@ -79,7 +80,7 @@ public class MemberOptions extends BetaSeriesObject {
 	/**
 	 * Checks if is downloaded enabled.
 	 *
-	 * @return the downloadedEnabled
+	 * @return true, if is downloaded enabled
 	 */
 	public boolean isDownloadedEnabled() {
 		return downloadedEnabled;
@@ -88,7 +89,8 @@ public class MemberOptions extends BetaSeriesObject {
 	/**
 	 * Sets the downloaded enabled.
 	 *
-	 * @param downloadedEnabled the downloadedEnabled to set
+	 * @param downloadedEnabled
+	 *            the new downloaded enabled
 	 */
 	public void setDownloadedEnabled(boolean downloadedEnabled) {
 		this.downloadedEnabled = downloadedEnabled;
@@ -97,7 +99,7 @@ public class MemberOptions extends BetaSeriesObject {
 	/**
 	 * Checks if is global enabled.
 	 *
-	 * @return the globalEnabled
+	 * @return true, if is global enabled
 	 */
 	public boolean isGlobalEnabled() {
 		return globalEnabled;
@@ -106,7 +108,8 @@ public class MemberOptions extends BetaSeriesObject {
 	/**
 	 * Sets the global enabled.
 	 *
-	 * @param globalEnabled the globalEnabled to set
+	 * @param globalEnabled
+	 *            the new global enabled
 	 */
 	public void setGlobalEnabled(boolean globalEnabled) {
 		this.globalEnabled = globalEnabled;
@@ -115,7 +118,7 @@ public class MemberOptions extends BetaSeriesObject {
 	/**
 	 * Checks if is timelag enabled.
 	 *
-	 * @return the timelagEnabled
+	 * @return true, if is timelag enabled
 	 */
 	public boolean isTimelagEnabled() {
 		return timelagEnabled;
@@ -124,7 +127,8 @@ public class MemberOptions extends BetaSeriesObject {
 	/**
 	 * Sets the timelag enabled.
 	 *
-	 * @param timelagEnabled the timelagEnabled to set
+	 * @param timelagEnabled
+	 *            the new timelag enabled
 	 */
 	public void setTimelagEnabled(boolean timelagEnabled) {
 		this.timelagEnabled = timelagEnabled;
@@ -133,7 +137,7 @@ public class MemberOptions extends BetaSeriesObject {
 	/**
 	 * Gets the friendship status.
 	 *
-	 * @return the friendshipEnabled
+	 * @return the friendship status
 	 */
 	public BSMemberOptionValue getFriendshipStatus() {
 		return friendshipStatus;
@@ -142,7 +146,8 @@ public class MemberOptions extends BetaSeriesObject {
 	/**
 	 * Sets the friendship status.
 	 *
-	 * @param friendshipStatus the new friendship status
+	 * @param friendshipStatus
+	 *            the new friendship status
 	 */
 	public void setFriendshipStatus(BSMemberOptionValue friendshipStatus) {
 		this.friendshipStatus = friendshipStatus;

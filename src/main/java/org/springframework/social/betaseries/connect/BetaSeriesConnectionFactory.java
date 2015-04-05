@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ public class BetaSeriesConnectionFactory extends OAuth2ConnectionFactory<BetaSer
 
 	/**
 	 * Instantiates a new beta series connection factory.
-	 * 
+	 *
 	 * @param clientId
 	 *            the client id
 	 * @param clientSecret

@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,35 +20,40 @@ import java.util.List;
 // TODO: Auto-generated Javadoc
 /**
  * The Interface CommentOperations.
- * 
+ *
  * @author Guillaume Maka
  */
 public interface CommentOperations {
 	
 	/**
-	 * Gets the latest comments for a specific object type.
+	 * Gets the comments for.
 	 *
-	 * @param type            the BetaSeries element type {@link BSObjectType} episode|movie|show|member episode|movie|show|member
-	 * @param objectId            the BetaSeries element object id
-	 * @return collection of {@link Comment}
+	 * @param type
+	 *            the type
+	 * @param objectId
+	 *            the object id
+	 * @return the comments for
 	 */
 	List<Comment> getCommentsFor(BSObjectType type, String objectId);
 	
 	/**
-	 * Gets a subset of comments.
+	 * Gets the comments for.
 	 *
-	 * @param type            the BetaSerie element type {@link BSObjectType} episode|movie|show|member
-	 * @param objectId            the object id
-	 * @param commentPerPage            the number of comment per page
-	 * @return a collection of {@link Comment}
+	 * @param type
+	 *            the type
+	 * @param objectId
+	 *            the object id
+	 * @param commentPerPage
+	 *            the comment per page
+	 * @return the comments for
 	 */
 	List<Comment> getCommentsFor(BSObjectType type, String objectId, int commentPerPage);
 	
 	/**
 	 * Gets the comments for.
-	 * 
+	 *
 	 * @param type
-	 *            the BetaSerie element type {@link BSObjectType} episode|movie|show|member
+	 *            the type
 	 * @param objectId
 	 *            the object id
 	 * @param commentPerPage
@@ -61,9 +66,9 @@ public interface CommentOperations {
 	
 	/**
 	 * Gets the comments for.
-	 * 
+	 *
 	 * @param type
-	 *            the BetaSerie element type {@link BSObjectType} episode|movie|show|member
+	 *            the type
 	 * @param objectId
 	 *            the object id
 	 * @param commentPerPage
@@ -78,9 +83,9 @@ public interface CommentOperations {
 	
 	/**
 	 * Gets the comments for.
-	 * 
+	 *
 	 * @param type
-	 *            the BetaSerie element type {@link BSObjectType} episode|movie|show|member
+	 *            the type
 	 * @param objectId
 	 *            the object id
 	 * @param commentPerPage
@@ -96,29 +101,31 @@ public interface CommentOperations {
 	List<Comment> getCommentsFor(BSObjectType type, String objectId, int commentPerPage, String sinceId, BSSortOrder order, boolean includeReplies);
 	
 	/**
-	 * Gets the comments replies for a specific comment.
+	 * Gets the comments replies for.
 	 *
-	 * @param commentId            the comment id
-	 * @param order            the order
+	 * @param commentId
+	 *            the comment id
+	 * @param order
+	 *            the order
 	 * @return the comments replies for
 	 */
 	List<Comment> getCommentsRepliesFor(String commentId, BSSortOrder order);
 	
 	/**
 	 * Suscribe.
-	 * 
+	 *
 	 * @param type
-	 *            the BetaSerie element type {@link BSObjectType} episode|movie|show|member
+	 *            the type
 	 * @param commentId
 	 *            the comment id
 	 */
 	void suscribe(BSObjectType type, String commentId);
 	
 	/**
-	 * Unsuscribe.
-	 * 
+	 * Un suscribe.
+	 *
 	 * @param type
-	 *            the BetaSerie element type {@link BSObjectType} episode|movie|show|member
+	 *            the type
 	 * @param commentId
 	 *            the comment id
 	 */

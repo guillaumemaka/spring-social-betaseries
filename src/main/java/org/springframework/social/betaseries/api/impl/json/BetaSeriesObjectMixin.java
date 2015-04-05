@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 // TODO: Auto-generated Javadoc
 /**
  * The Class BetaSeriesObjectMixin.
- * 
+ *
  * @author Guillaume Maka
  */
 @JsonIgnoreProperties(ignoreUnknown=true)
@@ -29,7 +29,7 @@ abstract class BetaSeriesObjectMixin {
 	
 	/**
 	 * Adds the.
-	 * 
+	 *
 	 * @param key
 	 *            the key
 	 * @param value

@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ package org.springframework.social.betaseries.api;
 // TODO: Auto-generated Javadoc
 /**
  * The Class Note.
- * 
+ *
  * @author Guillaume Maka
  */
 public class Note extends BetaSeriesObject {
@@ -39,7 +39,7 @@ public class Note extends BetaSeriesObject {
 	
 	/**
 	 * Gets the total.
-	 * 
+	 *
 	 * @return the total
 	 */
 	public double getTotal() {
@@ -48,7 +48,7 @@ public class Note extends BetaSeriesObject {
 
 	/**
 	 * Sets the total.
-	 * 
+	 *
 	 * @param total
 	 *            the new total
 	 */
@@ -58,7 +58,7 @@ public class Note extends BetaSeriesObject {
 
 	/**
 	 * Gets the average.
-	 * 
+	 *
 	 * @return the average
 	 */
 	public double getAverage() {
@@ -67,7 +67,7 @@ public class Note extends BetaSeriesObject {
 
 	/**
 	 * Sets the average.
-	 * 
+	 *
 	 * @param average
 	 *            the new average
 	 */
@@ -77,7 +77,7 @@ public class Note extends BetaSeriesObject {
 
 	/**
 	 * Gets the user note.
-	 * 
+	 *
 	 * @return the user note
 	 */
 	public double getUserNote() {
@@ -86,7 +86,7 @@ public class Note extends BetaSeriesObject {
 
 	/**
 	 * Sets the user note.
-	 * 
+	 *
 	 * @param userNote
 	 *            the new user note
 	 */
@@ -96,7 +96,7 @@ public class Note extends BetaSeriesObject {
 
 	/**
 	 * Instantiates a new note.
-	 * 
+	 *
 	 * @param total
 	 *            the total
 	 * @param average

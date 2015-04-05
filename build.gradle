@@ -24,7 +24,7 @@ dependencies {
 	compile group: 'com.fasterxml.jackson.core' , name: 'jackson-core', version: jacksonVersion
 	compile group: 'com.fasterxml.jackson.core' , name: 'jackson-annotations', version: jacksonAnnotationVersion
 	compile group: 'com.fasterxml.jackson.core' , name: 'jackson-databind', version: jacksonVersion
-	compile group: 'org.apache.httpcomponents' , name: 'httpclient', version: httpClientVersion
+	// compile group: 'org.apache.httpcomponents' , name: 'httpclient', version: httpClientVersion
 	compile group: 'org.slf4j' , name: 'slf4j-log4j12', version: slf4jVersion	
 	
 	testCompile group: 'junit' , name: 'junit', version: junitVersion
@@ -42,7 +42,7 @@ jar {
 
 test {
 	testLogging {
-		exceptionFormat "full" // default is "short"
+		exceptionFormat "short" // default is "short"
 		events "started", "passed", "skipped", "failed", "standardOut", "standardError"
 	}
 	

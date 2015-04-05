@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,7 +39,8 @@ public class TimelineTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the friends timeline.
 	 *
 	 * @return the friends timeline
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getFriendsTimeline() throws Exception {
@@ -56,7 +57,8 @@ public class TimelineTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the friends timeline nbpp.
 	 *
 	 * @return the friends timeline nbpp
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getFriendsTimelineNbpp() throws Exception {
@@ -69,7 +71,8 @@ public class TimelineTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the friends timeline nbpp since id.
 	 *
 	 * @return the friends timeline nbpp since id
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getFriendsTimelineNbppSinceId() throws Exception {
@@ -82,7 +85,8 @@ public class TimelineTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the friends timeline nbpp since id only types.
 	 *
 	 * @return the friends timeline nbpp since id only types
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getFriendsTimelineNbppSinceIdOnlyTypes() throws Exception {
@@ -95,7 +99,8 @@ public class TimelineTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the home timeline.
 	 *
 	 * @return the home timeline
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getHomeTimeline() throws Exception {
@@ -107,7 +112,8 @@ public class TimelineTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the home timeline nbpp.
 	 *
 	 * @return the home timeline nbpp
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getHomeTimelineNbpp() throws Exception {
@@ -120,7 +126,8 @@ public class TimelineTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the home timeline nbpp since id.
 	 *
 	 * @return the home timeline nbpp since id
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getHomeTimelineNbppSinceId() throws Exception {
@@ -133,7 +140,8 @@ public class TimelineTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the home timeline nbpp since id only types.
 	 *
 	 * @return the home timeline nbpp since id only types
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getHomeTimelineNbppSinceIdOnlyTypes() throws Exception {
@@ -146,7 +154,8 @@ public class TimelineTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the member timeline.
 	 *
 	 * @return the member timeline
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getMemberTimeline() throws Exception {
@@ -159,7 +168,8 @@ public class TimelineTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the member timeline nbpp.
 	 *
 	 * @return the member timeline nbpp
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getMemberTimelineNbpp() throws Exception {
@@ -172,7 +182,8 @@ public class TimelineTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the member timeline nbpp since id.
 	 *
 	 * @return the member timeline nbpp since id
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getMemberTimelineNbppSinceId() throws Exception {
@@ -185,7 +196,8 @@ public class TimelineTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the member timeline nbpp since id only types.
 	 *
 	 * @return the member timeline nbpp since id only types
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getMemberTimelineNbppSinceIdOnlyTypes() throws Exception {

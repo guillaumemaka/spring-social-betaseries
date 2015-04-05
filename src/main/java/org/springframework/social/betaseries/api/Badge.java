@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,43 +18,42 @@ package org.springframework.social.betaseries.api;
 import java.util.Date;
 
 /**
- * 
+ * The Class Badge.
+ *
  * @author Guillaume Maka
- *{
- * 	    "id": 148,
- *	    "code": "flashmob",
- *	    "name": "Flashmob",
- *	    "description": "Vou s avez regard\u00e9 le m\u00eame \u00e9pisode que 75 personnes ce jour-l\u00e0, vous \u00eates \u00e0 la mode.",
- *	    "date": "2012-04-16 00:26:21"
- *}
- *
- *
  */
 public class Badge extends BetaSeriesObject {	
 	
 	
 
-	/** The badge id. */
+	/** The id. */
 	private final Long id;
 	
-	/** The badge code. */
+	/** The code. */
 	private final String code;
 	
-	/** The badge name. */
+	/** The name. */
 	private final String name;
 	
-	/** The badge description. */
+	/** The description. */
 	private final String description;
 	
-	/** The badge earning date. */
+	/** The date. */
 	private final Date date;
 
 	/**
+	 * Instantiates a new badge.
+	 *
 	 * @param id
+	 *            the id
 	 * @param code
+	 *            the code
 	 * @param name
+	 *            the name
 	 * @param description
+	 *            the description
 	 * @param date
+	 *            the date
 	 */
 	public Badge(Long id, String code, String name, String description,
 			Date date) {
@@ -67,6 +66,8 @@ public class Badge extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the id.
+	 *
 	 * @return the id
 	 */
 	public Long getId() {
@@ -74,28 +75,36 @@ public class Badge extends BetaSeriesObject {
 	}
 
 	/**
-	 * @return the badge code
+	 * Gets the code.
+	 *
+	 * @return the code
 	 */
 	public String getCode() {
 		return code;
 	}
 
 	/**
-	 * @return the badge name
+	 * Gets the name.
+	 *
+	 * @return the name
 	 */
 	public String getName() {
 		return name;
 	}
 
 	/**
-	 * @return the badge description
+	 * Gets the description.
+	 *
+	 * @return the description
 	 */
 	public String getDescription() {
 		return description;
 	}
 
 	/**
-	 * @return the badge earning date
+	 * Gets the date.
+	 *
+	 * @return the date
 	 */
 	public Date getDate() {
 		return date;

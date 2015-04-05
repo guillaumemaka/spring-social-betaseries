@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ import java.util.List;
 // TODO: Auto-generated Javadoc
 /**
  * The Interface EpisodeOperations.
- * 
+ *
  * @author Guillaume Maka
  */
 public interface EpisodeOperations {
@@ -30,16 +30,16 @@ public interface EpisodeOperations {
 	
 	/**
 	 * Gets the by ids.
-	 * 
+	 *
 	 * @param episodeIds
-	 *            the BetaSerie episode object ids
+	 *            the episode ids
 	 * @return the by ids
 	 */
 	List<Episode> getByIds(String[] episodeIds);
 	
 	/**
 	 * Gets the by tv db ids.
-	 * 
+	 *
 	 * @param theTvDbIds
 	 *            the the tv db ids
 	 * @return the by tv db ids
@@ -48,69 +48,69 @@ public interface EpisodeOperations {
 	
 	/**
 	 * Gets the by ids.
-	 * 
+	 *
 	 * @param episodeIds
-	 *            the BetaSerie episode object ids
+	 *            the episode ids
 	 * @param includeSubtitles
-	 *            the subtitles {@link BSSubtitles}
+	 *            the include subtitles
 	 * @return the by ids
 	 */
 	List<Episode> getByIds(String[] episodeIds, boolean includeSubtitles);
 	
 	/**
 	 * Gets the by tv db ids.
-	 * 
+	 *
 	 * @param theTvDbIds
 	 *            the the tv db ids
 	 * @param includeSubtitles
-	 *            the subtitles {@link BSSubtitles}
+	 *            the include subtitles
 	 * @return the by tv db ids
 	 */
 	List<Episode> getByTvDbIds(String[] theTvDbIds, boolean includeSubtitles);
 	
 	/**
-	 * Gets all episodes to be watch.
-	 * 
-	 * @return a collection of {@link Episode}
+	 * Gets the episodes to be watch.
+	 *
+	 * @return the episodes to be watch
 	 */
 	List<UnseenEpisode> getEpisodesToBeWatch();
 	
 	/**
-	 * Gets the episodes to be watch for a specific show.
-	 * 
+	 * Gets the episodes to be watch.
+	 *
 	 * @param showId
 	 *            the show id
-	 * @return a collection of {@link Episode}
+	 * @return the episodes to be watch
 	 */
 	List<UnseenEpisode> getEpisodesToBeWatch(String showId);
 	
 	/**
-	 * Gets (N) episodes to be watch for a specific show.
-	 * 
+	 * Gets the episodes to be watch.
+	 *
 	 * @param showId
 	 *            the show id
 	 * @param limit
 	 *            the limit
-	 * @return a collection of {@link Episode}
+	 * @return the episodes to be watch
 	 */
 	List<UnseenEpisode> getEpisodesToBeWatch(String showId, int limit);
 	
 	/**
-	 * Gets (N) the episodes to be watch. for a specific show and a given user
-	 * 
+	 * Gets the episodes to be watch.
+	 *
 	 * @param showId
 	 *            the show id
 	 * @param limit
 	 *            the limit
 	 * @param user_id
 	 *            the user_id
-	 * @return a collection of {@link Episode}
+	 * @return the episodes to be watch
 	 */
 	List<UnseenEpisode> getEpisodesToBeWatch(String showId, int limit, String user_id);
 	
 	/**
-	 * Gets (N) the episodes to be watch. for a specific show and a given user, including subtitles
-	 * 
+	 * Gets the episodes to be watch.
+	 *
 	 * @param showId
 	 *            the show id
 	 * @param limit
@@ -118,36 +118,36 @@ public interface EpisodeOperations {
 	 * @param user_id
 	 *            the user_id
 	 * @param subtitles
-	 *            the subtitles {@link BSSubtitles} if specified return subtitle in the result set
-	 * @return a collection of {@link Episode}
+	 *            the subtitles
+	 * @return the episodes to be watch
 	 */
 	List<UnseenEpisode> getEpisodesToBeWatch(String showId, int limit, String user_id, BSSubtitles subtitles);
 	
 	/**
-	 * Search .
-	 * 
+	 * Search.
+	 *
 	 * @param showId
 	 *            the show id
 	 * @param number
-	 *            the show number SXXEXX e.g: S01E01
+	 *            the number
 	 * @param includeSubtitles
-	 *            the subtitles
-	 * @return a collection of {@link Episode}
+	 *            the include subtitles
+	 * @return the episode
 	 */
 	Episode search(String showId, String number, boolean includeSubtitles);
 	
 	/**
 	 * Gets the by id.
-	 * 
+	 *
 	 * @param episodeId
-	 *            the BetaSerie episode object id
+	 *            the episode id
 	 * @return the by id
 	 */
 	Episode getById(String episodeId);
 	
 	/**
-	 * Get an episode by the tv db id.
-	 * 
+	 * Gets the by the tv db id.
+	 *
 	 * @param theTvDbId
 	 *            the the tv db id
 	 * @return the by the tv db id
@@ -155,78 +155,80 @@ public interface EpisodeOperations {
 	Episode getByTheTvDbId(String theTvDbId);
 	
 	/**
-	 * Gets episode by id.
-	 * 
+	 * Gets the by id.
+	 *
 	 * @param episodeId
-	 *            the BetaSerie episode object id
-	 * @param includeSubtitles 
-	 *            the subtitles {@link BSSubtitles}
+	 *            the episode id
+	 * @param includeSubtitles
+	 *            the include subtitles
 	 * @return the by id
 	 */
 	Episode getById(String episodeId, boolean includeSubtitles);
 	
 	/**
-	 * Get an episode by the tv db id.
-	 * 
+	 * Gets the by the tv db id.
+	 *
 	 * @param theTvDbId
-	 *            the tv db id
+	 *            the the tv db id
 	 * @param includeSubtitles
-	 *            the subtitles {@link BSSubtitles}
-	 * @return {@link Episode}
+	 *            the include subtitles
+	 * @return the by the tv db id
 	 */
 	Episode getByTheTvDbId(String theTvDbId, boolean includeSubtitles);
 	
 	/**
 	 * Mark as downloaded.
-	 * 
+	 *
 	 * @param episodeId
-	 *            an episode {@link Episode}
-	 * @return TODO
+	 *            the episode id
+	 * @return the episode
 	 */
 	Episode markAsDownloaded(String episodeId);
 	
 	/**
 	 * Unmark as downloaded.
-	 * 
+	 *
 	 * @param episodeId
-	 *            an episode {@link Episode}
-	 * @return TODO
+	 *            the episode id
+	 * @return the episode
 	 */
 	Episode unmarkAsDownloaded(String episodeId);
 	
 	/**
 	 * Mark as watched.
-	 * 
+	 *
 	 * @param episodeId
-	 *            the an episode
-	 * @return TODO
+	 *            the episode id
+	 * @return the episode
 	 */
 	Episode markAsWatched(String episodeId);
 	
 	/**
 	 * Un mark as watched.
-	 * 
+	 *
 	 * @param episodeId
-	 *            the an episode
-	 * @return TODO
+	 *            the episode id
+	 * @return the episode
 	 */
 	Episode unMarkAsWatched(String episodeId);
 	
 	/**
 	 * Rate episode.
 	 *
-	 * @param episodeId            the an episode
-	 * @param note the note
-	 * @return TODO
+	 * @param episodeId
+	 *            the episode id
+	 * @param note
+	 *            the note
+	 * @return the episode
 	 */
 	Episode rateEpisode(String episodeId, int note);
 	
 	/**
 	 * Un rate episode.
-	 * 
+	 *
 	 * @param episodeId
-	 *            the an episode
-	 * @return TODO
+	 *            the episode id
+	 * @return the episode
 	 */
 	Episode unRateEpisode(String episodeId);
 	

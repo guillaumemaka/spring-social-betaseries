@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,10 +21,11 @@ import java.util.List;
 // TODO: Auto-generated Javadoc
 /**
  * The Class BSOptions.
- * 
+ *
  * @author Guillaume Maka
  */
 public class BSOptions extends BetaSeriesObject {
+	
 	/** The notation enabled. */
 	private boolean notationEnabled;
 	
@@ -54,7 +55,7 @@ public class BSOptions extends BetaSeriesObject {
 	/**
 	 * Checks if is notation enabled.
 	 *
-	 * @return the notationEnabled
+	 * @return true, if is notation enabled
 	 */
 	public boolean isNotationEnabled() {
 		return notationEnabled;
@@ -63,7 +64,8 @@ public class BSOptions extends BetaSeriesObject {
 	/**
 	 * Sets the notation enabled.
 	 *
-	 * @param notationEnabled the notationEnabled to set
+	 * @param notationEnabled
+	 *            the new notation enabled
 	 */
 	public void setNotationEnabled(boolean notationEnabled) {
 		this.notationEnabled = notationEnabled;
@@ -72,7 +74,7 @@ public class BSOptions extends BetaSeriesObject {
 	/**
 	 * Checks if is downloaded enabled.
 	 *
-	 * @return the downloadedEnabled
+	 * @return true, if is downloaded enabled
 	 */
 	public boolean isDownloadedEnabled() {
 		return downloadedEnabled;
@@ -81,7 +83,8 @@ public class BSOptions extends BetaSeriesObject {
 	/**
 	 * Sets the downloaded enabled.
 	 *
-	 * @param downloadedEnabled the downloadedEnabled to set
+	 * @param downloadedEnabled
+	 *            the new downloaded enabled
 	 */
 	public void setDownloadedEnabled(boolean downloadedEnabled) {
 		this.downloadedEnabled = downloadedEnabled;
@@ -90,7 +93,7 @@ public class BSOptions extends BetaSeriesObject {
 	/**
 	 * Checks if is global enabled.
 	 *
-	 * @return the globalEnabled
+	 * @return true, if is global enabled
 	 */
 	public boolean isGlobalEnabled() {
 		return globalEnabled;
@@ -99,7 +102,8 @@ public class BSOptions extends BetaSeriesObject {
 	/**
 	 * Sets the global enabled.
 	 *
-	 * @param globalEnabled the globalEnabled to set
+	 * @param globalEnabled
+	 *            the new global enabled
 	 */
 	public void setGlobalEnabled(boolean globalEnabled) {
 		this.globalEnabled = globalEnabled;
@@ -108,7 +112,7 @@ public class BSOptions extends BetaSeriesObject {
 	/**
 	 * Checks if is timelag enabled.
 	 *
-	 * @return the timelagEnabled
+	 * @return true, if is timelag enabled
 	 */
 	public boolean isTimelagEnabled() {
 		return timelagEnabled;
@@ -117,7 +121,8 @@ public class BSOptions extends BetaSeriesObject {
 	/**
 	 * Sets the timelag enabled.
 	 *
-	 * @param timelagEnabled the timelagEnabled to set
+	 * @param timelagEnabled
+	 *            the new timelag enabled
 	 */
 	public void setTimelagEnabled(boolean timelagEnabled) {
 		this.timelagEnabled = timelagEnabled;
@@ -126,7 +131,7 @@ public class BSOptions extends BetaSeriesObject {
 	/**
 	 * Checks if is friendship enabled.
 	 *
-	 * @return the friendshipEnabled
+	 * @return true, if is friendship enabled
 	 */
 	public boolean isFriendshipEnabled() {
 		return friendshipEnabled;
@@ -135,7 +140,8 @@ public class BSOptions extends BetaSeriesObject {
 	/**
 	 * Sets the friendship enabled.
 	 *
-	 * @param friendshipEnabled the friendshipEnabled to set
+	 * @param friendshipEnabled
+	 *            the new friendship enabled
 	 */
 	public void setFriendshipEnabled(boolean friendshipEnabled) {
 		this.friendshipEnabled = friendshipEnabled;
@@ -153,7 +159,8 @@ public class BSOptions extends BetaSeriesObject {
 	/**
 	 * Sets the sources.
 	 *
-	 * @param sources the sources to set
+	 * @param sources
+	 *            the new sources
 	 */
 	public void setSources(List<SubtitleSource> sources) {
 		this.sources = sources;

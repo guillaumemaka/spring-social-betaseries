@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,13 +28,14 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 // TODO: Auto-generated Javadoc
 /**
  * The Class MemberMixin.
- * 
+ *
  * @author Guillaume Maka
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 // @JsonDeserialize(using = MemberDeserializer.class)
 abstract class MemberMixin extends BetaSeriesObjectMixin {
-	/** The id. */
+	
+	/** The member id. */
 	@JsonProperty("id")
 	String memberId;
 

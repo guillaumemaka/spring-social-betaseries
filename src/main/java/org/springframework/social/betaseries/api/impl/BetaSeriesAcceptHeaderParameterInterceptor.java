@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,14 +26,14 @@ import org.springframework.social.support.HttpRequestDecorator;
 
 // TODO: Auto-generated Javadoc
 /**
- * The Class BetaSeriesApiKeyParameterInterceptor.
- * 
+ * The Class BetaSeriesAcceptHeaderParameterInterceptor.
+ *
  * @author Guillaume Maka
  */
 public class BetaSeriesAcceptHeaderParameterInterceptor implements
 		ClientHttpRequestInterceptor {
 	
-	/** The api key. */
+	/** The accepted media type. */
 	private String acceptedMediaType;
 	
 	/**
@@ -44,9 +44,10 @@ public class BetaSeriesAcceptHeaderParameterInterceptor implements
 	}
 	
 	/**
-	 * Instantiates a new beta series api key parameter interceptor.
+	 * Instantiates a new beta series accept header parameter interceptor.
 	 *
-	 * @param acceptedMediaType the accepted media type
+	 * @param acceptedMediaType
+	 *            the accepted media type
 	 */
 	public BetaSeriesAcceptHeaderParameterInterceptor(String acceptedMediaType) {
 		this(MediaType.parseMediaType(acceptedMediaType));
@@ -55,7 +56,8 @@ public class BetaSeriesAcceptHeaderParameterInterceptor implements
 	/**
 	 * Instantiates a new beta series accept header parameter interceptor.
 	 *
-	 * @param mediaType the media type
+	 * @param mediaType
+	 *            the media type
 	 */
 	public BetaSeriesAcceptHeaderParameterInterceptor(MediaType mediaType) {
 		if(mediaType.includes(MediaType.APPLICATION_JSON) || mediaType.includes(MediaType.APPLICATION_XML)) {

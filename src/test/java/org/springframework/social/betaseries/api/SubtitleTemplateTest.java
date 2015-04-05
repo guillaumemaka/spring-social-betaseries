@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,7 +37,8 @@ public class SubtitleTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the episode subtitles.
 	 *
 	 * @return the episode subtitles
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getEpisodeSubtitles() throws Exception {
@@ -54,7 +55,8 @@ public class SubtitleTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the episode subtitles for language.
 	 *
 	 * @return the episode subtitles for language
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getEpisodeSubtitlesForLanguage() throws Exception {
@@ -67,7 +69,8 @@ public class SubtitleTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the show subtitles.
 	 *
 	 * @return the show subtitles
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getShowSubtitles() throws Exception {
@@ -80,7 +83,8 @@ public class SubtitleTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the show subtitles for language.
 	 *
 	 * @return the show subtitles for language
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getShowSubtitlesForLanguage() throws Exception {
@@ -93,7 +97,8 @@ public class SubtitleTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the last added subtitles.
 	 *
 	 * @return the last added subtitles
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getLastAddedSubtitles() throws Exception {
@@ -106,7 +111,8 @@ public class SubtitleTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the last added subtitles for number.
 	 *
 	 * @return the last added subtitles for number
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getLastAddedSubtitlesForNumber() throws Exception {
@@ -119,7 +125,8 @@ public class SubtitleTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the last added subtitles for number amd language.
 	 *
 	 * @return the last added subtitles for number amd language
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getLastAddedSubtitlesForNumberAmdLanguage() throws Exception {
@@ -131,7 +138,8 @@ public class SubtitleTemplateTest extends AbstractBetaSeriesApiTest {
 	/**
 	 * Post report.
 	 *
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void postReport() throws Exception {

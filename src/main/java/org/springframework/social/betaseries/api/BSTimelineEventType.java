@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,47 +26,64 @@ public enum BSTimelineEventType {
 	
 	/** The friend add. */
 	FRIEND_ADD, 
+ 
  /** The friend delete. */
  FRIEND_DELETE, 
+ 
  /** The markas. */
  MARKAS, 
+ 
  /** The add serie. */
  ADD_SERIE, 
+ 
  /** The del serie. */
  DEL_SERIE, 
+ 
  /** The archive. */
  ARCHIVE,
     
     /** The unarchive. */
     UNARCHIVE, 
+ 
  /** The recommandation. */
  RECOMMANDATION, 
+ 
  /** The recommandation decline. */
  RECOMMANDATION_DECLINE, 
+ 
  /** The recommandation accept. */
  RECOMMANDATION_ACCEPT,
     
     /** The inscription. */
     INSCRIPTION, 
+ 
  /** The update. */
  UPDATE, 
+ 
  /** The subtitles. */
  SUBTITLES, 
+ 
  /** The comment. */
  COMMENT, 
+ 
  /** The badge. */
  BADGE, 
+ 
  /** The forum. */
  FORUM, 
+ 
  /** The wiki. */
  WIKI, 
+ 
  /** The film add. */
  FILM_ADD, 
+ 
  /** The film del. */
  FILM_DEL,
     
     /** The banner. */
     BANNER, 
+ 
  /** The suggest. */
  SUGGEST
 }

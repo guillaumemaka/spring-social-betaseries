@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,7 +33,7 @@ import org.springframework.web.client.RestTemplate;
 // TODO: Auto-generated Javadoc
 /**
  * The Class EpisodeTemplate.
- * 
+ *
  * @author Guillaume Maka
  */
 public class EpisodeTemplate extends AbstractBetaSeriesOperations implements EpisodeOperations {
@@ -43,7 +43,7 @@ public class EpisodeTemplate extends AbstractBetaSeriesOperations implements Epi
 	
 	/**
 	 * Instantiates a new episode template.
-	 * 
+	 *
 	 * @param restTemplate
 	 *            the rest template
 	 * @param isUserAuthorized

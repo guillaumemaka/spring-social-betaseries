@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,7 +35,8 @@ public class BetaSeriesUserList extends AbstractBetaSeriesList<BSUser>{
 	/**
 	 * Instantiates a new beta series user list.
 	 *
-	 * @param list the list
+	 * @param list
+	 *            the list
 	 */
 	@JsonCreator
 	public BetaSeriesUserList(@JsonProperty("users") List<BSUser> list) {

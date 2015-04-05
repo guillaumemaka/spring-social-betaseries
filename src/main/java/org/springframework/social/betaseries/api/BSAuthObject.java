@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,11 +42,16 @@ public class BSAuthObject {
 	/**
 	 * Instantiates a new BS auth object.
 	 *
-	 * @param userId the user id
-	 * @param login the login
-	 * @param inAccount the in account
-	 * @param token the token
-	 * @param hash the hash
+	 * @param userId
+	 *            the user id
+	 * @param login
+	 *            the login
+	 * @param inAccount
+	 *            the in account
+	 * @param token
+	 *            the token
+	 * @param hash
+	 *            the hash
 	 */
 	public BSAuthObject(String userId, String login, boolean inAccount,
 			String token, String hash) {
@@ -61,7 +66,7 @@ public class BSAuthObject {
 	/**
 	 * Gets the user id.
 	 *
-	 * @return the userId
+	 * @return the user id
 	 */
 	public String getUserId() {		
 		return userId;
@@ -79,7 +84,7 @@ public class BSAuthObject {
 	/**
 	 * Checks if is in account.
 	 *
-	 * @return the inAccount
+	 * @return true, if is in account
 	 */
 	public boolean isInAccount() {		
 		return inAccount;

@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,7 +38,8 @@ public class MessageTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the discussion.
 	 *
 	 * @return the discussion
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getDiscussion() throws Exception {
@@ -66,7 +67,8 @@ public class MessageTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the member inbox.
 	 *
 	 * @return the member inbox
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getMemberInbox() throws Exception {
@@ -79,7 +81,8 @@ public class MessageTemplateTest extends AbstractBetaSeriesApiTest {
 	 * Gets the member inbox page.
 	 *
 	 * @return the member inbox page
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void getMemberInboxPage() throws Exception {
@@ -91,7 +94,8 @@ public class MessageTemplateTest extends AbstractBetaSeriesApiTest {
 	/**
 	 * Post message.
 	 *
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void postMessage() throws Exception {
@@ -104,7 +108,8 @@ public class MessageTemplateTest extends AbstractBetaSeriesApiTest {
 	/**
 	 * Post message wirh discussion id.
 	 *
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void postMessageWirhDiscussionId() throws Exception {
@@ -117,7 +122,8 @@ public class MessageTemplateTest extends AbstractBetaSeriesApiTest {
 	/**
 	 * Delete message.
 	 *
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void deleteMessage() throws Exception {
@@ -129,7 +135,8 @@ public class MessageTemplateTest extends AbstractBetaSeriesApiTest {
 	/**
 	 * Mark message as read.
 	 *
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	@Test
 	public void markMessageAsRead() throws Exception {

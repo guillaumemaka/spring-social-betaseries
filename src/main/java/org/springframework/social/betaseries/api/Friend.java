@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ package org.springframework.social.betaseries.api;
 // TODO: Auto-generated Javadoc
 /**
  * The Class Friend.
- * 
+ *
  * @author Guillaume Maka
  */
 public class Friend extends BetaSeriesObject {
@@ -35,9 +35,12 @@ public class Friend extends BetaSeriesObject {
 	/**
 	 * Instantiates a new friend.
 	 *
-	 * @param id the id
-	 * @param login the login
-	 * @param inAccount the in account
+	 * @param id
+	 *            the id
+	 * @param login
+	 *            the login
+	 * @param inAccount
+	 *            the in account
 	 */
 	public Friend(String id, String login, boolean inAccount) {
 		super();
@@ -68,7 +71,7 @@ public class Friend extends BetaSeriesObject {
 	/**
 	 * Checks if is in account.
 	 *
-	 * @return the inAccount
+	 * @return true, if is in account
 	 */
 	public boolean isInAccount() {
 		return inAccount;

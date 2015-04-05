@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ package org.springframework.social.betaseries.api;
 // TODO: Auto-generated Javadoc
 /**
  * The Interface PictureOperations.
- * 
+ *
  * @author Guillaume Maka
  */
 public interface PictureOperations {
@@ -27,7 +27,8 @@ public interface PictureOperations {
 	/**
 	 * Gets the badge picture.
 	 *
-	 * @param badgeId the badge id
+	 * @param badgeId
+	 *            the badge id
 	 * @return the badge picture
 	 */
 	byte[] getBadgePicture(int badgeId);
@@ -35,9 +36,12 @@ public interface PictureOperations {
 	/**
 	 * Gets the badge picture.
 	 *
-	 * @param badgeId the badge id
-	 * @param height the height
-	 * @param width the width
+	 * @param badgeId
+	 *            the badge id
+	 * @param height
+	 *            the height
+	 * @param width
+	 *            the width
 	 * @return the badge picture
 	 */
 	byte[] getBadgePicture(int badgeId, Integer height, Integer width);
@@ -45,7 +49,8 @@ public interface PictureOperations {
 	/**
 	 * Gets the character picture.
 	 *
-	 * @param characterId the character id
+	 * @param characterId
+	 *            the character id
 	 * @return the character picture
 	 */
 	byte[] getCharacterPicture(int characterId);
@@ -53,9 +58,12 @@ public interface PictureOperations {
 	/**
 	 * Gets the character picture.
 	 *
-	 * @param characterId the character id
-	 * @param height the height
-	 * @param width the width
+	 * @param characterId
+	 *            the character id
+	 * @param height
+	 *            the height
+	 * @param width
+	 *            the width
 	 * @return the character picture
 	 */
 	byte[] getCharacterPicture(int characterId, Integer height, Integer width);
@@ -63,7 +71,8 @@ public interface PictureOperations {
 	/**
 	 * Gets the episode picture.
 	 *
-	 * @param episodeId the episode id
+	 * @param episodeId
+	 *            the episode id
 	 * @return the episode picture
 	 */
 	byte[] getEpisodePicture(int episodeId);
@@ -71,9 +80,12 @@ public interface PictureOperations {
 	/**
 	 * Gets the episode picture.
 	 *
-	 * @param episodeId the episode id
-	 * @param height the height
-	 * @param width the width
+	 * @param episodeId
+	 *            the episode id
+	 * @param height
+	 *            the height
+	 * @param width
+	 *            the width
 	 * @return the episode picture
 	 */
 	byte[] getEpisodePicture(int episodeId, Integer height, Integer width);
@@ -81,7 +93,8 @@ public interface PictureOperations {
 	/**
 	 * Gets the member picture.
 	 *
-	 * @param memberId the member id
+	 * @param memberId
+	 *            the member id
 	 * @return the member picture
 	 */
 	byte[] getMemberPicture(int memberId);
@@ -89,9 +102,12 @@ public interface PictureOperations {
 	/**
 	 * Gets the member picture.
 	 *
-	 * @param memberId the member id
-	 * @param height the height
-	 * @param width the width
+	 * @param memberId
+	 *            the member id
+	 * @param height
+	 *            the height
+	 * @param width
+	 *            the width
 	 * @return the member picture
 	 */
 	byte[] getMemberPicture(int memberId, Integer height, Integer width);
@@ -99,7 +115,8 @@ public interface PictureOperations {
 	/**
 	 * Gets the movie picture.
 	 *
-	 * @param movieId the movie id
+	 * @param movieId
+	 *            the movie id
 	 * @return the movie picture
 	 */
 	byte[] getMoviePicture(int movieId);
@@ -107,9 +124,12 @@ public interface PictureOperations {
 	/**
 	 * Gets the movie picture.
 	 *
-	 * @param movieId the movie id
-	 * @param height the height
-	 * @param width the width
+	 * @param movieId
+	 *            the movie id
+	 * @param height
+	 *            the height
+	 * @param width
+	 *            the width
 	 * @return the movie picture
 	 */
 	byte[] getMoviePicture(int movieId, Integer height, Integer width);
@@ -117,7 +137,8 @@ public interface PictureOperations {
 	/**
 	 * Gets the show picture.
 	 *
-	 * @param showId the show id
+	 * @param showId
+	 *            the show id
 	 * @return the show picture
 	 */
 	byte[] getShowPicture(int showId);
@@ -125,9 +146,12 @@ public interface PictureOperations {
 	/**
 	 * Gets the show picture.
 	 *
-	 * @param showId the show id
-	 * @param height the height
-	 * @param width the width
+	 * @param showId
+	 *            the show id
+	 * @param height
+	 *            the height
+	 * @param width
+	 *            the width
 	 * @return the show picture
 	 */
 	byte[] getShowPicture(int showId, Integer height, Integer width);

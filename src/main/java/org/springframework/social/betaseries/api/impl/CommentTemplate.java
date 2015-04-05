@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ import org.springframework.web.client.RestTemplate;
 // TODO: Auto-generated Javadoc
 /**
  * The Class CommentTemplate.
- * 
+ *
  * @author Guillaume Maka
  */
 public class CommentTemplate extends AbstractBetaSeriesOperations implements
@@ -41,7 +41,7 @@ public class CommentTemplate extends AbstractBetaSeriesOperations implements
 	
 	/**
 	 * Instantiates a new comment template.
-	 * 
+	 *
 	 * @param restTemplate
 	 *            the rest template
 	 * @param isUserAuthorized

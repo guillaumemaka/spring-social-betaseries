@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,11 +35,16 @@ abstract class UnseenEpisodeMixin extends BetaSeriesObjectMixin {
 	/**
 	 * Instantiates a new unseen episode mixin.
 	 *
-	 * @param showId the show id
-	 * @param theTvDbId the the tv db id
-	 * @param title the title
-	 * @param remaining the remaining
-	 * @param episodes the episodes
+	 * @param showId
+	 *            the show id
+	 * @param theTvDbId
+	 *            the the tv db id
+	 * @param title
+	 *            the title
+	 * @param remaining
+	 *            the remaining
+	 * @param episodes
+	 *            the episodes
 	 */
 	@JsonCreator
 	public UnseenEpisodeMixin(

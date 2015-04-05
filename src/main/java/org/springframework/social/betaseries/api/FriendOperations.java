@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,91 +20,92 @@ import java.util.List;
 // TODO: Auto-generated Javadoc
 /**
  * The Interface FriendOperations.
- * 
+ *
  * @author Guillaume Maka
  */
 public interface FriendOperations {
 	
 	/**
-	 * Block a user.
-	 * 
+	 * Block.
+	 *
 	 * @param userId
-	 *            the user id to block
-	 * @return TODO
+	 *            the user id
+	 * @return the member
 	 */
 	Member block(int userId);
 	
 	/**
-	 * Unblock a user.
-	 * 
+	 * Unblock.
+	 *
 	 * @param userId
-	 *            the user id to unblock
-	 * @return TODO
+	 *            the user id
+	 * @return the member
 	 */
 	Member unblock(int userId);
 	
 	/**
-	 * Add a friend relationship.
-	 * 
+	 * Adds the friend.
+	 *
 	 * @param userId
-	 *            the user id to add
-	 * @return TODO
+	 *            the user id
+	 * @return the member
 	 */
 	Member addFriend(int userId);
 	
 	/**
-	 * Removes a friend relationship.
-	 * 
+	 * Removes the friend.
+	 *
 	 * @param userId
-	 *            the user id to remove
-	 * @return TODO
+	 *            the user id
+	 * @return the member
 	 */
 	Member removeFriend(int userId);
 	
 	/**
-	 * Get the Friends list for the currenr user.
-	 * 
-	 * @return the list
+	 * Gets the friends list.
+	 *
+	 * @return the friends list
 	 */
 	List<BSUser> getFriendsList();
 	
 	/**
-	 * Get the Friends list for a specific user.
+	 * Gets the friends list.
 	 *
-	 * @param userId            the user id
-	 * @return the list
+	 * @param userId
+	 *            the user id
+	 * @return the friends list
 	 */
 	List<BSUser> getFriendsList(String userId);
 	
 	/**
-	 * Get the Blocked friends list for the current user. 
-	 * 
-	 * @return a collection of {@link Friend}
+	 * Gets the blocked friends list.
+	 *
+	 * @return the blocked friends list
 	 */
 	List<BSUser> getBlockedFriendsList();
 	
 	/**
-	 * Blocked friends list a specific user.
-	 * 
+	 * Gets the blocked friends list.
+	 *
 	 * @param userId
 	 *            the user id
-	 * @return the list
+	 * @return the blocked friends list
 	 */
 	List<BSUser> getBlockedFriendsList(String userId);
 	
 	/**
-	 * Get the requested friendship sent.
-	 * 
-	 * @return the list
+	 * Gets the requested friends.
+	 *
+	 * @return the requested friends
 	 */
 	List<BSUser> getRequestedFriends();
 	
 	/**
-	 * Get the requested friendship sent, including the received request friendship.
-	 * 
+	 * Gets the requested friends.
+	 *
 	 * @param received
 	 *            the received
-	 * @return the list
+	 * @return the requested friends
 	 */
 	List<BSUser> getRequestedFriends(boolean received);
 }

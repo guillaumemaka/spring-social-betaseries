@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,12 +20,12 @@ import java.util.List;
 // TODO: Auto-generated Javadoc
 /**
  * The Class Member.
- * 
+ *
  * @author Guillaume Maka
  */
 public class Member extends BetaSeriesObject {
 	
-	/** The id. */	
+	/** The member id. */	
 	private String memberId;
 	
 	/** The login. */
@@ -67,7 +67,7 @@ public class Member extends BetaSeriesObject {
 	/**
 	 * Gets the member id.
 	 *
-	 * @return the id
+	 * @return the member id
 	 */
 	public String getMemberId() {
 		return memberId;
@@ -76,7 +76,8 @@ public class Member extends BetaSeriesObject {
 	/**
 	 * Sets the member id.
 	 *
-	 * @param id the id to set
+	 * @param id
+	 *            the new member id
 	 */
 	public void setMemberId(String id) {
 		this.memberId = id;
@@ -94,7 +95,8 @@ public class Member extends BetaSeriesObject {
 	/**
 	 * Sets the login.
 	 *
-	 * @param login the login to set
+	 * @param login
+	 *            the new login
 	 */
 	public void setLogin(String login) {
 		this.login = login;
@@ -112,7 +114,8 @@ public class Member extends BetaSeriesObject {
 	/**
 	 * Sets the xp.
 	 *
-	 * @param xp the xp to set
+	 * @param xp
+	 *            the new xp
 	 */
 	public void setXp(int xp) {
 		this.xp = xp;
@@ -121,7 +124,7 @@ public class Member extends BetaSeriesObject {
 	/**
 	 * Gets the avatar url.
 	 *
-	 * @return the avatarUrl
+	 * @return the avatar url
 	 */
 	public String getAvatarUrl() {
 		return avatarUrl;
@@ -130,7 +133,8 @@ public class Member extends BetaSeriesObject {
 	/**
 	 * Sets the avatar url.
 	 *
-	 * @param avatarUrl the avatarUrl to set
+	 * @param avatarUrl
+	 *            the new avatar url
 	 */
 	public void setAvatarUrl(String avatarUrl) {
 		this.avatarUrl = avatarUrl;
@@ -148,7 +152,8 @@ public class Member extends BetaSeriesObject {
 	/**
 	 * Sets the cached.
 	 *
-	 * @param cached the cached to set
+	 * @param cached
+	 *            the new cached
 	 */
 	public void setCached(int cached) {
 		this.cached = cached;
@@ -157,7 +162,7 @@ public class Member extends BetaSeriesObject {
 	/**
 	 * Checks if is in account.
 	 *
-	 * @return the inAccount
+	 * @return true, if is in account
 	 */
 	public boolean isInAccount() {
 		return inAccount;
@@ -166,7 +171,8 @@ public class Member extends BetaSeriesObject {
 	/**
 	 * Sets the in account.
 	 *
-	 * @param inAccount the inAccount to set
+	 * @param inAccount
+	 *            the new in account
 	 */
 	public void setInAccount(boolean inAccount) {
 		this.inAccount = inAccount;
@@ -184,7 +190,8 @@ public class Member extends BetaSeriesObject {
 	/**
 	 * Sets the stats.
 	 *
-	 * @param stats the stats to set
+	 * @param stats
+	 *            the new stats
 	 */
 	public void setStats(MemberStats stats) {
 		this.stats = stats;
@@ -202,7 +209,8 @@ public class Member extends BetaSeriesObject {
 	/**
 	 * Sets the shows.
 	 *
-	 * @param shows the shows to set
+	 * @param shows
+	 *            the new shows
 	 */
 	public void setShows(List<Show> shows) {
 		this.shows = shows;
@@ -220,7 +228,8 @@ public class Member extends BetaSeriesObject {
 	/**
 	 * Sets the movies.
 	 *
-	 * @param movies the movies to set
+	 * @param movies
+	 *            the new movies
 	 */
 	public void setMovies(List<Movie> movies) {
 		this.movies = movies;
@@ -238,7 +247,8 @@ public class Member extends BetaSeriesObject {
 	/**
 	 * Sets the options.
 	 *
-	 * @param options the options to set
+	 * @param options
+	 *            the new options
 	 */
 	public void setOptions(MemberOptions options) {
 		this.options = options;

@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,15 +37,24 @@ abstract class SubtitleMixin extends BetaSeriesObjectMixin {
 	/**
 	 * Instantiates a new subtitle mixin.
 	 *
-	 * @param id the id
-	 * @param language the language
-	 * @param source the source
-	 * @param quality the quality
-	 * @param file the file
-	 * @param content the content
-	 * @param url the url
-	 * @param embededEpisode the embeded episode
-	 * @param date the date
+	 * @param id
+	 *            the id
+	 * @param language
+	 *            the language
+	 * @param source
+	 *            the source
+	 * @param quality
+	 *            the quality
+	 * @param file
+	 *            the file
+	 * @param content
+	 *            the content
+	 * @param url
+	 *            the url
+	 * @param embededEpisode
+	 *            the embeded episode
+	 * @param date
+	 *            the date
 	 */
 	@JsonCreator
 	SubtitleMixin(
@@ -71,10 +80,14 @@ abstract class SubtitleMixin extends BetaSeriesObjectMixin {
 		/**
 		 * Instantiates a new embeded episode mixin.
 		 *
-		 * @param showId the show id
-		 * @param episodeId the episode id
-		 * @param season the season
-		 * @param episode the episode
+		 * @param showId
+		 *            the show id
+		 * @param episodeId
+		 *            the episode id
+		 * @param season
+		 *            the season
+		 * @param episode
+		 *            the episode
 		 */
 		@JsonCreator
 		public EmbededEpisodeMixin(

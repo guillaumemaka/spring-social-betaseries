@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,9 +41,12 @@ public class SubtitleTemplate extends AbstractBetaSeriesOperations implements
 	/**
 	 * Instantiates a new subtitle template.
 	 *
-	 * @param restTemplate the rest template
-	 * @param isUserAuthorized the is user authorized
-	 * @param isAppAuthorized the is app authorized
+	 * @param restTemplate
+	 *            the rest template
+	 * @param isUserAuthorized
+	 *            the is user authorized
+	 * @param isAppAuthorized
+	 *            the is app authorized
 	 */
 	public SubtitleTemplate(RestTemplate restTemplate, boolean isUserAuthorized,
 			boolean isAppAuthorized) {
@@ -129,8 +132,10 @@ public class SubtitleTemplate extends AbstractBetaSeriesOperations implements
 	/**
 	 * Builds the params.
 	 *
-	 * @param elementId the element id
-	 * @param language the language
+	 * @param elementId
+	 *            the element id
+	 * @param language
+	 *            the language
 	 * @return the multi value map
 	 */
 	private MultiValueMap<String, String> buildParams(int elementId, BSSubtitles language) {

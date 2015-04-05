@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ import java.util.List;
 // TODO: Auto-generated Javadoc
 /**
  * The Interface PlanningOperations.
- * 
+ *
  * @author Guillaume Maka
  */
 public interface PlanningOperations {
@@ -36,7 +36,8 @@ public interface PlanningOperations {
 	/**
 	 * Gets the general planning.
 	 *
-	 * @param date the date
+	 * @param date
+	 *            the date
 	 * @return the general planning
 	 */
 	List<Episode> getGeneralPlanning(Date date);
@@ -44,8 +45,10 @@ public interface PlanningOperations {
 	/**
 	 * Gets the general planning.
 	 *
-	 * @param date the date
-	 * @param before the before
+	 * @param date
+	 *            the date
+	 * @param before
+	 *            the before
 	 * @return the general planning
 	 */
 	List<Episode> getGeneralPlanning(Date date, int before);
@@ -53,9 +56,12 @@ public interface PlanningOperations {
 	/**
 	 * Gets the general planning.
 	 *
-	 * @param date the date
-	 * @param before the before
-	 * @param after the after
+	 * @param date
+	 *            the date
+	 * @param before
+	 *            the before
+	 * @param after
+	 *            the after
 	 * @return the general planning
 	 */
 	List<Episode> getGeneralPlanning(Date date, int before, int after);
@@ -63,10 +69,14 @@ public interface PlanningOperations {
 	/**
 	 * Gets the general planning.
 	 *
-	 * @param date the date
-	 * @param before the before
-	 * @param after the after
-	 * @param type the type
+	 * @param date
+	 *            the date
+	 * @param before
+	 *            the before
+	 * @param after
+	 *            the after
+	 * @param type
+	 *            the type
 	 * @return the general planning
 	 */
 	List<Episode> getGeneralPlanning(Date date, int before, int after, BSPlanningEpisodeType type);
@@ -88,7 +98,8 @@ public interface PlanningOperations {
 	/**
 	 * Gets the member planning.
 	 *
-	 * @param unseen the unseen
+	 * @param unseen
+	 *            the unseen
 	 * @return the member planning
 	 */
 	List<Episode> getMemberPlanning(boolean unseen);
@@ -96,8 +107,10 @@ public interface PlanningOperations {
 	/**
 	 * Gets the member planning.
 	 *
-	 * @param unseen the unseen
-	 * @param month the month
+	 * @param unseen
+	 *            the unseen
+	 * @param month
+	 *            the month
 	 * @return the member planning
 	 */
 	List<Episode> getMemberPlanning(boolean unseen, Date month);
@@ -105,7 +118,8 @@ public interface PlanningOperations {
 	/**
 	 * Gets the member planning.
 	 *
-	 * @param memberId the member id
+	 * @param memberId
+	 *            the member id
 	 * @return the member planning
 	 */
 	List<Episode> getMemberPlanning(int memberId);
@@ -113,8 +127,10 @@ public interface PlanningOperations {
 	/**
 	 * Gets the member planning.
 	 *
-	 * @param memberId the member id
-	 * @param unseen the unseen
+	 * @param memberId
+	 *            the member id
+	 * @param unseen
+	 *            the unseen
 	 * @return the member planning
 	 */
 	List<Episode> getMemberPlanning(int memberId, boolean unseen);
@@ -122,9 +138,12 @@ public interface PlanningOperations {
 	/**
 	 * Gets the member planning.
 	 *
-	 * @param memberId the member id
-	 * @param unseen the unseen
-	 * @param month the month
+	 * @param memberId
+	 *            the member id
+	 * @param unseen
+	 *            the unseen
+	 * @param month
+	 *            the month
 	 * @return the member planning
 	 */
 	List<Episode> getMemberPlanning(int memberId, boolean unseen, Date month);	

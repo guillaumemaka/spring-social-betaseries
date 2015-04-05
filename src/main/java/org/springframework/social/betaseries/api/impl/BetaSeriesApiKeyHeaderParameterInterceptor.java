@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,8 +25,8 @@ import org.springframework.social.support.HttpRequestDecorator;
 
 // TODO: Auto-generated Javadoc
 /**
- * The Class BetaSeriesApiKeyParameterInterceptor.
- * 
+ * The Class BetaSeriesApiKeyHeaderParameterInterceptor.
+ *
  * @author Guillaume Maka
  */
 public class BetaSeriesApiKeyHeaderParameterInterceptor implements
@@ -39,8 +39,8 @@ public class BetaSeriesApiKeyHeaderParameterInterceptor implements
 	private String parameterName;
 	
 	/**
-	 * Instantiates a new beta series api key parameter interceptor.
-	 * 
+	 * Instantiates a new beta series api key header parameter interceptor.
+	 *
 	 * @param apiKey
 	 *            the api key
 	 */
@@ -49,8 +49,8 @@ public class BetaSeriesApiKeyHeaderParameterInterceptor implements
 	}
 	
 	/**
-	 * Instantiates a new beta series api key parameter interceptor.
-	 * 
+	 * Instantiates a new beta series api key header parameter interceptor.
+	 *
 	 * @param apiKey
 	 *            the api key
 	 * @param parameterName

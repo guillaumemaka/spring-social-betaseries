@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ import com.fasterxml.jackson.databind.JsonDeserializer;
 // TODO: Auto-generated Javadoc
 /**
  * The Class BSDateDeserializer.
- * 
+ *
  * @author Guillaume Maka
  */
 public class BSDateDeserializer extends JsonDeserializer<Date> {

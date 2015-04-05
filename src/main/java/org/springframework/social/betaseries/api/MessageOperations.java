@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ import java.util.List;
 // TODO: Auto-generated Javadoc
 /**
  * The Interface MessageOperations.
- * 
+ *
  * @author Guillaume Maka
  */
 public interface MessageOperations {
@@ -28,7 +28,8 @@ public interface MessageOperations {
 	/**
 	 * Gets the discussion.
 	 *
-	 * @param firstMessageId the first message id
+	 * @param firstMessageId
+	 *            the first message id
 	 * @return the discussion
 	 */
 	List<Message> getDiscussion(Integer firstMessageId);
@@ -43,7 +44,8 @@ public interface MessageOperations {
 	/**
 	 * Gets the member inbox.
 	 *
-	 * @param page the page
+	 * @param page
+	 *            the page
 	 * @return the member inbox
 	 */
 	List<Message> getMemberInbox(Integer page);
@@ -51,9 +53,12 @@ public interface MessageOperations {
 	/**
 	 * Reply to message.
 	 *
-	 * @param firstDiscussionMessageId the first discussion message id
-	 * @param text the text
-	 * @param title the title
+	 * @param firstDiscussionMessageId
+	 *            the first discussion message id
+	 * @param text
+	 *            the text
+	 * @param title
+	 *            the title
 	 * @return the message
 	 */
 	Message replyToMessage(Integer firstDiscussionMessageId, String text, String title);
@@ -61,10 +66,14 @@ public interface MessageOperations {
 	/**
 	 * Send message to.
 	 *
-	 * @param toMemberId the to member id
-	 * @param text the text
-	 * @param title the title
-	 * @param firstDiscussionMessageId the first discussion message id
+	 * @param toMemberId
+	 *            the to member id
+	 * @param text
+	 *            the text
+	 * @param title
+	 *            the title
+	 * @param firstDiscussionMessageId
+	 *            the first discussion message id
 	 * @return the message
 	 */
 	Message sendMessageTo(Integer toMemberId, String text, String title, Integer firstDiscussionMessageId);
@@ -72,7 +81,8 @@ public interface MessageOperations {
 	/**
 	 * Delete message.
 	 *
-	 * @param messageId the message id
+	 * @param messageId
+	 *            the message id
 	 * @return the message
 	 */
 	Message deleteMessage(Integer messageId);
@@ -80,7 +90,8 @@ public interface MessageOperations {
 	/**
 	 * Mark message as read.
 	 *
-	 * @param messageId the message id
+	 * @param messageId
+	 *            the message id
 	 * @return the message
 	 */
 	Message markMessageAsRead(Integer messageId);

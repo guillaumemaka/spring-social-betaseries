@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -56,15 +56,24 @@ public class Subtitle extends BetaSeriesObject {
 	/**
 	 * Instantiates a new subtitle.
 	 *
-	 * @param id the id
-	 * @param language the language
-	 * @param source the source
-	 * @param quality the quality
-	 * @param file the file
-	 * @param content the content
-	 * @param url the url
-	 * @param episode the episode
-	 * @param date the date
+	 * @param id
+	 *            the id
+	 * @param language
+	 *            the language
+	 * @param source
+	 *            the source
+	 * @param quality
+	 *            the quality
+	 * @param file
+	 *            the file
+	 * @param content
+	 *            the content
+	 * @param url
+	 *            the url
+	 * @param episode
+	 *            the episode
+	 * @param date
+	 *            the date
 	 */
 	public Subtitle(int id, String language, String source, int quality,
 			String file, List<String> content, String url,
@@ -279,10 +288,14 @@ public class Subtitle extends BetaSeriesObject {
 		/**
 		 * Instantiates a new embeded episode.
 		 *
-		 * @param showId the show id
-		 * @param episodeId the episode id
-		 * @param season the season
-		 * @param episode the episode
+		 * @param showId
+		 *            the show id
+		 * @param episodeId
+		 *            the episode id
+		 * @param season
+		 *            the season
+		 * @param episode
+		 *            the episode
 		 */
 		public EmbededEpisode(int showId, int episodeId, int season, int episode) {
 			super();
@@ -295,7 +308,7 @@ public class Subtitle extends BetaSeriesObject {
 		/**
 		 * Gets the show id.
 		 *
-		 * @return the showId
+		 * @return the show id
 		 */
 		public int getShowId() {
 			return showId;
@@ -304,7 +317,7 @@ public class Subtitle extends BetaSeriesObject {
 		/**
 		 * Gets the episode id.
 		 *
-		 * @return the episodeId
+		 * @return the episode id
 		 */
 		public int getEpisodeId() {
 			return episodeId;

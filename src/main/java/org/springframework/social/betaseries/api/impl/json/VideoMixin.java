@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,15 +31,24 @@ abstract class VideoMixin extends BetaSeriesObjectMixin {
 	/**
 	 * Instantiates a new video mixin.
 	 *
-	 * @param id the id
-	 * @param showId the show id
-	 * @param youtubeId the youtube id
-	 * @param youtubeUrl the youtube url
-	 * @param title the title
-	 * @param season the season
-	 * @param episode the episode
-	 * @param login the login
-	 * @param loginId the login id
+	 * @param id
+	 *            the id
+	 * @param showId
+	 *            the show id
+	 * @param youtubeId
+	 *            the youtube id
+	 * @param youtubeUrl
+	 *            the youtube url
+	 * @param title
+	 *            the title
+	 * @param season
+	 *            the season
+	 * @param episode
+	 *            the episode
+	 * @param login
+	 *            the login
+	 * @param loginId
+	 *            the login id
 	 */
 	@JsonCreator
 	public VideoMixin(

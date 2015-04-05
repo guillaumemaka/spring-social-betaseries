@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,10 +25,13 @@ public enum BSSubtitles {
 	
 	/** The all. */
 	ALL, 
+ 
  /** The vovf. */
  VOVF, 
+ 
  /** The vf. */
  VF, 
+ 
  /** The vo. */
  VO
 }

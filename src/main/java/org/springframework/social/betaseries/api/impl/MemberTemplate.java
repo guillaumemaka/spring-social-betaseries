@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -62,9 +62,12 @@ public class MemberTemplate extends AbstractBetaSeriesOperations implements
 	/**
 	 * Instantiates a new member template.
 	 *
-	 * @param restTemplate the rest template
-	 * @param isUserAuthorized the is user authorized
-	 * @param isAppAuthorized the is app authorized
+	 * @param restTemplate
+	 *            the rest template
+	 * @param isUserAuthorized
+	 *            the is user authorized
+	 * @param isAppAuthorized
+	 *            the is app authorized
 	 */
 	public MemberTemplate(RestTemplate restTemplate, boolean isUserAuthorized, boolean isAppAuthorized) {
 		super(isUserAuthorized, isAppAuthorized);
@@ -403,9 +406,10 @@ public class MemberTemplate extends AbstractBetaSeriesOperations implements
 	}
 	
 	/**
-	 * Helpers.
+	 * Hash to m d5.
 	 *
-	 * @param password the password
+	 * @param password
+	 *            the password
 	 * @return the string
 	 */
 	

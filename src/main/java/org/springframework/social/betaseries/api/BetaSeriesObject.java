@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ import java.util.Map;
 // TODO: Auto-generated Javadoc
 /**
  * The Class BetaSeriesObject.
- * 
+ *
  * @author Guillaume Maka
  */
 public class BetaSeriesObject {
@@ -38,7 +38,7 @@ public class BetaSeriesObject {
 	
 	/**
 	 * Gets the extra data.
-	 * 
+	 *
 	 * @return the extra data
 	 */
 	public Map<String,Object> getExtraData() {
@@ -47,7 +47,7 @@ public class BetaSeriesObject {
 	
 	/**
 	 * Adds the.
-	 * 
+	 *
 	 * @param key
 	 *            the key
 	 * @param value

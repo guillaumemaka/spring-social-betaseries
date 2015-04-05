@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 [name of copyright owner]
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,9 +42,12 @@ public class FriendTemplate extends AbstractBetaSeriesOperations implements
 	/**
 	 * Instantiates a new friend template.
 	 *
-	 * @param restTemplate the rest template
-	 * @param isUserAuthorized the is user authorized
-	 * @param isAppAuthorized the is app authorized
+	 * @param restTemplate
+	 *            the rest template
+	 * @param isUserAuthorized
+	 *            the is user authorized
+	 * @param isAppAuthorized
+	 *            the is app authorized
 	 */
 	public FriendTemplate(RestTemplate restTemplate, boolean isUserAuthorized, boolean isAppAuthorized) {
 		super(isUserAuthorized, isAppAuthorized);
