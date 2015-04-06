@@ -1,0 +1,297 @@
+{
+    "shows": [
+        {
+            "id": 4267,
+            "thetvdb_id": 82694,
+            "imdb_id": "tt0245612",
+            "title": "Shin Chan",
+            "description": "Shin Chan is a five-year-old boy with a knack for making his parents, teachers and friends crazy with highly inappropriate statements and behavior. The absurdity of the dubbing is peppered with frequent pop culture references, which can grow wearying after a while, but the sheer rudeness of the storylines generally overpowers any rough patches.",
+            "seasons": "19",
+            "seasons_details": [
+                {
+                    "number": 1,
+                    "episodes": 28
+                },
+                {
+                    "number": 2,
+                    "episodes": 47
+                },
+                {
+                    "number": 5,
+                    "episodes": 42
+                },
+                {
+                    "number": 6,
+                    "episodes": 45
+                },
+                {
+                    "number": 7,
+                    "episodes": 39
+                },
+                {
+                    "number": 8,
+                    "episodes": 42
+                },
+                {
+                    "number": 9,
+                    "episodes": 40
+                },
+                {
+                    "number": 10,
+                    "episodes": 40
+                },
+                {
+                    "number": 11,
+                    "episodes": 35
+                },
+                {
+                    "number": 12,
+                    "episodes": 31
+                },
+                {
+                    "number": 13,
+                    "episodes": 28
+                },
+                {
+                    "number": 14,
+                    "episodes": 36
+                },
+                {
+                    "number": 15,
+                    "episodes": 35
+                },
+                {
+                    "number": 16,
+                    "episodes": 29
+                },
+                {
+                    "number": 17,
+                    "episodes": 37
+                },
+                {
+                    "number": 18,
+                    "episodes": 35
+                },
+                {
+                    "number": 19,
+                    "episodes": 33
+                },
+                {
+                    "number": 20,
+                    "episodes": 34
+                },
+                {
+                    "number": 21,
+                    "episodes": 31
+                }
+            ],
+            "episodes": "687",
+            "followers": "38",
+            "comments": "1",
+            "similars": "0",
+            "characters": "0",
+            "creation": "1992",
+            "genres": [
+                "Animation",
+                "Comedy"
+            ],
+            "length": "30",
+            "network": "TV Asahi",
+            "rating": "TV-MA",
+            "status": "Continuing",
+            "language": "en",
+            "notes": {
+                "total": "3",
+                "mean": "4.3333",
+                "user": 0
+            },
+            "in_account": false,
+            "user": {
+                "archived": false,
+                "favorited": false,
+                "remaining": 0,
+                "status": 0,
+                "last": "S00E00",
+                "tags": null
+            },
+            "resource_url": "http:\/\/www.betaseries.com\/serie\/shin-chan"
+        },
+        {
+            "id": 6671,
+            "thetvdb_id": 267218,
+            "imdb_id": "",
+            "title": "You're the best, Lee Soon Shin",
+            "description": "Because of her father\u2019s sudden death, Lee Soon-Shin and her mother fall in trouble. They both attempt to find happiness, while Lee Soon-Shin falls in love.\nMeanwhile Shin Joon-Ho is the president of an entertainment management company. He is over confident, arrogant and cold-blooded. By meeting Lee Soon-Shin, he realizes the meaning of true success and also changes.",
+            "seasons": "1",
+            "seasons_details": [
+                {
+                    "number": 1,
+                    "episodes": 50
+                }
+            ],
+            "episodes": "50",
+            "followers": "42",
+            "comments": "0",
+            "similars": "0",
+            "characters": "20",
+            "creation": "2013",
+            "genres": [
+                "Comedy",
+                "Family"
+            ],
+            "length": "65",
+            "network": "KBS TV2",
+            "rating": "",
+            "status": "Ended",
+            "language": "en",
+            "notes": {
+                "total": "4",
+                "mean": "4.7500",
+                "user": 0
+            },
+            "in_account": false,
+            "user": {
+                "archived": false,
+                "favorited": false,
+                "remaining": 0,
+                "status": 0,
+                "last": "S00E00",
+                "tags": null
+            },
+            "resource_url": "http:\/\/www.betaseries.com\/serie\/lee-soon-shin-is-the-best"
+        },
+        {
+            "id": 4456,
+            "thetvdb_id": 255545,
+            "imdb_id": "",
+            "title": "Shin Prince Of Tennis",
+            "description": "Apr\u00e8s avoir remport\u00e9 le tournoi national, Echizen Ryoma est parti s'entra\u00eener aux Etat-Unis. L'aventure d\u00e9marre \u00e0 nouveau alors qu'il s'appr\u00eate \u00e0 retourner au Japon, afin de rejoindre ses co-\u00e9quipiers \u00e0 l' U-17, le camp d'entrainement de l'\u00e9lite des joueurs de moins de 17 ans. Et c'est lors de ce tournoi que seront d\u00e9signer les joueurs qui composeront l'\u00e9quipe nationale du Japon. R\u00e9ussira-t-il \u00e0 les surpasser ?",
+            "seasons": "1",
+            "seasons_details": [
+                {
+                    "number": 1,
+                    "episodes": 13
+                }
+            ],
+            "episodes": "13",
+            "followers": "58",
+            "comments": "0",
+            "similars": "0",
+            "characters": "0",
+            "creation": "2012",
+            "genres": [
+                "Animation"
+            ],
+            "length": "20",
+            "network": "TV Tokyo",
+            "rating": "",
+            "status": "Continuing",
+            "language": "fr",
+            "notes": {
+                "total": "1",
+                "mean": "5.0000",
+                "user": 0
+            },
+            "in_account": false,
+            "user": {
+                "archived": false,
+                "favorited": false,
+                "remaining": 0,
+                "status": 0,
+                "last": "S00E00",
+                "tags": null
+            },
+            "resource_url": "http:\/\/www.betaseries.com\/serie\/shin-prince-of-tennis"
+        },
+        {
+            "id": 4287,
+            "thetvdb_id": 161041,
+            "imdb_id": "tt1566464\/",
+            "title": "Shin Captain Tsubasa",
+            "description": "Suite direct de captain tsubasa,qui se situe juste apr\u00e8s la finale contre la Toho.On y retrouve tous nos jeunes joueurs qui font partis \u00e0 pr\u00e9sent de la s\u00e9lection junior japonaise...",
+            "seasons": "1",
+            "seasons_details": [
+                {
+                    "number": 1,
+                    "episodes": 13
+                }
+            ],
+            "episodes": "13",
+            "followers": "40",
+            "comments": "0",
+            "similars": "0",
+            "characters": "0",
+            "creation": "1989",
+            "genres": [
+                "Animation",
+                "Sport"
+            ],
+            "length": "30",
+            "network": "",
+            "rating": "TV-PG",
+            "status": "Ended",
+            "language": "fr",
+            "notes": {
+                "total": "1",
+                "mean": "4.0000",
+                "user": 0
+            },
+            "in_account": false,
+            "user": {
+                "archived": false,
+                "favorited": false,
+                "remaining": 0,
+                "status": 0,
+                "last": "S00E00",
+                "tags": null
+            },
+            "resource_url": "http:\/\/www.betaseries.com\/serie\/shin-captain-tsubasa"
+        },
+        {
+            "id": 3903,
+            "thetvdb_id": 217641,
+            "imdb_id": "",
+            "title": "Shin Hokuto No Ken",
+            "description": "Ken, apr\u00e8s avoir affront\u00e9 une bande de pillards fait la rencontre de Tobi, qui semble \u00eatre la derni\u00e8re personne \u00e0 conna\u00eetre le Hokuto Shin Ken.\n\nTobi lui pr\u00e9sente Sara qui lui rappelle \u00e9trangement Yuria, d'autant plus qu'elle poss\u00e8de une technique semblable \u00e0 cette derni\u00e8re qui permet de soigner les blessures par un simple toucher des tsubos du bout des doigts. Malheureusement, Sara est enlev\u00e9e par un groupe de soldats \u00e0 la solde de Sanga.\n\nSanga a besoin du pouvoir de Sara pour accomplir ses r\u00eaves de grandeur. Il veut combiner ce pouvoir avec ceux de Bista, un enfant qui semble faire des miracles. Sanga le fait passer pour un Dieu et gr\u00e2ce \u00e0 lui, il a asservi un village entier sans utiliser la violence. ",
+            "seasons": "1",
+            "seasons_details": [
+                {
+                    "number": 1,
+                    "episodes": 3
+                }
+            ],
+            "episodes": "3",
+            "followers": "36",
+            "comments": "0",
+            "similars": "0",
+            "characters": "0",
+            "creation": "0",
+            "genres": [
+
+            ],
+            "length": "60",
+            "network": "",
+            "rating": "",
+            "status": "Ended",
+            "language": "fr",
+            "notes": {
+                "total": "1",
+                "mean": "4.0000",
+                "user": 0
+            },
+            "in_account": false,
+            "user": {
+                "archived": false,
+                "favorited": false,
+                "remaining": 0,
+                "status": 0,
+                "last": "S00E00",
+                "tags": null
+            },
+            "resource_url": "http:\/\/www.betaseries.com\/serie\/shin-hokuto-no-ken"
+        }
+    ],
+    "errors": [
+
+    ]
+}

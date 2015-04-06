@@ -1,0 +1,151 @@
+{
+    "characters": [
+        {
+            "id": 1,
+            "show_id": 13,
+            "name": "Charles \"Chuck\" Bartowski",
+            "role": "first",
+            "actor": "Zachary Levi",
+            "picture": "http:\/\/cdn.betaseries.com\/betaseries\/images\/personnages\/22017.jpg",
+            "description": "Chuck Bartowski est un informaticien qui travaille au Nerd Herd (parodie de l'entreprise Geek Squad) d'un grand magasin d'\u00e9lectronique et d'\u00e9lectrom\u00e9nager, le Buy More. Il appara\u00eet \u00e0 premi\u00e8re vue comme \u00e9tant un loser : en effet, apr\u00e8s avoir \u00e9t\u00e9 renvoy\u00e9 de Stanford pour avoir pr\u00e9tendument trich\u00e9, il a \u00e9galement perdu sa petite amie. Apr\u00e8s s'\u00eatre fait renvoyer de Stanford, Chuck a emm\u00e9nag\u00e9 avec sa soeur, Ellie, et a commenc\u00e9 \u00e0 travailler au Buy More de Burbank.\n\nSource : Wikipedia"
+        },
+        {
+            "id": 32380,
+            "show_id": 13,
+            "name": "Sarah Walker",
+            "role": "first",
+            "actor": "Yvonne Strahovski",
+            "picture": "http:\/\/cdn.betaseries.com\/betaseries\/images\/personnages\/22019.jpg",
+            "description": "Sarah Walker, est une espionne de la CIA engag\u00e9e pour prot\u00e9ger Chuck. Pour ce faire, elle se fait passer pour la petite amie de ce dernier."
+        },
+        {
+            "id": 32383,
+            "show_id": 13,
+            "name": "Morgan Grimes",
+            "role": "second",
+            "actor": "Joshua Gomez",
+            "picture": "http:\/\/cdn.betaseries.com\/betaseries\/images\/personnages\/77809.jpg",
+            "description": "Morgan Grimes est le meilleur ami de Chuck, avec qui, il travaille au Buy More. Morgan est avec Chuck et les autres employ\u00e9s du Buy More, un des nombreux personnages geeks de la s\u00e9rie : il s'int\u00e9resse plus particuli\u00e8rement aux jeux vid\u00e9o."
+        },
+        {
+            "id": 32382,
+            "show_id": 13,
+            "name": "Major John Casey",
+            "role": "second",
+            "actor": "Adam Baldwin",
+            "picture": "http:\/\/cdn.betaseries.com\/betaseries\/images\/personnages\/22018.jpg",
+            "description": "John Casey est un agent de la NSA, d'abord Major, ensuite promu Colonel. Il prot\u00e8ge aussi Chuck. Il est souvent d\u00e9crit comme un homme dur et conservateur qui suit avant tout les ordres donn\u00e9s par sa hi\u00e9rarchie en ne montrant aucune \u00e9motion sur ce qu'il ressent."
+        },
+        {
+            "id": 32459,
+            "show_id": 13,
+            "name": "Ellie Bartowski",
+            "role": "third",
+            "actor": "Sarah Lancaster",
+            "picture": "http:\/\/cdn.betaseries.com\/betaseries\/images\/personnages\/77810.jpg",
+            "description": "Ellie Bartowski, est la s\u0153ur a\u00een\u00e9e de Chuck et petite amie de Devon Woodcomb. M\u00e9decin comme Devon, elle travaille dans le grand h\u00f4pital de Westside. "
+        },
+        {
+            "id": 32458,
+            "show_id": 13,
+            "name": "General Diane Beckman",
+            "role": "third",
+            "actor": "Bonita Friedericy",
+            "picture": "http:\/\/cdn.betaseries.com\/betaseries\/images\/personnages\/80686.jpg",
+            "description": "\u00c0 la t\u00eate de la NSA, le G\u00e9n\u00e9ral Beckman est responsable de l\u2019Op\u00e9ration Bartowski avec au sein de l'\u00e9quipe Sarah, Casey et Chuck."
+        },
+        {
+            "id": 32460,
+            "show_id": 13,
+            "name": "Devon ",
+            "role": "third",
+            "actor": "Ryan McPartlin",
+            "picture": "http:\/\/cdn.betaseries.com\/betaseries\/images\/personnages\/80672.jpg",
+            "description": "Devon, ou \u00ab Capitaine Trop Top \u00bb (Captain Awesome en vo), est le petit-ami d'Ellie. Il est m\u00e9decin et travaille dans le m\u00eame h\u00f4pital qu'elle. Son perfectionnisme et l'usage constant qu'il fait des mots \u00ab trop top \u00bb ont conduit \u00e0 son surnom."
+        },
+        {
+            "id": 32381,
+            "show_id": 13,
+            "name": "Stephen J. Bartowski",
+            "role": "third",
+            "actor": "Scott Bakula",
+            "picture": "http:\/\/cdn.betaseries.com\/betaseries\/images\/personnages\/880533.jpg",
+            "description": "P\u00e8re de Chuck et Ellie, Stephen J. Bartowski est un g\u00e9nie en informatique, il a cr\u00e9\u00e9 l'Intersecret. Son nom d'agent est Orion."
+        },
+        {
+            "id": 67,
+            "show_id": 13,
+            "name": "Bryce Larkin",
+            "role": "misc",
+            "actor": "Matthew Bomer",
+            "picture": "http:\/\/cdn.betaseries.com\/betaseries\/images\/personnages\/123921.jpg",
+            "description": "Bryce Larkin est un ancien camarade d'universit\u00e9 de Chuck, il \u00e9tait son colocataire et meilleur ami \u00e0 Stanford."
+        },
+        {
+            "id": 65,
+            "show_id": 13,
+            "name": "Lester Patel",
+            "role": "misc",
+            "actor": "Vik Sahay",
+            "picture": "http:\/\/cdn.betaseries.com\/betaseries\/images\/personnages\/80673.jpg",
+            "description": "Lester est un employ\u00e9 du Buy More qui passe une bonne partie de son temps avec Jeff. Il forme d'ailleurs avec ce dernier un groupe de rock nomm\u00e9 Jeffster!. Provocateur, il cherche souvent la rivalit\u00e9 avec Chuck, qu'il n'h\u00e9site pourtant pas \u00e0 appeler \u00e0 l'aide lors de situations d\u00e9licates."
+        },
+        {
+            "id": 2671,
+            "show_id": 13,
+            "name": "Anna Wu",
+            "role": "misc",
+            "actor": "Julia Ling",
+            "picture": "http:\/\/cdn.betaseries.com\/betaseries\/images\/personnages\/80674.jpg",
+            "description": null
+        },
+        {
+            "id": 2679,
+            "show_id": 13,
+            "name": "Alex McHugh",
+            "role": "misc",
+            "actor": "Mekenna Melvin",
+            "picture": "http:\/\/cdn.betaseries.com\/betaseries\/images\/personnages\/258451.jpg",
+            "description": null
+        },
+        {
+            "id": 2680,
+            "show_id": 13,
+            "name": "Mary Bartowski",
+            "role": "misc",
+            "actor": "Linda Hamilton",
+            "picture": "http:\/\/cdn.betaseries.com\/betaseries\/images\/personnages\/233481.jpg",
+            "description": null
+        },
+        {
+            "id": 64,
+            "show_id": 13,
+            "name": "Jeff Barnes",
+            "role": "misc",
+            "actor": "Scott Krinsky",
+            "picture": "http:\/\/cdn.betaseries.com\/betaseries\/images\/personnages\/80671.jpg",
+            "description": "Jefferson Barnes dit \u00ab Jeff \u00bb est un coll\u00e8gue de Chuck au Buy More et le meilleur ami de Lester. \u00c2g\u00e9 d'environ quarante ans mais tr\u00e8s immature, Jeff est tr\u00e8s port\u00e9 sur la boisson et les femmes, qu'il effraie souvent par son comportement inqui\u00e9tant."
+        },
+        {
+            "id": 63,
+            "show_id": 13,
+            "name": "Big Mike",
+            "role": "misc",
+            "actor": "Mark Christopher Lawrence",
+            "picture": "http:\/\/cdn.betaseries.com\/betaseries\/images\/personnages\/80670.jpg",
+            "description": "Michael Tucker alias \u00ab Big Mike \u00bb est le directeur en chef du magasin, le Buy More."
+        },
+        {
+            "id": 1093,
+            "show_id": 13,
+            "name": "Daniel Shaw",
+            "role": "misc",
+            "actor": "Brandon Routh",
+            "picture": "http:\/\/cdn.betaseries.com\/betaseries\/images\/personnages\/144291.jpg",
+            "description": "Espion myst\u00e9rieux, venu pour aider la team Bartowski dans leur combat contre The Ring. Il cache plus de chose qu'il ne laisse para\u00eetre."
+        }
+    ],
+    "errors": [
+
+    ]
+}

@@ -1,0 +1,338 @@
+{
+    "shows": [
+        {
+            "id": 7346,
+            "thetvdb_id": 271585,
+            "imdb_id": "tt2401525",
+            "title": "Upper Middle Bogan",
+            "description": "The series follows the story of two families living at opposite ends of the freeway. Bess Denyar, is a doctor with a posh mother Margaret, an architect husband Danny Bright and twin 13-year-olds at a private school, Oscar and Edwina. When Bess finds out that she is adopted, she is stunned, but even more so when she meets her birth parents, Wayne and Julie Wheeler. She also discovers that she has three siblings: Amber, Kayne and Brianna. The bogan Wheelers head up a drag racing team in the outer suburbs and are thrilled to discover the daughter they thought they had lost.",
+            "seasons": "2",
+            "seasons_details": [
+                {
+                    "number": 1,
+                    "episodes": 8
+                },
+                {
+                    "number": 2,
+                    "episodes": 8
+                }
+            ],
+            "episodes": "16",
+            "followers": "13",
+            "comments": "0",
+            "similars": "0",
+            "characters": "0",
+            "creation": "2013",
+            "genres": [
+                "Comedy"
+            ],
+            "length": "30",
+            "network": "ABC1",
+            "rating": "TV-14",
+            "status": "Continuing",
+            "language": "en",
+            "notes": {
+                "total": "0",
+                "mean": 0,
+                "user": 0
+            },
+            "in_account": false,
+            "user": {
+                "archived": false,
+                "favorited": false,
+                "remaining": 0,
+                "status": 0,
+                "last": "S00E00",
+                "tags": null
+            },
+            "resource_url": "http:\/\/www.betaseries.com\/serie\/upper-middle-bogan"
+        },
+        {
+            "id": 9070,
+            "thetvdb_id": 279983,
+            "imdb_id": "",
+            "title": "DRAMAtical Murder",
+            "description": "Dans un futur lointain, Midorijima, une \u00eele au sud du Japon, a \u00e9t\u00e9 privatis\u00e9e par la grande entreprise T\u00f4e. Un grand complexe de divertissement pour riches, la Platinum Jail, y est implant\u00e9, tandis que les habitants de l'\u00eele sont rel\u00e9gu\u00e9s \u00e0 une vie m\u00e9diocre dans l'ancien quartier populaire. Deux jeux ont un succ\u00e8s ph\u00e9nom\u00e9nal : le Rib, opposant des gangs \u00e0 la force de leurs poings, et le Rhyme, sorte de combat virtuel. Aoba Seragaki vivait une vie paisible dans ce quartier, essayant de ne pas se m\u00ealer \u00e0 ces affrontements, jusqu'\u00e0 ce qu'il se retrouve impliqu\u00e9\u2026",
+            "seasons": "1",
+            "seasons_details": [
+                {
+                    "number": 1,
+                    "episodes": 12
+                }
+            ],
+            "episodes": "12",
+            "followers": "200",
+            "comments": "0",
+            "similars": "0",
+            "characters": "0",
+            "creation": "2014",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Animation",
+                "Science-Fiction"
+            ],
+            "length": "25",
+            "network": "TV Tokyo",
+            "rating": "",
+            "status": "Ended",
+            "language": "en",
+            "notes": {
+                "total": "2",
+                "mean": "4",
+                "user": 0
+            },
+            "in_account": false,
+            "user": {
+                "archived": false,
+                "favorited": false,
+                "remaining": 0,
+                "status": 0,
+                "last": "S00E00",
+                "tags": null
+            },
+            "resource_url": "http:\/\/www.betaseries.com\/serie\/dramatical-murder"
+        },
+        {
+            "id": 6008,
+            "thetvdb_id": 71756,
+            "imdb_id": "tt0096555",
+            "title": "Casualty",
+            "description": "Casualty is a weekly television show broadcast on BBC One, and the longest running emergency medical drama television series in the world. Created by Jeremy Brock and Paul Unwin, it was first broadcast on 6 September 1986 and transmitted in the UK on BBC One. The producer was Geraint Morris. The programme is based around the fictional Holby City Hospital and focuses on the staff and patients of the hospital's Accident and Emergency Department.",
+            "seasons": "29",
+            "seasons_details": [
+                {
+                    "number": 1,
+                    "episodes": 15
+                },
+                {
+                    "number": 2,
+                    "episodes": 15
+                },
+                {
+                    "number": 3,
+                    "episodes": 10
+                },
+                {
+                    "number": 4,
+                    "episodes": 12
+                },
+                {
+                    "number": 5,
+                    "episodes": 13
+                },
+                {
+                    "number": 6,
+                    "episodes": 15
+                },
+                {
+                    "number": 7,
+                    "episodes": 24
+                },
+                {
+                    "number": 8,
+                    "episodes": 24
+                },
+                {
+                    "number": 9,
+                    "episodes": 24
+                },
+                {
+                    "number": 10,
+                    "episodes": 24
+                },
+                {
+                    "number": 11,
+                    "episodes": 24
+                },
+                {
+                    "number": 12,
+                    "episodes": 26
+                },
+                {
+                    "number": 13,
+                    "episodes": 28
+                },
+                {
+                    "number": 14,
+                    "episodes": 30
+                },
+                {
+                    "number": 15,
+                    "episodes": 36
+                },
+                {
+                    "number": 16,
+                    "episodes": 40
+                },
+                {
+                    "number": 17,
+                    "episodes": 40
+                },
+                {
+                    "number": 18,
+                    "episodes": 46
+                },
+                {
+                    "number": 19,
+                    "episodes": 48
+                },
+                {
+                    "number": 20,
+                    "episodes": 47
+                },
+                {
+                    "number": 21,
+                    "episodes": 48
+                },
+                {
+                    "number": 22,
+                    "episodes": 48
+                },
+                {
+                    "number": 23,
+                    "episodes": 48
+                },
+                {
+                    "number": 24,
+                    "episodes": 48
+                },
+                {
+                    "number": 25,
+                    "episodes": 47
+                },
+                {
+                    "number": 26,
+                    "episodes": 42
+                },
+                {
+                    "number": 27,
+                    "episodes": 44
+                },
+                {
+                    "number": 28,
+                    "episodes": 48
+                },
+                {
+                    "number": 29,
+                    "episodes": 14
+                }
+            ],
+            "episodes": "927",
+            "followers": "5",
+            "comments": "1",
+            "similars": "0",
+            "characters": "0",
+            "creation": "1986",
+            "genres": [
+                "Drama"
+            ],
+            "length": "50",
+            "network": "BBC One",
+            "rating": "",
+            "status": "Continuing",
+            "language": "en",
+            "notes": {
+                "total": "0",
+                "mean": 0,
+                "user": 0
+            },
+            "in_account": false,
+            "user": {
+                "archived": false,
+                "favorited": false,
+                "remaining": 0,
+                "status": 0,
+                "last": "S00E00",
+                "tags": null
+            },
+            "resource_url": "http:\/\/www.betaseries.com\/serie\/casualty"
+        },
+        {
+            "id": 6644,
+            "thetvdb_id": 263438,
+            "imdb_id": "",
+            "title": "A Piece of Phantasmagoria",
+            "description": "An anime series by Shigeru Tamura based on the illustrated book published in March 1989 by Kakuusha. It consisted of fifteen episodes, each five minutes in length. The series shows little stories from the planet \"Phantasmagoria\" \"discovered in the realm of dreams\", where bakeries are build of bread, walking buildings roam around the countryside, snowmen go on holiday, artificial moons are lifted from the ocean, and stars have their own bar.  Tamura's later animation world, and many of his books go back to the universe as depicted in this animation. It's a key work for understanding the universe he created.",
+            "seasons": "0",
+            "seasons_details": [
+
+            ],
+            "episodes": "0",
+            "followers": "0",
+            "comments": "0",
+            "similars": "0",
+            "characters": "0",
+            "creation": "0",
+            "genres": [
+
+            ],
+            "length": "5",
+            "network": "",
+            "rating": "",
+            "status": "",
+            "language": "en",
+            "notes": {
+                "total": "0",
+                "mean": 0,
+                "user": 0
+            },
+            "in_account": false,
+            "user": {
+                "archived": false,
+                "favorited": false,
+                "remaining": 0,
+                "status": 0,
+                "last": "S00E00",
+                "tags": null
+            },
+            "resource_url": "http:\/\/www.betaseries.com\/serie\/a-piece-of-phantasmagoria"
+        },
+        {
+            "id": 9609,
+            "thetvdb_id": 272268,
+            "imdb_id": "",
+            "title": "Tropes vs Women in Video Games",
+            "description": "The Tropes vs Women in Video Games project aims to examine the plot devices and patterns most often associated with female characters in gaming from a systemic, big picture perspective. This series will include critical analysis of many beloved games and characters, but remember that it is both possible (and even necessary) to simultaneously enjoy media while also being critical of its more problematic or pernicious aspects.\n\nThis video series is created by Anita Sarkeesian and the project was funded by 6968 awesome backers on kickstarter.com",
+            "seasons": "1",
+            "seasons_details": [
+                {
+                    "number": 1,
+                    "episodes": 6
+                }
+            ],
+            "episodes": "6",
+            "followers": "2",
+            "comments": "0",
+            "similars": "0",
+            "characters": "0",
+            "creation": "2013",
+            "genres": [
+                "Documentary"
+            ],
+            "length": "25",
+            "network": "",
+            "rating": "TV-14",
+            "status": "Continuing",
+            "language": "en",
+            "notes": {
+                "total": "1",
+                "mean": "5",
+                "user": 0
+            },
+            "in_account": false,
+            "user": {
+                "archived": false,
+                "favorited": false,
+                "remaining": 0,
+                "status": 0,
+                "last": "S00E00",
+                "tags": null
+            },
+            "resource_url": "http:\/\/www.betaseries.com\/serie\/tropes-vs-women-in-video-games"
+        }
+    ],
+    "errors": [
+
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "movie": {
+        "id": 2774,
+        "title": "(500) Jours Ensemble",
+        "original_title": "(500) Days of Summer",
+        "themoviedb_id": 19913,
+        "imdb_id": "tt1022603",
+        "url": "500-jours-ensemble",
+        "poster": "http:\/\/www.betaseries.com\/images\/affiches\/2774.jpg",
+        "production_year": "2009",
+        "release_date": "2009-07-17",
+        "sale_date": "0000-00-00",
+        "director": "Marc Webb",
+        "length": "5760",
+        "genres": [
+            "Com\u00e9die",
+            "Drame",
+            "Romance"
+        ],
+        "synopsis": "Tom croit encore en un amour qui transfigure, un amour \u00e0 la destin\u00e9e cosmique, un coup de foudre unique. Ce qui n'est pas du tout le cas de Summer. Cela n'emp\u00eache pourtant pas Tom de partir \u00e0 sa conqu\u00eate, arm\u00e9 de toute sa force et de tout son courage, tel un Don Quichotte des temps modernes. La foudre tombe le premier jour, quand Tom rencontre Summer la nouvelle secr\u00e9taire de son patron, une belle jeune fille enjou\u00e9e.",
+        "language": "Anglais",
+        "notes": {
+            "total": "688",
+            "mean": "3.9549",
+            "user": 0
+        },
+        "followers": "3572",
+        "user": {
+            "in_account": false,
+            "status": -1
+        }
+    },
+    "errors": [
+
+    ]
+}

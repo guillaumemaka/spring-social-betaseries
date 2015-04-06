@@ -1,0 +1,69 @@
+{
+    "episode": {
+        "id": 264473,
+        "thetvdb_id": 55452,
+        "title": "Simpsons Roasting on an Open Fire",
+        "season": 1,
+        "episode": 1,
+        "show": {
+            "id": 12,
+            "thetvdb_id": 71663,
+            "title": "The Simpsons"
+        },
+        "code": "S01E01",
+        "global": 1,
+        "description": "Ce soir, les Simpson assistent \u00e0 la f\u00eate de No\u00ebl de l'\u00e9cole dans laquelle Bart et Lisa participent. De retour \u00e0 la maison, les enfants r\u00e9digent leur lettre pour le P\u00e8re No\u00ebl : Lisa r\u00e9clame pour la \u00e9ni\u00e8me ann\u00e9e un poney et Bart veut un tatouage.",
+        "date": "1989-12-18",
+        "note": {
+            "total": "164",
+            "mean": "4.16",
+            "user": 5
+        },
+        "user": {
+            "seen": true,
+            "downloaded": true
+        },
+        "comments": "4",
+        "subtitles": [
+            {
+                "id": 129901,
+                "language": "VO",
+                "source": "tvsubtitles",
+                "quality": 1,
+                "file": "The Simpsons_1x01_en.zip",
+                "url": "https:\/\/www.betaseries.com\/srt\/129901",
+                "date": "2007-07-01 16:13:32"
+            },
+            {
+                "id": 129907,
+                "language": "VF",
+                "source": "tvsubtitles",
+                "quality": 1,
+                "file": "The Simpsons_1x01_fr.zip",
+                "url": "https:\/\/www.betaseries.com\/srt\/129907",
+                "date": "2008-05-10 16:36:44"
+            },
+            {
+                "id": 360277,
+                "language": "VF",
+                "source": "tvsubtitles",
+                "quality": 1,
+                "file": "The Simpsons_1x01_HDTV.addic7ed.fr.zip",
+                "url": "https:\/\/www.betaseries.com\/srt\/360277",
+                "date": "2011-11-13 20:48:55"
+            },
+            {
+                "id": 420121,
+                "language": "VO",
+                "source": "podnapisi",
+                "quality": 1,
+                "file": "The Simpsons [1x01] The Simpsons Roasting on an Open Fire-eng.zip",
+                "url": "https:\/\/www.betaseries.com\/srt\/420121",
+                "date": "2013-03-18 18:54:03"
+            }
+        ]
+    },
+    "errors": [
+
+    ]
+}

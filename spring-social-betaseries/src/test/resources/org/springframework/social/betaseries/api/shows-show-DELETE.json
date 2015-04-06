@@ -1,0 +1,67 @@
+{
+    "show": {
+        "id": 13,
+        "thetvdb_id": 80348,
+        "imdb_id": "tt0934814",
+        "title": "Chuck",
+        "description": "Chuck, un informaticien d'une vingtaine d'ann\u00e9es, renferme, dans son cerveau, une base de donn\u00e9es contenant des secrets gouvernementaux. Il est bient\u00f4t recrut\u00e9 par John Casey, un ancien agent de la NSA (Agence de S\u00e9curit\u00e9 Nationale), pour travailler dans le monde de l'espionnage avec sa nouvelle partenaire, Sarah. Sa vie se partage d\u00e8s lors entre sa passion pour les ordinateurs et ses missions secr\u00e8tes de la NSA.",
+        "seasons": "5",
+        "seasons_details": [
+            {
+                "number": 1,
+                "episodes": 13
+            },
+            {
+                "number": 2,
+                "episodes": 22
+            },
+            {
+                "number": 3,
+                "episodes": 19
+            },
+            {
+                "number": 4,
+                "episodes": 24
+            },
+            {
+                "number": 5,
+                "episodes": 13
+            }
+        ],
+        "episodes": "91",
+        "followers": "25389",
+        "comments": "167",
+        "similars": "23",
+        "characters": "16",
+        "creation": "2007",
+        "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Drama"
+        ],
+        "length": "60",
+        "network": "NBC",
+        "rating": "TV-PG",
+        "status": "Ended",
+        "language": "en",
+        "notes": {
+            "total": "1102",
+            "mean": "4.5581",
+            "user": 0
+        },
+        "in_account": false,
+        "user": {
+            "archived": false,
+            "favorited": false,
+            "remaining": "91",
+            "status": "0",
+            "last": "S00E00",
+            "tags": ""
+        },
+        "resource_url": "http:\/\/www.betaseries.com\/serie\/chuck"
+    },
+    "errors": [
+
+    ]
+}
