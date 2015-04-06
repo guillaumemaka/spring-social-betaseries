@@ -26,7 +26,7 @@ configure(allprojects) {
         junitVersion = '4.11'
         mockitoVersion = '1.9.5'
         servletApiVersion = '3.0.1'
-        springVersion = '4.0.2.RELEASE'
+        springVersion = '4.1.6.RELEASE'
 		slf4jVersion = '1.7.7'
     }
 
