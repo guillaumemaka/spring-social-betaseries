@@ -103,7 +103,7 @@ project(':spring-social-betaseries') {
        compile ("com.fasterxml.jackson.core:jackson-databind:$jacksonVersion")
        compile ("com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion")
        compile ("javax.servlet:javax.servlet-api:$servletApiVersion", provided)
-	   testCompile group: 'org.slf4j' , name: 'slf4j-log4j12', version: slf4jVersion
+	   compile group: 'org.slf4j' , name: 'slf4j-log4j12', version: slf4jVersion
        testCompile "org.springframework:spring-test:$springVersion"
     }
 }
@@ -190,7 +190,7 @@ configure(rootProject) {
         }
     }
 
-    task distZip(type: Zip, dependsOn: [docsZip, schemaZip]) {
+    task distZip(type: Zip, dependsOn: [docsZip, schemaZip] ) {
         group = 'Distribution'
         classifier = 'dist'
         description = "Builds -${classifier} archive, containing all jars and docs, " +
@@ -229,7 +229,7 @@ configure(rootProject) {
 
     artifacts {
         archives docsZip
-//        archives schemaZip
+		// archives schemaZip
         archives distZip
     }
 
