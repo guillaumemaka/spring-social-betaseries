@@ -15,6 +15,6 @@
  */
 
 rootProject.name = 'spring-social-betaseries'
-
-//include 'docs'
-//include 'spring-social-betaseries'
+//rootProject.projectDir = new File(settingsDir, "./spring-social-betaseries")
+include 'docs'
+include 'spring-social-betaseries'
