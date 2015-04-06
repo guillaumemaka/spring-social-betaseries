@@ -1,10 +1,6 @@
-<<<<<<< HEAD:src/main/java/org/springframework/social/betaseries/api/BSSortOrder.java
-/**
- * Copyright 2015 Guillaume Maka
-=======
+
 /*
  * Copyright 2011 the original author or authors.
->>>>>>> gradle-experimentation:settings.gradle
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,24 +15,8 @@
  * limitations under the License.
  */
 
-<<<<<<< HEAD:src/main/java/org/springframework/social/betaseries/api/BSSortOrder.java
-// TODO: Auto-generated Javadoc
-/**
- * The Enum BSSortOrder.
- *
- * @author Guillaume Maka
- */
-public enum BSSortOrder {
 
-	/** The asc. */
-	ASC,
-
-	/** The desc. */
-	DESC
-}
-=======
 rootProject.name = 'spring-social-betaseries'
 //rootProject.projectDir = new File(settingsDir, "./spring-social-betaseries")
 include 'docs'
 include 'spring-social-betaseries'
->>>>>>> gradle-experimentation:settings.gradle
