@@ -31,7 +31,7 @@ configure(allprojects) {
     }
 
     [compileJava, compileTestJava]*.options*.compilerArgs = ['-Xlint:none']
-
+    compileTestJava.options.encoding = "UTF-8"
     sourceSets.test.resources.srcDirs = ['src/test/resources', 'src/test/java']
 
     test.systemProperty("java.awt.headless", "true")
