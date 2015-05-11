@@ -13,7 +13,7 @@ configure(allprojects) {
     apply plugin: 'eclipse'
     apply plugin: 'idea'
     apply plugin: 'javadocHotfix'
-	apply plugin: 'maven'
+	  apply plugin: 'maven'
 
     group = 'org.springframework.social'
 
@@ -233,6 +233,8 @@ configure(rootProject) {
         archives distZip
     }
 
+
+
     task wrapper(type: Wrapper) {
         description = 'Generates gradlew[.bat] scripts'
         gradleVersion = '2.0'
@@ -240,7 +242,7 @@ configure(rootProject) {
 
 }
 
-task updateRootDocs << {
+/*task updateRootDocs << {
     copy {
         from 'src/dist'
         into "${rootProject.projectDir}"
@@ -255,6 +257,6 @@ task updateRootDocs << {
         include 'license.txt'
         rename { filename -> 'LICENSE' }
     }
-}
+}*/
 
 //build.dependsOn('updateRootDocs')

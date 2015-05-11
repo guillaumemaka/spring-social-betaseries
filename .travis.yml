@@ -4,6 +4,6 @@ jdk:
   - oraclejdk7
   - openjdk6
 install:
-  - gradle spring-social-betaseries:check -x updateRootDocs --continue
-  - gradle spring-social-betaseries:assemble -x updateRootDocs --continue
-script: gradle spring-social-betaseries:build -x updateRootDocs --continue
+  - gradle spring-social-betaseries:check -x spring-social-betaseries:test spring-social-betaseries:javadoc spring-social-betaseries:jar --continue
+  - gradle spring-social-betaseries:assemble -x spring-social-betaseries:test spring-social-betaseries:javadoc spring-social-betaseries:jar --continue
+script: gradle spring-social-betaseries:build -x spring-social-betaseries:javadoc spring-social-betaseries:jar --continue
