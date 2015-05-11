@@ -109,7 +109,7 @@ project(':spring-social-betaseries') {
 }
 
 configure(rootProject) {
-    description = 'Spring Social GitHub'
+    description = 'Spring Social BetaSeries'
 
     apply plugin: 'docbook-reference'
 
@@ -122,7 +122,7 @@ configure(rootProject) {
 
     dependencies { // for integration tests
     }
-    
+
     task api(type: Javadoc) {
         group = 'Documentation'
         description = 'Generates aggregated Javadoc API documentation.'
@@ -191,7 +191,6 @@ configure(rootProject) {
     }
 
     task distZip(type: Zip, dependsOn: [docsZip, schemaZip] ) {
-		enabled = false
         group = 'Distribution'
         classifier = 'dist'
         description = "Builds -${classifier} archive, containing all jars and docs, " +
@@ -258,4 +257,4 @@ task updateRootDocs << {
     }
 }
 
-build.dependsOn('updateRootDocs')
+//build.dependsOn('updateRootDocs')
