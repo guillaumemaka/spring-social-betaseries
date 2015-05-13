@@ -18,9 +18,8 @@ package org.springframework.social.betaseries.api;
 import java.util.HashMap;
 import java.util.Map;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class BetaSeriesObject.
+ * Represent a base class for all object representation. 
  * 
  * @author Guillaume Maka
  */
@@ -38,6 +37,13 @@ public class BetaSeriesObject {
 	
 	/**
 	 * Gets the extra data.
+	 * <p>
+	 * A {@code Map} containing extra response property that the child class
+	 * doesn't handle by default. Prevent Json unknown property error.  
+ 	 * </p>
+ 	 * <p>
+ 	 * This prevent API changes.
+ 	 * </p>
 	 * 
 	 * @return the extra data
 	 */
@@ -46,12 +52,11 @@ public class BetaSeriesObject {
 	}
 	
 	/**
-	 * Adds the.
+	 * Adds the unknown property from json response that child class doesn't 
+	 * handle by default.
 	 * 
-	 * @param key
-	 *            the key
-	 * @param value
-	 *            the value
+	 * @param key  the key
+	 * @param value  the value
 	 */
 	public void add(String key, Object value) {
 		this.extraData.put(key, value);

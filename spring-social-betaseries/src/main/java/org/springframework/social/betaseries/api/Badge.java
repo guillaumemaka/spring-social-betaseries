@@ -18,17 +18,7 @@ package org.springframework.social.betaseries.api;
 import java.util.Date;
 
 /**
- * 
- * @author Guillaume Maka
- *{
- * 	    "id": 148,
- *	    "code": "flashmob",
- *	    "name": "Flashmob",
- *	    "description": "Vou s avez regard\u00e9 le m\u00eame \u00e9pisode que 75 personnes ce jour-l\u00e0, vous \u00eates \u00e0 la mode.",
- *	    "date": "2012-04-16 00:26:21"
- *}
- *
- *
+ * This class represent a {@code Badge} object representation
  */
 public class Badge extends BetaSeriesObject {	
 	
@@ -50,11 +40,13 @@ public class Badge extends BetaSeriesObject {
 	private final Date date;
 
 	/**
-	 * @param id
-	 * @param code
-	 * @param name
-	 * @param description
-	 * @param date
+	 * Construct e new {@link Badge} object.
+	 * 
+	 * @param id  the badge id  
+	 * @param code  the badge code 
+	 * @param name  the badge name
+	 * @param description  the badge description
+	 * @param date  the badge date
 	 */
 	public Badge(Long id, String code, String name, String description,
 			Date date) {
@@ -67,20 +59,26 @@ public class Badge extends BetaSeriesObject {
 	}
 
 	/**
-	 * @return the id
+	 * Gets the badge id.
+	 * 
+	 * @return the badgw id
 	 */
 	public Long getId() {
 		return id;
 	}
 
 	/**
-	 * @return the badge code
+	 * Gets the badge code.
+	 * 
+	 * @return the badge code.
 	 */
 	public String getCode() {
 		return code;
 	}
 
 	/**
+	 * Gets the badge name.
+	 * 
 	 * @return the badge name
 	 */
 	public String getName() {
@@ -88,6 +86,8 @@ public class Badge extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the badge description.
+	 * 
 	 * @return the badge description
 	 */
 	public String getDescription() {
@@ -95,6 +95,8 @@ public class Badge extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gwts the badge date.
+	 * 
 	 * @return the badge earning date
 	 */
 	public Date getDate() {

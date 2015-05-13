@@ -18,49 +18,54 @@ package org.springframework.social.betaseries.api;
 import java.util.List;
 
 /**
- * The Class Member.
+ * Represents an instance of {@code Member}.
  * 
  * @author Guillaume Maka
  */
 public class Member extends BetaSeriesObject {
 	
-	/** The id. */	
+	/** The member id. */	
 	private String memberId;
 	
-	/** The login. */
+	/** The member login. */
 	private String login;
 	
-	/** The xp. */
+	/** The member experience point. */
 	private int xp;
 	
-	/** The avatar url. */
+	/** The member avatar url. */
 	private String avatarUrl;
 	
+	/** The member last cached timestamp */
 	private int cached;
 	
-	/** The in account. */
+	/** The member flag in account. */
 	private boolean inAccount;
 	
-	/** The stats. */
+	/** The member statistics {@see MemberStats}. */
 	private MemberStats stats;
 	
-	/** The shows. */
+	/** The member list of show. */
 	private List<Show> shows;
 	
+	/** The member list of movie. */
 	private List<Movie> movies;
 	
+	/** The member account options. */
 	private MemberOptions options;
 	
 	
 
 	/**
-	 * 
+	 * Construct an instance of {@code Member}.
 	 */
 	public Member() {
 		super();
 	}
 
 	/**
+	 * Gets the member id.
+	 * 
 	 * @return the id
 	 */
 	public String getMemberId() {
@@ -68,6 +73,7 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Sets the member id.
 	 * @param id the id to set
 	 */
 	public void setMemberId(String id) {
@@ -75,6 +81,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the member login
+	 * 
 	 * @return the login
 	 */
 	public String getLogin() {
@@ -82,13 +90,15 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
-	 * @param login the login to set
+	 * @param login the login to set.
 	 */
 	public void setLogin(String login) {
 		this.login = login;
 	}
 
 	/**
+	 * Gets the member xp.
+	 * 
 	 * @return the xp
 	 */
 	public int getXp() {
@@ -96,6 +106,7 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * 
 	 * @param xp the xp to set
 	 */
 	public void setXp(int xp) {
@@ -103,6 +114,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the member avatar url.
+	 * 
 	 * @return the avatarUrl
 	 */
 	public String getAvatarUrl() {
@@ -117,6 +130,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the member cached timestamp.
+	 * 
 	 * @return the cached
 	 */
 	public int getCached() {
@@ -131,6 +146,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the member in account flag.
+	 * 
 	 * @return the inAccount
 	 */
 	public boolean isInAccount() {
@@ -145,7 +162,10 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Get the member account options.
+	 * 
 	 * @return the stats
+	 * @see MemberStats
 	 */
 	public MemberStats getStats() {
 		return stats;
@@ -159,6 +179,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the member list of show
+	 * 
 	 * @return the shows
 	 */
 	public List<Show> getShows() {
@@ -166,6 +188,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * 
+	 * 
 	 * @param shows the shows to set
 	 */
 	public void setShows(List<Show> shows) {
@@ -173,6 +197,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the member list of movie.
+	 * 
 	 * @return the movies
 	 */
 	public List<Movie> getMovies() {
@@ -187,6 +213,8 @@ public class Member extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the member account options.
+	 * 
 	 * @return the options
 	 */
 	public MemberOptions getOptions() {

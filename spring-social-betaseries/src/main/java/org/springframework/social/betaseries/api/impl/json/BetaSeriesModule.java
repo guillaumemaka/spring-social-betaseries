@@ -31,7 +31,6 @@ import org.springframework.social.betaseries.api.Message;
 import org.springframework.social.betaseries.api.Movie;
 import org.springframework.social.betaseries.api.Note;
 import org.springframework.social.betaseries.api.Notification;
-import org.springframework.social.betaseries.api.NotificationList;
 import org.springframework.social.betaseries.api.Picture;
 import org.springframework.social.betaseries.api.Recommendation;
 import org.springframework.social.betaseries.api.Show;
@@ -82,8 +81,7 @@ public class BetaSeriesModule extends SimpleModule {
 		context.setMixInAnnotations(Movie.class, MovieMixin.class);
 		context.setMixInAnnotations(Movie.UserDetail.class, MovieMixin.UserDetailMixin.class);
 		context.setMixInAnnotations(Movie.SummarizedMovie.class, MovieMixin.SummarizedMovieMixin.class);
-		context.setMixInAnnotations(Notification.class, NotificationMixin.class);
-		context.setMixInAnnotations(NotificationList.class, NotificationListMixin.class);
+		context.setMixInAnnotations(Notification.class, NotificationMixin.class);		
 		context.setMixInAnnotations(SubtitleSource.class, SubtitleSourceMixin.class);
 		context.setMixInAnnotations(Subtitle.class, SubtitleMixin.class);
 		context.setMixInAnnotations(Subtitle.EmbededEpisode.class, SubtitleMixin.EmbededEpisodeMixin.class);

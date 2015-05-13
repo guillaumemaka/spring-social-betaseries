@@ -18,93 +18,92 @@ package org.springframework.social.betaseries.api;
 import java.util.List;
 
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class BSOptions.
+ * <p>
+ * Represents the available subtitles options of a member.
+ * </p>
  * 
  * @author Guillaume Maka
  */
 public class BSOptions extends BetaSeriesObject {
-	/** The notation enabled. */
-	private boolean notationEnabled;
+	/** The notation option. */
+	private final boolean notationEnabled;
 	
-	/** The downloaded enabled. */	
-	private boolean downloadedEnabled;
+	/** The downloaded option. */	
+	private final boolean downloadedEnabled;
 	
-	/** The global enabled. */
-	private boolean globalEnabled;
+	/** The global option. */
+	private final boolean globalEnabled;
 	
-	/** The timelag enabled. */
-	private boolean timelagEnabled;
+	/** The timelag option. */
+	private final boolean timelagEnabled;
 	
-	/** The friendship enabled. */
-	private boolean friendshipEnabled;
+	/** The friendship option. */
+	private final boolean friendshipEnabled;
 
-	/** The sources. */
-	List<SubtitleSource> sources;
+	/** The subtitles sources. */
+	private final List<SubtitleSource> sources;
 	
 	/**
+	 * Represent a new instance of {@code BSOptions}.
 	 * 
+	 * @param notationEnabled
+	 * @param downloadedEnabled
+	 * @param globalEnabled
+	 * @param timelagEnabled
+	 * @param friendshipEnabled
+	 * @param sources
 	 */
-	public BSOptions() {
+	public BSOptions(boolean notationEnabled, boolean downloadedEnabled,
+			boolean globalEnabled, boolean timelagEnabled,
+			boolean friendshipEnabled, List<SubtitleSource> sources) {
 		super();
-		// TODO Auto-generated constructor stub
+		this.notationEnabled = notationEnabled;
+		this.downloadedEnabled = downloadedEnabled;
+		this.globalEnabled = globalEnabled;
+		this.timelagEnabled = timelagEnabled;
+		this.friendshipEnabled = friendshipEnabled;
+		this.sources = sources;
 	}
 
 	/**
+	 * Gets the notation option.
+	 * 
 	 * @return the notationEnabled
 	 */
 	public boolean isNotationEnabled() {
 		return notationEnabled;
 	}
 
-	/**
-	 * @param notationEnabled the notationEnabled to set
-	 */
-	public void setNotationEnabled(boolean notationEnabled) {
-		this.notationEnabled = notationEnabled;
-	}
 
 	/**
+	 * Gets the downloaded option.
+	 * 
 	 * @return the downloadedEnabled
 	 */
 	public boolean isDownloadedEnabled() {
 		return downloadedEnabled;
 	}
 
-	/**
-	 * @param downloadedEnabled the downloadedEnabled to set
-	 */
-	public void setDownloadedEnabled(boolean downloadedEnabled) {
-		this.downloadedEnabled = downloadedEnabled;
-	}
 
 	/**
+	 * Gets the global option.
+	 * 
 	 * @return the globalEnabled
 	 */
 	public boolean isGlobalEnabled() {
 		return globalEnabled;
 	}
 
-	/**
-	 * @param globalEnabled the globalEnabled to set
-	 */
-	public void setGlobalEnabled(boolean globalEnabled) {
-		this.globalEnabled = globalEnabled;
-	}
 
 	/**
+	 * Gets the notation option.
+	 * 
 	 * @return the timelagEnabled
 	 */
 	public boolean isTimelagEnabled() {
 		return timelagEnabled;
-	}
-
-	/**
-	 * @param timelagEnabled the timelagEnabled to set
-	 */
-	public void setTimelagEnabled(boolean timelagEnabled) {
-		this.timelagEnabled = timelagEnabled;
 	}
 
 	/**
@@ -115,24 +114,10 @@ public class BSOptions extends BetaSeriesObject {
 	}
 
 	/**
-	 * @param friendshipEnabled the friendshipEnabled to set
-	 */
-	public void setFriendshipEnabled(boolean friendshipEnabled) {
-		this.friendshipEnabled = friendshipEnabled;
-	}
-
-	/**
 	 * @return the sources
 	 */
 	public List<SubtitleSource> getSources() {
 		return sources;
-	}
-
-	/**
-	 * @param sources the sources to set
-	 */
-	public void setSources(List<SubtitleSource> sources) {
-		this.sources = sources;
 	}
 
 	/* (non-Javadoc)
@@ -179,5 +164,21 @@ public class BSOptions extends BetaSeriesObject {
 		if (timelagEnabled != other.timelagEnabled)
 			return false;
 		return true;
-	}	
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("BSOptions [notationEnabled=").append(notationEnabled)
+				.append(", downloadedEnabled=").append(downloadedEnabled)
+				.append(", globalEnabled=").append(globalEnabled)
+				.append(", timelagEnabled=").append(timelagEnabled)
+				.append(", friendshipEnabled=").append(friendshipEnabled)
+				.append(", sources=").append(sources).append("]");
+		return builder.toString();
+	}
+	
 }

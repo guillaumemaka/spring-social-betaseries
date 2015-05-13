@@ -1,19 +1,56 @@
+/**
+ * Copyright 2015 Guillaume Maka
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
 import java.util.List;
 
+/**
+ * Represents an instance of {@code UnseenEpisode}.
+ * <p>
+ * This class is derived subset of {@code Episode} describing an unseen episode. 
+ * </p>
+ *
+ * @author Guillaume Maka
+ */
 public class UnseenEpisode extends BetaSeriesObject {
+	
+	/** The show id. */
 	private final int showId;
+	
+	/** The show tv db id. */
 	private final int theTvDbId;
+	
+	/** The show title. */
 	private final String title;
+	
+	/** The show remaining episode to see. */
 	private final int remaining;
+	
+	/** The unseen episodes. */
 	private final List<Episode> episodes;
+	
 	/**
-	 * @param showId
-	 * @param theTvDbId
-	 * @param title
-	 * @param remaining
-	 * @param episodes
+	 * Instantiates a new {@code UnseenEpisode}.
+	 *
+	 * @param showId  the show id
+	 * @param theTvDbId  the show the tv db id
+	 * @param title  the show title
+	 * @param remaining  the show remaining episode to see
+	 * @param episodes  the unseen episodes
+	 * @see Episode
 	 */
 	public UnseenEpisode(int showId, int theTvDbId, String title,
 			int remaining, List<Episode> episodes) {
@@ -24,36 +61,52 @@ public class UnseenEpisode extends BetaSeriesObject {
 		this.remaining = remaining;
 		this.episodes = episodes;
 	}
+	
 	/**
-	 * @return the showId
+	 * Gets the show id.
+	 *
+	 * @return the show id
 	 */
 	public int getShowId() {
 		return showId;
 	}
+	
 	/**
-	 * @return the theTvDbId
+	 * Gets the show tv db id.
+	 *
+	 * @return the show tv db id
 	 */
 	public int getTheTvDbId() {
 		return theTvDbId;
 	}
+	
 	/**
-	 * @return the title
+	 * Gets the show title.
+	 *
+	 * @return the show title
 	 */
 	public String getTitle() {
 		return title;
 	}
+	
 	/**
-	 * @return the remaining
+	 * Gets the show remaining episode to see.
+	 *
+	 * @return the show remaining episode to see.
 	 */
 	public int getRemaining() {
 		return remaining;
 	}
+	
 	/**
-	 * @return the episodes
+	 * Gets the unseen episodes.
+	 *
+	 * @return the unseen episodes
 	 */
 	public List<Episode> getEpisodes() {
 		return episodes;
 	}
+	
 	/* (non-Javadoc)
 	 * @see java.lang.Object#hashCode()
 	 */

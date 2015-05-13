@@ -15,69 +15,58 @@
  */
 package org.springframework.social.betaseries.api;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class MemberStats.
+ * Represent an instance of {@code MemberStats}.
  * 
  * @author Guillaume Maka
  */
 public class MemberStats extends BetaSeriesObject {
 	
-	/** The number of friends. */
+	/** The number of friends stats for the member. */
 	private int numberOfFriends;
 	
-	/** The number of shows. */
+	/** The number of shows stats for the member. */
 	private int numberOfShows;
 	
-	/** The number of seasons. */
+	/** The number of seasons stats for the member. */
 	private int numberOfSeasons;
 	
-	/** The number of episodes. */
+	/** The number of episodes stats for the member. */
 	private int numberOfEpisodes;
 	
-	/** The number of comments. */
+	/** The number of comments stats for the member. */
 	private int numberOfComments;
 	
-	/** The progress. */
+	/** The progress stats for the member. */
 	private double progress;
 	
-	/** The episodes to watch. */
+	/** The episodes to watch stats for the member. */
 	private int episodesToWatch;
 	
-	/** The time on tv. */
+	/** The time on tv stats for the member. */
 	private int timeOnTv;
 	
-	/** The time to spend. */
+	/** The time to spend stats for the member. */
 	private int timeToSpend;
 	
-	/** The badges. */
+	/** The badges stats for the member. */
 	private int badges;
 
 	public MemberStats() {}
 	
 	/**
-	 * Instantiates a new member stats.
+	 * Instantiates a new {@code MemberStats}.
 	 * 
-	 * @param numberOfFriends
-	 *            the number of friends
-	 * @param numberOfShows
-	 *            the number of shows
-	 * @param numberOfSeasons
-	 *            the number of seasons
-	 * @param numberOfEpisodes
-	 *            the number of episodes
-	 * @param numberOfComments
-	 *            the number of comments
-	 * @param progress
-	 *            the progress
-	 * @param episodesToWatch
-	 *            the episodes to watch
-	 * @param timeOnTv
-	 *            the time on tv
-	 * @param timeToSpend
-	 *            the time to spend
-	 * @param badges
-	 *            the badges
+	 * @param numberOfFriends  the number of friends stats
+	 * @param numberOfShows  the number of shows stats
+	 * @param numberOfSeasons  the number of seasons stats
+	 * @param numberOfEpisodes  the number of episodes stats
+	 * @param numberOfComments  the number of comments stats
+	 * @param progress  the progress stats
+	 * @param episodesToWatch  the episodes to watch stats
+	 * @param timeOnTv  the time on tv stats
+	 * @param timeToSpend  the time to spend stats
+	 * @param badges  the badges stats
 	 */
 	public MemberStats(int numberOfFriends, int numberOfShows,
 			int numberOfSeasons, int numberOfEpisodes, int numberOfComments,
@@ -97,7 +86,7 @@ public class MemberStats extends BetaSeriesObject {
 	}
 
 	/**
-	 * Gets the number of friends.
+	 * Gets the number of friends stats.
 	 * 
 	 * @return the number of friends
 	 */
@@ -106,17 +95,7 @@ public class MemberStats extends BetaSeriesObject {
 	}
 
 	/**
-	 * Sets the number of friends.
-	 * 
-	 * @param numberOfFriends
-	 *            the new number of friends
-	 */
-	public void setNumberOfFriends(int numberOfFriends) {
-		this.numberOfFriends = numberOfFriends;
-	}
-
-	/**
-	 * Gets the number of shows.
+	 * Gets the number of shows stats.
 	 * 
 	 * @return the number of shows
 	 */
@@ -124,18 +103,9 @@ public class MemberStats extends BetaSeriesObject {
 		return numberOfShows;
 	}
 
-	/**
-	 * Sets the number of shows.
-	 * 
-	 * @param numberOfShows
-	 *            the new number of shows
-	 */
-	public void setNumberOfShows(int numberOfShows) {
-		this.numberOfShows = numberOfShows;
-	}
 
 	/**
-	 * Gets the number of seasons.
+	 * Gets the number of seasons stats.
 	 * 
 	 * @return the number of seasons
 	 */
@@ -144,17 +114,7 @@ public class MemberStats extends BetaSeriesObject {
 	}
 
 	/**
-	 * Sets the number of seasons.
-	 * 
-	 * @param numberOfSeasons
-	 *            the new number of seasons
-	 */
-	public void setNumberOfSeasons(int numberOfSeasons) {
-		this.numberOfSeasons = numberOfSeasons;
-	}
-
-	/**
-	 * Gets the number of episodes.
+	 * Gets the number of episodes stats.
 	 * 
 	 * @return the number of episodes
 	 */
@@ -163,17 +123,7 @@ public class MemberStats extends BetaSeriesObject {
 	}
 
 	/**
-	 * Sets the number of episodes.
-	 * 
-	 * @param numberOfEpisodes
-	 *            the new number of episodes
-	 */
-	public void setNumberOfEpisodes(int numberOfEpisodes) {
-		this.numberOfEpisodes = numberOfEpisodes;
-	}
-
-	/**
-	 * Gets the number of comments.
+	 * Gets the number of comments stats.
 	 * 
 	 * @return the number of comments
 	 */
@@ -182,17 +132,7 @@ public class MemberStats extends BetaSeriesObject {
 	}
 
 	/**
-	 * Sets the number of comments.
-	 * 
-	 * @param numberOfComments
-	 *            the new number of comments
-	 */
-	public void setNumberOfComments(int numberOfComments) {
-		this.numberOfComments = numberOfComments;
-	}
-
-	/**
-	 * Gets the progress.
+	 * Gets the progress stats.
 	 * 
 	 * @return the progress
 	 */
@@ -201,36 +141,16 @@ public class MemberStats extends BetaSeriesObject {
 	}
 
 	/**
-	 * Sets the progress.
+	 * Gets the number of episodes to watch stats.
 	 * 
-	 * @param progress
-	 *            the new progress
-	 */
-	public void setProgress(double progress) {
-		this.progress = progress;
-	}
-
-	/**
-	 * Gets the episodes to watch.
-	 * 
-	 * @return the episodes to watch
+	 * @return the number of episodes to watch
 	 */
 	public int getEpisodesToWatch() {
 		return episodesToWatch;
 	}
 
 	/**
-	 * Sets the episodes to watch.
-	 * 
-	 * @param episodesToWatch
-	 *            the new episodes to watch
-	 */
-	public void setEpisodesToWatch(int episodesToWatch) {
-		this.episodesToWatch = episodesToWatch;
-	}
-
-	/**
-	 * Gets the time on tv.
+	 * Gets the time on tv stats.
 	 * 
 	 * @return the time on tv
 	 */
@@ -239,17 +159,7 @@ public class MemberStats extends BetaSeriesObject {
 	}
 
 	/**
-	 * Sets the time on tv.
-	 * 
-	 * @param timeOnTv
-	 *            the new time on tv
-	 */
-	public void setTimeOnTv(int timeOnTv) {
-		this.timeOnTv = timeOnTv;
-	}
-
-	/**
-	 * Gets the time to spend.
+	 * Gets the time to spend stats.
 	 * 
 	 * @return the time to spend
 	 */
@@ -258,32 +168,12 @@ public class MemberStats extends BetaSeriesObject {
 	}
 
 	/**
-	 * Sets the time to spend.
-	 * 
-	 * @param timeToSpend
-	 *            the new time to spend
-	 */
-	public void setTimeToSpend(int timeToSpend) {
-		this.timeToSpend = timeToSpend;
-	}
-
-	/**
-	 * Gets the badges.
+	 * Gets the badges stats.
 	 * 
 	 * @return the badges
 	 */
 	public int getBadges() {
 		return badges;
-	}
-
-	/**
-	 * Sets the badges.
-	 * 
-	 * @param badges
-	 *            the new badges
-	 */
-	public void setBadges(int badges) {
-		this.badges = badges;
 	}
 
 	/* (non-Javadoc)

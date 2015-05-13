@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,50 +18,55 @@ package org.springframework.social.betaseries.api;
 import java.util.Date;
 import java.util.List;
 
-// TODO: Auto-generated Javadoc
+
 /**
- * The Class Subtitle.
- * 
+ * Represents an instance of {@code Subtitle}.
+ * <p>
+ * </p>
+ *
  * @author Guillaume Maka
- * @param <EmbededEpidose>
  */
 public class Subtitle extends BetaSeriesObject {
 
-	/** The id. */
+	/** The subtitle id. */
 	private final int id;
 
-	/** The language. */
+	/** The subtitle language. */
 	private final String language;
 
-	/** The source. */
+	/** The subtitle source. */
 	private final String source;
 
-	/** The quality. */
+	/** The subtitle quality. */
 	private final int quality;
 
-	/** The file. */
+	/** The subtitle archive filename. */
 	private final String file;
 
+	/** The content of {@link #file}. */
 	private final List<String> content;
 
-	/** The url. */
+	/** The url to download the subtitle archive. */
 	private final String url;
 
+	/** The episode relative to this subtitle (subset). */
 	private final EmbededEpisode episode;
 
-	/** The date. */
+	/** The subtitle publish date. */
 	private final Date date;
 
 	/**
-	 * @param id
-	 * @param language
-	 * @param source
-	 * @param quality
-	 * @param file
-	 * @param content
-	 * @param url
-	 * @param episode
-	 * @param date
+	 * Instantiates a {@code Subtitle}.
+	 *
+	 * @param id  the subtitle internal id
+	 * @param language  the subtitle language
+	 * @param source  the subtitle source
+	 * @param quality  the subtitle quality
+	 * @param file  the subtitle archive filename
+	 * @param content  the subtitle archive content
+	 * @param url  the downloadable subtitle archive url
+	 * @param episode  The episode relative to this subtitle (subset)
+	 * @param date  the subtitle publish date
 	 */
 	public Subtitle(int id, String language, String source, int quality,
 			String file, List<String> content, String url,
@@ -79,63 +84,82 @@ public class Subtitle extends BetaSeriesObject {
 	}
 
 	/**
-	 * @return the id
+	 * Gets the subtitle internal id.
+	 *
+	 * @return the subtitle internal id
 	 */
 	public int getId() {
 		return id;
 	}
 
 	/**
-	 * @return the language
+	 * Gets the subtitle language.
+	 *
+	 * @return the subtitle language
 	 */
 	public String getLanguage() {
 		return language;
 	}
 
 	/**
-	 * @return the source
+	 * Gets the subtitle source.
+	 *
+	 * @return the subtitle source
 	 */
 	public String getSource() {
 		return source;
 	}
 
 	/**
-	 * @return the quality
+	 * Gets the subtitle quality.
+	 *
+	 * @return the subtitle quality
 	 */
 	public int getQuality() {
 		return quality;
 	}
 
 	/**
-	 * @return the file
+	 * Gets the subtitle archive filename.
+	 *
+	 * @return the subtitle archive filename
 	 */
 	public String getFile() {
 		return file;
 	}
 
 	/**
-	 * @return the content
+	 * Gets the subtitle archive content.
+	 *
+	 * @return the subtitle archive content
 	 */
 	public List<String> getContent() {
 		return content;
 	}
 
 	/**
-	 * @return the url
+	 * Gets the downloadable archive url.
+	 *
+	 * @return the downloadable archive url
 	 */
 	public String getUrl() {
 		return url;
 	}
 
 	/**
-	 * @return the episode
+	 * Gets the relative episode info.
+	 *
+	 * @return the episode info
+	 * @see EmbededEpisode
 	 */
 	public EmbededEpisode getEpisode() {
 		return episode;
 	}
 
 	/**
-	 * @return the date
+	 * Gets the subtitle publish date.
+	 *
+	 * @return the subtitle publish date
 	 */
 	public Date getDate() {
 		return date;
@@ -236,17 +260,38 @@ public class Subtitle extends BetaSeriesObject {
 		return builder.toString();
 	}
 
+	/**
+	 * Represents an instance of {@code EmbededEpisode}.
+	 * <p>
+	 * </p>
+	 *
+	 * @author Guillaume Maka
+	 */
 	public static class EmbededEpisode extends BetaSeriesObject {
+		
+		/** The show id. */
 		private final int showId;
+		
+		/** The episode id. */
 		private final int episodeId;
+		
+		/** The season. */
 		private final int season;
+		
+		/** The episode. */
 		private final int episode;
 
 		/**
+		 * Instantiates a new embeded episode.
+		 *
 		 * @param showId
+		 *            the show id
 		 * @param episodeId
+		 *            the episode id
 		 * @param season
+		 *            the season
 		 * @param episode
+		 *            the episode
 		 */
 		public EmbededEpisode(int showId, int episodeId, int season, int episode) {
 			super();
@@ -257,20 +302,26 @@ public class Subtitle extends BetaSeriesObject {
 		}
 
 		/**
-		 * @return the showId
+		 * Gets the show id.
+		 *
+		 * @return the show id
 		 */
 		public int getShowId() {
 			return showId;
 		}
 
 		/**
-		 * @return the episodeId
+		 * Gets the episode id.
+		 *
+		 * @return the episode id
 		 */
 		public int getEpisodeId() {
 			return episodeId;
 		}
 
 		/**
+		 * Gets the season.
+		 *
 		 * @return the season
 		 */
 		public int getSeason() {
@@ -278,6 +329,8 @@ public class Subtitle extends BetaSeriesObject {
 		}
 
 		/**
+		 * Gets the episode.
+		 *
 		 * @return the episode
 		 */
 		public int getEpisode() {

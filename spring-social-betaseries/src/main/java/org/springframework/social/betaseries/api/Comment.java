@@ -19,25 +19,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 // TODO: Auto-generated Javadoc
-/*
- * Represents a Comment for n element (e.g: episode|show|member|movie)
- *  
- *  comments: comment*
- *	comment:
- *	  - id: string
- *	  - user_id: integer
- *	  - login: string
- *	  - avatar: url
- *	  - date: datetime
- *	  - text: string
- *	  - inner_id: integer
- *	  - in_reply_to: integer
- *  
- * @author Guillaume Maka
- */
 /**
- * The Class Comment.
- * 
+ * Represents an instance of {@code Comment} for an element (e.g: episode|show|member|movie)
+ *  
  * @author Guillaume Maka
  */
 public class Comment extends BetaSeriesObject implements Serializable{
@@ -45,47 +29,42 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = 1L;
 	
-	/** The id. */
+	/** The comment id. */
 	private final int id;	
 	
-	/** The user id. */
+	/** The comment user id. */
 	private final int userId;
 	
-	/** The login. */
+	/** The comment user login. */
 	private final String login;
 	
 	private final String avatarUrl;
 	
-	/** The created at. */
+	/** The comment created at date. */
 	private final Date createdAt;
 	
-	/** The text. */
+	/** The comment text. */
 	private final String text;
 	
-	/** The inner id. */
+	/** The comment inner id. */
 	private final int innerId;
 	
-	/** The in reply to. */
+	/** The in reply to comment id. */
 	private final int inReplyTo;
 	
+	/** The number of replies */
 	private final int numberOfReplies;
+	
 	/**
-	 * Instantiates a new comment.
+	 * Instantiates a new @{code Comment}.
 	 * 
-	 * @param id
-	 *            the id
-	 * @param userId
-	 *            the user id
-	 * @param login
-	 *            the login
-	 * @param createdAt
-	 *            the created at
-	 * @param text
-	 *            the text
-	 * @param innerId
-	 *            the inner id
-	 * @param inReplyTo
-	 *            the in reply to
+	 * @param id  the comment id
+	 * @param userId  the comment user id
+	 * @param login  the comment user login
+	 * @param createdAt  the comment created at date
+	 * @param text  the comment text
+	 * @param innerId  the comment inner id
+	 * @param inReplyTo  the comment in reply to
 	 */
 	public Comment(int id, int userId, String login,String avatarUrl, Date createdAt,
 			String text, int innerId, int inReplyTo, int numberOfReplies) {
@@ -102,20 +81,17 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
-	 * @return the serialversionuid
-	 */
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
-
-	/**
-	 * @return the id
+	 * Gets the comment {@code id}.
+	 * 
+	 * @return the comment {@code id}.
 	 */
 	public int getId() {
 		return id;
 	}
 
 	/**
+	 * Gets the user id.
+	 * 
 	 * @return the userId
 	 */
 	public int getUserId() {
@@ -123,6 +99,8 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
+	 * Gets the user login.
+	 * 
 	 * @return the login
 	 */
 	public String getLogin() {
@@ -130,6 +108,8 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
+	 * Gets the avatar url.
+	 * 
 	 * @return the avatarUrl
 	 */
 	public String getAvatarUrl() {
@@ -137,6 +117,8 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
+	 * Gets the comment created at date.
+	 * 
 	 * @return the createdAt
 	 */
 	public Date getCreatedAt() {
@@ -144,6 +126,8 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
+	 * Gets the comment text.
+	 * 
 	 * @return the text
 	 */
 	public String getText() {
@@ -151,6 +135,8 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
+	 * Gets the comment inner id.
+	 * 
 	 * @return the innerId
 	 */
 	public int getInnerId() {
@@ -158,6 +144,8 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
+	 * Gets the comment in reply to id.
+	 * 
 	 * @return the inReplyTo
 	 */
 	public int getInReplyTo() {
@@ -165,6 +153,8 @@ public class Comment extends BetaSeriesObject implements Serializable{
 	}
 
 	/**
+	 * Gets number of replies for this comment.
+	 * 
 	 * @return the numberOfReplies
 	 */
 	public int getNumberOfReplies() {

@@ -17,50 +17,65 @@ package org.springframework.social.betaseries.api;
 
 import org.springframework.social.ApiBinding;
 
-// TODO: Auto-generated Javadoc
 /*
  * Interface specifying a basic set of operations for interacting with BetaSeries.
  * Implemented by BetaSeriesTemplate.
  * 
  * @author Guillaume Maka
  */
-/**
- * The Interface BetaSeries.
- * 
- * @author Guillaume Maka
- */
 public interface BetaSeries extends ApiBinding {
 	
 	/**
-	 * Comment operations.
+	 * Gets a an instance of {@code CommentOperations}.
+	 * <p>
+	 * A {@code CommentOperations} exposes all operation that can be performed
+	 * relative to comments endpoint
+	 * </p>
+	 * 
 	 * 
 	 * @return the comment operations
 	 */
 	CommentOperations commentOperations();
 	
 	/**
-	 * Episode operations.
+	 * Gets an instance {@code EpisodeOperations}.
+	 * <p>
+	 * An {@code EpisodeOperations} exposes all operations that can be performed
+	 * relative to the episodes endpoint.
+	 * </p>
 	 * 
 	 * @return the episode operations
 	 */
 	EpisodeOperations episodeOperations();
 	
 	/**
-	 * Friend operations.
+	 * Gets an instance {@code FriendOperations}.
+	 * <p>
+	 * An {@code FriendOperations} exposes all operations that can be performed
+	 * relative to the member friends relationship.
+	 * </p>
 	 * 
 	 * @return the friend operations
 	 */
 	FriendOperations friendOperations();
 	
 	/**
-	 * Member operations.
+	 * Gets an instance {@code MemberOperations}.
+	 * <p>
+	 * An {@code MemberOperations} exposes all operations that can be performed
+	 * relative to the member endpoint.
+	 * </p>
 	 * 
 	 * @return the member operations
 	 */
 	MemberOperations memberOperations();
 	
 	/**
-	 * Message operations.
+	 * * Gets an instance {@code MessageOperations}.
+	 * <p>
+	 * An {@code MessageOperationsFriendOperations} exposes all operations that can be performed
+	 * relative to the message endpoint.
+	 * </p>
 	 * 
 	 * @return the message operations
 	 */
@@ -95,16 +110,27 @@ public interface BetaSeries extends ApiBinding {
 	ShowOperations showOperations();
 	
 	/**
-	 * Subtitle operations.
+	 * Gets an instance {@code SubtitleOperations}.
+	 * <p>
+	 * An {@code SubtitleOperationsFriendOperations} exposes all operations that can be performed
+	 * relative to the subtitle endpoint.
+	 * </p>
 	 * 
 	 * @return the subtitle operations
 	 */
 	SubtitleOperations subtitleOperations();
 	
 	/**
-	 * Timeline operations.
+ 	 * Gets an instance {@code TimelineOperations}.
+	 * <p>
+	 * An {@code TimelineOperationsFriendOperations} exposes all operations that can be performed
+	 * relative to the timeline endpoint.
+	 * </p>
 	 * 
 	 * @return the timeline operations
 	 */
 	TimelineOperations timelineOperations();
 }
+
+
+

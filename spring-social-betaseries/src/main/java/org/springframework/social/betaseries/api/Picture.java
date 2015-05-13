@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,45 +18,49 @@ package org.springframework.social.betaseries.api;
 import java.util.Date;
 
 /**
- * The Class Picture.
- * 
+ * Represents an instance of {@code Picture}.
+ * <p>
+ * </p>
+ *
  * @author Guillaume Maka
  */
 public class Picture extends BetaSeriesObject {
 
-	/** The id. */
+	/** The picture id. */
 	private final int id;
 
-	/** The show id. */
+	/** The picture show id. */
 	private final int showId;
 
-	/** The login id. */
+	/** The picture login id. */
 	private final int loginId;
 
-	/** The url. */
+	/** The picture url. */
 	private final String url;
 
-	/** The width. */
+	/** The picture width. */
 	private final int width;
 
-	/** The height. */
+	/** The picture height. */
 	private final int height;
 
-	/** The date. */
+	/** The picture date. */
 	private final Date date;
 
-	/** The type. */
+	/** The picture type. */
 	private final BSPictureType type;
 
 	/**
-	 * @param id
-	 * @param showId
-	 * @param loginId
-	 * @param url
-	 * @param width
-	 * @param height
-	 * @param date
-	 * @param type
+	 * Instantiates a new {@code Picture}.
+	 *
+	 * @param id  the picture id
+	 * @param showId  the picture show id
+	 * @param loginId  the picture login id
+	 * @param url  the picture url
+	 * @param width  the picture width
+	 * @param height  the picture height
+	 * @param date  the picture date
+	 * @param type  the picture type
 	 */
 	public Picture(int id, int showId, int loginId, String url, int width,
 			int height, Date date, BSPictureType type) {
@@ -72,56 +76,73 @@ public class Picture extends BetaSeriesObject {
 	}
 
 	/**
-	 * @return the id
+	 * Gets picture the id.
+	 *
+	 * @return the picture id
 	 */
 	public int getId() {
 		return id;
 	}
 
 	/**
-	 * @return the showId
+	 * Gets the picture show id.
+	 *
+	 * @return the picture show id
 	 */
 	public int getShowId() {
 		return showId;
 	}
 
 	/**
-	 * @return the loginId
+	 * Gets the picture login id.
+	 *
+	 * @return the picture login id
 	 */
 	public int getLoginId() {
 		return loginId;
 	}
 
 	/**
-	 * @return the url
+	 * Gets the picture url.
+	 *
+	 * @return the picture url
 	 */
 	public String getUrl() {
 		return url;
 	}
 
 	/**
-	 * @return the width
+	 * Gets the picture width.
+	 *
+	 * @return the picture width
 	 */
 	public int getWidth() {
 		return width;
 	}
 
 	/**
-	 * @return the height
+	 * Gets the picture height.
+	 *
+	 * @return the picture height
 	 */
 	public int getHeight() {
 		return height;
 	}
 
 	/**
-	 * @return the date
+	 * Gets the picture date.
+	 *
+	 * @return the picture date
 	 */
 	public Date getDate() {
 		return date;
 	}
 
 	/**
-	 * @return the type
+	 * Gets the picture type.
+	 *
+	 * @return the picture type
+	 * @see BSPictureType
 	 */
 	public BSPictureType getType() {
 		return type;

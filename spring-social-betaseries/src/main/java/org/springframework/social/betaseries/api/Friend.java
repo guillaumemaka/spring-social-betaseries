@@ -16,25 +16,31 @@
 package org.springframework.social.betaseries.api;
 
 /**
- * The Class Friend.
+ * Represents an instance of {@code Friend}.
+ * <p>
+ * This class is derived of the {@link Member} class. The Api for the friend
+ * endpoint return a similar subset of the {@link Member} class. 
+ * </p> 
  * 
  * @author Guillaume Maka
  */
 public class Friend extends BetaSeriesObject {
 	
-	/** The id. */
+	/** The friend id. Similar to {@link Member#getId()} */
 	private final String id;
 	
-	/** The login. */
+	/** The friend login. Similar to {@link Member#getLogin()} */
 	private final String login;
 	
-	/** The in account. */
+	/** The friend in account flag. Similar to  {@link Member#isInAccount()}}. */
 	private final boolean inAccount;
 
 	/**
-	 * @param id
-	 * @param login
-	 * @param inAccount
+	 * Construct an instance of {@code Friend}.
+	 * 
+	 * @param  the friend id
+	 * @param  the friend login
+	 * @param  the friend inAccount
 	 */
 	public Friend(String id, String login, boolean inAccount) {
 		super();
@@ -44,6 +50,8 @@ public class Friend extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the friend id.
+	 * 
 	 * @return the id
 	 */
 	public String getId() {
@@ -52,6 +60,8 @@ public class Friend extends BetaSeriesObject {
 
 
 	/**
+	 * Gets the friend login.
+	 * 
 	 * @return the login
 	 */
 	public String getLogin() {
@@ -59,6 +69,8 @@ public class Friend extends BetaSeriesObject {
 	}
 
 	/**
+	 * Gets the friend inAccount.
+	 * 
 	 * @return the inAccount
 	 */
 	public boolean isInAccount() {

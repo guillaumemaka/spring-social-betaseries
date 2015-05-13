@@ -1,19 +1,56 @@
+/**
+ * Copyright 2015 Guillaume Maka
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
+/**
+ * Represents an instance of {@code Recommendation}.
+ * <p>
+ * </p>
+ *
+ * @author Guillaume Maka
+ */
 public class Recommendation extends BetaSeriesObject {
+	
+	/** The recommendation id. */
 	private final int id;
+	
+	/** The recommendation from id. */
 	private final int fromId;
+	
+	/** The recommendation to id. */
 	private final int toId;
+	
+	/** The recommendation show id. */
 	private final int showId;
+	
+	/** The recommendation status. */
 	private final String status;
+	
+	/** The recommendation comments. */
 	private final String comments;
+	
 	/**
-	 * @param id
-	 * @param fromId
-	 * @param toId
-	 * @param showId
-	 * @param status
-	 * @param comments
+	 * Instantiates a new {@code Recommendation}.
+	 *
+	 * @param id  the recommendation id
+	 * @param fromId  the recommendation sender {@link Member#getMemberId() id}
+	 * @param toId  the recommendation recipient to {@link Member#getMemberId() id}
+	 * @param showId  the recommended show {@link Show#getId() id} 
+	 * @param status  the recommendation status
+	 * @param comments  the recommendation comments
 	 */
 	public Recommendation(int id, int fromId, int toId, int showId,
 			String status, String comments) {
@@ -25,42 +62,61 @@ public class Recommendation extends BetaSeriesObject {
 		this.status = status;
 		this.comments = comments;
 	}
+	
 	/**
-	 * @return the id
+	 * Gets recommendation the id.
+	 *
+	 * @return the recommendation id
 	 */
 	public int getId() {
 		return id;
 	}
+	
 	/**
-	 * @return the fromId
+	 * Gets the recommendation sender {@link Member#getMemberId() id}.
+	 *
+	 * @return the recommendation sender id
 	 */
 	public int getFromId() {
 		return fromId;
 	}
+	
 	/**
-	 * @return the toId
+	 * Gets the recommendation recipient {@link Member#getMemberId() id}.
+	 *
+	 * @return the recommendation recipient id
 	 */
 	public int getToId() {
 		return toId;
 	}
+	
 	/**
-	 * @return the showId
+	 * Gets the recommended show {@link Show#getId() id}.
+	 *
+	 * @return the recommended show id
 	 */
 	public int getShowId() {
 		return showId;
 	}
+	
 	/**
-	 * @return the status
+	 * Gets recommendation the status.
+	 *
+	 * @return the recommendation status
 	 */
 	public String getStatus() {
 		return status;
 	}
+	
 	/**
-	 * @return the comments
+	 * Gets the recommendation comments.
+	 *
+	 * @return the recommendation comments
 	 */
 	public String getComments() {
 		return comments;
 	}
+	
 	/* (non-Javadoc)
 	 * @see java.lang.Object#hashCode()
 	 */
@@ -77,6 +133,7 @@ public class Recommendation extends BetaSeriesObject {
 		result = prime * result + toId;
 		return result;
 	}
+	
 	/* (non-Javadoc)
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */

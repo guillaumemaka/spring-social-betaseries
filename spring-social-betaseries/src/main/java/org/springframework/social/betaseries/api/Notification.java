@@ -1,132 +1,138 @@
+/**
+ * Copyright 2015 Guillaume Maka
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
 import java.util.Date;
 
+/**
+ * Represents an instance of {@code Notification}.
+ * <p>
+ * </p>
+ *
+ * @author Guillaume Maka
+ */
 public class Notification extends BetaSeriesObject {
-//	Json Representtation
-//	{
-//        "id": 252644325,
-//        "type": "episode",
-//        "ref_id": "417761",
-//        "text": "Nouvel \u00e9pisode : Fairy Tail S05E32 - Stand, Hisui",
-//        "html": "Nouvel \u00e9pisode : <a href=\"\/serie\/fairytail\">Fairy Tail<\/a> S05E32 - Stand, Hisui",
-//        "date": "2014-11-09 00:03:16",
-//        "seen": null
-//    }
-	private Long id;
+
+	/** The notification id. */
+	private final Long id;
 	
-	private BSNotificationType type;
+	/** The notification type. */
+	private final BSNotificationType type;
 	
-	private String refId;
+	/** The notification reference id. */
+	private final String refId;
 	
-	private String text;
+	/** The notification text. */
+	private final String text;
 	
-	private String html;
+	/** The notification in html format. */
+	private final String html;
 	
-	private Date date;
+	/** The notification date. */
+	private final Date date;
 	
-	private boolean seen;
-	
-	public Notification() {
+	/** The notification seen flag. */
+	private final boolean seen;
+
+	/**
+	 * Instantiates a new {@code Notification}
+	 *
+	 * @param id  the notification id
+	 * @param type  the type notificaction
+	 * @param refId  the notification reference id
+	 * @param text  the notification in text format
+	 * @param html  the notifiaction in html format
+	 * @param date  the notification date
+	 * @param seen  the notification seen flag
+	 */
+	public Notification(Long id, BSNotificationType type, String refId,
+			String text, String html, Date date, boolean seen) {
 		super();
+		this.id = id;
+		this.type = type;
+		this.refId = refId;
+		this.text = text;
+		this.html = html;
+		this.date = date;
+		this.seen = seen;
 	}
 
 	/**
-	 * @return the id
+	 * Gets the notification id.
+	 *
+	 * @return the notification id
 	 */
 	public Long getId() {
 		return id;
 	}
 
 	/**
-	 * @param id the id to set
-	 */
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	/**
-	 * @return the type
+	 * Gets the notification type.
+	 *
+	 * @return the notification type
 	 */
 	public BSNotificationType getType() {
 		return type;
 	}
 
 	/**
-	 * @param type the type to set
-	 */
-	public void setType(BSNotificationType type) {
-		this.type = type;
-	}
-
-	/**
-	 * @return the refId
+	 * Gets the notification reference id.
+	 *
+	 * @return the notification reference id
 	 */
 	public String getRefId() {
 		return refId;
 	}
 
 	/**
-	 * @param refId the refId to set
-	 */
-	public void setRefId(String refId) {
-		this.refId = refId;
-	}
-
-	/**
-	 * @return the text
+	 * Gets the notification text.
+	 *
+	 * @return the notification text
 	 */
 	public String getText() {
 		return text;
 	}
 
 	/**
-	 * @param text the text to set
-	 */
-	public void setText(String text) {
-		this.text = text;
-	}
-
-	/**
-	 * @return the html
+	 * Gets the notification in html format.
+	 *
+	 * @return the notification in html
 	 */
 	public String getHtml() {
 		return html;
 	}
 
-	/**
-	 * @param html the html to set
-	 */
-	public void setHtml(String html) {
-		this.html = html;
-	}
 
 	/**
-	 * @return the date
+	 * Gets the notification date.
+	 *
+	 * @return the notification date
 	 */
 	public Date getDate() {
 		return date;
 	}
 
-	/**
-	 * @param date the date to set
-	 */
-	public void setDate(Date date) {
-		this.date = date;
-	}
 
 	/**
-	 * @return the seen
+	 * Checks if the notification is seen.
+	 *
+	 * @return true, if is seen
 	 */
 	public boolean isSeen() {
 		return seen;
-	}
-
-	/**
-	 * @param seen the seen to set
-	 */
-	public void setSeen(boolean seen) {
-		this.seen = seen;
 	}
 
 	/* (non-Javadoc)

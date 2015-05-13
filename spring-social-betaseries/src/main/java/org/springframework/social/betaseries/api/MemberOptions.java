@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,37 +16,40 @@
 package org.springframework.social.betaseries.api;
 
 /**
- * The Class MemberOptions.
- * 
+ * Represents an instance of {@code MemberOptions}.
+ * <p>
+ * </p>
+ *
  * @author Guillaume Maka
  */
 public class MemberOptions extends BetaSeriesObject {
 	
-	/** The notation enabled. */
+	/** The notation flag option. */
 	private boolean notationEnabled;
 	
-	/** The downloaded enabled. */	
+	/** The downloaded flag option. */	
 	private boolean downloadedEnabled;
 	
-	/** The global enabled. */
+	/** The global flag option. */
 	private boolean globalEnabled;
 	
-	/** The timelag enabled. */
+	/** The timelag flag option. */
 	private boolean timelagEnabled;
 	
-	/** The friendship enabled. */
+	/** The friendship status option. */
 	private BSMemberOptionValue friendshipStatus;
 	
+	/**
+	 * Instantiates a new  {@code MemberOptions}.
+	 */
 	public MemberOptions() {
 		super();
 	}	
 	
 	/**
-	 * @param notationEnabled
-	 * @param downloadedEnabled
-	 * @param globalEnabled
-	 * @param timelagEnabled
-	 * @param friendshipEnabled
+	 * Checks if is notation enabled.
+	 *
+	 * @return true, if is notation enabled
 	 */
 //	public MemberOptions(boolean notationEnabled, boolean downloadedEnabled,
 //			boolean globalEnabled, boolean timelagEnabled,
@@ -59,61 +62,95 @@ public class MemberOptions extends BetaSeriesObject {
 //		this.friendshipEnabled = friendshipEnabled;
 //	}
 	/**
+	 * Check if the notation option is enabled.
+	 * 
 	 * @return the notationEnabled
 	 */
 	public boolean isNotationEnabled() {
 		return notationEnabled;
 	}
+	
 	/**
-	 * @param notationEnabled the notationEnabled to set
+	 * Sets the notation enabled.
+	 *
+	 * @param notationEnabled
+	 *            the new notation enabled
 	 */
 	public void setNotationEnabled(boolean notationEnabled) {
 		this.notationEnabled = notationEnabled;
 	}
+	
 	/**
-	 * @return the downloadedEnabled
+	 * Checks if is download option is enabled.
+	 *
+	 * @return true, if is downloaded enabled
 	 */
 	public boolean isDownloadedEnabled() {
 		return downloadedEnabled;
 	}
+	
 	/**
-	 * @param downloadedEnabled the downloadedEnabled to set
+	 * Sets the downloaded enabled.
+	 *
+	 * @param downloadedEnabled
+	 *            the new downloaded enabled
 	 */
 	public void setDownloadedEnabled(boolean downloadedEnabled) {
 		this.downloadedEnabled = downloadedEnabled;
 	}
+	
 	/**
-	 * @return the globalEnabled
+	 * Checks if is global option is enabled.
+	 *
+	 * @return true, if is global enabled
 	 */
 	public boolean isGlobalEnabled() {
 		return globalEnabled;
 	}
+	
 	/**
-	 * @param globalEnabled the globalEnabled to set
+	 * Sets the global enabled.
+	 *
+	 * @param globalEnabled
+	 *            the new global enabled
 	 */
 	public void setGlobalEnabled(boolean globalEnabled) {
 		this.globalEnabled = globalEnabled;
 	}
+	
 	/**
-	 * @return the timelagEnabled
+	 * Checks if is timelag option is enabled.
+	 *
+	 * @return true, if is timelag enabled
 	 */
 	public boolean isTimelagEnabled() {
 		return timelagEnabled;
 	}
+	
 	/**
-	 * @param timelagEnabled the timelagEnabled to set
+	 * Sets the timelag enabled.
+	 *
+	 * @param timelagEnabled
+	 *            the new timelag enabled
 	 */
 	public void setTimelagEnabled(boolean timelagEnabled) {
 		this.timelagEnabled = timelagEnabled;
 	}
+	
 	/**
-	 * @return the friendshipEnabled
+	 * Gets the friendship status.
+	 *
+	 * @return the friendship status
 	 */
 	public BSMemberOptionValue getFriendshipStatus() {
 		return friendshipStatus;
 	}
+	
 	/**
-	 * @param friendshipEnabled the friendshipEnabled to set
+	 * Sets the friendship status.
+	 *
+	 * @param friendshipStatus
+	 *            the new friendship status
 	 */
 	public void setFriendshipStatus(BSMemberOptionValue friendshipStatus) {
 		this.friendshipStatus = friendshipStatus;

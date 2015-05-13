@@ -15,17 +15,19 @@
  */
 package org.springframework.social.betaseries.api;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Enum BSSortOrder.
+ * <p>
+ * Represents sorting order.
+ * </p>
  * 
  * @author Guillaume Maka
  */
 public enum BSSortOrder {
 
-	/** The asc. */
+	/** Ascending Sort. */
 	ASC,
 
-	/** The desc. */
+	/** Descending Sort. */
 	DESC
 }

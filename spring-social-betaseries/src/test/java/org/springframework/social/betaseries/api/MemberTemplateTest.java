@@ -225,7 +225,7 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 		Assert.assertTrue(options.isDownloadedEnabled());
 		Assert.assertTrue(options.isNotationEnabled());
 		Assert.assertFalse(options.isGlobalEnabled());
-		Assert.assertFalse(options.isFriendshipEnabled());
+		Assert.assertTrue(options.isFriendshipEnabled());
 
 		SubtitleSource source = options.getSources().get(0);
 		Assert.assertEquals("addic7ed", source.getName());

@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,91 +15,30 @@
  */
 package org.springframework.social.betaseries.api;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class Note.
- * 
+ * Represents an instance of {@code Note}.
+ * <p>
+ * </p>
+ *
  * @author Guillaume Maka
  */
 public class Note extends BetaSeriesObject {
 	
-	/** The total. */
-	private double total;
+	/** The total rating. */
+	private final double total;
 	
-	/** The average. */
-	private double average;
+	/** The average rating. */
+	private final double average;
 	
-	/** The user note. */
-	private double userNote;
-
-	public Note() {}
+	/** The user note rating. */
+	private final double userNote;
 	
 	/**
-	 * Gets the total.
+	 * Instantiates a new {@code Note}.
 	 * 
-	 * @return the total
-	 */
-	public double getTotal() {
-		return total;
-	}
-
-	/**
-	 * Sets the total.
-	 * 
-	 * @param total
-	 *            the new total
-	 */
-	public void setTotal(double total) {
-		this.total = total;
-	}
-
-	/**
-	 * Gets the average.
-	 * 
-	 * @return the average
-	 */
-	public double getAverage() {
-		return average;
-	}
-
-	/**
-	 * Sets the average.
-	 * 
-	 * @param average
-	 *            the new average
-	 */
-	public void setAverage(double average) {
-		this.average = average;
-	}
-
-	/**
-	 * Gets the user note.
-	 * 
-	 * @return the user note
-	 */
-	public double getUserNote() {
-		return userNote;
-	}
-
-	/**
-	 * Sets the user note.
-	 * 
-	 * @param userNote
-	 *            the new user note
-	 */
-	public void setUserNote(double userNote) {
-		this.userNote = userNote;
-	}
-
-	/**
-	 * Instantiates a new note.
-	 * 
-	 * @param total
-	 *            the total
-	 * @param average
-	 *            the average
-	 * @param userNote
-	 *            the user note
+	 * @param total  the total
+	 * @param average  the average
+	 * @param userNote  the user note
 	 */
 	public Note(double total, double average, double userNote) {
 		super();
@@ -107,6 +46,33 @@ public class Note extends BetaSeriesObject {
 		this.average = average;
 		this.userNote = userNote;
 	}
+
+	/**
+	 * Gets the total.
+	 *
+	 * @return the total
+	 */
+	public double getTotal() {
+		return total;
+	}
+
+	/**
+	 * Gets the average.
+	 *
+	 * @return the average
+	 */
+	public double getAverage() {
+		return average;
+	}
+
+	/**
+	 * Gets the user note.
+	 *
+	 * @return the user note
+	 */
+	public double getUserNote() {
+		return userNote;
+	}	
 
 	/* (non-Javadoc)
 	 * @see java.lang.Object#hashCode()

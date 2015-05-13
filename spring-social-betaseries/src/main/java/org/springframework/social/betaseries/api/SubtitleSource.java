@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,25 +16,25 @@
 package org.springframework.social.betaseries.api;
 
 /**
- * The Class SubtitlesSource.
- * 
+ * Represents an instance of {@code SubtitleSource}.
+ * <p>
+ * </p>
+ *
  * @author Guillaume Maka
  */
 public class SubtitleSource extends BetaSeriesObject {
 	
-	/** The name. */
-	private String name;
+	/** The source name. */
+	private final String name;
 	
-	/** The enabled. */
-	private boolean enabled;
-	
-	public SubtitleSource() {
-		super();
-	}
+	/** The source option flag. */
+	private final boolean enabled;
 	
 	/**
-	 * @param name
-	 * @param enabled
+	 * Instantiates a new {@code SubtitleSource}.
+	 *
+	 * @param name  the source name
+	 * @param enabled  the enabled flag
 	 */
 	public SubtitleSource(String name, boolean enabled) {
 		super();
@@ -43,31 +43,21 @@ public class SubtitleSource extends BetaSeriesObject {
 	}
 
 	/**
-	 * @return the name
+	 * Gets the source name.
+	 *
+	 * @return the source name
 	 */
 	public String getName() {
 		return name;
 	}
 
 	/**
-	 * @param name the name to set
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	/**
-	 * @return the enabled
+	 * Checks if the source is enabled.
+	 *
+	 * @return true, if is enabled
 	 */
 	public boolean isEnabled() {
 		return enabled;
-	}
-
-	/**
-	 * @param enabled the enabled to set
-	 */
-	public void setEnabled(boolean enabled) {
-		this.enabled = enabled;
 	}
 
 	/* (non-Javadoc)
@@ -103,6 +93,15 @@ public class SubtitleSource extends BetaSeriesObject {
 			return false;
 		return true;
 	}
-	
-	
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("SubtitleSource [name=").append(name)
+				.append(", enabled=").append(enabled).append("]");
+		return builder.toString();
+	}	
 }

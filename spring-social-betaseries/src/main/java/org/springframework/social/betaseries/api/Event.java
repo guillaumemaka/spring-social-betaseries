@@ -1,26 +1,67 @@
+/**
+ * Copyright 2015 Guillaume Maka
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
 import java.util.Date;
 
+/**
+ * Represents an instance of {@code Event}.
+ * <p>
+ * 
+ * </p>
+ *
+ * @author Guillaume Maka
+ */
 public class Event extends BetaSeriesObject {
+	
+	/** The event id. */
 	private final Integer id;
+	
+	/** The event type. */
 	private final BSTimelineEventType type;
+	
+	/** The event ref. */
 	private final String ref;
+	
+	/** The event ref id. */
 	private final Integer refId;
+	
+	/** The event user. */
 	private final String user;
+	
+	/** The event user id. */
 	private final Integer userId;
+	
+	/** The event html representation. */
 	private final String html;
+	
+	/** The event date. */
 	private final Date date;
 
 	/**
-	 * @param id
-	 * @param type
-	 * @param ref
-	 * @param refId
-	 * @param user
-	 * @param userId
-	 * @param html
-	 * @param date
+	 * Instantiates a new {@code Event}.
+	 *
+	 * @param id  the event id
+	 * @param type  the event type
+	 * @param ref  the event ref
+	 * @param refId  the event ref id
+	 * @param user  the event user
+	 * @param userId  the event user id
+	 * @param html  the event html representation
+	 * @param date  the event date
 	 */
 	public Event(Integer id, BSTimelineEventType type, String ref,
 			Integer refId, String user, Integer userId, String html, Date date) {
@@ -36,56 +77,72 @@ public class Event extends BetaSeriesObject {
 	}
 
 	/**
-	 * @return the id
+	 * Gets event id.
+	 *
+	 * @return the event id
 	 */
 	public Integer getId() {
 		return id;
 	}
 
 	/**
-	 * @return the type
+	 * Gets the event {@link BSTimelineEventType type}.
+	 *
+	 * @return the event type
 	 */
 	public BSTimelineEventType getType() {
 		return type;
 	}
 
 	/**
-	 * @return the ref
+	 * Gets the event ref.
+	 *
+	 * @return the event ref
 	 */
 	public String getRef() {
 		return ref;
 	}
 
 	/**
-	 * @return the refId
+	 * Gets the event ref id.
+	 *
+	 * @return the event ref id
 	 */
 	public Integer getRefId() {
 		return refId;
 	}
 
 	/**
-	 * @return the user
+	 * Gets the event user.
+	 *
+	 * @return the event user
 	 */
 	public String getUser() {
 		return user;
 	}
 
 	/**
-	 * @return the userId
+	 * Gets the event user id.
+	 *
+	 * @return the event user id
 	 */
 	public Integer getUserId() {
 		return userId;
 	}
 
 	/**
-	 * @return the html
+	 * Gets the event html representation.
+	 *
+	 * @return the event html representation
 	 */
 	public String getHtml() {
 		return html;
 	}
 
 	/**
-	 * @return the date
+	 * Gets the event date.
+	 *
+	 * @return the event date
 	 */
 	public Date getDate() {
 		return date;

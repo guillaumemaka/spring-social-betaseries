@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,56 +18,81 @@ package org.springframework.social.betaseries.api;
 import java.util.List;
 
 import org.springframework.core.io.Resource;
-import org.springframework.social.MissingAuthorizationException;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Interface MemberOperations.
- * 
+ * Represents an instance of {@code MemberOperations}.
+ * <p>
+ * </p>
+ *
  * @author Guillaume Maka
  */
 public interface MemberOperations {		
 	
 	/**
-	 * Gets the current user logged in member infos.
-	 * 
-	 * @return {@link Member} object
+	 * Gets the member infos.
+	 *
+	 * @return the member infos
 	 */
 	Member getMemberInfos();
 	
+	/**
+	 * Gets the member infos.
+	 *
+	 * @param memberId
+	 *            the member id
+	 * @return the member infos
+	 */
 	Member getMemberInfos(String memberId);
 	
+	/**
+	 * Gets the member infos.
+	 *
+	 * @param memberId
+	 *            the member id
+	 * @param summary
+	 *            the summary
+	 * @return the member infos
+	 */
 	Member getMemberInfos(String memberId, boolean summary);
 	
+	/**
+	 * Gets the member infos.
+	 *
+	 * @param memberId
+	 *            the member id
+	 * @param summary
+	 *            the summary
+	 * @param showOnly
+	 *            the show only
+	 * @return the member infos
+	 */
 	Member getMemberInfos(String memberId, boolean summary, BSObjectType showOnly);
 	
 	/**
-	 * Checks if is active.
-	 * @return TODO
-	 * 
-	 * @throws MissingAuthorizationException
+	 * Checks if the member is active.
+	 *
+	 * @return true, if is active
 	 */
 	boolean isActive();
 	
 	/**
 	 * Gets the badges.
-	 * 
-	 * @param userId
-	 *            the user id
+	 *
+	 * @param userId  the user id
 	 * @return the badges
 	 */
 	List<Badge> getBadges(String userId);
 	
 	/**
-	 * Gets notifications.
-	 * 
-	 * @return a collection of {@link Notification}
+	 * Gets the notifications.
+	 *
+	 * @return the notifications
 	 */
 	List<Notification> getNotifications();
 	
 	/**
 	 * Gets the notifications.
-	 * 
+	 *
 	 * @param sinceId
 	 *            the since id
 	 * @return the notifications
@@ -76,7 +101,7 @@ public interface MemberOperations {
 	
 	/**
 	 * Gets the notifications.
-	 * 
+	 *
 	 * @param sinceId
 	 *            the since id
 	 * @param limit
@@ -87,7 +112,7 @@ public interface MemberOperations {
 	
 	/**
 	 * Gets the notifications.
-	 * 
+	 *
 	 * @param sinceId
 	 *            the since id
 	 * @param limit
@@ -100,7 +125,7 @@ public interface MemberOperations {
 	
 	/**
 	 * Gets the notifications.
-	 * 
+	 *
 	 * @param sinceId
 	 *            the since id
 	 * @param limit
@@ -115,7 +140,7 @@ public interface MemberOperations {
 	
 	/**
 	 * Gets the notifications.
-	 * 
+	 *
 	 * @param sinceId
 	 *            the since id
 	 * @param limit
@@ -131,15 +156,15 @@ public interface MemberOperations {
 	List<Notification> getNotifications(String sinceId, String limit, BSSortOrder order, BSNotificationType[] notificationTypes, boolean autoDelete);
 		
 	/**
-	 * Member options.
-	 * 
-	 * @return the list
+	 * Gets the member options.
+	 *
+	 * @return the member options
 	 */
 	BSOptions getMemberOptions();
 	
 	/**
 	 * Search.
-	 * 
+	 *
 	 * @param login
 	 *            the login
 	 * @return the list
@@ -147,27 +172,27 @@ public interface MemberOperations {
 	List<BSUser> search(String login);
 	
 	/**
-	 * Available usernames.
-	 * 
+	 * Gets the available usernames.
+	 *
 	 * @param username
 	 *            the username
-	 * @return the list
+	 * @return the available usernames
 	 */
 	String[] getAvailableUsernames(String username);
 	
 	/**
 	 * Upload avatar.
-	 * 
+	 *
 	 * @param avatar
 	 *            the avatar
-	 * @return TODO
+	 * @return the member
 	 */
 	Member uploadAvatar(Resource avatar);
 	
 	/**
 	 * Delete avatar.
-	 * @return TODO
-	 * @return TODO
+	 *
+	 * @return the member
 	 */
 	Member deleteAvatar();
 	
@@ -178,52 +203,63 @@ public interface MemberOperations {
 	
 	/**
 	 * Reset password.
-	 * 
+	 *
 	 * @param emailOrUsername
 	 *            the email or username
 	 */
 	void resetPassword(String emailOrUsername);
 	
 	/**
-	 * Sets the options.
-	 * 
-	 * @param options
-	 *            the new options {@link MemberOptions}
+	 * Sets the option.
+	 *
+	 * @param name
+	 *            the name
+	 * @param value
+	 *            the value
 	 */
 	void setOption(BSMemberOptionName name, BSMemberOptionValue value);
 	
 	/**
-	 * Sign up a new user. The password will be in the confirmation email from BetaSeries
-	 * 
+	 * Sign up.
+	 *
 	 * @param login
-	 *            the login of the new user
+	 *            the login
 	 * @param email
-	 *            the email of the new user
-	 * @return TODO
+	 *            the email
+	 * @return the BS auth object
 	 */
 	BSAuthObject signUp(String login, String email);
 	
 	/**
-	 * Sign up a new user.
-	 * 
+	 * Sign up.
+	 *
 	 * @param login
-	 *            the login of the new user
+	 *            the login
 	 * @param password
-	 *            the plain text password of the new user
+	 *            the password
 	 * @param email
-	 *            the email of the new user
-	 * @return TODO
+	 *            the email
+	 * @return the BS auth object
 	 */
 	BSAuthObject signUp(String login, String password, String email);
 	
 	/**
-	 * Search a friend from the current user.
-	 * 
+	 * Sync.
+	 *
 	 * @param emails
-	 *            the emails of users to find
-	 * @return TODO
+	 *            the emails
+	 * @return the list
 	 */
 	List<BSUser> sync(String[] emails);
 	
+	/**
+	 * Simple authentication.
+	 *
+	 * @param login
+	 *            the login
+	 * @param password
+	 *            the password
+	 * @return the BS auth object
+	 */
 	BSAuthObject simpleAuthentication(String login, String password);
 }

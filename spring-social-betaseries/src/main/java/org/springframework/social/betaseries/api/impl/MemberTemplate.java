@@ -20,12 +20,12 @@ import org.springframework.social.betaseries.api.Badge;
 import org.springframework.social.betaseries.api.Member;
 import org.springframework.social.betaseries.api.MemberOperations;
 import org.springframework.social.betaseries.api.Notification;
-import org.springframework.social.betaseries.api.NotificationList;
 import org.springframework.social.betaseries.api.impl.json.BetaSeriesAuthObjectWrapper;
 import org.springframework.social.betaseries.api.impl.json.BetaSeriesAvailableUsernamesObject;
 import org.springframework.social.betaseries.api.impl.json.BetaSeriesBadgeList;
 import org.springframework.social.betaseries.api.impl.json.BetaSeriesMemberSingleObject;
 import org.springframework.social.betaseries.api.impl.json.BetaSeriesNotificationList;
+import org.springframework.social.betaseries.api.impl.json.BetaSeriesOptionsSingleObject;
 import org.springframework.social.betaseries.api.impl.json.BetaSeriesUserList;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
@@ -162,7 +162,7 @@ public class MemberTemplate extends AbstractBetaSeriesOperations implements
 		}
 		
 		if(params.size() > 0) {
-			return restTemplate.getForObject(buildUri("members/notifications", params), NotificationList.class);
+			return restTemplate.getForObject(buildUri("members/notifications", params), BetaSeriesNotificationList.class).getList();
 		}
 		
 		return restTemplate.getForObject(buildUri("members/notifications"), BetaSeriesNotificationList.class).getList();
@@ -170,7 +170,7 @@ public class MemberTemplate extends AbstractBetaSeriesOperations implements
 
 	public BSOptions getMemberOptions() {		
 		requireEitherUserOrAppAuthorization();			
-		return restTemplate.getForObject(buildUri("members/options"), BSOptions.class);
+		return restTemplate.getForObject(buildUri("members/options"), BetaSeriesOptionsSingleObject.class).getObject();
 	}
 
 	public List<BSUser> search(String login) {

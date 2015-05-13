@@ -5,6 +5,22 @@ buildscript {
     dependencies {
         classpath 'org.springframework.build.gradle:docbook-reference-plugin:0.2.8'
         classpath 'me.champeau.gradle:gradle-javadoc-hotfix-plugin:0.1'
+        classpath 'com.bluepapa32:gradle-watch-plugin:0.1.5'
+    }
+}
+
+apply plugin: 'com.bluepapa32.watch'
+
+watch {
+  java{
+    files files('spring-social-betaseries/src/main/java')
+    tasks 'test'
+  }
+
+  resources {
+        files fileTree(dir: 'spring-social-betaseries/src/main/resources',
+                       include: 'spring-social-betaseries/**/*.properties')
+        tasks 'processResources'
     }
 }
 
@@ -259,4 +275,4 @@ configure(rootProject) {
     }
 }*/
 
-//build.dependsOn('updateRootDocs')
+build.dependsOn('updateRootDocs')

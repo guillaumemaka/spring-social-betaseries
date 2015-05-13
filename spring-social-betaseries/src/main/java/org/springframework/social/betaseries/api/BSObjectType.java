@@ -18,20 +18,22 @@ package org.springframework.social.betaseries.api;
 
 /**
  * The Enum BSObjectType.
- * 
+ * <p>
+ * Represents the object type returned by the Api. 
+ * </p>
  * @author Guillaume Maka
  */
 public enum BSObjectType {
 
-	/** The episode. */
+	/** An episode object type. */
 	EPISODE,
 
-	/** The show. */
+	/** A show object type. */
 	SHOW,
 
-	/** The member. */
+	/** A member object type. */
 	MEMBER,
 
-	/** The movie. */
+	/** A movie object type. */
 	MOVIE
 }

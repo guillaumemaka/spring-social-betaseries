@@ -1,19 +1,54 @@
+/**
+ * Copyright 2015 Guillaume Maka
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
 
+/**
+ * Represents an AuthResponse object.
+ *
+ * @author Guillaume Maka
+ */
 public class BSAuthObject {		
+	
+	/** The user id. */
 	private final String userId;
+	
+	/** The login. */
 	private final String login;
+	
+	/** The in account. */
 	private final boolean inAccount;
+	
+	/** The token. */
 	private final String token;
+	
+	/** The hash. */
 	private final String hash;
 	
 	/**
-	 * @param userId
-	 * @param login
-	 * @param inAccount
-	 * @param token
-	 * @param hash
+	 * Represent an instance of {@code BSAuthObject}.
+	 * <p>
+	 * This map an authentication response from the Api.
+	 * </p>
+	 *
+	 * @param userId  the user id
+	 * @param login  the login
+	 * @param inAccount the in account
+	 * @param token  the token
+	 * @param hash  the hash
 	 */
 	public BSAuthObject(String userId, String login, boolean inAccount,
 			String token, String hash) {
@@ -26,13 +61,23 @@ public class BSAuthObject {
 	}
 
 	/**
-	 * @return the userId
+	 * Gets the user id.
+	 * <p>
+	 * The {@code id} represents the unique identfier of the athenticated user.
+	 * </p>
+	 *
+	 * @return the user id
 	 */
 	public String getUserId() {		
 		return userId;
 	}
 
 	/**
+	 * Gets the login.
+	 * <p>
+	 * The {@code login} represents the login display name of the authenticated user.
+	 * </p>
+	 *
 	 * @return the login
 	 */
 	public String getLogin() {		
@@ -40,13 +85,20 @@ public class BSAuthObject {
 	}
 
 	/**
-	 * @return the inAccount
+	 * Checks if is in account.
+	 *
+	 * @return true, if is in account
 	 */
 	public boolean isInAccount() {		
 		return inAccount;
 	}
 
 	/**
+	 * Gets the token.
+	 * <p>
+	 * The {@code token} represents the user token of the authenticated user.
+	 * </p>
+	 * 
 	 * @return the token
 	 */
 	public String getToken() {		
@@ -54,6 +106,11 @@ public class BSAuthObject {
 	}
 
 	/**
+	 * Gets the hash.
+	 * <p>
+	 * The {@code hash} represents the hashed password of the authenticated user.
+	 * </p>
+	 * 
 	 * @return the hash
 	 */
 	public String getHash() {		

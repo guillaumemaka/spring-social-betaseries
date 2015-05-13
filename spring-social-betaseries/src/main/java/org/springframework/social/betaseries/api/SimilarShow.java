@@ -1,21 +1,64 @@
+/**
+ * Copyright 2015 Guillaume Maka
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.betaseries.api;
 
+/**
+ * TODO: Maybe Abstract Show ?
+ * 
+ * Represents an instance of {@code SimilarShow}.
+ * <p>
+ * This is a derived subset of {@code Show} properties returned by the Api {@code /show/similar}
+ * endpoint. 
+ * </p>
+ *
+ * @author Guillaume Maka
+ */
 public class SimilarShow extends BetaSeriesObject {
+	
+	/** The internal id. */
 	private final int id;
+	
+	/** The show {@link Show#getTitle() title}. */
 	private final String showTitle;
+	
+	/** The show {@link Show#getId() id}. */
 	private final int showId;
+	
+	/** The show {@link Show#getTheTvDbId()) Tv Db id}. */
 	private final int theTvDbId;
+	
+	/** The {@link Member#getLogin() login} member that mark the show as similar. */
 	private final String login;
+	
+	/** The {@link Member#getMemberId() login id} member that mark the show as similar. */
 	private final int loginId;
+	
+	/** The show notes. */
 	private final String notes;
+	
 	/**
-	 * @param id
-	 * @param showTitle
-	 * @param showId
-	 * @param theTvDbId
-	 * @param login
-	 * @param loginId
-	 * @param notes
+	 * Instantiates a new {@code SimilarShow}.
+	 *
+	 * @param id  the internal id
+	 * @param showTitle  the show title
+	 * @param showId  the show id
+	 * @param theTvDbId  the show the tv db id
+	 * @param login  the {@link Member#getLogin() login} member that mark the show as similar
+	 * @param loginId  the {@link Member#getMemberId() login id} member that mark the show as similar
+	 * @param notes  the show notes
 	 */
 	public SimilarShow(int id, String showTitle, int showId, int theTvDbId,
 			String login, int loginId, String notes) {
@@ -28,48 +71,72 @@ public class SimilarShow extends BetaSeriesObject {
 		this.loginId = loginId;
 		this.notes = notes;
 	}
+	
 	/**
-	 * @return the id
+	 * Gets the show id.
+	 *
+	 * @return the show id
 	 */
 	public int getId() {
 		return id;
 	}
+	
 	/**
-	 * @return the showTitle
+	 * Gets the show title.
+	 *
+	 * @return the show title
 	 */
 	public String getShowTitle() {
 		return showTitle;
 	}
+	
 	/**
-	 * @return the showId
+	 * Gets the show id.
+	 *
+	 * @return the show id
 	 */
 	public int getShowId() {
 		return showId;
 	}
+	
 	/**
-	 * @return the theTvDbId
+	 * Gets the show tv db id.
+	 *
+	 * @return the show tv db id
 	 */
 	public int getTheTvDbId() {
 		return theTvDbId;
 	}
+	
 	/**
-	 * @return the login
+	 * Gets the member login who mark the show as similar.
+	 *
+	 * @return the member login
+	 * @see Member#getMemberId()
 	 */
 	public String getLogin() {
 		return login;
 	}
+	
 	/**
-	 * @return the login_id
+	 * Gets the member login id who mark the show as similar.
+	 *
+	 * @return the member login id
+	 * @see Member#getLogin()
 	 */
 	public int getLoginId() {
 		return loginId;
 	}
+	
 	/**
-	 * @return the notes
+	 * Gets the show notes.
+	 *
+	 * @return the show notes
 	 */
 	public String getNotes() {
 		return notes;
 	}
+	
 	/* (non-Javadoc)
 	 * @see java.lang.Object#hashCode()
 	 */
