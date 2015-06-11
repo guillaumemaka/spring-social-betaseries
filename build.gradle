@@ -6,21 +6,7 @@ buildscript {
         classpath 'org.springframework.build.gradle:docbook-reference-plugin:0.2.8'
         classpath 'me.champeau.gradle:gradle-javadoc-hotfix-plugin:0.1'
         classpath 'com.bluepapa32:gradle-watch-plugin:0.1.5'
-    }
-}
-
-apply plugin: 'com.bluepapa32.watch'
-
-watch {
-  java{
-    files files('spring-social-betaseries/src/main/java')
-    tasks 'test'
-  }
-
-  resources {
-        files fileTree(dir: 'spring-social-betaseries/src/main/resources',
-                       include: 'spring-social-betaseries/**/*.properties')
-        tasks 'processResources'
+        classpath 'org.kordamp.gradle:livereload-gradle-plugin:0.2.1'
     }
 }
 
@@ -29,7 +15,50 @@ configure(allprojects) {
     apply plugin: 'eclipse'
     apply plugin: 'idea'
     apply plugin: 'javadocHotfix'
-	  apply plugin: 'maven'
+	apply plugin: 'maven'
+    apply plugin: "jacoco"
+    apply plugin: 'com.bluepapa32.watch'
+    apply plugin: "org.kordamp.gradle.livereload"
+
+    liveReload {
+      docRoot "$buildDir"
+    }
+
+    watch {
+      java{
+        files files('spring-social-betaseries/src/main/java')
+        tasks 'test jacocoTestReport'
+      }
+
+      resources {
+            files fileTree(dir: 'spring-social-betaseries/src/main/resources',
+                           include: 'spring-social-betaseries/**/*.properties')
+            tasks 'processResources'
+        }
+    }
+
+
+    jacoco {
+      toolVersion = "0.7.1.201405082137"
+      reportsDir = file("$buildDir/reports/coverage")
+    }
+
+    jacocoTestReport {
+      reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination "${buildDir}/jacoco/html"
+      }
+    }
+
+    test {
+      jacoco {
+        append = false
+        destinationFile = file("$buildDir/jacoco/jacocoTest.exec")
+        classDumpFile = file("$buildDir/jacoco/classpathdumps")
+      }
+    }
+
 
     group = 'org.springframework.social'
 
@@ -43,7 +72,7 @@ configure(allprojects) {
         mockitoVersion = '1.9.5'
         servletApiVersion = '3.0.1'
         springVersion = '4.1.6.RELEASE'
-		slf4jVersion = '1.7.7'
+		    slf4jVersion = '1.7.7'
     }
 
     [compileJava, compileTestJava]*.options*.compilerArgs = ['-Xlint:none']
@@ -110,6 +139,7 @@ configure(subprojects) { subproject ->
 }
 
 project(':spring-social-betaseries') {
+
     description = 'BetaSeries API'
     dependencies {
        compile "org.springframework.social:spring-social-core:$springSocialVersion"
@@ -258,7 +288,7 @@ configure(rootProject) {
 
 }
 
-/*task updateRootDocs << {
+task updateRootDocs << {
     copy {
         from 'src/dist'
         into "${rootProject.projectDir}"
@@ -273,6 +303,6 @@ configure(rootProject) {
         include 'license.txt'
         rename { filename -> 'LICENSE' }
     }
-}*/
+}
 
 build.dependsOn('updateRootDocs')
