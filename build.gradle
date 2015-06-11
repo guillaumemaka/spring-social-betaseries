@@ -17,10 +17,13 @@ configure(allprojects) {
     apply plugin: 'javadocHotfix'
 	   apply plugin: 'maven'
     apply plugin: "jacoco"
-    apply plugin: "org.kordamp.gradle.livereload"
 
-    liveReload {
-      docRoot "$buildDir"
+    if(JavaVersion.current() != JavaVersion.VERSION_1_6){
+      apply plugin: "org.kordamp.gradle.livereload"
+
+      liveReload {
+        docRoot "$buildDir"
+      }
     }
 
     //watch {
