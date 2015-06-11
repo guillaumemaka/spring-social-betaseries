@@ -28,55 +28,55 @@ import java.util.List;
 public class Episode extends BetaSeriesObject {
 	
 	/** The episode id. */
-	private int id;
+	private final  int id;
 	
 	/** The episode TV DB id. */
-	private int theTvDbId;
+	private final int theTvDbId;
 	
 	/** The episode title. */
-	private String title;
+	private final String title;
 	
 	/** The episode season number. */
-	private int seasonNumber;
+	private final int seasonNumber;
 	
 	/** The episode number. */
-	private int episodeNumber;
+	private final int episodeNumber;
 	
 	/** The episode show id. */
-	private int showId;	
+	private final int showId;	
 	
 	/** The episode show TV DB id. */
-	private int showTvDbId;
+	private final int showTvDbId;
 	
 	/** The episode show title. */
-	private String showTitle;	 
+	private final String showTitle;	 
 	
 	/** The episode code. */
-	private String code;
+	private final String code;
 	
 	/** The episode global number. */
-	private int global;
+	private final int global;
 	
 	/** The episode description. */
-	private String description;
+	private final String description;
 	
 	/** The episode airing date. */
-	private Date airDate;
+	private final Date airDate;
 	
 	/** The episode note. */
-	private Note note;
+	private final Note note;
 	
 	/** Is the episode marked as seen. */
-	private boolean isSeen;
+	private final boolean isSeen;
 	
 	/** Is the episode marked as downloaded. */
-	private boolean isDownloaded;
+	private final boolean isDownloaded;
 	
 	/** The episode number of comment. */
-	private int numberOfComment;
+	private final int numberOfComment;
 	
 	/** The episode available subtitles. */
-	private List<Subtitle> subtitles;
+	private final List<Subtitle> subtitles;
 	
 	/**
 	 * Instantiates a new {@code Episode}.
@@ -84,13 +84,46 @@ public class Episode extends BetaSeriesObject {
 	 * @param id  the episode id
 	 * @param theTvDbId  the episodeTV DB id
 	 * @param title  the episode title
+	 * @param seasonNumber
+	 * @param episodeNumber
+	 * @param showId
+	 * @param showTvDbId
+	 * @param showTitle
+	 * @param code
+	 * @param global
+	 * @param description
+	 * @param airDate
+	 * @param note
+	 * @param isSeen
+	 * @param isDownloaded
+	 * @param numberOfComment
+	 * @param subtitles
 	 */
-	public Episode(int id, int theTvDbId, String title) {
+	public Episode(int id, int theTvDbId, String title, int seasonNumber,
+			int episodeNumber, int showId, int showTvDbId, String showTitle,
+			String code, int global, String description, Date airDate,
+			Note note, boolean isSeen, boolean isDownloaded,
+			int numberOfComment, List<Subtitle> subtitles) {
 		super();
 		this.id = id;
 		this.theTvDbId = theTvDbId;
 		this.title = title;
+		this.seasonNumber = seasonNumber;
+		this.episodeNumber = episodeNumber;
+		this.showId = showId;
+		this.showTvDbId = showTvDbId;
+		this.showTitle = showTitle;
+		this.code = code;
+		this.global = global;
+		this.description = description;
+		this.airDate = airDate;
+		this.note = note;
+		this.isSeen = isSeen;
+		this.isDownloaded = isDownloaded;
+		this.numberOfComment = numberOfComment;
+		this.subtitles = subtitles;
 	}
+
 
 	/**
 	 * Gets the episode id.
@@ -99,15 +132,6 @@ public class Episode extends BetaSeriesObject {
 	 */
 	public int getId() {
 		return id;
-	}
-
-	/**
-	 * Sets episode id.
-	 *
-	 * @param id the new id
-	 */
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	/**
@@ -120,31 +144,12 @@ public class Episode extends BetaSeriesObject {
 	}
 
 	/**
-	 * Sets the episode TV DB id.
-	 *
-	 * @param theTvDbId  the new the tv db id
-	 */
-	public void setTheTvDbId(int theTvDbId) {
-		this.theTvDbId = theTvDbId;
-	}
-
-	/**
 	 * Gets the title.
 	 *
 	 * @return the title
 	 */
 	public String getTitle() {
 		return title;
-	}
-
-	/**
-	 * Sets the title.
-	 *
-	 * @param title
-	 *            the new title
-	 */
-	public void setTitle(String title) {
-		this.title = title;
 	}
 
 	/**
@@ -157,32 +162,12 @@ public class Episode extends BetaSeriesObject {
 	}
 
 	/**
-	 * Sets the season number.
-	 *
-	 * @param seasonNumber
-	 *            the new season number
-	 */
-	public void setSeasonNumber(int seasonNumber) {
-		this.seasonNumber = seasonNumber;
-	}
-
-	/**
 	 * Gets the episode number.
 	 *
 	 * @return the episode number
 	 */
 	public int getEpisodeNumber() {
 		return episodeNumber;
-	}
-
-	/**
-	 * Sets the episode number.
-	 *
-	 * @param episodeNumber
-	 *            the new episode number
-	 */
-	public void setEpisodeNumber(int episodeNumber) {
-		this.episodeNumber = episodeNumber;
 	}
 
 	/**
@@ -195,32 +180,12 @@ public class Episode extends BetaSeriesObject {
 	}
 
 	/**
-	 * Sets the show id.
-	 *
-	 * @param showId
-	 *            the new show id
-	 */
-	public void setShowId(int showId) {
-		this.showId = showId;
-	}
-
-	/**
 	 * Gets the show tv db id.
 	 *
 	 * @return the show tv db id
 	 */
 	public int getShowTvDbId() {
 		return showTvDbId;
-	}
-
-	/**
-	 * Sets the show tv db id.
-	 *
-	 * @param showTvDbId
-	 *            the new show tv db id
-	 */
-	public void setShowTvDbId(int showTvDbId) {
-		this.showTvDbId = showTvDbId;
 	}
 
 	/**
@@ -233,32 +198,12 @@ public class Episode extends BetaSeriesObject {
 	}
 
 	/**
-	 * Sets the show title.
-	 *
-	 * @param showTitle
-	 *            the new show title
-	 */
-	public void setShowTitle(String showTitle) {
-		this.showTitle = showTitle;
-	}
-
-	/**
 	 * Gets the code.
 	 *
 	 * @return the code
 	 */
 	public String getCode() {
 		return code;
-	}
-
-	/**
-	 * Sets the code.
-	 *
-	 * @param code
-	 *            the new code
-	 */
-	public void setCode(String code) {
-		this.code = code;
 	}
 
 	/**
@@ -271,32 +216,12 @@ public class Episode extends BetaSeriesObject {
 	}
 
 	/**
-	 * Sets the global.
-	 *
-	 * @param global
-	 *            the new global
-	 */
-	public void setGlobal(int global) {
-		this.global = global;
-	}
-
-	/**
 	 * Gets the description.
 	 *
 	 * @return the description
 	 */
 	public String getDescription() {
 		return description;
-	}
-
-	/**
-	 * Sets the description.
-	 *
-	 * @param description
-	 *            the new description
-	 */
-	public void setDescription(String description) {
-		this.description = description;
 	}
 
 	/**
@@ -309,32 +234,12 @@ public class Episode extends BetaSeriesObject {
 	}
 
 	/**
-	 * Sets the air date.
-	 *
-	 * @param airDate
-	 *            the new air date
-	 */
-	public void setAirDate(Date airDate) {
-		this.airDate = airDate;
-	}
-
-	/**
 	 * Gets the note.
 	 *
 	 * @return the note
 	 */
 	public Note getNote() {
 		return note;
-	}
-
-	/**
-	 * Sets the note.
-	 *
-	 * @param note
-	 *            the new note
-	 */
-	public void setNote(Note note) {
-		this.note = note;
 	}
 
 	/**
@@ -347,32 +252,12 @@ public class Episode extends BetaSeriesObject {
 	}
 
 	/**
-	 * Sets the seen.
-	 *
-	 * @param isSeen
-	 *            the new seen
-	 */
-	public void setSeen(boolean isSeen) {
-		this.isSeen = isSeen;
-	}
-
-	/**
 	 * Checks if is downloaded.
 	 *
 	 * @return true, if is downloaded
 	 */
 	public boolean isDownloaded() {
 		return isDownloaded;
-	}
-
-	/**
-	 * Sets the downloaded.
-	 *
-	 * @param isDownloaded
-	 *            the new downloaded
-	 */
-	public void setDownloaded(boolean isDownloaded) {
-		this.isDownloaded = isDownloaded;
 	}
 
 	/**
@@ -391,26 +276,6 @@ public class Episode extends BetaSeriesObject {
 	 */
 	public List<Subtitle> getSubtitles() {
 		return subtitles;
-	}
-
-	/**
-	 * Sets the subtitles.
-	 *
-	 * @param subtitles
-	 *            the new subtitles
-	 */
-	public void setSubtitles(List<Subtitle> subtitles) {
-		this.subtitles = subtitles;
-	}
-
-	/**
-	 * Sets the number of comment.
-	 *
-	 * @param numberOfComment
-	 *            the new number of comment
-	 */
-	public void setNumberOfComment(int numberOfComment) {
-		this.numberOfComment = numberOfComment;
 	}
 
 	/* (non-Javadoc)

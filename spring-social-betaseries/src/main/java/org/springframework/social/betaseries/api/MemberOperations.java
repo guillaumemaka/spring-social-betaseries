@@ -29,41 +29,35 @@ import org.springframework.core.io.Resource;
 public interface MemberOperations {		
 	
 	/**
-	 * Gets the member infos.
+	 * Gets the authenticated member infos.
 	 *
-	 * @return the member infos
+	 * @return the member
 	 */
 	Member getMemberInfos();
 	
 	/**
-	 * Gets the member infos.
+	 * Gets the member infos for a specific member.
 	 *
-	 * @param memberId
-	 *            the member id
-	 * @return the member infos
+	 * @param memberId  the member id
+	 * @return the member
 	 */
 	Member getMemberInfos(String memberId);
 	
 	/**
-	 * Gets the member infos.
+	 * Gets the member infos for a specific member w/o shows.
 	 *
-	 * @param memberId
-	 *            the member id
-	 * @param summary
-	 *            the summary
-	 * @return the member infos
+	 * @param memberId  the member id
+	 * @param summary  if true return a summary
+	 * @return the member
 	 */
 	Member getMemberInfos(String memberId, boolean summary);
 	
 	/**
-	 * Gets the member infos.
+	 * Gets the member infos for a specific member w/o shows.
 	 *
-	 * @param memberId
-	 *            the member id
-	 * @param summary
-	 *            the summary
-	 * @param showOnly
-	 *            the show only
+	 * @param memberId  the member id, if null the authenticated member is use.
+	 * @param summary  if true return a summary
+	 * @param showOnly  the show only
 	 * @return the member infos
 	 */
 	Member getMemberInfos(String memberId, boolean summary, BSObjectType showOnly);

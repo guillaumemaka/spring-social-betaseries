@@ -50,6 +50,8 @@ public class AbstractBetaSeriesApiTest {
 	protected MockRestServiceServer mockServer;
 	protected MockRestServiceServer unauthorizedMockServer;
 
+	private ClassPathResource resource;
+
 	@Before
 	public void setUp() {
 		betaSeries = new BetaSeriesTemplate(ACCESS_TOKEN, API_KEY);
@@ -63,19 +65,22 @@ public class AbstractBetaSeriesApiTest {
 	}
 	
 	@After
-	public void teatDown() {
-		this.betaSeries = null;
-		this.mockServer = null;
+	public void tearDown() {		
+		this.betaSeries = null;		
+		this.mockServer = null;		
 		this.unauthorizedBetaSeries = null;
 		this.unauthorizedMockServer = null;
+		resource = null;				
 	}
 
 	protected Resource jsonResource(String filename) {
-		return new ClassPathResource(filename + ".json", getClass());
+		resource = new ClassPathResource(filename + ".json", getClass());
+		return resource;
 	}
 
 	protected Resource imageResource(String filename) {
-		return new ClassPathResource(filename + ".png", getClass());
+		resource = new ClassPathResource(filename + ".png", getClass());
+		return resource;
 	}
 
 	protected Date dateFromString(String strDate) {

@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,216 +17,232 @@ package org.springframework.social.betaseries.api;
 
 import java.util.List;
 
+import org.springframework.social.ApiException;
+
 
 // TODO: Auto-generated Javadoc
 /**
- * The Interface EpisodeOperations.
- * 
+ * Represents an instance of {@code EpisodeOperations}.
+ * <p>
+ * </p>
+ *
  * @author Guillaume Maka
  */
 public interface EpisodeOperations {
-	
-	
-	
+		
 	/**
-	 * Gets the by ids.
-	 * 
-	 * @param episodeIds
-	 *            the BetaSerie episode object ids
-	 * @return the by ids
+	 * Gets the episodes specified by the given ids without subtitles.
+	 *
+	 * @param theTvDbIds  an array of id
+	 * @param includeSubtitles  if true include subtitles
+	 * @return a list of episode
 	 */
 	List<Episode> getByIds(String[] episodeIds);
 	
 	/**
-	 * Gets the by tv db ids.
-	 * 
-	 * @param theTvDbIds
-	 *            the the tv db ids
-	 * @return the by tv db ids
+	 * Gets the episodes specified by the given TV DB ids without subtitles.
+	 *
+	 * @param theTvDbIds  an array of TV DB id
+	 * @param includeSubtitles  if true include subtitles
+	 * @return a list of episode
 	 */
 	List<Episode> getByTvDbIds(String[] theTvDbIds);
 	
 	/**
-	 * Gets the by ids.
-	 * 
-	 * @param episodeIds
-	 *            the BetaSerie episode object ids
-	 * @param includeSubtitles
-	 *            the subtitles {@link BSSubtitles}
-	 * @return the by ids
+	 * Gets the episodes specified by the given ids without subtitles.
+	 *
+	 * @param theTvDbIds  an array of id
+	 * @return a list of episode
 	 */
 	List<Episode> getByIds(String[] episodeIds, boolean includeSubtitles);
 	
 	/**
-	 * Gets the by tv db ids.
-	 * 
-	 * @param theTvDbIds
-	 *            the the tv db ids
-	 * @param includeSubtitles
-	 *            the subtitles {@link BSSubtitles}
-	 * @return the by tv db ids
+	 * Gets the episodes specified by the given TV DB ids w/o subtitles.
+	 *
+	 * @param theTvDbIds  an array of TV DB id
+	 * @param includeSubtitles  if true include subtitles
+	 * @return a list of episode
 	 */
 	List<Episode> getByTvDbIds(String[] theTvDbIds, boolean includeSubtitles);
 	
 	/**
-	 * Gets all episodes to be watch.
-	 * 
-	 * @return a collection of {@link Episode}
+	 * Gets all the unseen episodes of the authenticated user 
+	 * for all show that have unseen episodes, without subtitles.
+	 *
+	 * @return the episodes to be watch
+	 * @throws ApiException
+	 * @throws MissingAuthorizationException
+	 * @see UnseenEpisode
 	 */
 	List<UnseenEpisode> getEpisodesToBeWatch();
 	
 	/**
-	 * Gets the episodes to be watch for a specific show.
-	 * 
-	 * @param showId
-	 *            the show id
-	 * @return a collection of {@link Episode}
+	 * Gets all the unseen episodes of the authenticated user 
+	 * for the given show, without subtitles.
+	 *
+	 * @param showId  the show id 
+	 * @return the episodes to be watch
+	 * @throws ApiException
+	 * @throws MissingAuthorizationException
+	 * @see UnseenEpisode
 	 */
 	List<UnseenEpisode> getEpisodesToBeWatch(String showId);
 	
 	/**
-	 * Gets (N) episodes to be watch for a specific show.
-	 * 
-	 * @param showId
-	 *            the show id
-	 * @param limit
-	 *            the limit
-	 * @return a collection of {@link Episode}
+	 * Gets the {@code n} first unseen episodes of the authenticated user 
+	 * for a given show, without subtitles.
+	 *
+	 * @param showId  the show id
+	 * @param limit  the limit
+	 * @return the episodes to be watch
+	 * @throws ApiException
+	 * @throws MissingAuthorizationException
+	 * @see UnseenEpisode
 	 */
 	List<UnseenEpisode> getEpisodesToBeWatch(String showId, int limit);
 	
 	/**
-	 * Gets (N) the episodes to be watch. for a specific show and a given user
-	 * 
-	 * @param showId
-	 *            the show id
-	 * @param limit
-	 *            the limit
-	 * @param user_id
-	 *            the user_id
-	 * @return a collection of {@link Episode}
+	 * Gets the {@code n} first unseen episodes for a given show, user and without 
+	 * subtitles.
+	 *
+	 * @param showId  the show id to get unseen episode
+	 * @param limit  the number of episode to retrieve
+	 * @param user_id  retrieve unseen episode for this user
+	 * @return the unseen episodes
+	 * @throws ApiException
+	 * @throws MissingAuthorizationException
+	 * @see UnseenEpisode
 	 */
 	List<UnseenEpisode> getEpisodesToBeWatch(String showId, int limit, String user_id);
 	
 	/**
-	 * Gets (N) the episodes to be watch. for a specific show and a given user, including subtitles
+	 * Gets the {@code n} first unseen episodes for a given show, user and optionally 
+	 * include subtitles.
+	 * <p>
+	 * If the specified show doesn't have unseen episode this method return an empty
+	 * {@code List<UnseenEpisode>}.
+	 * </p>
 	 * 
-	 * @param showId
-	 *            the show id
-	 * @param limit
-	 *            the limit
-	 * @param user_id
-	 *            the user_id
-	 * @param subtitles
-	 *            the subtitles {@link BSSubtitles} if specified return subtitle in the result set
-	 * @return a collection of {@link Episode}
+	 * @param showId  the show id
+	 * @param limit  the limit
+	 * @param user_id  the user_id
+	 * @param subtitles  the subtitles
+	 * @return the list of unseen episodes
+	 * @throws ApiException
+	 * @throws MissingAuthorizationException
+	 * @see UnseenEpisode
 	 */
 	List<UnseenEpisode> getEpisodesToBeWatch(String showId, int limit, String user_id, BSSubtitles subtitles);
 	
 	/**
-	 * Search .
-	 * 
-	 * @param showId
-	 *            the show id
-	 * @param number
-	 *            the show number SXXEXX e.g: S01E01
-	 * @param includeSubtitles
-	 *            the subtitles
-	 * @return a collection of {@link Episode}
+	 * Obtains information about an episode.
+	 *
+	 * @param showId  the show id
+	 * @param number  the show number SxxExx or the global number 
+	 * @param includeSubtitles  true, include subtitles 
+	 * @return the episode
+	 * @throws ApiException
+	 * @see Episode
 	 */
 	Episode search(String showId, String number, boolean includeSubtitles);
 	
 	/**
-	 * Gets the by id.
-	 * 
-	 * @param episodeId
-	 *            the BetaSerie episode object id
-	 * @return the by id
+	 * Gets an episode by its id without subtitles.
+	 *
+	 * @param theTvDbId  the episode id
+	 * @param includeSubtitles  true, include subtitles
+	 * @return the episode
+	 * @throws ApiException
 	 */
 	Episode getById(String episodeId);
 	
 	/**
-	 * Get an episode by the tv db id.
-	 * 
-	 * @param theTvDbId
-	 *            the the tv db id
-	 * @return the by the tv db id
+	 * Gets an episode by its TV DB id without subtitles.
+	 *
+	 * @param theTvDbId  the episode tv db id
+	 * @param includeSubtitles  true, include subtitles
+	 * @return the episode
+	 * @throws ApiException
 	 */
 	Episode getByTheTvDbId(String theTvDbId);
 	
 	/**
-	 * Gets episode by id.
-	 * 
-	 * @param episodeId
-	 *            the BetaSerie episode object id
-	 * @param includeSubtitles 
-	 *            the subtitles {@link BSSubtitles}
-	 * @return the by id
+	 * Gets an episode by its {@code id} with/without subtitles.
+	 *
+	 * @param episodeId  the episode id
+	 * @param includeSubtitles  true, include subtitles
+	 * @return the episode
+	 * @throws ApiException
 	 */
 	Episode getById(String episodeId, boolean includeSubtitles);
 	
 	/**
-	 * Get an episode by the tv db id.
-	 * 
-	 * @param theTvDbId
-	 *            the tv db id
-	 * @param includeSubtitles
-	 *            the subtitles {@link BSSubtitles}
-	 * @return {@link Episode}
+	 * Gets an episode by its TV DB id with/without subtitles.
+	 *
+	 * @param theTvDbId  the episode tv db id
+	 * @param includeSubtitles  true, include subtitles
+	 * @return the episode
+	 * @throws ApiException 
 	 */
 	Episode getByTheTvDbId(String theTvDbId, boolean includeSubtitles);
 	
 	/**
-	 * Mark as downloaded.
-	 * 
-	 * @param episodeId
-	 *            an episode {@link Episode}
-	 * @return TODO
+	 * Mark an episode as downloaded.
+	 *
+	 * @param episodeId  the episode id to mark as downloaded
+	 * @return the marked episode
+	 * @throws ApiException
+	 * @throws MissingAuthorizationException
 	 */
 	Episode markAsDownloaded(String episodeId);
 	
 	/**
-	 * Unmark as downloaded.
-	 * 
-	 * @param episodeId
-	 *            an episode {@link Episode}
-	 * @return TODO
+	 * Unmark an episode as downloaded.
+	 *
+	 * @param episodeId  the episode id to remove the downloaded flag
+	 * @return the marked episode
+	 * @throws ApiException
+	 * @throws MissingAuthorizationException
 	 */
 	Episode unmarkAsDownloaded(String episodeId);
 	
 	/**
-	 * Mark as watched.
-	 * 
-	 * @param episodeId
-	 *            the an episode
-	 * @return TODO
+	 * Mark an episode as watched.
+	 *
+	 * @param episodeId  the episode id to mark as watch
+	 * @return the marked episode
+	 * @throws ApiException 
+	 * @throws MissingAuthorizationException
 	 */
 	Episode markAsWatched(String episodeId);
 	
 	/**
-	 * Un mark as watched.
-	 * 
-	 * @param episodeId
-	 *            the an episode
-	 * @return TODO
+	 * Un mark an episode as watched.
+	 *
+	 * @param episodeId  the episode id to mark as unwatch
+	 * @return the marked episode
+	 * @throws ApiException
+	 * @throws MissingAuthorizationException
 	 */
 	Episode unMarkAsWatched(String episodeId);
 	
 	/**
-	 * Rate episode.
-	 * 
-	 * @param episodeId
-	 *            the an episode
-	 * @return TODO
+	 * Rate the specified episode.
+	 *
+	 * @param episodeId  the episode id to rate
+	 * @param note  the note
+	 * @return the rated episode
+	 * @throws ApiException, MissingAuthorizationException
 	 */
 	Episode rateEpisode(String episodeId, int note);
 	
 	/**
-	 * Un rate episode.
-	 * 
-	 * @param episodeId
-	 *            the an episode
-	 * @return TODO
+	 * Un rate the specified episode.
+	 *
+	 * @param episodeId  the episode id to unrate
+	 * @return the unrated episode
+	 * @throws ApiException
+	 * @throws MissingAuthorizationException
 	 */
 	Episode unRateEpisode(String episodeId);
 	

@@ -25,6 +25,4 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonDeserialize(using=EpisodeDeserializer.class)
-abstract class EpisodeMixin extends BetaSeriesObjectMixin {
-
-}
+abstract class EpisodeMixin extends BetaSeriesObjectMixin {}

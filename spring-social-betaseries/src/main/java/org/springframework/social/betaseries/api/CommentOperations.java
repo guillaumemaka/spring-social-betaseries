@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 the original author or authors
+ * Copyright 2015 Guillaume Maka
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,122 +17,164 @@ package org.springframework.social.betaseries.api;
 
 import java.util.List;
 
-import org.springframework.social.ApiException;
-import org.springframework.social.MissingAuthorizationException;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Interface CommentOperations.
- * 
+ * Represents an instance of {@code CommentOperations}.
+ * <p>
+ * </p>
+ *
  * @author Guillaume Maka
  */
 public interface CommentOperations {
 	
 	/**
-	 * Gets the latest comments for a specific object type
+	 * Gets the {@code 10} first comments for an element {@code id}
+	 * in descending order including replies.
+	 * <p>
+	 * You can get 4 type of element comments:
+	 * <ul>
+	 * <li>EPISODE</li>
+	 * <li>SHOW</li>
+	 * <li>MEMBER</li>
+	 * <li>MOVIE</li>
+	 * </ul>
+	 * </p>
 	 * 
-	 * @param type
-	 *            the BetaSeries element type {@link BSObjectType} episode|movie|show|member episode|movie|show|member
-	 * @param objectId
-	 *            the BetaSeries element object id
-	 * @return collection of {@link Comment}
-	 * @throws MissingAuthorizationException
+	 * @param type  the type of element {@link BSObjectType}
+	 * @param objectId  the object id
+	 * @return the list of comments for the specified element
 	 * @throws ApiException
+	 * @see BSObjectType
 	 */
 	List<Comment> getCommentsFor(BSObjectType type, String objectId);
 	
 	/**
-	 * Gets a subset of comments
+	 * Gets the {@code n} comments for an element starting at the specified element {@code id}
+	 * in descending order including replies.
+	 * <p>
+	 * You can get 4 type of element comments:
+	 * <ul>
+	 * <li>EPISODE</li>
+	 * <li>SHOW</li>
+	 * <li>MEMBER</li>
+	 * <li>MOVIE</li>
+	 * </ul>
+	 * </p>
 	 * 
-	 * @param type
-	 *            the BetaSerie element type {@link BSObjectType} episode|movie|show|member
-	 * @param objectId
-	 *            the object id
-	 * @param commentPerPage
-	 *            the number of comment per page
-	 * @return a collection of {@link Comment}
+	 * @param type  the type of element {@link BSObjectType}
+	 * @param objectId  the object id
+	 * @param commentPerPage  the number of comment per page
+	 * @return the list of comments for the specified element
+	 * @throws ApiException
+	 * @see BSObjectType
+	 * @see Comment
 	 */
 	List<Comment> getCommentsFor(BSObjectType type, String objectId, int commentPerPage);
 	
 	/**
-	 * Gets the comments for.
+	 * Gets the {@code n} comments for an element starting at the specified element {@code id}
+	 * in descending order including replies.
+	 * <p>
+	 * You can get 4 type of element comments:
+	 * <ul>
+	 * <li>EPISODE</li>
+	 * <li>SHOW</li>
+	 * <li>MEMBER</li>
+	 * <li>MOVIE</li>
+	 * </ul>
+	 * </p>
 	 * 
-	 * @param type
-	 *            the BetaSerie element type {@link BSObjectType} episode|movie|show|member
-	 * @param objectId
-	 *            the object id
-	 * @param commentPerPage
-	 *            the comment per page
-	 * @param sinceId
-	 *            the since id
-	 * @return the comments for
+	 * @param type  the type of element {@link BSObjectType}
+	 * @param objectId  the object id of the element
+	 * @param commentPerPage  the number of comment per page to retrieve
+	 * @param sinceId  the last comment received id to start 
+	 * @return the list of comments for the specified element
+	 * @throws ApiException
+	 * @see BSObjectType
+	 * @see Comment
 	 */
 	List<Comment> getCommentsFor(BSObjectType type, String objectId, int commentPerPage, String sinceId);
 	
 	/**
-	 * Gets the comments for.
+	 * Gets the {@code n} comments for an element starting at the specified element {@code id}
+	 * in the given order including replies.
+	 * <p>
+	 * You can get 4 type of element comments:
+	 * <ul>
+	 * <li>EPISODE</li>
+	 * <li>SHOW</li>
+	 * <li>MEMBER</li>
+	 * <li>MOVIE</li>
+	 * </ul>
+	 * </p>
 	 * 
-	 * @param type
-	 *            the BetaSerie element type {@link BSObjectType} episode|movie|show|member
-	 * @param objectId
-	 *            the object id
-	 * @param commentPerPage
-	 *            the comment per page
-	 * @param sinceId
-	 *            the since id
-	 * @param order
-	 *            the order
-	 * @return the comments for
+	 * @param type  the type of element {@link BSObjectType}
+	 * @param objectId  the object id of the element
+	 * @param commentPerPage  the number of comment per page to retrieve
+	 * @param sinceId  the last comment received id to start
+	 * @param order  the order
+	 * @return the list of comments for the specified element
+	 * @throws ApiException
+	 * @see BSObjectType
+	 * @see BSSortOrder
+	 * @see Comment
 	 */
 	List<Comment> getCommentsFor(BSObjectType type, String objectId, int commentPerPage, String sinceId, BSSortOrder order);
 	
 	/**
-	 * Gets the comments for.
+	 * Gets the {@code n} comments for an element starting at the specified element {@code id}
+	 * in the given order with/without replies.
+	 * <p>
+	 * You can get 4 type of element comments:
+	 * <ul>
+	 * <li>EPISODE</li>
+	 * <li>SHOW</li>
+	 * <li>MEMBER</li>
+	 * <li>MOVIE</li>
+	 * </ul>
+	 * </p>
 	 * 
-	 * @param type
-	 *            the BetaSerie element type {@link BSObjectType} episode|movie|show|member
-	 * @param objectId
-	 *            the object id
-	 * @param commentPerPage
-	 *            the comment per page
-	 * @param sinceId
-	 *            the since id
-	 * @param order
-	 *            the order
-	 * @param includeReplies
-	 *            the include replies
-	 * @return the comments for
+	 * @param type  the type of element {@link BSObjectType}
+	 * @param objectId  the object id of the element
+	 * @param commentPerPage  the number of comment per page to retrieve
+	 * @param sinceId  the last comment received id to start
+	 * @param order  the order
+	 * @param includeReplies  if true include replies
+	 * @return the list of comments for the specified element
+	 * @throws ApiException
+	 * @see BSObjectType
+	 * @see BSSortOrder
+	 * @see Comment
 	 */
 	List<Comment> getCommentsFor(BSObjectType type, String objectId, int commentPerPage, String sinceId, BSSortOrder order, boolean includeReplies);
 	
 	/**
-	 * Gets the comments replies for a specific comment
-	 * 
-	 * @param commentId
-	 *            the comment id
-	 * @param order
-	 *            the order
-	 * @return the comments replies for
+	 * Gets the comments replies for a specific comment.
+	 *
+	 * @param commentId  the comment id
+	 * @param order  the order
+	 * @return the list of comments repllies for the specified comment
+	 * @throws ApiException
+	 * @see BSSortOrder
+	 * @see Comment
 	 */
 	List<Comment> getCommentsRepliesFor(String commentId, BSSortOrder order);
 	
 	/**
-	 * Suscribe.
-	 * 
-	 * @param type
-	 *            the BetaSerie element type {@link BSObjectType} episode|movie|show|member
-	 * @param commentId
-	 *            the comment id
+	 * Subscribe to a comment feed.
+	 *
+	 * @param type  the element type
+	 * @param commentId  the comment id to subscribe
+	 * @throws ApiException
 	 */
 	void suscribe(BSObjectType type, String commentId);
 	
 	/**
-	 * Unsuscribe.
-	 * 
-	 * @param type
-	 *            the BetaSerie element type {@link BSObjectType} episode|movie|show|member
-	 * @param commentId
-	 *            the comment id
+	 * Unsubscribe to a comment feed.
+	 *
+	 * @param type  the element type
+	 * @param commentId  the comment id to unsubscribe
+	 * @throws ApiException 
 	 */
 	void unSuscribe(BSObjectType type, String commentId);
 }

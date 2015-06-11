@@ -7,10 +7,15 @@ import static org.springframework.test.web.client.response.MockRestResponseCreat
 
 import java.util.List;
 
+import org.junit.After;
 import org.junit.Test;
 import org.springframework.http.MediaType;
 
 public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
+	
+	List<Episode> episodes;
+	List<UnseenEpisode> unseens;
+	
 	@Test
 	public void getByIds() {
 		constructGetMockRequest(mockServer,
@@ -20,7 +25,7 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 								.body(jsonResource("episodes-display-multi-ids-without-subtitles"))
 								.contentType(MediaType.APPLICATION_JSON));
 
-		List<Episode> episodes = betaSeries.episodeOperations().getByIds(
+		episodes = betaSeries.episodeOperations().getByIds(
 				new String[] { "264473", "264474" });
 		Episode episode1 = episodes.get(0);
 		assertEquals(2, episodes.size());
@@ -39,7 +44,7 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 								.body(jsonResource("episodes-display-multi-ids-without-subtitles"))
 								.contentType(MediaType.APPLICATION_JSON));
 
-		List<Episode> episodes = betaSeries.episodeOperations().getByTvDbIds(
+		episodes = betaSeries.episodeOperations().getByTvDbIds(
 				new String[] { "55452", "55453" });
 		Episode episode1 = episodes.get(0);
 		assertEquals(2, episodes.size());
@@ -57,7 +62,7 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 								.body(jsonResource("episodes-display-with-subtitles"))
 								.contentType(MediaType.APPLICATION_JSON));
 
-		List<Episode> episodes = betaSeries.episodeOperations().getByIds(
+		episodes = betaSeries.episodeOperations().getByIds(
 				new String[] { "264473", "264474" }, true);
 		Episode episode1 = episodes.get(0);
 		assertEquals(2, episodes.size());
@@ -88,7 +93,7 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 								.body(jsonResource("episodes-display-multi-ids-with-subtitles"))
 								.contentType(MediaType.APPLICATION_JSON));
 
-		List<Episode> episodes = betaSeries.episodeOperations().getByTvDbIds(
+		episodes = betaSeries.episodeOperations().getByTvDbIds(
 				new String[] { "55452", "55453" }, true);
 		Episode episode1 = episodes.get(0);
 		assertEquals(2, episodes.size());
@@ -120,7 +125,7 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 						jsonResource("episodes-list-without-subtitles"))
 						.contentType(MediaType.APPLICATION_JSON));
 
-		List<UnseenEpisode> unseens = betaSeries.episodeOperations()
+		unseens = betaSeries.episodeOperations()
 				.getEpisodesToBeWatch();
 		UnseenEpisode unseen = unseens.get(0);
 
@@ -144,7 +149,7 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 								jsonResource("episodes-list-with-subtitles"))
 								.contentType(MediaType.APPLICATION_JSON));
 
-		List<UnseenEpisode> unseens = betaSeries.episodeOperations()
+		unseens = betaSeries.episodeOperations()
 				.getEpisodesToBeWatch(null, 0, null, BSSubtitles.ALL);
 		UnseenEpisode unseen = unseens.get(0);
 
@@ -413,5 +418,12 @@ public class EpisodeTemplateTest extends AbstractBetaSeriesApiTest {
 		assertEquals(
 				dateFromString("2008-05-10 16:36:53", BS_DATE_AND_TIME_FORMAT),
 				subtitle.getDate());
+	}
+	
+	@After
+	public void tearDown() {		
+		super.tearDown();
+		episodes = null;
+		unseens = null;
 	}
 }

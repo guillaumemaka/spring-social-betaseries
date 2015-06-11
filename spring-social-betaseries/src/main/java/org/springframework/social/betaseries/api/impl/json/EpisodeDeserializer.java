@@ -103,24 +103,11 @@ class EpisodeDeserializer extends JsonDeserializer<Episode> {
 		JsonNode userNode = rootNode.path("user");
 		boolean isSeen = userNode.path("seen").asBoolean();
 		boolean isDownloaded = userNode.path("downloaded").asBoolean();
+				
 		
-		Episode episode = new Episode(id, theTvDbId, title);
-		episode.setSeasonNumber(seasonNumber);
-		episode.setEpisodeNumber(episodeNumber);
-		episode.setShowId(showId);
-		episode.setShowTvDbId(show_theTvDbId);
-		episode.setShowTitle(showTitle);
-		episode.setCode(code);
-		episode.setGlobal(global);
-		episode.setDescription(description);
-		episode.setAirDate(airDate);
+		Note note = new Note(noteTotal, noteMean, noteUser);		
 		
-		Note note = new Note(noteTotal, noteMean, noteUser);
-		episode.setNote(note);
-		
-		episode.setSeen(isSeen);
-		episode.setDownloaded(isDownloaded);		
-		episode.setNumberOfComment(rootNode.path("comments").asInt());
+		int numberOfComment = rootNode.path("comments").asInt();
 		
 		List<Subtitle> subtitles = new ArrayList<Subtitle>();		
 		JavaType subtitleListType = getObjectMapper().getTypeFactory().constructCollectionType(List.class, Subtitle.class);
@@ -134,7 +121,24 @@ class EpisodeDeserializer extends JsonDeserializer<Episode> {
 			
 		}
 		
-		episode.setSubtitles(subtitles);
+		final Episode episode = new Episode(
+				id, 
+				theTvDbId, 
+				title, 
+				seasonNumber, 
+				episodeNumber, 
+				showId, 
+				show_theTvDbId, 
+				showTitle, 
+				code, 
+				global, 
+				description, 
+				airDate, 
+				note, 
+				isSeen, 
+				isDownloaded, 
+				numberOfComment, 
+				subtitles);
 		
 		return episode;
 	}

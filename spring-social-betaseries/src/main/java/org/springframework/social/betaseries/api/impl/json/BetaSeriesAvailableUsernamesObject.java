@@ -10,6 +10,5 @@ public class BetaSeriesAvailableUsernamesObject extends
 	@JsonCreator
 	public BetaSeriesAvailableUsernamesObject(@JsonProperty("usernames") String[] object) {
 		super(object);
-		// TODO Auto-generated constructor stub
 	}
 }

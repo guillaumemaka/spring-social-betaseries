@@ -27,84 +27,77 @@ public interface FriendOperations {
 	/**
 	 * Block a user.
 	 * 
-	 * @param userId
-	 *            the user id to block
-	 * @return TODO
+	 * @param userId  the user id to block
+	 * @return the blocked member
 	 */
 	Member block(int userId);
 	
 	/**
 	 * Unblock a user.
 	 * 
-	 * @param userId
-	 *            the user id to unblock
-	 * @return TODO
+	 * @param userId  the user id to unblock
+	 * @return the unblocked member
 	 */
 	Member unblock(int userId);
 	
 	/**
 	 * Add a friend relationship.
 	 * 
-	 * @param userId
-	 *            the user id to add
-	 * @return TODO
+	 * @param userId  the user id to add
+	 * @return the new added friend
 	 */
 	Member addFriend(int userId);
 	
 	/**
 	 * Removes a friend relationship.
 	 * 
-	 * @param userId
-	 *            the user id to remove
-	 * @return TODO
+	 * @param userId  the user id to remove
+	 * @return the new removed friend
 	 */
 	Member removeFriend(int userId);
 	
 	/**
 	 * Get the Friends list for the currenr user.
 	 * 
-	 * @return the list
+	 * @return the friend list
 	 */
 	List<BSUser> getFriendsList();
 	
 	/**
 	 * Get the Friends list for a specific user
 	 * 
-	 * @param userId
-	 *            the user id
-	 * @return the list
+	 * @param userId  the user id
+	 * @return the friend list
 	 */
 	List<BSUser> getFriendsList(String userId);
 	
 	/**
 	 * Get the Blocked friends list for the current user. 
 	 * 
-	 * @return a collection of {@link Friend}
+	 * @return a collection of {@link BSUser}
 	 */
 	List<BSUser> getBlockedFriendsList();
 	
 	/**
 	 * Blocked friends list a specific user.
 	 * 
-	 * @param userId
-	 *            the user id
-	 * @return the list
+	 * @param userId  the user id
+	 * @return the blocked friend list
 	 */
 	List<BSUser> getBlockedFriendsList(String userId);
 	
 	/**
-	 * Get the requested friendship sent.
+	 * Get the list of requested friendship sent.
 	 * 
-	 * @return the list
+	 * @return the requested friendship list
 	 */
 	List<BSUser> getRequestedFriends();
 	
 	/**
-	 * Get the requested friendship sent, including the received request friendship.
+	 * Get the list of requested friendship sent, including the received request friendship.
 	 * 
-	 * @param received
-	 *            the received
-	 * @return the list
+	 * @param received  the received
+	 * @return the requested friendship list
 	 */
 	List<BSUser> getRequestedFriends(boolean received);
 }

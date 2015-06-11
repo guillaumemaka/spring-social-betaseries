@@ -5,6 +5,7 @@ import static org.springframework.test.web.client.response.MockRestResponseCreat
 
 import java.util.List;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
@@ -12,7 +13,8 @@ import org.springframework.core.io.Resource;
 import org.springframework.http.MediaType;
 
 public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
-
+	Member member;
+	
 	@Test
 	public void members_getMemberInfos_test() {
 		constructGetMockRequest(mockServer,
@@ -20,7 +22,7 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 				withSuccess().body(jsonResource("members-infos")).contentType(
 						MediaType.APPLICATION_JSON));
 		// Member assertions
-		Member member = betaSeries.memberOperations().getMemberInfos();
+		member = betaSeries.memberOperations().getMemberInfos();
 		assertMember(member);
 
 		// Stats assertions
@@ -296,7 +298,7 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 		constructDeleteMockRequest(mockServer, "https://api.betaseries.com/members/avatar")
 		.andRespond(withSuccess().body(jsonResource("members-upload-avatar")).contentType(MediaType.APPLICATION_JSON));
 		
-		Member member = betaSeries.memberOperations().deleteAvatar();
+		member = betaSeries.memberOperations().deleteAvatar();
 		
 		Assert.assertNotNull(member);
 		Assert.assertEquals("Dev040", member.getLogin());
@@ -418,5 +420,11 @@ public class MemberTemplateTest extends AbstractBetaSeriesApiTest {
 		Assert.assertEquals(0, movie.getFollowers());
 		Assert.assertTrue(movie.getUserDetail().isInAccount());
 		Assert.assertEquals(BSMovieUserState.SEEN, movie.getUserDetail().getStatus());
+	}
+	
+	@After
+	public void tearDown() {		
+		super.tearDown();
+		member = null;
 	}
 }
