@@ -5,7 +5,7 @@ buildscript {
     dependencies {
         classpath 'org.springframework.build.gradle:docbook-reference-plugin:0.2.8'
         classpath 'me.champeau.gradle:gradle-javadoc-hotfix-plugin:0.1'
-        classpath 'com.bluepapa32:gradle-watch-plugin:0.1.5'
+        // classpath 'com.bluepapa32:gradle-watch-plugin:0.1.5'
         classpath 'org.kordamp.gradle:livereload-gradle-plugin:0.2.1'
     }
 }
@@ -15,27 +15,26 @@ configure(allprojects) {
     apply plugin: 'eclipse'
     apply plugin: 'idea'
     apply plugin: 'javadocHotfix'
-	apply plugin: 'maven'
+	   apply plugin: 'maven'
     apply plugin: "jacoco"
-    apply plugin: 'com.bluepapa32.watch'
     apply plugin: "org.kordamp.gradle.livereload"
 
     liveReload {
       docRoot "$buildDir"
     }
 
-    watch {
-      java{
-        files files('spring-social-betaseries/src/main/java')
-        tasks 'test jacocoTestReport'
-      }
+    //watch {
+    //  java{
+    //    files files('spring-social-betaseries/src/main/java')
+    //    tasks 'test jacocoTestReport'
+    //  }
 
-      resources {
-            files fileTree(dir: 'spring-social-betaseries/src/main/resources',
-                           include: 'spring-social-betaseries/**/*.properties')
-            tasks 'processResources'
-        }
-    }
+    //  resources {
+    //        files fileTree(dir: 'spring-social-betaseries/src/main/resources',
+    //                       include: 'spring-social-betaseries/**/*.properties')
+    //        tasks 'processResources'
+    //    }
+    //}
 
 
     jacoco {
